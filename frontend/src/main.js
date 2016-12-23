@@ -1,12 +1,26 @@
 import Vue from 'vue'
-import App from './App.vue'
+import VueRouter from 'vue-router'
 import VueMaterial from 'vue-material'
 
-Vue.use(VueMaterial)
+import App from './App.vue'
+import Files from './views/Files.vue'
 
+// router
+Vue.use(VueRouter);
+// routes
+var router = new VueRouter({
+  routes: [
+    { path: '/', component: Files },
+    { path: '*', redirect: '/' }
+  ]
+});
+
+// material
+Vue.use(VueMaterial)
+// theme
 Vue.material.registerTheme({
   default: {
-    primary: 'red',
+    primary: 'purple',
     accent: 'red'
   },
   green: {
@@ -22,5 +36,6 @@ Vue.material.registerTheme({
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  render: h => h(App)
+  render: h => h(App),
+  router
 })
