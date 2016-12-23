@@ -11,6 +11,7 @@ Vue.use(VueRouter);
 var router = new VueRouter({
   routes: [
     { path: '/', component: Files },
+    { path: '/files', component: Files },
     { path: '*', redirect: '/' }
   ]
 });
@@ -21,15 +22,9 @@ Vue.use(VueMaterial)
 Vue.material.registerTheme({
   default: {
     primary: 'purple',
-    accent: 'red'
-  },
-  green: {
-    primary: 'green',
-    accent: 'pink'
-  },
-  orange: {
-    primary: 'green',
-    accent: 'green'
+    accent: 'deep-purple',
+    warn: 'blue',
+    background: 'white'
   }
 })
 
