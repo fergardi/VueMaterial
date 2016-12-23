@@ -1,64 +1,26 @@
 <template lang="pug">
-  md-list.md-double-line
-    md-subheader.md-inset Folders
-    md-list-item
-      md-avatar.md-avatar-icon
-        md-icon folder
-      .md-list-text-container
-        span Photos
-        p Jan 9, 2014
-      md-button.md-icon-button.md-list-action
-        md-icon info
-    md-list-item
-      md-avatar.md-avatar-icon
-        md-icon folder
-      .md-list-text-container
-        span Recipes
-        p Jan 17, 2014
-      md-button.md-icon-button.md-list-action
-        md-icon info
-    md-list-item
-      md-avatar.md-avatar-icon
-        md-icon folder
-      .md-list-text-container
-        span Work
-        p Jan 28, 2014
-      md-button.md-icon-button.md-list-action
-        md-icon info
-      md-divider.md-inset
-    md-subheader.md-inset Files
-    md-list-item
-      md-avatar.md-avatar-icon.md-primary
-        md-icon insert_drive_file
-      .md-list-text-container
-        span Vacation Itinerary
-        p Jan 20, 2014
-      md-button.md-icon-button.md-list-action
-        md-icon info
-    md-list-item
-      md-avatar.md-avatar-icon.md-primary(md-theme='orange')
-        md-icon collections
-      .md-list-text-container
-        span Kitchen Remodel
-        p Jan 10, 2014
-      md-button.md-icon-button.md-list-action
-        md-icon info
-    md-list-item
-      md-avatar.md-avatar-icon.md-primary(md-theme='green')
-        md-icon view_list
-      .md-list-text-container
-        span Grocery Shop
-        p Jan 10, 2014
-      md-button.md-icon-button.md-list-action
-        md-icon info
-    md-list-item
-      md-avatar.md-avatar-icon.md-primary(md-theme='orange')
-        md-icon collections
-      .md-list-text-container
-        span Weekend Pictures
-        p Jan 10, 2014
-      md-button.md-icon-button.md-list-action
-        md-icon info
+  md-theme
+    md-whiteframe(md-elevation='3')
+      md-toolbar.md-medium
+        md-button.md-icon-button(@click='$parent.$refs.sidebar.toggle()')
+          md-icon menu
+        h2.md-title(style='flex: 1') My Files
+        md-button.md-fab.md-mini
+          md-icon add
+        md-button.md-icon-button
+          md-icon search
+        md-button.md-icon-button
+          md-icon view_module
+    md-list.md-double-line
+      md-subheader.md-inset Examples
+      md-list-item(v-for='file in files')
+        md-avatar.md-avatar-icon
+          md-icon folder
+        .md-list-text-container
+          span {{ file.name }}
+          p {{ file.date }}
+        md-button.md-icon-button.md-list-action
+          md-icon info
 </template>
 
 <script>
@@ -66,8 +28,8 @@
     data () {
       return {
         files: [
-          {name:'Name1'},
-          {name:'Name2'}
+          { name:'Name1', date: new Date() },
+          { name:'Name2', date: new Date() }
         ]
       }
     }
@@ -75,5 +37,26 @@
 </script>
 
 <style lang="stylus" scoped>
-  
+  .md-list
+    height: 100%;
+    overflow: auto;
+  .md-fab
+    margin: 0;
+    position: absolute;
+    bottom: -20px;
+    left: 16px;
+    .md-icon
+      color: #fff;
+  .md-title
+    padding-left: 8px;
+    color: #fff;
+  .md-list-action .md-icon
+    color: lightgray;
+  .md-avatar-icon .md-icon
+    color: #fff !important;
+  .md-account-header
+    .md-list-item:hover .md-button:hover
+      background-color: inherit;
+    .md-avatar-list .md-list-item-container:hover
+      background: none !important;
 </style>
