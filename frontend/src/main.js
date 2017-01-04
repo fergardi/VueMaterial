@@ -3,15 +3,17 @@ import VueRouter from 'vue-router'
 import VueMaterial from 'vue-material'
 
 import App from './App.vue'
-import Files from './views/Files.vue'
+import Home from './views/Home.vue'
+import Quest from './views/Quest.vue'
 
 // router
 Vue.use(VueRouter);
 // routes
 var router = new VueRouter({
   routes: [
-    { path: '/', component: Files },
-    { path: '/files', component: Files },
+    { path: '/', component: Home },
+    { path: '/home', component: Home },
+    { path: '/quest', component: Quest },
     { path: '*', redirect: '/' }
   ]
 });
