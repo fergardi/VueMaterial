@@ -4,10 +4,10 @@
       md-list.md-transparent
         md-list-item.md-avatar-list.center
           md-avatar.md-large
-            img(src="dist/img/fergardi.png")
+            img(src="dist/img/fergardi.jpg")
           span(style="flex: 1")
           md-avatar.md-large
-            img(src="dist/img/vivi.png")
+            img(src="dist/img/vivi.jpg")
     md-list
       router-link(to="/home")
         md-list-item(@click="$refs.sidebar.toggle()")

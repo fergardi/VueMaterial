@@ -11,7 +11,7 @@
         md-tooltip(md-direction="left") Si te portas bien a lo mejor te doy una pista
     md-card-media
       iframe(v-bind:src="active.media", v-if="!image()")
-      img(v-bind:src="active.media", v-if="image()")
+      img(v-bind:src="'/dist/img/' + active.media", v-if="image()")
     md-card-content {{ active.description }}
       md-input-container(md-has-password)
         label Código secreto
@@ -25,10 +25,10 @@
       return {
         quests: [],
         default: {
-          id: '',
+          password: '',
           title: 'Código incorrecto',
           subtitle: 'El código secreto no se reconoce',
-          media: 'http://www.evidentlycochrane.net/wp-content/uploads/2015/10/iStock_uncertaintyconcept_Medium.jpg',
+          media: 'default.jpg',
           description: 'Debes encontrar un código que se corresponda con la misión actual para pasar al siguiente nivel. Pueden ser números, letras, o combinaciones de ambas cosas. Pista: el primer código es tu nombre.'
         },
         password: ''
@@ -39,13 +39,13 @@
     },
     methods: {
       image () {
-        return this.active.media.toLowerCase().indexOf('.jpg') !== -1 || this.active.media.toLowerCase().indexOf('.png') !== -1 || this.active.media.toLowerCase().indexOf('.jpeg') !== -1;
+        return this.active.media.toLowerCase().indexOf('.jpg') !== -1 || this.active.media.toLowerCase().indexOf('.png') !== -1 || this.active.media.toLowerCase().indexOf('.jpeg') !== -1 || this.active.media.toLowerCase().indexOf('.gif') !== -1;
       }
     },
     computed: {
       active () {
-        if (this.password && this.quests.find(x => x.id === this.password)) {
-          return this.quests.find(x => x.id === this.password);
+        if (this.password && this.quests.find(x => x.password === this.password)) {
+          return this.quests.find(x => x.password === this.password);
         } else {
           return this.default;
         }
