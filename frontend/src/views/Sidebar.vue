@@ -13,11 +13,11 @@
             md-icon arrow_drop_down
     md-list
       router-link(to='/home')
-        md-list-item.md-primary(@click='$refs.sidebar.toggle()')
+        md-list-item(@click='$refs.sidebar.toggle()')
           md-icon home
           span Inicio
       router-link(to='/quest')
-        md-list-item(@click='$refs.sidebar.toggle()')
+        md-list-item.md-primary(@click='$refs.sidebar.toggle()')
           md-icon announcement
           span Misiones
       router-link(to='/help')

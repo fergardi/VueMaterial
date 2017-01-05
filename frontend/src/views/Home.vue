@@ -1,16 +1,47 @@
 <template lang="pug">
-  md-card.md-primary(md-with-hover)
-    md-card-header
-      md-avatar.md-large
-        img(src="http://www.ebcwebstore.com/images/Icon-Circle-Exclamation.png")
-      md-card-header-text
-        .md-title Titulo de la Mision
-        .md-subhead Breve explicacion de la mision
-      md-button.md-icon-button.md-list-action
-        md-icon.md-primary place
-    md-card-media
-      iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11751.13290874479!2d-5.59323995!3d42.581123350000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1483539569271", width="100%", height="300px" frameborder="0", style="border:0")
-    md-card-content Texto explicativo de la mision.
+  md-card(md-with-hover)
+    md-card-media-cover(md-solid)
+      md-card-media(md-ratio='16:9')
+        img(src='http://sleepwalker008.esy.es/gallery_gen/6b7e0df9d9f40178ad88a538b79e97f7_1719.8136645963x1810.jpg')
+      md-card-area
+        md-card-header
+          .md-title Feliz aniversario!
+          .md-subhead Esto es una gymkana online creada para ti
+    md-card-media-cover(md-solid)
+      md-card-media(md-ratio='16:9')
+        img(src='http://data.techtimes.com/data/images/full/123567/star-wars-land-3-jpg.jpg')
+      md-card-area
+        md-card-header
+          .md-title Tal vez tengas que viajar
+          .md-subhead Tienes un coche eléctrico
+    md-card-media-cover(md-solid)
+      md-card-media(md-ratio='16:9')
+        img(src='http://4.bp.blogspot.com/-4x96_hbGQaI/UdMw0w5BE9I/AAAAAAAAAX4/x58XEZqn6XQ/s1280/Gates+of+Moria.jpg')
+      md-card-area
+        md-card-header
+          .md-title Resolver un acertijo
+          .md-subhead Eres más lista que yo
+    md-card-media-cover(md-solid)
+      md-card-media(md-ratio='16:9')
+        img(src='http://winteriscoming.net/wp-content/uploads/2016/08/Battle-of-Meereen-Concept-Art-2.jpg')
+      md-card-area
+        md-card-header
+          .md-title Luchar contra un monstruo
+          .md-subhead O su equivalente legal
+    md-card-media-cover(md-solid)
+      md-card-media(md-ratio='16:9')
+        img(src='http://whatpixel.com/images/2016/concept-art-galleries/treasure-chests/05-green-treasure-chest-coin.jpg')
+      md-card-area
+        md-card-header
+          .md-title O encontrar un tesoro
+          .md-subhead Tomar prestado no es robar
+    md-card-media-cover(md-solid)
+      md-card-media(md-ratio='16:9')
+        img(src='https://giant.gfycat.com/WavyShowyBorer.gif')
+      md-card-area
+        md-card-header
+          .md-title Quieres jugar?
+          .md-subhead Accede a las Misiones con el menú lateral
 </template>
 
 <script>

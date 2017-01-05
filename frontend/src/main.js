@@ -5,6 +5,7 @@ import VueMaterial from 'vue-material'
 import App from './App.vue'
 import Home from './views/Home.vue'
 import Quest from './views/Quest.vue'
+import quests from './fixtures/quests.js'
 
 // router
 Vue.use(VueRouter);
@@ -25,7 +26,7 @@ Vue.material.registerTheme({
   default: {
     primary: 'purple',
     accent: 'deep-purple',
-    warn: 'blue',
+    warn: 'deep-orange',
     background: 'white'
   }
 })

@@ -7,7 +7,7 @@
         h2.md-title(style='flex: 1') Annyversary
     sidebar
     .main
-      router-view.content
+      router-view.content.animated.fadeIn
 </template>
 
 <script>
@@ -33,14 +33,9 @@
   .app
     display: flex;
     flex-flow: column;
-  iframe
-    height: 250px;
-    min-height: 250px;
   .main
     overflow: auto;
     height: 100%;
   .content
     margin: 15px;
-  .md-card
-    opacity: 0.9;
 </style>

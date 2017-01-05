@@ -1,20 +1,68 @@
 <template lang="pug">
-  md-card
+  md-card(md-with-hover)
     md-card-header
       md-avatar.md-large
-        img(src='http://www.ebcwebstore.com/images/Icon-Circle-Exclamation.png')
+        md-icon.md-primary announcement
       md-card-header-text
-        .md-title Titulo de la Mision
-        .md-subhead Breve explicacion de la mision
-      md-button.md-icon-button
-        md-icon place
+        .md-title {{ active.title }}
+        .md-subhead {{ active.subtitle }}
     md-card-media
-      iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11751.13290874479!2d-5.59323995!3d42.581123350000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1483539569271", width="100%", height="300px" frameborder="0", style="border:0")
-    md-card-content Texto explicativo de la mision.
+      iframe(v-bind:src="active.media", v-if="!image()")
+      img(v-bind:src="active.media", v-if="image()")
+    md-card-content {{ active.description }}
+      md-input-container(md-has-password)
+        label Código secreto
+        md-input(type="password", required, v-model="password")
 </template>
 
 <script>
+  import quests from '../fixtures/quests.js'
+  export default {
+    data () {
+      return {
+        quests: [],
+        default: {
+          id: '',
+          title: 'Código incorrecto',
+          subtitle: 'El código secreto no se reconoce',
+          media: 'http://www.evidentlycochrane.net/wp-content/uploads/2015/10/iStock_uncertaintyconcept_Medium.jpg',
+          description: 'Debes encontrar un código que se corresponda con la misión actual para pasar al siguiente nivel. Pueden ser números, letras, o combinaciones de ambas cosas. Pista: el primer código es tu nombre (y respeta las mayúsculas).'
+        },
+        password: ''
+      }
+    },
+    created () {
+      this.quests = quests;
+    },
+    methods: {
+      image () {
+        return this.active.media.toLowerCase().indexOf('.jpg') !== -1 || this.active.media.toLowerCase().indexOf('.png') !== -1 || this.active.media.toLowerCase().indexOf('.jpeg') !== -1;
+      }
+    },
+    computed: {
+      active () {
+        if (this.password && this.quests.find(x => x.id === this.password)) {
+          return this.quests.find(x => x.id === this.password);
+        } else {
+          return this.default;
+        }
+      }
+    }
+  }
 </script>
 
 <style lang="stylus" scoped>
+  .md-card
+    opacity: 0.9;
+  .md-card + .md-card
+    margin-top: 15px;
+  iframe
+  img
+    width: 100%;
+    border: none;
+  img
+    height: auto;
+  iframe
+    height: 350px;
+    max-height: 350px;
 </style>
