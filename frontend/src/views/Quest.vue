@@ -6,6 +6,9 @@
       md-card-header-text
         .md-title {{ active.title }}
         .md-subhead {{ active.subtitle }}
+      md-button.md-icon-button
+        md-icon help
+        md-tooltip(md-direction="left") Si te portas bien a lo mejor te doy una pista
     md-card-media
       iframe(v-bind:src="active.media", v-if="!image()")
       img(v-bind:src="active.media", v-if="image()")
@@ -26,7 +29,7 @@
           title: 'Código incorrecto',
           subtitle: 'El código secreto no se reconoce',
           media: 'http://www.evidentlycochrane.net/wp-content/uploads/2015/10/iStock_uncertaintyconcept_Medium.jpg',
-          description: 'Debes encontrar un código que se corresponda con la misión actual para pasar al siguiente nivel. Pueden ser números, letras, o combinaciones de ambas cosas. Pista: el primer código es tu nombre (y respeta las mayúsculas).'
+          description: 'Debes encontrar un código que se corresponda con la misión actual para pasar al siguiente nivel. Pueden ser números, letras, o combinaciones de ambas cosas. Pista: el primer código es tu nombre.'
         },
         password: ''
       }

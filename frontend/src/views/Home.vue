@@ -19,29 +19,22 @@
         img(src='http://4.bp.blogspot.com/-4x96_hbGQaI/UdMw0w5BE9I/AAAAAAAAAX4/x58XEZqn6XQ/s1280/Gates+of+Moria.jpg')
       md-card-area
         md-card-header
-          .md-title Resolver un acertijo
+          .md-title Resolver acertijos
           .md-subhead Eres más lista que yo
     md-card-media-cover(md-solid)
       md-card-media(md-ratio='16:9')
         img(src='http://winteriscoming.net/wp-content/uploads/2016/08/Battle-of-Meereen-Concept-Art-2.jpg')
       md-card-area
         md-card-header
-          .md-title Luchar contra un monstruo
+          .md-title Luchar contra monstruos
           .md-subhead O su equivalente legal
     md-card-media-cover(md-solid)
       md-card-media(md-ratio='16:9')
-        img(src='http://whatpixel.com/images/2016/concept-art-galleries/treasure-chests/05-green-treasure-chest-coin.jpg')
+        img(src='http://img02.deviantart.net/81eb/i/2011/235/5/c/the_alethiometer_by_tidalkraken-d47l7kl.jpg')
       md-card-area
         md-card-header
-          .md-title O encontrar un tesoro
+          .md-title O encontrar tesoros
           .md-subhead Tomar prestado no es robar
-    md-card-media-cover(md-solid)
-      md-card-media(md-ratio='16:9')
-        img(src='https://giant.gfycat.com/WavyShowyBorer.gif')
-      md-card-area
-        md-card-header
-          .md-title Quieres jugar?
-          .md-subhead Accede a las Misiones con el menú lateral
 </template>
 
 <script>
