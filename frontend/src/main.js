@@ -4,6 +4,8 @@ import VueMaterial from 'vue-material'
 
 import App from './App.vue'
 import Home from './views/Home.vue'
+import About from './views/About.vue'
+import Help from './views/Help.vue'
 import Quest from './views/Quest.vue'
 import quests from './fixtures/quests.js'
 
@@ -14,6 +16,8 @@ var router = new VueRouter({
   routes: [
     { path: '/', component: Home },
     { path: '/home', component: Home },
+    { path: '/help', component: Help },
+    { path: '/about', component: About },
     { path: '/quest', component: Quest },
     { path: '*', redirect: '/' }
   ]
@@ -26,7 +30,7 @@ Vue.material.registerTheme({
   default: {
     primary: 'purple',
     accent: 'deep-purple',
-    warn: 'deep-orange',
+    warn: 'red',
     background: 'white'
   }
 })

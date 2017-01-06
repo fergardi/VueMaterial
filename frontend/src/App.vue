@@ -38,4 +38,7 @@
     height: 100%;
   .content
     margin: 15px;
+  @media screen and (min-width: 768px)
+    .content
+      margin: 15px 25%;
 </style>

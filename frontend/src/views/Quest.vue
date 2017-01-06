@@ -8,14 +8,16 @@
         .md-subhead {{ active.subtitle }}
       md-button.md-icon-button
         md-icon help
-        md-tooltip(md-direction="left") Si te portas bien a lo mejor te doy una pista
+        md-tooltip(md-direction="left")
+          strong Pista
     md-card-media
       iframe(v-bind:src="active.media", v-if="!image()")
       img(v-bind:src="'/dist/img/' + active.media", v-if="image()")
     md-card-content {{ active.description }}
-      md-input-container(md-has-password)
+      md-input-container.md-input-invalid(md-has-password)
         label Código secreto
         md-input(type="password", required, v-model="password")
+        span.md-error {{ message }}
 </template>
 
 <script>
@@ -31,7 +33,8 @@
           media: 'default.jpg',
           description: 'Debes encontrar un código que se corresponda con la misión actual para pasar al siguiente nivel. Pueden ser números, letras, o combinaciones de ambas cosas. Pista: el primer código es tu nombre.'
         },
-        password: ''
+        password: '',
+        message: 'Código incorrecto!'
       }
     },
     created () {
@@ -39,14 +42,21 @@
     },
     methods: {
       image () {
-        return this.active.media.toLowerCase().indexOf('.jpg') !== -1 || this.active.media.toLowerCase().indexOf('.png') !== -1 || this.active.media.toLowerCase().indexOf('.jpeg') !== -1 || this.active.media.toLowerCase().indexOf('.gif') !== -1;
+        return (
+          this.active.media.toLowerCase().indexOf('.jpg') !== -1 || 
+          this.active.media.toLowerCase().indexOf('.png') !== -1 || 
+          this.active.media.toLowerCase().indexOf('.jpeg') !== -1 || 
+          this.active.media.toLowerCase().indexOf('.gif') !== -1
+        );
       }
     },
     computed: {
       active () {
         if (this.password && this.quests.find(x => x.password === this.password)) {
+          this.message = 'Código correcto!';
           return this.quests.find(x => x.password === this.password);
         } else {
+          this.message = 'Código incorrecto!';
           return this.default;
         }
       }
@@ -55,10 +65,6 @@
 </script>
 
 <style lang="stylus" scoped>
-  .md-card
-    opacity: 0.9;
-  .md-card + .md-card
-    margin-top: 15px;
   iframe
   img
     width: 100%;
