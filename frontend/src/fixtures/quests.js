@@ -1,31 +1,59 @@
 const quests = [
   {
     password: 'Virginia',
-    title: 'Una imagen vale más que mil palabras',
-    subtitle: 'La pista está en la imagen',
-    media: 'plate.jpg',
-    description: 'Ésta es bastante fácil, sólo es para ponerte a tono, no te confíes.'
+    title: 'Provisional',
+    subtitle: 'Provisional',
+    description: 'Provisional',
+    media: 'plate.jpg'
   },
   {
     password: '1234VJS',
-    title: 'Una de física',
-    subtitle: 'Mapa',
-    media: 'law.jpg',
-    description: 'Mapa'
+    title: 'Provisional',
+    subtitle: 'Provisional',
+    description: 'Provisional',
+    media: 'gollum.jpg'
   },
   {
-    password: 'Ley de Ohm',
-    title: 'Video',
-    subtitle: 'Video',
-    media: 'm4tr1x.jpg',
-    description: 'Video'
+    password: 'Sombra',
+    title: 'Provisional',
+    subtitle: 'Provisional',
+    description: 'Provisional',
+    media: 'law.jpg'
   },
   {
-    password: 'm4tr1x',
-    title: 'Video',
-    subtitle: 'Video',
-    media: 'p0t4t0.jpg',
-    description: 'Video'
+    password: 'Ohm',
+    title: 'Provisional',
+    subtitle: 'Provisional',
+    description: 'Provisional',
+    media: 'sherlock.jpg'
+  },
+  {
+    password: 'Hipo',
+    title: 'Provisional',
+    subtitle: 'Provisional',
+    description: 'Provisional',
+    media: 'moria.jpg'
+  },
+  {
+    password: 'Vanya',
+    title: 'Provisional',
+    subtitle: 'Provisional',
+    description: 'Provisional',
+    media: 'einstein.jpg'
+  },
+  {
+    password: 'Cerveza',
+    title: 'Provisional',
+    subtitle: 'Provisional',
+    description: 'Provisional',
+    media: 'laura.jpg'
+  },
+  {
+    password: 'Vanya',
+    title: 'Provisional',
+    subtitle: 'Provisional',
+    description: 'Provisional',
+    media: 'einstein.jpg'
   }
 ];
 

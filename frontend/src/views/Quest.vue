@@ -12,7 +12,7 @@
           strong Pista
     md-card-media
       iframe(v-bind:src="active.media", v-if="!image()")
-      img(v-bind:src="'/dist/img/' + active.media", v-if="image()")
+      img(v-bind:src="'/dist/img/quests/' + active.media", v-if="image()")
     md-card-content {{ active.description }}
       md-input-container.md-input-invalid(md-has-password)
         label Código secreto
@@ -31,7 +31,7 @@
           title: 'Código incorrecto',
           subtitle: 'El código secreto no se reconoce',
           media: 'default.jpg',
-          description: 'Debes encontrar un código que se corresponda con la misión actual para pasar al siguiente nivel. Pueden ser números, letras, o combinaciones de ambas cosas. Pista: el primer código es tu nombre.'
+          description: 'Debes encontrar el código que se corresponda con el acertijo actual para pasar al siguiente nivel. Pueden ser números, letras, o combinaciones de ambas cosas, pero siempre habrá solo una palabra, sin frases. Respeta siempre las mayúsculas, pero ignora siempre los signos de puntuación. Pista: el primer código es tu nombre.'
         },
         password: '',
         message: 'Código incorrecto!'
@@ -45,6 +45,7 @@
         return (
           this.active.media.toLowerCase().indexOf('.jpg') !== -1 || 
           this.active.media.toLowerCase().indexOf('.png') !== -1 || 
+          this.active.media.toLowerCase().indexOf('.bmp') !== -1 || 
           this.active.media.toLowerCase().indexOf('.jpeg') !== -1 || 
           this.active.media.toLowerCase().indexOf('.gif') !== -1
         );
