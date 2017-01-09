@@ -70,7 +70,7 @@ const quests = [
     media: 'laura.jpg'
   },
   {
-    password: 'Vanya',
+    password: 'Piti',
     icon: 'announcement',
     title: 'Provisional',
     subtitle: 'Provisional',
@@ -79,6 +79,6 @@ const quests = [
     theme: 'default',
     media: 'einstein.jpg'
   }
-];
+]
 
-export default quests;
+export default quests

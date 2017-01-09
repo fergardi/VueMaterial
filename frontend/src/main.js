@@ -7,10 +7,9 @@ import Home from './views/Home.vue'
 import About from './views/About.vue'
 import Help from './views/Help.vue'
 import Quest from './views/Quest.vue'
-import quests from './fixtures/quests.js'
 
 // router
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 // routes
 var router = new VueRouter({
   routes: [
@@ -21,7 +20,7 @@ var router = new VueRouter({
     { path: '/quest', component: Quest },
     { path: '*', redirect: '/' }
   ]
-});
+})
 
 // material
 Vue.use(VueMaterial)

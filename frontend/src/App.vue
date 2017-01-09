@@ -2,9 +2,9 @@
   .app
     md-whiteframe(md-elevation="3")
       md-toolbar
-        md-button.md-icon-button(@click='toggle()')
+        md-button.md-icon-button(@click="toggle()")
           md-icon menu
-        h2.md-title(style='flex: 1') Vue Material Design
+        h2.md-title(style="flex: 1") Annyversary
     md-sidenav.md-left.md-fixed(ref="sidebar")
       md-toolbar.md-account-header
         md-list.md-transparent
@@ -32,16 +32,15 @@
             md-icon info
             span Info
     .main
-      .row.center
-        .col-xs-12.col-sm-8.col-md-6.col-lg-4
-          router-view.content.animated.fadeIn
+      router-view.content.animated.fadeIn
 </template>
 
 <script>
   export default {
     methods: {
       toggle () {
-        this.$refs.sidebar.toggle();
+        this.$refs.sidebar.toggle()
+          console.log('csadsa');
       }
     }
   }
@@ -77,6 +76,10 @@
   iframe
     height: 350px;
     max-height: 350px;
-  .center
-    justify-content: center;
+  @media screen and (min-width: 768px)
+    .content
+      margin: 16px 25% !important;
+  @media screen and (min-width: 1024px)
+    .content
+      margin: 16px 33% !important;
 </style>

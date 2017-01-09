@@ -35,11 +35,6 @@
             media: 'gameofthrones.jpg'
           },
           {
-            title: 'Hablar con NPCs',
-            subtitle: 'Como si de una misión se tratara',
-            media: 'wow.jpg'
-          },
-          {
             title: 'Y encontrar tesoros',
             subtitle: 'Tomar prestado no es robar',
             media: 'darkmatherials.jpg'

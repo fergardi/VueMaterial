@@ -10,7 +10,7 @@
         md-button.md-icon-button
           md-icon help
           md-tooltip(md-direction="left")
-            strong {{ active.clue }}
+            strong Pista: {{ active.clue }}
       md-card-media
         iframe(v-bind:src="active.media", v-if="!image()")
         img(v-bind:src="'/dist/img/quests/' + active.media", v-if="image()")
@@ -33,32 +33,28 @@
           subtitle: 'El código secreto no se reconoce',
           theme: 'default',
           description: 'Debes encontrar el código que se corresponda con el acertijo actual para pasar al siguiente nivel. Pueden ser números, letras, o combinaciones de ambas cosas, pero siempre habrá como mucho una palabra, nada de frases. Respeta siempre las mayúsculas, pero ignora siempre los signos de puntuación.',
-          clue: 'Pista: el primer código es tu nombre',
+          clue: 'El primer código es tu nombre',
           media: 'default.jpg'
         },
         password: ''
       }
     },
     created () {
-      this.quests = quests;
+      this.quests = quests
     },
     methods: {
       image () {
         return (
-          this.active.media.toLowerCase().indexOf('.jpg') !== -1 || 
-          this.active.media.toLowerCase().indexOf('.png') !== -1 || 
-          this.active.media.toLowerCase().indexOf('.bmp') !== -1 || 
-          this.active.media.toLowerCase().indexOf('.jpeg') !== -1 || 
-          this.active.media.toLowerCase().indexOf('.gif') !== -1
-        );
+          this.active.media.toLowerCase().indexOf('.jpg') !== -1 || this.active.media.toLowerCase().indexOf('.png') !== -1 || this.active.media.toLowerCase().indexOf('.bmp') !== -1 || this.active.media.toLowerCase().indexOf('.jpeg') !== -1 || this.active.media.toLowerCase().indexOf('.gif') !== -1
+        )
       }
     },
     computed: {
       active () {
         if (this.password && this.quests.find(x => x.password === this.password)) {
-          return this.quests.find(x => x.password === this.password);
+          return this.quests.find(x => x.password === this.password)
         } else {
-          return this.default;
+          return this.default
         }
       }
     }
