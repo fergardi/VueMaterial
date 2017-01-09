@@ -20,7 +20,7 @@
             media: 'harrypotter.jpg'
           },
           {
-            title: 'Tal vez tengas que viajar',
+            title: 'Tendrás que viajar',
             subtitle: 'Tienes un coche eléctrico',
             media: 'starwars.jpg'
           },
@@ -40,7 +40,7 @@
             media: 'wow.jpg'
           },
           {
-            title: 'O encontrar tesoros',
+            title: 'Y encontrar tesoros',
             subtitle: 'Tomar prestado no es robar',
             media: 'darkmatherials.jpg'
           }

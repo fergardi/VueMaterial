@@ -32,7 +32,9 @@
             md-icon info
             span Info
     .main
-      router-view.content.animated.fadeIn
+      .row.center
+        .col-xs-12.col-sm-8.col-md-6.col-lg-4
+          router-view.content.animated.fadeIn
 </template>
 
 <script>
@@ -75,10 +77,6 @@
   iframe
     height: 350px;
     max-height: 350px;
-  @media screen and (min-width: 768px)
-    .content
-      margin: 16px 25% !important;
-  @media screen and (min-width: 1024px)
-    .content
-      margin: 16px 33% !important;
+  .center
+    justify-content: center;
 </style>
