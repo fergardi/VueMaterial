@@ -1,23 +1,23 @@
 <template lang="pug">
-  md-card(md-with-hover)
-    md-card-header
-      md-avatar.md-large
-        md-icon.md-primary announcement
-      md-card-header-text
-        .md-title {{ active.title }}
-        .md-subhead {{ active.subtitle }}
-      md-button.md-icon-button
-        md-icon help
-        md-tooltip(md-direction="left")
-          strong Pista
-    md-card-media
-      iframe(v-bind:src="active.media", v-if="!image()")
-      img(v-bind:src="'/dist/img/quests/' + active.media", v-if="image()")
-    md-card-content {{ active.description }}
-      md-input-container.md-input-invalid(md-has-password)
-        label Código secreto
-        md-input(type="password", required, v-model="password")
-        span.md-error {{ message }}
+  md-theme(v-bind:md-name="active.theme")
+    md-card(md-with-hover)
+      md-card-header
+        md-avatar.md-large
+          md-icon.md-primary {{ active.icon }}
+        md-card-header-text
+          .md-title {{ active.title }}
+          .md-subhead {{ active.subtitle }}
+        md-button.md-icon-button
+          md-icon help
+          md-tooltip(md-direction="left")
+            strong {{ active.clue }}
+      md-card-media
+        iframe(v-bind:src="active.media", v-if="!image()")
+        img(v-bind:src="'/dist/img/quests/' + active.media", v-if="image()")
+      md-card-content {{ active.description }}
+        md-input-container(md-has-password)
+          label Código secreto
+          md-input(type="password", required, v-model="password")
 </template>
 
 <script>
@@ -29,12 +29,14 @@
         default: {
           password: '',
           title: 'Código incorrecto',
+          icon: 'announcement',
           subtitle: 'El código secreto no se reconoce',
-          media: 'default.jpg',
-          description: 'Debes encontrar el código que se corresponda con el acertijo actual para pasar al siguiente nivel. Pueden ser números, letras, o combinaciones de ambas cosas, pero siempre habrá solo una palabra, sin frases. Respeta siempre las mayúsculas, pero ignora siempre los signos de puntuación. Pista: el primer código es tu nombre.'
+          theme: 'default',
+          description: 'Debes encontrar el código que se corresponda con el acertijo actual para pasar al siguiente nivel. Pueden ser números, letras, o combinaciones de ambas cosas, pero siempre habrá como mucho una palabra, nada de frases. Respeta siempre las mayúsculas, pero ignora siempre los signos de puntuación.',
+          clue: 'Pista: el primer código es tu nombre',
+          media: 'default.jpg'
         },
-        password: '',
-        message: 'Código incorrecto!'
+        password: ''
       }
     },
     created () {
@@ -54,10 +56,8 @@
     computed: {
       active () {
         if (this.password && this.quests.find(x => x.password === this.password)) {
-          this.message = 'Código correcto!';
           return this.quests.find(x => x.password === this.password);
         } else {
-          this.message = 'Código incorrecto!';
           return this.default;
         }
       }
@@ -66,13 +66,4 @@
 </script>
 
 <style lang="stylus" scoped>
-  iframe
-  img
-    width: 100%;
-    border: none;
-  img
-    height: auto;
-  iframe
-    height: 350px;
-    max-height: 350px;
 </style>

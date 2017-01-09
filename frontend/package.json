@@ -1,7 +1,7 @@
 {
-  "name": "safe-spot-frontend",
+  "name": "Annyversary",
   "description": "A Vue.js project",
-  "author": "Emilio J Grande <emilio@jsjutsu.com>",
+  "author": "Fernando García <fergardi@gmail.com>",
   "private": true,
   "scripts": {
     "watchify": "watchify -vd -p browserify-hmr -e src/main.js -o dist/build.js",

@@ -27,11 +27,23 @@ var router = new VueRouter({
 Vue.use(VueMaterial)
 // theme
 Vue.material.registerTheme({
-  default: {
-    primary: 'purple',
+  riddle: {
+    primary: 'red',
     accent: 'deep-purple',
     warn: 'red',
-    background: 'white'
+    background: 'red'
+  },
+  travel: {
+    primary: 'green',
+    accent: 'deep-purple',
+    warn: 'red',
+    background: 'green'
+  },
+  contact: {
+    primary: 'orange',
+    accent: 'deep-purple',
+    warn: 'red',
+    background: 'orange'
   }
 })
 
