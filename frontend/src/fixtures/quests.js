@@ -6,6 +6,7 @@ const quests = [
     subtitle: 'Provisional',
     description: 'Provisional',
     clue: 'Provisional',
+    tags: ['Provisional1', 'Provisional2'],
     theme: 'default',
     media: 'plate.jpg'
   },
@@ -16,6 +17,7 @@ const quests = [
     subtitle: 'Provisional',
     description: 'Provisional',
     clue: 'Provisional',
+    tags: ['Provisional1', 'Provisional2'],
     theme: 'default',
     media: 'gollum.jpg'
   },
@@ -26,6 +28,7 @@ const quests = [
     subtitle: 'Provisional',
     description: 'Provisional',
     clue: 'Provisional',
+    tags: ['Provisional1', 'Provisional2'],
     theme: 'default',
     media: 'law.jpg'
   },
@@ -36,6 +39,7 @@ const quests = [
     subtitle: 'Provisional',
     description: 'Provisional',
     clue: 'Provisional',
+    tags: ['Provisional1', 'Provisional2'],
     theme: 'default',
     media: 'sherlock.jpg'
   },
@@ -46,6 +50,7 @@ const quests = [
     subtitle: 'Provisional',
     description: 'Provisional',
     clue: 'Provisional',
+    tags: ['Provisional1', 'Provisional2'],
     theme: 'default',
     media: 'moria.jpg'
   },
@@ -56,6 +61,7 @@ const quests = [
     subtitle: 'Provisional',
     description: 'Provisional',
     clue: 'Provisional',
+    tags: ['Provisional1', 'Provisional2'],
     theme: 'default',
     media: 'einstein.jpg'
   },
@@ -66,6 +72,7 @@ const quests = [
     subtitle: 'Provisional',
     description: 'Provisional',
     clue: 'Provisional',
+    tags: ['Provisional1', 'Provisional2'],
     theme: 'default',
     media: 'laura.jpg'
   },
@@ -76,6 +83,7 @@ const quests = [
     subtitle: 'Provisional',
     description: 'Provisional',
     clue: 'Provisional',
+    tags: ['Provisional1', 'Provisional2'],
     theme: 'default',
     media: 'einstein.jpg'
   }

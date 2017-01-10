@@ -4,7 +4,7 @@
       md-toolbar
         md-button.md-icon-button(@click="toggle()")
           md-icon menu
-        h2.md-title(style="flex: 1") Annyversary2
+        h2.md-title(style="flex: 1") Annyversary
     md-sidenav.md-left.md-fixed(ref="sidebar")
       md-toolbar.md-account-header
         md-list.md-transparent
@@ -66,10 +66,8 @@
     height: 100%;
   .content
     margin: 16px 8px !important;
-  .swiper
-    width: 50px;
-    height: 100%;
-    position: absolute;
+  .md-chip + .md-chip
+    margin-left: 5px;
   iframe
   img
     width: 100%;
