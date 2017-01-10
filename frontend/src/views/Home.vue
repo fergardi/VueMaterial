@@ -3,6 +3,7 @@
     md-card-media-cover(md-solid, v-for="card in cards")
       md-card-media(md-ratio="16:9")
         img(v-bind:src="'img/' + card.media")
+        md-ink-ripple
       md-card-area
         md-card-header
           .md-title {{ card.title }}
@@ -33,6 +34,11 @@
             title: 'Luchar contra monstruos',
             subtitle: 'O lo más parecido a la realidad',
             media: 'gameofthrones.jpg'
+          },
+          {
+            title: 'Hablar con NPCs',
+            subtitle: 'Recuerda que tienen sentimientos',
+            media: 'worldofwarcraft.jpg'
           },
           {
             title: 'Y encontrar tesoros',

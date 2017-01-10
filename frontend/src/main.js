@@ -26,24 +26,6 @@ var router = new VueRouter({
 Vue.use(VueMaterial)
 // theme
 Vue.material.registerTheme({
-  riddle: {
-    primary: 'red',
-    accent: 'deep-purple',
-    warn: 'red',
-    background: 'red'
-  },
-  travel: {
-    primary: 'green',
-    accent: 'deep-purple',
-    warn: 'red',
-    background: 'green'
-  },
-  contact: {
-    primary: 'orange',
-    accent: 'deep-purple',
-    warn: 'red',
-    background: 'orange'
-  }
 })
 
 /* eslint-disable no-new */

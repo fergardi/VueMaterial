@@ -4,7 +4,12 @@
       md-toolbar
         md-button.md-icon-button(@click="toggle()")
           md-icon menu
-        h2.md-title(style="flex: 1") Annyversary
+        h2.md-title Annyversary
+        span(style="flex: 1")
+        md-button.md-icon-button
+          md-icon help
+        md-button.md-icon-button
+          md-icon info
     md-sidenav.md-left.md-fixed(ref="sidebar")
       md-toolbar.md-account-header
         md-list.md-transparent
@@ -20,8 +25,8 @@
             md-icon home
             span Inicio
         router-link(to="/quest")
-          md-list-item.md-primary(@click="toggle()")
-            md-icon.md-primary announcement
+          md-list-item(@click="toggle()")
+            md-icon announcement
             span Misiones
         router-link(to="/help")
           md-list-item(@click="toggle()")

@@ -20,7 +20,7 @@
         img(v-bind:src="'img/quests/' + active.media", v-if="image()")
       md-card-content {{ active.description }}
         p
-          md-chip(v-for="tag in active.tags") {{ tag }}
+          md-chip(md-deletable, v-for="tag in active.tags") {{ tag }}
         md-input-container(md-has-password)
           label Código secreto
           md-input(type="password", required, v-model="password")
@@ -44,7 +44,7 @@
           media: 'default.jpg'
         },
         password: '',
-        snackbar: 'Correcto!'
+        snackbar: 'Correcto! A ver si resuelves el siguiente...'
       }
     },
     created () {
