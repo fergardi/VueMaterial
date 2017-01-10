@@ -1,10 +1,10 @@
 <template lang="pug">
-  md-touch.app(v-on:swipe="toggle()")
-    md-whiteframe(md-elevation="3")
+  .app
+    md-whiteframe(md-elevation="5")
       md-toolbar
         md-button.md-icon-button(@click="toggle()")
           md-icon menu
-        h2.md-title(style="flex: 1") Annyversary
+        h2.md-title(style="flex: 1") Annyversary2
     md-sidenav.md-left.md-fixed(ref="sidebar")
       md-toolbar.md-account-header
         md-list.md-transparent
@@ -66,6 +66,10 @@
     height: 100%;
   .content
     margin: 16px 8px !important;
+  .swiper
+    width: 50px;
+    height: 100%;
+    position: absolute;
   iframe
   img
     width: 100%;

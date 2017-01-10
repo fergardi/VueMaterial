@@ -11,12 +11,10 @@
     "cordova": "cross-env NODE_ENV=production browserify -g envify src/main.js | uglifyjs -c warnings=false -m > ../cordova/www/js/build.js"
   },
   "dependencies": {
-    "cordova": "^6.4.0",
     "vue": "^2.0.1",
     "vue-loader": "^10.0.2",
-    "vue-material": "^0.5.1",
-    "vue-router": "^2.1.1",
-    "vueify": "^9.4.0"
+    "vue-material": "^0.5.*",
+    "vue-router": "^2.1.1"
   },
   "devDependencies": {
     "axis": "^0.6.1",
@@ -40,7 +38,7 @@
     "pug": "^2.0.0-beta6",
     "stylus": "^0.54.5",
     "uglify-js": "^2.5.0",
-    "vueify": "^9.1.0",
+    "vueify": "^9.4.0",
     "watchify": "^3.4.0"
   },
   "browserify": {
