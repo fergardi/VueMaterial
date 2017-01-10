@@ -4,12 +4,13 @@
   "author": "Fernando García <fergardi@gmail.com>",
   "private": true,
   "scripts": {
-    "watchify": "watchify -vd -p browserify-hmr -e src/main.js -o dist/build.js -t [ eslintify --extension js --extension vue --passthrough warnings --formatter table --quiet-ignored ]",
+    "watchify": "watchify -vd -p browserify-hmr -e src/main.js -o dist/build.js -t [ eslintify --extension js --extension vue --formatter stylish --quiet-ignored ]",
     "serve": "http-server -s -c 1 -o -a localhost",
     "dev": "npm-run-all --parallel watchify serve",
     "build": "cross-env NODE_ENV=production browserify -g envify src/main.js | uglifyjs -c warnings=false -m > dist/build.js"
   },
   "dependencies": {
+    "cordova": "^6.4.0",
     "vue": "^2.0.1",
     "vue-loader": "^10.0.2",
     "vue-material": "^0.5.1",

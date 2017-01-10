@@ -13,7 +13,7 @@
             strong Pista: {{ active.clue }}
       md-card-media
         iframe(v-bind:src="active.media", v-if="!image()")
-        img(v-bind:src="'/dist/img/quests/' + active.media", v-if="image()")
+        img(v-bind:src="'img/quests/' + active.media", v-if="image()")
       md-card-content {{ active.description }}
         md-input-container(md-has-password)
           label Código secreto

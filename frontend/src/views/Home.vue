@@ -2,7 +2,7 @@
   md-card(md-with-hover)
     md-card-media-cover(md-solid, v-for="card in cards")
       md-card-media(md-ratio="16:9")
-        img(v-bind:src="'/dist/img/' + card.media")
+        img(v-bind:src="'img/' + card.media")
       md-card-area
         md-card-header
           .md-title {{ card.title }}
