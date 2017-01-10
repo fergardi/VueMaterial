@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import VueMaterial from 'vue-material'
+import VueTouch from 'vue-touch'
 
 import App from './App.vue'
 import Home from './views/Home.vue'
@@ -45,6 +46,9 @@ Vue.material.registerTheme({
     background: 'orange'
   }
 })
+
+// touch
+Vue.use(VueTouch, { name: 'md-touch' })
 
 /* eslint-disable no-new */
 new Vue({

@@ -24,5 +24,7 @@
     <allow-intent href="itms-apps:*" />
   </platform>
   <engine name="android" spec="~7.0.0" />
-  <icon src="www/img/res/icon.png" />
+  <preference name="Orientation" value="portrait" />
+  <preference name="SplashScreenDelay" value="3000" />
+  <preference name="SplashScreen" value="screen" />
 </widget>

@@ -1,5 +1,5 @@
 <template lang="pug">
-  .app
+  md-touch.app(v-on:swipe="toggle()")
     md-whiteframe(md-elevation="3")
       md-toolbar
         md-button.md-icon-button(@click="toggle()")
