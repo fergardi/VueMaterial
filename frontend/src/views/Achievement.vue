@@ -1,35 +1,48 @@
 <template lang="pug">
-  md-list
-    md-list-item(v-for="achievement in achievements")
+  md-list.md-triple-line
+    md-list-item(v-for="achievement in ordered")
       md-avatar.md-large
-        img(v-bind:src="'img/quests/' + unlock(achievement).media")
-      span {{ unlock(achievement).title }}
-      md-button.md-icon-button.md-list-action
-        md-icon.md-primary star
+        img(v-bind:src="'img/quests/' + achievement.media")
+      .md-list-text-container
+        strong {{ achievement.title }}
+        span.italic {{ achievement.password }}
+        span.italic {{ readable(achievement.timestamp) }}
+      md-button.md-icon-button.md-list-action(v-on:click="fav(achievement)")
+        md-icon(v-bind:class="{ 'md-primary' : achievement.favorite }") star
 </template>
 
 <script>
-  import quests from '../fixtures/quests.js'
+  import moment from 'moment'
   export default {
     data () {
       return {
-        quests: [],
         achievements: []
       }
     },
     methods: {
-      unlock (password) {
-        return this.quests.find(x => x.password === password)
+      fav (achievement) {
+        achievement.favorite = !achievement.favorite
+        this.$setItem(achievement.password, achievement)
+      },
+      readable (timestamp) {
+        return moment(parseInt(timestamp)).format('D/M/YYYY HH:mm:ss')
       }
     },
     created () {
-      this.quests = quests
-      this.$iterateStorage((value, key, index) => {
+      this.$iterateStorage((key, value, index) => {
         this.achievements.push(key)
       })
+    },
+    computed: {
+      ordered () {
+        return this.achievements
+        .sort((x, y) => parseInt(x.timestamp) - parseInt(y.timestamp))
+      }
     }
   }
 </script>
 
 <style lang="stylus" scoped>
+  .italic
+    font-style: italic;
 </style>

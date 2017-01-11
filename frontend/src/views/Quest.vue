@@ -29,6 +29,7 @@
 
 <script>
   import quests from '../fixtures/quests.js'
+  import moment from 'moment'
   export default {
     data () {
       return {
@@ -51,16 +52,18 @@
       close () {
         this.$refs.snackbar.close()
       },
-      save () {
-        this.$setItem(this.password, this.password)
+      save (achievement) {
+        achievement.timestamp = moment().format('x')
+        this.$setItem(this.password, achievement)
       }
     },
     computed: {
       active () {
-        if (this.password && this.quests.find(x => x.password === this.password)) {
-          this.save()
+        var found = this.quests.find(x => x.password === this.password)
+        if (this.password && found) {
+          this.save(found)
           this.open()
-          return this.quests.find(x => x.password === this.password)
+          return found
         } else {
           return this.quests[0]
         }

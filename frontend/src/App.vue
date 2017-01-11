@@ -4,7 +4,7 @@
       md-toolbar
         md-button.md-icon-button(@click="toggle()")
           md-icon menu
-        h2.md-title Annyversary
+        h2.md-title Vue Test
         span(style="flex: 1")
         md-button.md-icon-button
           md-icon help

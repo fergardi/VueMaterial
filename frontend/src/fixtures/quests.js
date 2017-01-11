@@ -4,11 +4,13 @@ const quests = [
     title: 'Código incorrecto',
     icon: 'announcement',
     subtitle: 'El código secreto no se reconoce',
-    theme: 'default',
     description: 'Debes encontrar el código que se corresponda con el acertijo actual para pasar al siguiente nivel. Pueden ser números, letras, o combinaciones de ambas cosas, pero siempre habrá como mucho una palabra, nada de frases. Respeta siempre las mayúsculas, pero ignora siempre los signos de puntuación.',
     clue: 'El primer código es tu nombre',
     tags: ['Los', 'tags', 'también', 'ayudan'],
-    media: 'default.jpg'
+    theme: 'default',
+    media: 'default.jpg',
+    favorite: false,
+    timestamp: 0
   },
   {
     password: 'Virginia',
@@ -19,7 +21,9 @@ const quests = [
     clue: 'Provisional',
     tags: ['Provisional1', 'Provisional2'],
     theme: 'default',
-    media: 'plate.jpg'
+    media: 'plate.jpg',
+    favorite: false,
+    timestamp: 0
   },
   {
     password: '1234VJS',
@@ -30,7 +34,9 @@ const quests = [
     clue: 'Provisional',
     tags: ['Provisional1', 'Provisional2'],
     theme: 'default',
-    media: 'gollum.jpg'
+    media: 'gollum.jpg',
+    favorite: false,
+    timestamp: 0
   },
   {
     password: 'Sombra',
@@ -41,7 +47,9 @@ const quests = [
     clue: 'Provisional',
     tags: ['Provisional1', 'Provisional2'],
     theme: 'default',
-    media: 'law.jpg'
+    media: 'law.jpg',
+    favorite: false,
+    timestamp: 0
   },
   {
     password: 'Ohm',
@@ -52,7 +60,9 @@ const quests = [
     clue: 'Provisional',
     tags: ['Provisional1', 'Provisional2'],
     theme: 'default',
-    media: 'sherlock.jpg'
+    media: 'sherlock.jpg',
+    favorite: false,
+    timestamp: 0
   },
   {
     password: 'Hipo',
@@ -63,7 +73,9 @@ const quests = [
     clue: 'Provisional',
     tags: ['Provisional1', 'Provisional2'],
     theme: 'default',
-    media: 'moria.jpg'
+    media: 'moria.jpg',
+    favorite: false,
+    timestamp: 0
   },
   {
     password: 'Vanya',
@@ -74,7 +86,9 @@ const quests = [
     clue: 'Provisional',
     tags: ['Provisional1', 'Provisional2'],
     theme: 'default',
-    media: 'einstein.jpg'
+    media: 'einstein.jpg',
+    favorite: false,
+    timestamp: 0
   },
   {
     password: 'Cerveza',
@@ -85,7 +99,9 @@ const quests = [
     clue: 'Provisional',
     tags: ['Provisional1', 'Provisional2'],
     theme: 'default',
-    media: 'laura.jpg'
+    media: 'laura.jpg',
+    favorite: false,
+    timestamp: 0
   },
   {
     password: 'Piti',
@@ -96,7 +112,9 @@ const quests = [
     clue: 'Provisional',
     tags: ['Provisional1', 'Provisional2'],
     theme: 'default',
-    media: 'einstein.jpg'
+    media: 'einstein.jpg',
+    favorite: false,
+    timestamp: 0
   }
 ]
 
