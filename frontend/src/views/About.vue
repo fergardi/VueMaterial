@@ -1,5 +1,11 @@
 <template lang="pug">
-  p info
+  md-card
+    md-card-header
+      md-card-header-text
+        .md-title Acerca de
+        .md-subhead Cosas legales
+    md-card-content
+      span info
 </template>
 
 <script>

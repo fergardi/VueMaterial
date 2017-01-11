@@ -10,7 +10,7 @@
           md-icon.md-primary {{ active.icon }}
         md-card-header-text
           .md-title {{ active.title }}
-          .md-subhead {{ active.subtitle }}
+          .md-subhead {{ active.id }}/{{quests.length}}
         md-button.md-icon-button
           md-icon help
           md-tooltip(md-direction="left")
@@ -54,7 +54,7 @@
       },
       save (achievement) {
         achievement.timestamp = moment().format('x')
-        this.$setItem(this.password, achievement)
+        if (!this.$getItem(this.password)) this.$setItem(this.password, achievement)
       }
     },
     computed: {

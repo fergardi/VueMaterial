@@ -1,9 +1,9 @@
 const quests = [
   {
+    id: 1,
     password: null,
     title: 'Código incorrecto',
     icon: 'announcement',
-    subtitle: 'El código secreto no se reconoce',
     description: 'Debes encontrar el código que se corresponda con el acertijo actual para pasar al siguiente nivel. Pueden ser números, letras, o combinaciones de ambas cosas, pero siempre habrá como mucho una palabra, nada de frases. Respeta siempre las mayúsculas, pero ignora siempre los signos de puntuación.',
     clue: 'El primer código es tu nombre',
     tags: ['Los', 'tags', 'también', 'ayudan'],
@@ -13,10 +13,10 @@ const quests = [
     timestamp: 0
   },
   {
+    id: 2,
     password: 'Virginia',
     icon: 'announcement',
     title: 'Provisional',
-    subtitle: 'Provisional',
     description: 'Provisional',
     clue: 'Provisional',
     tags: ['Provisional1', 'Provisional2'],
@@ -26,10 +26,10 @@ const quests = [
     timestamp: 0
   },
   {
+    id: 3,
     password: '1234VJS',
     icon: 'announcement',
     title: 'Provisional',
-    subtitle: 'Provisional',
     description: 'Provisional',
     clue: 'Provisional',
     tags: ['Provisional1', 'Provisional2'],
@@ -39,10 +39,10 @@ const quests = [
     timestamp: 0
   },
   {
+    id: 4,
     password: 'Sombra',
     icon: 'announcement',
     title: 'Provisional',
-    subtitle: 'Provisional',
     description: 'Provisional',
     clue: 'Provisional',
     tags: ['Provisional1', 'Provisional2'],
@@ -52,10 +52,10 @@ const quests = [
     timestamp: 0
   },
   {
+    id: 5,
     password: 'Ohm',
     icon: 'announcement',
     title: 'Provisional',
-    subtitle: 'Provisional',
     description: 'Provisional',
     clue: 'Provisional',
     tags: ['Provisional1', 'Provisional2'],
@@ -65,10 +65,10 @@ const quests = [
     timestamp: 0
   },
   {
+    id: 6,
     password: 'Hipo',
     icon: 'announcement',
     title: 'Provisional',
-    subtitle: 'Provisional',
     description: 'Provisional',
     clue: 'Provisional',
     tags: ['Provisional1', 'Provisional2'],
@@ -78,10 +78,10 @@ const quests = [
     timestamp: 0
   },
   {
+    id: 7,
     password: 'Vanya',
     icon: 'announcement',
     title: 'Provisional',
-    subtitle: 'Provisional',
     description: 'Provisional',
     clue: 'Provisional',
     tags: ['Provisional1', 'Provisional2'],
@@ -91,10 +91,10 @@ const quests = [
     timestamp: 0
   },
   {
+    id: 8,
     password: 'Cerveza',
     icon: 'announcement',
     title: 'Provisional',
-    subtitle: 'Provisional',
     description: 'Provisional',
     clue: 'Provisional',
     tags: ['Provisional1', 'Provisional2'],
@@ -104,15 +104,54 @@ const quests = [
     timestamp: 0
   },
   {
+    id: 9,
     password: 'Piti',
     icon: 'announcement',
     title: 'Provisional',
-    subtitle: 'Provisional',
     description: 'Provisional',
     clue: 'Provisional',
     tags: ['Provisional1', 'Provisional2'],
     theme: 'default',
-    media: 'einstein.jpg',
+    media: 'cah.jpg',
+    favorite: false,
+    timestamp: 0
+  },
+  {
+    id: 10,
+    password: 'Burrada',
+    icon: 'announcement',
+    title: 'Provisional',
+    description: 'Provisional',
+    clue: 'Provisional',
+    tags: ['Provisional1', 'Provisional2'],
+    theme: 'default',
+    media: 'item.jpg',
+    favorite: false,
+    timestamp: 0
+  },
+  {
+    id: 11,
+    password: 'Item',
+    icon: 'announcement',
+    title: 'Provisional',
+    description: 'Provisional',
+    clue: 'Provisional',
+    tags: ['Provisional1', 'Provisional2'],
+    theme: 'default',
+    media: 'boss.jpg',
+    favorite: false,
+    timestamp: 0
+  },
+  {
+    id: 12,
+    password: 'Malygos',
+    icon: 'announcement',
+    title: 'Provisional',
+    description: 'Provisional',
+    clue: 'Provisional',
+    tags: ['Provisional1', 'Provisional2'],
+    theme: 'default',
+    media: 'achievement.jpg',
     favorite: false,
     timestamp: 0
   }

@@ -1,13 +1,20 @@
 <template lang="pug">
-  md-list.md-double-line
-    md-list-item(v-for="achievement in ordered")
-      md-avatar.md-large
-        img(v-bind:src="'img/quests/' + achievement.media")
-      .md-list-text-container
-        strong {{ achievement.title }}
-        span.italic {{ readable(achievement.timestamp) }}
-      md-button.md-icon-button.md-list-action(v-on:click="fav(achievement)")
-        md-icon(v-bind:class="{ 'md-primary' : achievement.favorite }") star
+  md-card
+    md-card-header
+      md-card-header-text
+        .md-title Logros
+        .md-subhead Lo que has conseguido hasta ahora
+    md-card-content
+      md-list.md-double-line(v-if="ordered.length")
+        md-list-item(v-for="achievement in ordered")
+          md-avatar.md-large
+            img(v-bind:src="'img/quests/' + achievement.media")
+          .md-list-text-container
+            strong {{ achievement.title }}
+            span.italic {{ readable(achievement.timestamp) }}
+          md-button.md-icon-button.md-list-action(v-on:click="fav(achievement)")
+            md-icon(v-bind:class="{ 'md-primary' : achievement.favorite }") star
+          md-divider.md-inset
 </template>
 
 <script>

@@ -60,7 +60,7 @@
 
 <style lang="stylus">
   body
-    //background: url("img/background.jpg") no-repeat center center fixed;
+    background: url("img/background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
