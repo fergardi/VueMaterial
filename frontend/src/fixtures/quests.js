@@ -1,5 +1,16 @@
 const quests = [
   {
+    password: null,
+    title: 'Código incorrecto',
+    icon: 'announcement',
+    subtitle: 'El código secreto no se reconoce',
+    theme: 'default',
+    description: 'Debes encontrar el código que se corresponda con el acertijo actual para pasar al siguiente nivel. Pueden ser números, letras, o combinaciones de ambas cosas, pero siempre habrá como mucho una palabra, nada de frases. Respeta siempre las mayúsculas, pero ignora siempre los signos de puntuación.',
+    clue: 'El primer código es tu nombre',
+    tags: ['Los', 'tags', 'también', 'ayudan'],
+    media: 'default.jpg'
+  },
+  {
     password: 'Virginia',
     icon: 'announcement',
     title: 'Provisional',

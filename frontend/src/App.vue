@@ -22,26 +22,39 @@
       md-list
         router-link(to="/home")
           md-list-item(@click="toggle()")
-            md-icon home
+            md-icon.md-primary home
             span Inicio
         router-link(to="/quest")
           md-list-item(@click="toggle()")
-            md-icon announcement
+            md-icon.md-primary announcement
             span Misiones
+        router-link(to="/achievement")
+          md-list-item(@click="toggle()")
+            md-icon.md-primary star
+            span Logros
         router-link(to="/help")
           md-list-item(@click="toggle()")
-            md-icon help
+            md-icon.md-primary help
             span Ayuda
         router-link(to="/about")
           md-list-item(@click="toggle()")
-            md-icon info
+            md-icon.md-primary info
             span Info
     .main
       router-view.content.animated.fadeIn
 </template>
 
 <script>
+  import localforage from 'localforage'
   export default {
+    created () {
+      this.$storageConfig({
+        driver: localforage.LOCALSTORAGE,
+        name: 'Vue',
+        storeName: 'Achievements',
+        description: 'Vue Annyversary database'
+      })
+    },
     methods: {
       toggle () {
         this.$refs.sidebar.toggle()
@@ -52,7 +65,7 @@
 
 <style lang="stylus">
   body
-    background: url("img/background.jpg") no-repeat center center fixed;
+    //background: url("img/background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -71,8 +84,8 @@
     height: 100%;
   .content
     margin: 16px 8px !important;
-  .md-chip + .md-chip
-    margin-left: 5px;
+  .md-chip
+    margin: 0 5px 5px 0;
   iframe
   img
     width: 100%;

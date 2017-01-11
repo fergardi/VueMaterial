@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import VueMaterial from 'vue-material'
+import VueLocalForage from 'vue-localforage'
 
 import App from './App.vue'
 import Home from './views/Home.vue'
 import About from './views/About.vue'
+import Achievement from './views/Achievement.vue'
 import Help from './views/Help.vue'
 import Quest from './views/Quest.vue'
 
@@ -15,18 +17,19 @@ var router = new VueRouter({
   routes: [
     { path: '/', component: Home },
     { path: '/home', component: Home },
+    { path: '/quest', component: Quest },
+    { path: '/achievement', component: Achievement },
     { path: '/help', component: Help },
     { path: '/about', component: About },
-    { path: '/quest', component: Quest },
     { path: '*', redirect: '/' }
   ]
 })
 
 // material
 Vue.use(VueMaterial)
-// theme
-Vue.material.registerTheme({
-})
+
+// localstorage
+Vue.use(VueLocalForage)
 
 /* eslint-disable no-new */
 new Vue({

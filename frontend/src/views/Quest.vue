@@ -1,7 +1,7 @@
 <template lang="pug">
   md-theme(v-bind:md-name="active.theme")
-    md-snackbar(ref="snackbar", v-bind:md-duration="5000")
-      span {{ snackbar }}
+    md-snackbar(ref="snackbar", md-duration="5000")
+      span Correcto! A ver si resuelves el siguiente...
       md-button.md-accent(v-on:click="close()")
         md-icon done
     md-card(md-with-hover)
@@ -18,9 +18,10 @@
       md-card-media
         iframe(v-bind:src="active.media", v-if="!image()")
         img(v-bind:src="'img/quests/' + active.media", v-if="image()")
+        md-ink-ripple
       md-card-content {{ active.description }}
         p
-          md-chip(md-deletable, v-for="tag in active.tags") {{ tag }}
+          md-chip(v-for="tag in active.tags") {{ tag }}
         md-input-container(md-has-password)
           label Código secreto
           md-input(type="password", required, v-model="password")
@@ -32,19 +33,7 @@
     data () {
       return {
         quests: [],
-        default: {
-          password: '',
-          title: 'Código incorrecto',
-          icon: 'announcement',
-          subtitle: 'El código secreto no se reconoce',
-          theme: 'default',
-          description: 'Debes encontrar el código que se corresponda con el acertijo actual para pasar al siguiente nivel. Pueden ser números, letras, o combinaciones de ambas cosas, pero siempre habrá como mucho una palabra, nada de frases. Respeta siempre las mayúsculas, pero ignora siempre los signos de puntuación.',
-          clue: 'El primer código es tu nombre',
-          tags: ['Los', 'tags', 'también', 'ayudan'],
-          media: 'default.jpg'
-        },
-        password: '',
-        snackbar: 'Correcto! A ver si resuelves el siguiente...'
+        password: ''
       }
     },
     created () {
@@ -61,15 +50,19 @@
       },
       close () {
         this.$refs.snackbar.close()
+      },
+      save () {
+        this.$setItem(this.password, this.password)
       }
     },
     computed: {
       active () {
         if (this.password && this.quests.find(x => x.password === this.password)) {
+          this.save()
           this.open()
           return this.quests.find(x => x.password === this.password)
         } else {
-          return this.default
+          return this.quests[0]
         }
       }
     }
