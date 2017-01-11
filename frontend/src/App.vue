@@ -5,11 +5,6 @@
         md-button.md-icon-button(@click="toggle()")
           md-icon menu
         h2.md-title Vue Test
-        span(style="flex: 1")
-        md-button.md-icon-button
-          md-icon help
-        md-button.md-icon-button
-          md-icon info
     md-sidenav.md-left.md-fixed(ref="sidebar")
       md-toolbar.md-account-header
         md-list.md-transparent
@@ -20,24 +15,24 @@
             md-avatar.md-large
               img(src="img/vivi.jpg")
       md-list
-        router-link(to="/home")
-          md-list-item(@click="toggle()")
+        md-list-item(@click="toggle()")
+          router-link(to="/home")
             md-icon.md-primary home
             span Inicio
-        router-link(to="/quest")
-          md-list-item(@click="toggle()")
+        md-list-item(@click="toggle()")
+          router-link(to="/quest")
             md-icon.md-primary announcement
             span Misiones
-        router-link(to="/achievement")
-          md-list-item(@click="toggle()")
+        md-list-item(@click="toggle()")
+          router-link(to="/achievement")
             md-icon.md-primary star
             span Logros
-        router-link(to="/help")
-          md-list-item(@click="toggle()")
+        md-list-item(@click="toggle()")
+          router-link(to="/help")
             md-icon.md-primary help
             span Ayuda
-        router-link(to="/about")
-          md-list-item(@click="toggle()")
+        md-list-item(@click="toggle()")
+          router-link(to="/about")
             md-icon.md-primary info
             span Info
     .main
