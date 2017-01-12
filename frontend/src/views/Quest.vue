@@ -37,7 +37,7 @@
       }
     },
     created () {
-      this.$material.setCurrentTheme('purple')
+      this.$material.setCurrentTheme('quest')
       this.quests = quests
     },
     methods: {

@@ -7,7 +7,7 @@ const quests = [
     clue: 'El primer código es tu nombre',
     media: 'default.jpg',
     description: 'Debes encontrar el código que se corresponda con el acertijo actual para pasar al siguiente nivel. Pueden ser números, letras, o combinaciones de ambas cosas, pero siempre habrá como mucho una palabra, nada de frases. Respeta siempre las mayúsculas, pero ignora siempre los signos de puntuación.',
-    tags: ['Los', 'tags', 'también', 'ayudan'],
+    tags: ['Los', 'tags', 'ayudan'],
     favorite: false,
     timestamp: 0
   },

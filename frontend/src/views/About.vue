@@ -15,7 +15,7 @@
 <script>
   export default {
     created () {
-      this.$material.setCurrentTheme('brown')
+      this.$material.setCurrentTheme('about')
     }
   }
 </script>

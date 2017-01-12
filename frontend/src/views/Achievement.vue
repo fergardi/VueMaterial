@@ -38,7 +38,7 @@
       }
     },
     created () {
-      this.$material.setCurrentTheme('orange')
+      this.$material.setCurrentTheme('achievement')
       this.$iterateStorage((key, value, index) => {
         this.achievements.push(key)
       })

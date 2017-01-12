@@ -54,7 +54,7 @@
       }
     },
     created () {
-      this.$material.setCurrentTheme('blue')
+      this.$material.setCurrentTheme('home')
     }
   }
 </script>

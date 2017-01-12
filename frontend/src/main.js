@@ -28,21 +28,23 @@ var router = new VueRouter({
 // material
 Vue.use(VueMaterial)
 Vue.material.registerTheme({
-  // views
-  purple: {
+  default: {
+    primary: 'blue-grey'
+  },
+  home: {
     primary: 'purple'
   },
-  orange: {
+  achievement: {
     primary: 'deep-orange'
   },
-  green: {
+  help: {
     primary: 'teal'
   },
-  blue: {
-    primary: 'blue'
+  about: {
+    primary: 'pink'
   },
-  brown: {
-    primary: 'brown'
+  quest: {
+    primary: 'indigo'
   }
 })
 
