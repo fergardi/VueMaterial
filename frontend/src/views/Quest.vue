@@ -1,5 +1,5 @@
 <template lang="pug">
-  md-theme(v-bind:md-name="active.theme")
+  div
     md-snackbar(ref="snackbar", md-duration="5000")
       span Correcto! A ver si resuelves el siguiente...
       md-button.md-accent(v-on:click="close()")
@@ -11,17 +11,16 @@
         md-card-header-text
           .md-title {{ active.title }}
           .md-subhead {{ active.id }}/{{quests.length}}
-        md-button.md-icon-button
+        md-button.md-icon-button.md-primary
           md-icon help
           md-tooltip(md-direction="left")
             strong Pista: {{ active.clue }}
       md-card-media
-        iframe(v-bind:src="active.media", v-if="!image()")
-        img(v-bind:src="'img/quests/' + active.media", v-if="image()")
+        img(v-bind:src="'img/quests/' + active.media")
         md-ink-ripple
       md-card-content {{ active.description }}
-        p
-          md-chip(v-for="tag in active.tags") {{ tag }}
+        br
+        md-chip(v-for="tag in active.tags") {{ tag }}
         md-input-container(md-has-password)
           label Código secreto
           md-input(type="password", required, v-model="password")
@@ -38,14 +37,10 @@
       }
     },
     created () {
+      this.$material.setCurrentTheme('purple')
       this.quests = quests
     },
     methods: {
-      image () {
-        return (
-          this.active.media.toLowerCase().indexOf('.jpg') !== -1 || this.active.media.toLowerCase().indexOf('.png') !== -1 || this.active.media.toLowerCase().indexOf('.bmp') !== -1 || this.active.media.toLowerCase().indexOf('.jpeg') !== -1 || this.active.media.toLowerCase().indexOf('.gif') !== -1
-        )
-      },
       open () {
         this.$refs.snackbar.open()
       },

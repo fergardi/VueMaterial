@@ -80,7 +80,7 @@
   .content
     margin: 16px 8px !important;
   .md-chip
-    margin: 0 5px 5px 0;
+    margin: 5px 5px 0 0;
   iframe
   img
     width: 100%;

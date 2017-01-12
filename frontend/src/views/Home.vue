@@ -52,6 +52,9 @@
           }
         ]
       }
+    },
+    created () {
+      this.$material.setCurrentTheme('blue')
     }
   }
 </script>

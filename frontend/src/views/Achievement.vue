@@ -1,6 +1,8 @@
 <template lang="pug">
   md-card
     md-card-header
+      md-avatar.md-large
+        md-icon.md-primary star
       md-card-header-text
         .md-title Logros
         .md-subhead Lo que has conseguido hasta ahora
@@ -15,6 +17,7 @@
           md-button.md-icon-button.md-list-action(v-on:click="fav(achievement)")
             md-icon(v-bind:class="{ 'md-primary' : achievement.favorite }") star
           md-divider.md-inset
+      span(v-else) Absolutamente nada...
 </template>
 
 <script>
@@ -35,6 +38,7 @@
       }
     },
     created () {
+      this.$material.setCurrentTheme('orange')
       this.$iterateStorage((key, value, index) => {
         this.achievements.push(key)
       })

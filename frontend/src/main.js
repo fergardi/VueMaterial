@@ -27,6 +27,24 @@ var router = new VueRouter({
 
 // material
 Vue.use(VueMaterial)
+Vue.material.registerTheme({
+  // views
+  purple: {
+    primary: 'purple'
+  },
+  orange: {
+    primary: 'deep-orange'
+  },
+  green: {
+    primary: 'teal'
+  },
+  blue: {
+    primary: 'blue'
+  },
+  brown: {
+    primary: 'brown'
+  }
+})
 
 // localstorage
 Vue.use(VueLocalForage)
