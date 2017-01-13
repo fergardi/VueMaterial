@@ -6,6 +6,9 @@
       md-card-header-text
         .md-title Logros
         .md-subhead Lo que has conseguido hasta ahora
+    md-card-media
+      img(src="img/achievement.gif")
+      md-ink-ripple
     md-card-content
       md-list.md-double-line(v-if="ordered.length")
         md-list-item(v-for="achievement in ordered")
@@ -17,7 +20,7 @@
           md-button.md-icon-button.md-list-action(v-on:click="fav(achievement)")
             md-icon(v-bind:class="{ 'md-primary' : achievement.favorite }") star
           md-divider.md-inset
-      span(v-else) Absolutamente nada...
+      span(v-else) Absolutamente NADA...
 </template>
 
 <script>
