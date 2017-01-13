@@ -1,32 +1,33 @@
 <template lang="pug">
-  md-card
-    md-card-header
-      md-avatar.md-large
-        md-icon.md-primary star
-      md-card-header-text
-        .md-title Logros
-        .md-subhead Lo que has conseguido hasta ahora
-    md-card-media
-      img(src="img/achievement.gif")
-      md-ink-ripple
-    md-card-content
-      md-list.md-double-line
-        md-list-item(v-if="!ordered.length")
-          router-link(to="/quest")
+  div
+    md-card
+      md-card-header
+        md-avatar.md-large
+          md-icon.md-primary star
+        md-card-header-text
+          .md-title Logros
+          .md-subhead Lo que has conseguido hasta ahora
+      md-card-media
+        img(src="img/achievement.gif")
+        md-ink-ripple
+      md-card-content
+        md-list.md-double-line
+          md-list-item(v-if="!ordered.length")
+            router-link(to="/quest")
+              .md-list-text-container
+                strong Absolutamente NADA
+                span.italic Empieza a resolver puzzles YA!
+              md-button.md-icon-button.md-list-action
+                md-icon.md-primary announcement
+          md-list-item(v-for="(achievement, index) in ordered")
+            md-avatar.md-large
+              img(v-bind:src="'img/quests/' + achievement.media")
             .md-list-text-container
-              strong Absolutamente NADA
-              span.italic Empieza a resolver puzzles YA!
-            md-button.md-icon-button.md-list-action
-              md-icon.md-primary announcement
-        md-list-item(v-for="(achievement, index) in ordered")
-          md-avatar.md-large
-            img(v-bind:src="'img/quests/' + achievement.media")
-          .md-list-text-container
-            strong {{ achievement.title }}
-            span.italic {{ readable(achievement.timestamp) }}
-          md-button.md-icon-button.md-list-action(v-on:click="fav(achievement)")
-            md-icon(v-bind:class="{ 'md-primary' : achievement.favorite }") star
-          md-divider.md-inset(v-if="index < ordered.length - 1")
+              strong {{ achievement.title }}
+              span.italic {{ readable(achievement.timestamp) }}
+            md-button.md-icon-button.md-list-action(v-on:click="fav(achievement)")
+              md-icon(v-bind:class="{ 'md-primary' : achievement.favorite }") star
+            md-divider.md-inset(v-if="index < ordered.length - 1")
 </template>
 
 <script>

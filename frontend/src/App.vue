@@ -4,10 +4,7 @@
       md-toolbar
         md-button.md-icon-button(v-on:click="toggle()")
           md-icon menu
-        h2.md-title(style="flex: 1") Vue Test
-        md-button.md-icon-button
-          router-link(to="/help")
-            md-icon help
+        h2.md-title(style="flex: 1") Annyversary
     md-sidenav.md-left.md-fixed(ref="sidebar")
       md-toolbar.md-account-header
         md-list.md-transparent
@@ -38,7 +35,7 @@
           router-link(to="/about")
             md-icon.md-primary info
             span Info
-    .main
+    .main      
       router-view.content.animated.fadeIn
 </template>
 

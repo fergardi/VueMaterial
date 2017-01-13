@@ -1,42 +1,43 @@
 <template lang="pug">
-  md-card
-    md-card-header
-      md-avatar.md-large
-        md-icon.md-primary info
-      md-card-header-text
-        .md-title Info del juego
-        .md-subhead Cosas
-    md-card-media
-      img(src="img/info.gif")
-      md-ink-ripple
-    md-card-content 
-      span Para nuestro aniversario quería hacer algo especial para tí, y como esto es lo que mejor se me da, me dije ¿por qué no hacer una gymkana online con las cosas que te gustan? Espero que te diviertas jugándolo. Además, he aprovechado para aprender a desarrollar aplicaciones móviles! Por si tienes curiosidad, lo he creado usando:
-      md-list.md-double-line.md-dense
-        md-list-item
-          md-icon cloud
-          .md-list-text-container
-            span NodeJS
-            span https://nodejs.org/es/
-        md-list-item
-          md-icon build
-          .md-list-text-container
-            span VueJS
-            span https://vuejs.org/
-        md-list-item
-          md-icon brush
-          .md-list-text-container
-            span Google Material Design
-            span https://material.io/guidelines/
-        md-list-item
-          md-icon dashboard
-          .md-list-text-container
-            span Vue Material
-            span https://material.io/guidelines/
-        md-list-item
-          md-icon android
-          .md-list-text-container
-            span Apache Cordova
-            span https://cordova.apache.org/
+  div
+    md-card
+      md-card-header
+        md-avatar.md-large
+          md-icon.md-primary info
+        md-card-header-text
+          .md-title Info del juego
+          .md-subhead Datos técnicos
+      md-card-media
+        img(src="img/info.gif")
+        md-ink-ripple
+      md-card-content 
+        span Para nuestro aniversario quería hacer algo especial para tí, y como esto es lo que mejor se me da, me dije ¿por qué no hacer una gymkana online con las cosas que te gustan? Espero que te diviertas jugándolo. Además, he aprovechado para aprender a desarrollar aplicaciones móviles! Por si tienes curiosidad, lo he creado usando:
+        md-list.md-double-line.md-dense
+          md-list-item
+            md-icon cloud
+            .md-list-text-container
+              span NodeJS
+              span https://nodejs.org/es/
+          md-list-item
+            md-icon build
+            .md-list-text-container
+              span VueJS
+              span https://vuejs.org/
+          md-list-item
+            md-icon brush
+            .md-list-text-container
+              span Google Material Design
+              span https://material.io/guidelines/
+          md-list-item
+            md-icon dashboard
+            .md-list-text-container
+              span Vue Material
+              span https://material.io/guidelines/
+          md-list-item
+            md-icon android
+            .md-list-text-container
+              span Apache Cordova
+              span https://cordova.apache.org/
 </template>
 
 <script>
