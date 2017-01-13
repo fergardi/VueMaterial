@@ -1,7 +1,7 @@
 <template lang="pug">
   div
     md-snackbar(ref="snackbar", md-duration="5000")
-      span Correcto! A ver si resuelves el siguiente...
+      span Correcto! Se ha guardado en tus Logros. A ver si resuelves el siguiente...
       md-button.md-accent(v-on:click="close()")
         md-icon done
     md-card(md-with-hover)
@@ -18,9 +18,10 @@
       md-card-media
         img(v-bind:src="'img/quests/' + active.media")
         md-ink-ripple
-      md-card-content {{ active.description }}
-        br
-        md-chip(v-for="tag in active.tags") {{ tag }}
+      md-card-content
+        span {{ active.description }}
+        p
+          md-chip(v-for="tag in active.tags") {{ tag }}
         md-input-container(md-has-password)
           label Código secreto
           md-input(type="password", required, v-model="password")
@@ -46,17 +47,19 @@
       },
       close () {
         this.$refs.snackbar.close()
-      },
-      save (achievement) {
-        achievement.timestamp = moment().format('x')
-        if (!this.$getItem(this.password)) this.$setItem(this.password, achievement)
       }
     },
     computed: {
       active () {
         var found = this.quests.find(x => x.password === this.password)
         if (this.password && found) {
-          this.save(found)
+          this.$getItem(this.password)
+          .then((value) => {
+            if (!value) {
+              found.timestamp = moment().format('x')
+              this.$setItem(this.password, found)
+            }
+          })
           this.open()
           return found
         } else {

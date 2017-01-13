@@ -9,23 +9,34 @@
     md-card-media
       img(src="img/info.gif")
       md-ink-ripple
-    md-card-content Para nuestro aniversario quería hacer algo especial para tí, y como esto es lo que mejor se me da, me dije ¿por qué no hacer una gymkana online con las cosas que te gustan? Espero que te diviertas jugándolo. Además, he aprovechado para aprender a desarrollar aplicaciones móviles! Por si tienes curiosidad, lo he creado usando:
-      md-list.md-dense
-        md-list-item(href="https://nodejs.org/es/")
+    md-card-content 
+      span Para nuestro aniversario quería hacer algo especial para tí, y como esto es lo que mejor se me da, me dije ¿por qué no hacer una gymkana online con las cosas que te gustan? Espero que te diviertas jugándolo. Además, he aprovechado para aprender a desarrollar aplicaciones móviles! Por si tienes curiosidad, lo he creado usando:
+      md-list.md-double-line.md-dense
+        md-list-item
           md-icon cloud
-          span NodeJS
-        md-list-item(href="https://vuejs.org/")
+          .md-list-text-container
+            span NodeJS
+            span https://nodejs.org/es/
+        md-list-item
           md-icon build
-          span VueJS
-        md-list-item(href="https://material.io/guidelines/")
+          .md-list-text-container
+            span VueJS
+            span https://vuejs.org/
+        md-list-item
           md-icon brush
-          span Google Material Design
-        md-list-item(href="https://vuematerial.github.io/")
+          .md-list-text-container
+            span Google Material Design
+            span https://material.io/guidelines/
+        md-list-item
           md-icon dashboard
-          span Vue Material
-        md-list-item(href="https://cordova.apache.org/")
+          .md-list-text-container
+            span Vue Material
+            span https://material.io/guidelines/
+        md-list-item
           md-icon android
-          span Apache Cordova
+          .md-list-text-container
+            span Apache Cordova
+            span https://cordova.apache.org/
 </template>
 
 <script>

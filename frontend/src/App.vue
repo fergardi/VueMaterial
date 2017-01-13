@@ -2,9 +2,12 @@
   .app
     md-whiteframe(md-elevation="5")
       md-toolbar
-        md-button.md-icon-button(@click="toggle()")
+        md-button.md-icon-button(v-on:click="toggle()")
           md-icon menu
-        h2.md-title Vue Test
+        h2.md-title(style="flex: 1") Vue Test
+        md-button.md-icon-button
+          router-link(to="/help")
+            md-icon help
     md-sidenav.md-left.md-fixed(ref="sidebar")
       md-toolbar.md-account-header
         md-list.md-transparent
@@ -15,23 +18,23 @@
             md-avatar.md-large
               img(src="img/vivi.jpg")
       md-list
-        md-list-item(@click="toggle()")
+        md-list-item(v-on:click="toggle()")
           router-link(to="/home")
             md-icon.md-primary home
             span Inicio
-        md-list-item(@click="toggle()")
+        md-list-item(v-on:click="toggle()")
           router-link(to="/quest")
             md-icon.md-primary announcement
             span Misiones
-        md-list-item(@click="toggle()")
+        md-list-item(v-on:click="toggle()")
           router-link(to="/achievement")
             md-icon.md-primary star
             span Logros
-        md-list-item(@click="toggle()")
+        md-list-item(v-on:click="toggle()")
           router-link(to="/help")
             md-icon.md-primary help
             span Ayuda
-        md-list-item(@click="toggle()")
+        md-list-item(v-on:click="toggle()")
           router-link(to="/about")
             md-icon.md-primary info
             span Info
@@ -80,7 +83,7 @@
   .content
     margin: 16px 8px !important;
   .md-chip
-    margin: 5px 5px 0 0;
+    margin-right: 5px;
   iframe
   img
     width: 100%;
