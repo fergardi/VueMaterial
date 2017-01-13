@@ -11,7 +11,8 @@
         img(src="img/info.gif")
         md-ink-ripple
       md-card-content 
-        span Para nuestro aniversario quería hacer algo especial para tí, y como esto es lo que mejor se me da, me dije ¿por qué no hacer una gymkana online con las cosas que te gustan? Espero que te diviertas jugándolo. Además, he aprovechado para aprender a desarrollar aplicaciones móviles! Por si tienes curiosidad, lo he creado usando:
+        span Para nuestro aniversario quería hacer algo especial para tí, y como esto es lo que mejor se me da, me dije ¿por qué no hacer una gymkana online con las cosas que te gustan? Espero que te diviertas jugándolo tanto como yo haciéndolo. Además, he aprovechado para aprender a desarrollar aplicaciones móviles! 
+        p Por si tienes curiosidad, lo he creado usando:
         md-list.md-double-line.md-dense
           md-list-item
             md-icon cloud
