@@ -24,8 +24,21 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
+    <splash density="land-ldpi" src="res/screen/drawable-land-ldpi/screen.png" />
+    <splash density="land-mdpi" src="res/screen/drawable-land-mdpi/screen.png" />
+    <splash density="land-hdpi" src="res/screen/drawable-land-hdpi/screen.png" />
+    <splash density="land-xhdpi" src="res/screen/drawable-land-xhdpi/screen.png" />
+    <splash density="port-ldpi" src="res/screen/drawable-port-ldpi/screen.png" />
+    <splash density="port-mdpi" src="res/screen/drawable-port-mdpi/screen.png" />
+    <splash density="port-hdpi" src="res/screen/drawable-port-hdpi/screen.png" />
+    <splash density="port-xhdpi" src="res/screen/drawable-port-xhdpi/screen.png" />
+    <icon density="ldpi" src="res/icon/mipmap-ldpi/icon.png" />
+    <icon density="mdpi" src="res/icon/mipmap-mdpi/icon.png" />
+    <icon density="hdpi" src="res/icon/mipmap-hdpi/icon.png" />
+    <icon density="xhdpi" src="res/icon/mipmap-xhdpi/icon.png" />
     <preference name="loglevel" value="DEBUG" />
     <preference name="Orientation" value="portrait" />
     <preference name="SplashScreenDelay" value="3000" />
     <preference name="SplashScreen" value="screen" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
 </widget>

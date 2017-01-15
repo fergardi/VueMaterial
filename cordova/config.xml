@@ -19,20 +19,20 @@
   <platform name="android">
     <allow-intent href="market:*" />
     <!-- screen landscape -->
-    <splash src="res/screen/splash-land-ldpi.png" density="land-ldpi"/>
-    <splash src="res/screen/splash-land-mdpi.png" density="land-mdpi"/>
-    <splash src="res/screen/splash-land-hdpi.png" density="land-hdpi"/>
-    <splash src="res/screen/splash-land-xhdpi.png" density="land-xhdpi"/>
+    <splash src="res/screen/drawable-land-ldpi/screen.png" density="land-ldpi"/>
+    <splash src="res/screen/drawable-land-mdpi/screen.png" density="land-mdpi"/>
+    <splash src="res/screen/drawable-land-hdpi/screen.png" density="land-hdpi"/>
+    <splash src="res/screen/drawable-land-xhdpi/screen.png" density="land-xhdpi"/>
     <!-- screen portrait -->
-    <splash src="res/screen/splash-port-ldpi.png" density="port-ldpi"/>
-    <splash src="res/screen/splash-port-mdpi.png" density="port-mdpi"/>
-    <splash src="res/screen/splash-port-hdpi.png" density="port-hdpi"/>
-    <splash src="res/screen/splash-port-xhdpi.png" density="port-xhdpi"/>
+    <splash src="res/screen/drawable-port-ldpi/screen.png" density="port-ldpi"/>
+    <splash src="res/screen/drawable-port-mdpi/screen.png" density="port-mdpi"/>
+    <splash src="res/screen/drawable-port-hdpi/screen.png" density="port-hdpi"/>
+    <splash src="res/screen/drawable-port-xhdpi/screen.png" density="port-xhdpi"/>
     <!-- icon -->
-    <icon src="res/icon/mipmap-ldpi/ldpi.png" density="ldpi" />
-    <icon src="res/icon/mipmap-mdpi/mdpi.png" density="mdpi" />
-    <icon src="res/icon/mipmap-hdpi/hdpi.png" density="hdpi" />
-    <icon src="res/icon/mipmap-xhdpi/xhdpi.png" density="xhdpi" />
+    <icon src="res/icon/mipmap-ldpi/icon.png" density="ldpi" />
+    <icon src="res/icon/mipmap-mdpi/icon.png" density="mdpi" />
+    <icon src="res/icon/mipmap-hdpi/icon.png" density="hdpi" />
+    <icon src="res/icon/mipmap-xhdpi/icon.png" density="xhdpi" />
   </platform>
   <platform name="ios">
     <allow-intent href="itms:*" />
@@ -46,5 +46,4 @@
   <preference name="SplashScreenDelay" value="3000" />
   <preference name="SplashScreen" value="screen" />
   <preference name="ShowSplashScreenSpinner" value="false"/>
-  <icon src="res/icon/icon.png" />
 </widget>
