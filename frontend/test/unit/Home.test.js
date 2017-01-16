@@ -4,10 +4,10 @@ import Home from '../../src/views/Home.vue'
 
 describe('Home', () => {
   // Inspect the raw component options
-  it(' Has created', () => {
+  it('Has created function', () => {
     expect(typeof Home.created).toBe('function')
   })
-  it(' Has data', () => {
+  it('Has data function', () => {
     expect(typeof Home.data).toBe('function')
     expect(typeof Home.data().cards).toBe('object')
   })

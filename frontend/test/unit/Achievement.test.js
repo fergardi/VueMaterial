@@ -4,7 +4,7 @@ import Achievement from '../../src/views/Achievement.vue'
 
 describe('Achievement', () => {
   // Inspect the raw component options
-  it('Has a created function', () => {
+  it('Has created function', () => {
     expect(typeof Achievement.created).toBe('function')
   })
 })

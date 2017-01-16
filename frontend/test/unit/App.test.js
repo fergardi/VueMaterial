@@ -4,7 +4,7 @@ import App from '../../src/App.vue'
 
 describe('App', () => {
   // Inspect the raw component options
-  it('Has a created function', () => {
+  it('Has created function', () => {
     expect(typeof App.created).toBe('function')
   })
 })
