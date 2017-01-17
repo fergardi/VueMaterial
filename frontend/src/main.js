@@ -32,19 +32,22 @@ Vue.material.registerTheme({
     primary: 'blue-grey'
   },
   home: {
-    primary: 'purple'
+    primary: 'indigo'
   },
   achievement: {
-    primary: 'deep-orange'
+    primary: 'deep-purple'
   },
   help: {
-    primary: 'teal'
+    primary: {
+      color: 'green',
+      hue: 600
+    }
   },
   about: {
-    primary: 'pink'
+    primary: 'blue'
   },
   quest: {
-    primary: 'indigo'
+    primary: 'deep-orange'
   }
 })
 

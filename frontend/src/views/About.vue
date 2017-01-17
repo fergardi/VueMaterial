@@ -5,7 +5,7 @@
         md-avatar.md-large
           md-icon.md-primary info
         md-card-header-text
-          .md-title Info del juego
+          .md-title Información
           .md-subhead Datos técnicos
       md-card-media
         img(src="img/info.gif")

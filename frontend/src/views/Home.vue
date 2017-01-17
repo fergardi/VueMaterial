@@ -6,6 +6,8 @@
           img(v-bind:src="'img/' + card.media")
           md-ink-ripple
         md-card-area
+          router-link.md-primary.md-fab(tag="md-button", to="/quest")
+            md-icon play_arrow
           md-card-header
             .md-title {{ card.title }}
             .md-subhead {{ card.subtitle }}
@@ -61,4 +63,8 @@
 </script>
 
 <style lang="stylus" scoped>
+  .md-button
+    position: absolute
+    top: -35px
+    right: 5px
 </style>

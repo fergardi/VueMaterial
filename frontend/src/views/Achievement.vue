@@ -64,5 +64,5 @@
 
 <style lang="stylus" scoped>
   .italic
-    font-style: italic;
+    font-style: italic
 </style>
