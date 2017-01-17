@@ -24,7 +24,7 @@
               img(v-bind:src="'img/quests/' + achievement.media")
             .md-list-text-container
               strong {{ achievement.title }}
-              span.italic {{ readable(achievement.timestamp) }}
+              i {{ readable(achievement.timestamp) }}
             md-button.md-icon-button.md-list-action(v-on:click="fav(achievement)")
               md-icon(v-bind:class="{ 'md-primary' : achievement.favorite }") star
             md-divider.md-inset(v-if="index < ordered.length - 1")
@@ -63,6 +63,4 @@
 </script>
 
 <style lang="stylus" scoped>
-  .italic
-    font-style: italic
 </style>
