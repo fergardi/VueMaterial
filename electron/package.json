@@ -1,5 +1,16 @@
 {
-  "name"    : "your-app",
-  "version" : "0.1.0",
-  "main"    : "main.js"
+  "name": "Annyversary",
+  "productName": "Annyversary",
+  "version": "1.0.0",
+  "description": "Annyversary",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Fernando garcia",
+  "license": "MIT",
+  "devDependencies": {
+    
+  },
+  "dependencies": {}
 }
