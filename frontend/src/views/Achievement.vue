@@ -8,7 +8,7 @@
           .md-title Logros
           .md-subhead Lo que has conseguido hasta ahora
       md-card-media
-        img(src="img/achievement.gif")
+        img(src="img/achievement.jpg")
         md-ink-ripple
       md-card-content
         md-list.md-double-line

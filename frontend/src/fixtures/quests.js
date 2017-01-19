@@ -97,7 +97,7 @@ const quests = [
   },
   {
     id: 9,
-    password: 'Niño',
+    password: 'Niños',
     icon: 'announcement',
     media: 'item.jpg',
     description: 'Provisional',
@@ -133,7 +133,7 @@ const quests = [
   },
   {
     id: 12,
-    password: 'Rojo',
+    password: 'Ekallatum',
     icon: 'announcement',
     media: 'ff.jpg',
     description: 'Provisional',
@@ -193,7 +193,7 @@ const quests = [
   },
   {
     id: 17,
-    password: 'K2S0',
+    password: 'K2SO',
     icon: 'announcement',
     media: 'triforce.jpg',
     description: 'Provisional',
@@ -207,7 +207,7 @@ const quests = [
     id: 18,
     password: 'Nayru',
     icon: 'announcement',
-    media: '?.jpg',
+    media: 'traitor.jpg',
     description: 'Provisional',
     title: 'Provisional',
     tags: ['Provisional1', 'Provisional2'],
@@ -217,7 +217,7 @@ const quests = [
   },
   {
     id: 19,
-    password: '?',
+    password: 'FN21878',
     icon: 'announcement',
     media: 'key.jpg',
     description: 'Provisional',

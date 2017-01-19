@@ -8,7 +8,7 @@
           .md-title Información
           .md-subhead Datos técnicos
       md-card-media
-        img(src="img/info.gif")
+        img(src="img/info.jpg")
         md-ink-ripple
       md-card-content 
         span Para nuestro aniversario quería hacer algo especial para tí, y como esto es lo que mejor se me da, me dije ¿por qué no hacer una gymkana online con las cosas que te gustan? Espero que te diviertas jugándolo tanto como yo haciéndolo. Además, he aprovechado para aprender a desarrollar aplicaciones móviles! 
