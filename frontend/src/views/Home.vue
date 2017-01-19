@@ -6,7 +6,7 @@
           img(v-bind:src="'img/' + card.media")
           md-ink-ripple
         md-card-area
-          router-link.md-primary.md-fab(tag="md-button", to="/quest", v-if="index >= cards.length -1")
+          router-link.md-primary.md-fab.floating(tag="md-button", to="/quest", v-if="index >= cards.length -1")
             md-icon play_arrow
           md-card-header
             .md-title {{ card.title }}
@@ -63,7 +63,7 @@
 </script>
 
 <style lang="stylus" scoped>
-  .md-button
+  .floating
     position: absolute
     top: -35px
     right: 5px

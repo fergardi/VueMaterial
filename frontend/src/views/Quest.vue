@@ -10,7 +10,7 @@
           md-icon.md-primary {{ active.icon }}
         md-card-header-text
           .md-title {{ active.title }}
-          .md-subhead {{ active.id }}/{{quests.length}}
+          .md-subhead {{ active.id }}/{{ quests.length }}
         md-button.md-icon-button.md-primary
           md-icon help
           md-tooltip(md-direction="left")
@@ -18,6 +18,8 @@
       md-card-media
         img(v-bind:src="'img/quests/' + active.media")
         md-ink-ripple
+        md-button.md-primary.md-fab.floating(v-on:click="debug()", v-if="active.id < quests.length")
+          md-icon play_arrow
       md-card-content
         span {{ active.description }}
         p
@@ -57,6 +59,9 @@
           hash = hash & hash
         }
         return hash
+      },
+      debug () {
+        this.password = this.quests[this.active.id].password
       }
     },
     computed: {
@@ -81,4 +86,9 @@
 </script>
 
 <style lang="stylus" scoped>
+  .floating
+    position: absolute
+    bottom: -35px
+    right: 5px
+    z-index: 9999
 </style>
