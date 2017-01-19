@@ -1,12 +1,12 @@
 <template lang="pug">
   div
     md-card(md-with-hover)
-      md-card-media-cover(md-solid, v-for="card in cards")
+      md-card-media-cover(md-solid, v-for="(card, index) in cards")
         md-card-media(md-ratio="16:9")
           img(v-bind:src="'img/' + card.media")
           md-ink-ripple
         md-card-area
-          router-link.md-primary.md-fab(tag="md-button", to="/quest")
+          router-link.md-primary.md-fab(tag="md-button", to="/quest", v-if="index >= cards.length -1")
             md-icon play_arrow
           md-card-header
             .md-title {{ card.title }}
