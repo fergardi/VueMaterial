@@ -87,18 +87,6 @@ const quests = [
     id: 8,
     password: 'Cerveza',
     icon: 'announcement',
-    media: 'laura.jpg',
-    description: 'Provisional',
-    title: 'Provisional',
-    tags: ['Provisional1', 'Provisional2'],
-    favorite: false,
-    clue: 'Provisional',
-    timestamp: 0
-  },
-  {
-    id: 9,
-    password: 'Piti',
-    icon: 'announcement',
     media: 'cah.jpg',
     description: 'Provisional',
     title: 'Provisional',
@@ -108,7 +96,7 @@ const quests = [
     timestamp: 0
   },
   {
-    id: 10,
+    id: 9,
     password: 'Niño',
     icon: 'announcement',
     media: 'item.jpg',
@@ -120,19 +108,7 @@ const quests = [
     timestamp: 0
   },
   {
-    id: 11,
-    password: 'Item',
-    icon: 'announcement',
-    media: 'boss.jpg',
-    description: 'Provisional',
-    title: 'Provisional',
-    tags: ['Provisional1', 'Provisional2'],
-    favorite: false,
-    clue: 'Provisional',
-    timestamp: 0
-  },
-  {
-    id: 12,
+    id: 10,
     password: 'Illidan',
     icon: 'announcement',
     media: 'achievement.jpg',
@@ -144,7 +120,7 @@ const quests = [
     timestamp: 0
   },
   {
-    id: 13,
+    id: 11,
     password: 'Jenkins',
     icon: 'announcement',
     media: 'python.jpg',
@@ -156,7 +132,7 @@ const quests = [
     timestamp: 0
   },
   {
-    id: 14,
+    id: 12,
     password: 'Rojo',
     icon: 'announcement',
     media: 'ff.jpg',
@@ -168,7 +144,7 @@ const quests = [
     timestamp: 0
   },
   {
-    id: 15,
+    id: 13,
     password: 'Vivi',
     icon: 'announcement',
     media: 'model.jpg',
@@ -180,7 +156,7 @@ const quests = [
     timestamp: 0
   },
   {
-    id: 16,
+    id: 14,
     password: 'Arianne',
     icon: 'announcement',
     media: 'marauder.jpg',
@@ -192,7 +168,7 @@ const quests = [
     timestamp: 0
   },
   {
-    id: 17,
+    id: 15,
     password: 'Gusano',
     icon: 'announcement',
     media: 'deepthought.jpg',
@@ -204,7 +180,7 @@ const quests = [
     timestamp: 0
   },
   {
-    id: 18,
+    id: 16,
     password: '42',
     icon: 'announcement',
     media: 'robots.jpg',
@@ -216,7 +192,7 @@ const quests = [
     timestamp: 0
   },
   {
-    id: 19,
+    id: 17,
     password: 'K2S0',
     icon: 'announcement',
     media: 'triforce.jpg',
@@ -228,8 +204,32 @@ const quests = [
     timestamp: 0
   },
   {
-    id: 20,
+    id: 18,
     password: 'Nayru',
+    icon: 'announcement',
+    media: '?.jpg',
+    description: 'Provisional',
+    title: 'Provisional',
+    tags: ['Provisional1', 'Provisional2'],
+    favorite: false,
+    clue: 'Provisional',
+    timestamp: 0
+  },
+  {
+    id: 19,
+    password: '?',
+    icon: 'announcement',
+    media: 'key.jpg',
+    description: 'Provisional',
+    title: 'Provisional',
+    tags: ['Provisional1', 'Provisional2'],
+    favorite: false,
+    clue: 'Provisional',
+    timestamp: 0
+  },
+  {
+    id: 20,
+    password: 'Piti',
     icon: 'announcement',
     media: 'victory.jpg',
     description: 'Provisional',
