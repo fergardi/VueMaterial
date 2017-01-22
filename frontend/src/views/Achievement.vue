@@ -24,14 +24,13 @@
               img(v-bind:src="'img/quests/' + achievement.media")
             .md-list-text-container
               strong {{ achievement.title }}
-              i {{ readable(achievement.timestamp) }}
+              i {{ achievement.timestamp | date }}
             md-button.md-icon-button.md-list-action(v-on:click="fav(achievement)")
               md-icon(v-bind:class="{ 'md-primary' : achievement.favorite }") star
             md-divider.md-inset(v-if="index < ordered.length - 1")
 </template>
 
 <script>
-  import moment from 'moment'
   export default {
     data () {
       return {
@@ -42,9 +41,6 @@
       fav (achievement) {
         achievement.favorite = !achievement.favorite
         this.$setItem(achievement.password, achievement)
-      },
-      readable (timestamp) {
-        return moment(parseInt(timestamp)).format('D/M/YYYY HH:mm:ss')
       }
     },
     created () {

@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import VueMaterial from 'vue-material'
 import VueLocalForage from 'vue-localforage'
 
+import moment from 'moment'
+
 import App from './App.vue'
 import Home from './views/Home.vue'
 import About from './views/About.vue'
@@ -49,6 +51,11 @@ Vue.material.registerTheme({
   quest: {
     primary: 'deep-orange'
   }
+})
+
+// filter
+Vue.filter('date', (timestamp) => {
+  return moment(parseInt(timestamp)).format('D/M/YYYY HH:mm:ss')
 })
 
 // localstorage
