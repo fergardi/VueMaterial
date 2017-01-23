@@ -8,7 +8,7 @@
           .md-title Información
           .md-subhead Datos técnicos
       md-card-media
-        img(src="img/info.jpg")
+        img(src="img/about.gif")
         md-ink-ripple
       md-card-content 
         span Para nuestro aniversario quería hacer algo especial para tí, y, como esto del desarrollo es lo que mejor se me da, me dije: ¿Por qué no hacer una gymkana online con cosas frikis que nos gusten a los dos, como pelis, series, comics o libros? Espero que te diviertas jugándolo tanto como yo haciéndolo.

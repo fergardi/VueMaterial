@@ -8,7 +8,7 @@
           .md-title Logros
           .md-subhead Lo que has conseguido hasta ahora
       md-card-media
-        img(src="img/achievement.jpg")
+        img(src="img/achievement.gif")
         md-ink-ripple
       md-card-content
         md-list.md-double-line
@@ -16,7 +16,7 @@
             router-link(to="/quest")
               .md-list-text-container
                 strong Absolutamente NADA
-                span.italic Empieza a resolver puzzles YA!
+                span.italic Empieza a resolver acertijos!
               md-button.md-icon-button.md-list-action
                 md-icon.md-primary announcement
           md-list-item(v-for="(achievement, index) in ordered")
