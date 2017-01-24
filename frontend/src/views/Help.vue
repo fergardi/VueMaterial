@@ -17,10 +17,10 @@
             md-icon extension
             span Simboliza puzzle
           md-list-item
-            md-icon theaters
-            span Simboliza serie o película
+            md-icon movies
+            span Simboliza televisión
           md-list-item
-            md-icon videogame_asset
+            md-icon games
             span Simboliza videojuego
           md-list-item
             md-icon book
@@ -28,6 +28,10 @@
           md-list-item
             md-icon place
             span Simboliza lugar
+          md-list-item
+            md-icon filter_6
+            span Simboliza juego
+
 </template>
 
 <script>
