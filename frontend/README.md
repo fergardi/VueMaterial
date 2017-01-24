@@ -1,18 +1,51 @@
-# safe-spot-frontend
-
-> A Vue.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-```
-
-For more information see the [docs for vueify](https://github.com/vuejs/vueify).
+virginia (nombre)
+autoestopista galactico (42)
+alien (nostromo)
+cards agains humanity (carta)
+overexposed model (modelo)
+mad max (rockatansky)
+el señor de los anillos (moria)
+pitufos (gargamel)
+sherlock (eurus)
+el principito (sombrero)
+pokemon (pokemon)
+indiana jones (kalimah)
+walking dead (virus)
+crash bandicoot (mascara)
+los goonies (sloth)
+juego de tronos (espada)
+pesadilla antes de navidad (oogie boogie)
+la historia interminable (atreyu)
+logica (einstein)
+world of warcraft (frostmourne)
+fisica (V=IR)
+fraggle rock (malo)
+malcolm (kenarban)
+skyrim (fusrodah)
+half life (xen)
+jumanji (zathura)
+breaking bad (beba)
+final fantasy (vivi)
+resident evil (virus)
+guardianes de la galaxia (rocket)
+pacman (fantasmas)
+legend of zelda (diosa)
+saw (jigsaw)
+monkey island (numero de monos)
+los simpsons (radiactivoman)
+monty python (capital de asiria)
+evil dead (necronomicon)
+mortal kombat (monstruo final)
+blade runner (numero de serie)
+harry potter (merodeador)
+el hobbit (gollum)
+star wars (nuevo robot)
+dragon ball (shenlong)
+super mario (yoshi)
+lost (numeros)
+terminator (numero de modelo)
+regreso al futuro (matricula)
+matrix (merovingio)
+futurama (pin)
+piti (mapa)
+fin (mapa)
