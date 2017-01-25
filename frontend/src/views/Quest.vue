@@ -182,15 +182,15 @@
           {
             password: 'Frostmourne',
             icon: 'movies',
-            title: 'Run',
+            title: 'Upside down',
             media: 'stranger.gif',
-            description: 'Vaya pedazo de serie. Muy oscura y a la vez casi familiar con la pandilla de Verano Azul dando vueltas por la ciudad con un monstruo interdimensional rondado. Y la escena de las luces de navidad sobre la pared fue magistral. Tal vez deberías verla más de cerca...',
-            tags: ['Luces', 'Letras'],
+            description: 'Vaya pedazo de serie. Muy oscura y a la vez casi familiar con la pandilla de Verano Azul dando vueltas por la ciudad con un monstruo interdimensional rondado. Y la escena de las luces de navidad sobre la pared fue magistral.',
+            tags: ['Luces'],
             favorite: false,
             timestamp: 0
           },
           {
-            password: 'Currada',
+            password: 'Fake',
             icon: 'chrome_reader_mode',
             title: 'Habla, y entra',
             media: 'moria.gif',
