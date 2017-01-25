@@ -12,10 +12,8 @@
           .md-title {{ active.title }}
           .md-subhead Acertijo {{ index }} de {{ quests.length }}
       md-card-media
-        img(v-bind:src="'img/quests/' + active.media")
+        img(v-bind:src="'img/quests/' + active.media", v-on:click="debug()")
         md-ink-ripple
-        md-button.md-primary.md-fab.floating(v-on:click="debug()")
-          md-icon play_arrow
       md-card-content
         span {{ active.description }}
         p
@@ -175,7 +173,7 @@
             password: 'Niños',
             icon: 'games',
             title: 'World of Warcraft',
-            media: 'item.jpg',
+            media: 'item.gif',
             description: 'Otro agujero de horas y un no parar de jugar. La saga completa, la verdad. La historia del WoW es un poco enrevesada y sin un final concreto, pero la del Warcraft3 está bastante bien. Pero aquí buscamos al culpable de todo, de toda la historia, desde el principio.',
             tags: ['Arma', 'Inglés'],
             favorite: false,
@@ -245,7 +243,7 @@
             password: 'Shenlong',
             icon: 'chrome_reader_mode',
             title: 'Eres un mago, Harry',
-            media: 'mapa.gif',
+            media: 'marauders.gif',
             description: 'Siempre me pareció un poco absurdo que unos artefactos mágicos tan jodidamente poderosos y que tienden a ser usados para hacer el mal, como la Capa de Invisibilidad o el Mapa del Merodeador, acaben en las inexpedrtas manos de imberbes estudiantes de instituto. Eso sí, en Gringots guardamos las monedas de oro, no sea que los gitamagos nos las roben.',
             tags: ['Muerto', 'Imposible', 'Mote'],
             favorite: false,
@@ -255,7 +253,7 @@
             password: 'Colagusano',
             icon: 'movies',
             title: 'Odio a Carl',
-            media: 'walking.jpg',
+            media: 'carl.gif',
             description: 'Yo ya veo esto simplemente para ver si Carl se muere. Aunque sé que es un personaje principal y esto no es Juego de Tronos, no he perdido la esperanza de que Negan lo mate a base de bates en la cabeza. Este niño evade la muerte tan bien como la Portuguesa o Kissy.',
             tags: ['Spoiler', 'Todos', 'Estamos'],
             favorite: false,
@@ -275,7 +273,7 @@
             password: 'Blinky',
             icon: 'movies',
             title: 'I will be back',
-            media: 'back.gif',
+            media: 'terminator.gif',
             description: 'A mi me gustan por este orden: primero la segunda, segundo la tercera, tercero la primera, cuarta la quinta y quinta la cuarta. La serie no hay por donde cogerla.',
             tags: ['Orden'],
             favorite: false,
@@ -315,7 +313,7 @@
             password: 'Xenomorfo',
             icon: 'games',
             title: 'Resident Evil',
-            media: 'media.extension',
+            media: 'resident.gif',
             description: 'El mejor juego de zombies que hay. Tenía acción, sustos, acertijos, puzzles y una historia bastante buena. Hoy en día los píxeles dan asco, pero de aquella era un acojone constante, sobre todo cuando llevabas jugando unas horas y no encontrabas una puta cinta para grabar la partida en la máquina de escribir.',
             tags: ['Boss', 'Final'],
             favorite: false,
@@ -323,16 +321,6 @@
           },
           {
             password: 'Nemesis',
-            icon: 'movies',
-            title: 'Tabla periódica',
-            media: 'bb.jpg',
-            description: 'Ya que has tenido una pregunta de física, qué tal ahora una de química? Y quién mejor en química que nuestro profesor favorito, Walter White? No seas demasiado dura conmigo, no sé casi nada de química y aunque éste es tu campo predilecto, no se me ha ocurrido nada más...',
-            tags: ['Peso', '+3000'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: '3033',
             icon: 'movies',
             title: 'Big Crunch',
             media: 'bang.gif',
@@ -365,7 +353,7 @@
             password: 'Zathura',
             icon: 'movies',
             title: '3000',
-            media: 'futurama.gif',
+            media: 'fry.gif',
             description: 'Mi serie de animación favorita. Tiene más burradas que los Simpsons, pero menos que Padre de Familia. Una pena que la cancelaran. Aunque luego volviera en forma de películas. Y luego volviera a estar en antena. Y luego vuelto a cancelarla. Pero estoy buscando un capítulo concreto...',
             tags: ['Tarjeta', 'Banco'],
             favorite: false,
@@ -384,7 +372,7 @@
           {
             password: '89P13',
             icon: 'extension',
-            title: 'Overexpoed model',
+            title: 'Overexposed model',
             media: 'model.jpg',
             description: 'Incluso alguien ha hecho un Tumblr para postear fotos donde la gente encuentra a esta modelo que está por todas partes. Nosotros mismos sin ir más lejos ya nos la hemos encontrado por ahí. Yo una vez la ví en Noruega anunciando auténtica butifarra española.',
             tags: ['Nombre'],
@@ -404,8 +392,8 @@
           {
             password: 'Ekallatum',
             icon: 'movies',
-            title: 'indiana jones',
-            media: 'media.extension',
+            title: 'Indiana',
+            media: 'indiana.gif',
             description: 'Quién no ha tenido alguna vez la curisidad por saber qué se siente al tener el corazón palpitante de un hombre en la mano mientras se lo ofrece como sacrificio a su Dios favorito? Y el de un niño?',
             tags: ['Dios'],
             favorite: false,
@@ -414,8 +402,8 @@
           {
             password: 'Kalimah',
             icon: 'games',
-            title: 'Final Fantasy',
-            media: 'ff.gif',
+            title: 'Fuego++',
+            media: 'ff.jpg',
             description: 'Somos de mundos distintos. Tú, de Nintendo y Legend of Zelda. Yo, de Sony y Final Fantasy. Un amor imposible.',
             tags: ['Personaje'],
             favorite: false,
@@ -445,7 +433,7 @@
             password: 'Roja',
             icon: 'movies',
             title: 'Uno nuevo en la familia',
-            media: 'rogue.gif',
+            media: 'starwars.gif',
             description: 'Éramos pocos y parió la abuela. Estos de Disney si que saben hacer merchandising. Le dan a la rueda y ala, un nuevo droide en cada película. Luego peluches, pósters, figuras, camisetas... Y yo encantado de la vida! Cuál será el siguiente?',
             tags: ['Nombre'],
             favorite: false,
@@ -455,7 +443,7 @@
             password: 'K2SO',
             icon: 'movies',
             title: 'Westworld',
-            media: 'bernard.gif',
+            media: 'westworld.gif',
             description: 'Vaya spoileraco que se nos escapó sobre Bernard, eh? A la bobada además. Zasca. Yo suelo ser siempre muy considerado cuando hablamos de spoilers, pero esa vez...',
             tags: ['Spoiler', 'Bernard'],
             favorite: false,
@@ -515,7 +503,7 @@
             password: 'Hawkes',
             icon: 'games',
             title: 'Triforce',
-            media: 'triforce.gif',
+            media: 'zelda.gif',
             description: 'Yo no he jugado, pero se supone que en cada historia se repite el bucle de la divisón de la trifuerza en tres fragmentos: la Fuerza, representada por Garnon; la Sabiduría, representada por Zelda; y el Valor, representado por Link. Y el que controle las 3, controla el poder supremo. Pero, quién hizo esas piedras exactamente?',
             tags: ['Color', 'Favorito'],
             favorite: false,
@@ -525,7 +513,7 @@
             password: 'Din',
             icon: 'movies',
             title: 'Me comeré tu alma',
-            media: 'media.extension',
+            media: 'ash.gif',
             description: 'Aunque tiene un par de escenas especialmente brutas, es una película de muy bajo presupuesto pensada para reirse con ganas de las fuerzas del mal y de los muertos vivientes. Y la serie no está nada mal tampoco.',
             tags: ['Libro'],
             favorite: false,
@@ -537,7 +525,7 @@
             title: 'Fin',
             media: 'victory.jpg',
             description: 'Enhorabuena! Has llegado al final del todo. Te estarás preguntando si todo este esfuerzo ha merecido la pena, pero espero que al menos te hayas divertido resolviendo mi juego. Y que te guste mi regalo como premio por tu esfuerzo! Para el año que viene, tal vez te haga una expansión con otras 50 pruebas. Un beso, Vivi!',
-            tags: ['La llave es importante', 'Al final no había monstruos', 'El Ornitorrinco era para despistar'],
+            tags: ['Llave', 'Los monstruos no existen'],
             favorite: false,
             timestamp: 0
           }
@@ -589,16 +577,11 @@
         }
       },
       index () {
-        return this.quests.findIndex(quest => quest.password === this.password)
+        return this.quests.findIndex(quest => quest.password === this.password) + 1
       }
     }
   }
 </script>
 
 <style lang="stylus" scoped>
-  .floating
-    position: absolute
-    bottom: -35px
-    right: 5px
-    z-index: 9999
 </style>

@@ -23,7 +23,7 @@
             md-icon games
             span Simboliza videojuego
           md-list-item
-            md-icon book
+            md-icon chrome_reader_mode
             span Simboliza libro
           md-list-item
             md-icon place
