@@ -36,8 +36,8 @@
             icon: 'extension',
             title: 'Empieza el juego',
             media: 'avatar.jpg',
-            description: 'Bienvenida a tu propia gymkana de aniversario! Durante 50 pruebas, resolverás pequeños acertijos sobre temas de la cultura friki que tanto nos gusta a los dos, y deberás resolverlas todas para encontrar el regalo que he escondido. Hay de todo: libros, películas, series, dibujos animados, videojuegos, juegos... Para avanzar debes encontrar la contraseña que desbloquea la siguiente prueba. Los códigos siempre son de una palabra, compuesta por letras y/o números. Elimina los signos de puntuación, pero respeta las mayúsculas. Suerte y que te diviertas!',
-            tags: ['Pista', 'Ayuda', 'Nombre'],
+            description: 'Bienvenida a tu propia gymkana de aniversario portátil! Durante 50 pruebas, resolverás pequeños acertijos sobre temas de la cultura friki que tanto nos gusta a los dos para encontrar el regalo que he escondido al final. Hay de todo: libros, películas, series, dibujos animados, videojuegos, juegos... Para avanzar debes encontrar la contraseña que desbloquea la siguiente prueba. Los códigos siempre son de una palabra, compuesta por letras y/o números. En algunos raros casos, como nombres propios de 2 palabras, la contraseña será del formato PrimeraSegunda, nunca con espacios. Elimina los signos de puntuación, pero respeta las mayúsculas. Suerte y que te diviertas!',
+            tags: ['Pista', 'Ayuda', 'Nombre', 'Mujer'],
             favorite: false,
             timestamp: 0
           },
@@ -46,7 +46,7 @@
             icon: 'movies',
             title: 'Marty, tenemos que volver',
             media: 'delorean.gif',
-            description: 'Para resolver algunos acertijos tendrás que viajar usando tu flamante coche nuevo, que tiene algo que ver con este acertijo. También era híbrido, y sólo consumía 1.21GW por salto! Creo que he sido un poco enrevesado, pero eres una chica lista y seguro que lo sacas tarde o temprano.',
+            description: 'Para resolver algunos acertijos tendrás que viajar usando tu flamante coche nuevo, que tiene algo que ver con este acertijo. También era híbrido, y sólo consumía 1.21GW por viaje! Creo que he sido un poco enrevesado, pero eres una chica lista y seguro que lo sacas tarde o temprano.',
             tags: ['California', 'Virginia'],
             favorite: false,
             timestamp: 0
@@ -86,7 +86,7 @@
             icon: 'games',
             title: 'Desierto de Nevada',
             media: 'halflife.gif',
-            description: 'Allí transcurre este grandísimo juego. Supongo que te sonará. Lo que nos interesa aquí no es el juego como tal, sino la ubicación de las instalaciones del mismo. Has jugado?',
+            description: 'Allí transcurre este grandísimo juego. Supongo que te sonará. Lo que nos interesa aquí no es el juego como tal, sino la ubicación de las instalaciones del mismo. Te acuerdas?',
             tags: ['Nombre', 'Clave', 'Complejo'],
             favorite: false,
             timestamp: 0
@@ -94,19 +94,19 @@
           {
             password: 'BlackMesa',
             icon: 'movies',
-            title: 'Los números son chungos',
+            title: 'Ciencia vs Fe',
             media: 'lost.gif',
-            description: 'Otra grandísima serie, probablemente la primera que vi como una "serie" de capítulos en los que el orden importaba y mucho. De cuando apenas tenía suficiente banda ancha de internet en casa para poder verlo en streaming, pero eso no me impedía pausar la carga y poder ver capítulos hasta altísimas horas de la madrugada. Final decepcionante.',
-            tags: ['Spoiler', 'Perdidos', 'Hugo'],
+            description: 'Otra grandísima serie, probablemente la primera que vi como una "serie" de capítulos en los que el orden importaba y mucho. De cuando apenas tenía suficiente banda ancha de internet en casa para poder verlo en streaming, pero eso no me impedía pausar la carga y poder ver capítulos hasta altísimas horas de la madrugada. Como haces tu en 2017, vamos...',
+            tags: ['Spoiler', 'Números'],
             favorite: false,
             timestamp: 0
           },
           {
-            password: '8',
+            password: '4815162342',
             icon: 'chrome_reader_mode',
             title: 'Imaginación al poder',
             media: 'neverending.gif',
-            description: 'Uno de los libros que con más cariño recuerdo de mi infancia. De cuando las novelas río de fantasía medieval eran demasiado complicados para un niño, que prefería entretenerse con amigables dragones y princesas en altos castillos.',
+            description: 'Uno de los libros que con más cariño recuerdo de mi infancia. De cuando las novelas río de fantasía medieval eran demasiado complicados para un niño, que prefería entretenerse con amigables dragones y princesas en altos castillos de mundos imaginarios.',
             tags: ['Amuleto', 'Cura', 'Enfermedad'],
             favorite: false,
             timestamp: 0
@@ -126,7 +126,7 @@
             icon: 'extension',
             title: 'Las 5 casas',
             media: 'einstein.jpg',
-            description: 'Seguro que has hecho este rompecabezas antes. Te toca volverlo a hacer, pero ésta vez para responder a mi pregunta: ¿Qué bebe el dueño del pez?',
+            description: 'Seguro que has hecho este rompecabezas antes. Te toca volverlo a hacer, pero ésta vez para responder a mi propia pregunta: ¿Qué bebe el dueño del pez?',
             tags: ['País', 'Origen', 'Bebida'],
             favorite: false,
             timestamp: 0
@@ -157,7 +157,7 @@
             title: 'Le Petit Prince',
             media: 'little.gif',
             description: 'Otro precioso libro de obligada lectura infantil y no tan infantil. Mientras que los niños ven un elefante en el estómago de una boa, los adultos somos muchos más simples y aburridos... Menos mal que yo no.',
-            tags: ['Realidad'],
+            tags: ['Adultos', 'Realidad'],
             favorite: false,
             timestamp: 0
           },
@@ -176,7 +176,7 @@
             icon: 'games',
             title: 'World of Warcraft',
             media: 'item.jpg',
-            description: 'Otro agujero de horas y un no parar de jugar. La saga completa, la verdad. La historia del WoW es un poco enrevesada y sin un final concreto, pero la del Warcraft3 está bastante bien. Pero aquí buscamos al culpable de todo, en realidad.',
+            description: 'Otro agujero de horas y un no parar de jugar. La saga completa, la verdad. La historia del WoW es un poco enrevesada y sin un final concreto, pero la del Warcraft3 está bastante bien. Pero aquí buscamos al culpable de todo, de toda la historia, desde el principio.',
             tags: ['Arma', 'Inglés'],
             favorite: false,
             timestamp: 0
@@ -186,17 +186,17 @@
             icon: 'movies',
             title: 'Run',
             media: 'stranger.gif',
-            description: 'Vaya pedazo de serie. Muy oscura y a la vez casi familiar con la pandilla de Verano Azul dando vueltas por la ciudad. Y la escena de las luces de navidad sobre la pared fue magistral. Tal vez deberías verla más de cerca.',
-            tags: ['Luces', 'Letras', 'Palabra'],
+            description: 'Vaya pedazo de serie. Muy oscura y a la vez casi familiar con la pandilla de Verano Azul dando vueltas por la ciudad con un monstruo interdimensional rondado. Y la escena de las luces de navidad sobre la pared fue magistral. Tal vez deberías verla más de cerca...',
+            tags: ['Luces', 'Letras'],
             favorite: false,
             timestamp: 0
           },
           {
             password: 'Currada',
             icon: 'chrome_reader_mode',
-            title: 'Habla y entra',
+            title: 'Habla, y entra',
             media: 'moria.gif',
-            description: 'Otra escena mítica de otro gran libro y película. Aquí vamos a jugar un poco con el frikismo más extremo. Da gracias que no me gusta Star Trek...',
+            description: 'Otra escena mítica de otro gran libro y película. Aquí vamos a jugar un poco con el frikismo más extremo. Da gracias que no me gusta Star Trek, que sino imagínate en Klingon...',
             tags: ['Élfico', 'Hermosa'],
             favorite: false,
             timestamp: 0
@@ -216,8 +216,8 @@
             icon: 'movies',
             title: 'Foto de familia',
             media: 'sherlock.jpg',
-            description: 'No podía ser un juego de acertijos completo sin que apareciera nuestro investigador favorito, verdad? Yo no soy tan listo como para crear un complicado reto intelectual que resolver, aunque tenga buenas ideas para una scape room. Al menos Mary está MUERTA.',
-            tags: ['Esta', 'U', 'Resulta', 'Una', 'Salvajada'],
+            description: 'No podía ser un juego de acertijos completo sin que apareciera nuestro investigador favorito, verdad? Yo no soy tan listo como para crear un complicado reto intelectual que resolver, aunque tenga buenas ideas para una scape room. Y gracias adios, ahora Mary está MUERTA.',
+            tags: ['Esta', 'U', 'Resulta', 'Una', 'Simpleza'],
             favorite: false,
             timestamp: 0
           },
@@ -247,7 +247,7 @@
             title: 'Eres un mago, Harry',
             media: 'mapa.gif',
             description: 'Siempre me pareció un poco absurdo que unos artefactos mágicos tan jodidamente poderosos y que tienden a ser usados para hacer el mal, como la Capa de Invisibilidad o el Mapa del Merodeador, acaben en las inexpedrtas manos de imberbes estudiantes de instituto. Eso sí, en Gringots guardamos las monedas de oro, no sea que los gitamagos nos las roben.',
-            tags: ['Persona', 'Muerta', 'Imposible', 'Nick'],
+            tags: ['Muerto', 'Imposible', 'Mote'],
             favorite: false,
             timestamp: 0
           },
@@ -317,7 +317,7 @@
             title: 'Resident Evil',
             media: 'media.extension',
             description: 'El mejor juego de zombies que hay. Tenía acción, sustos, acertijos, puzzles y una historia bastante buena. Hoy en día los píxeles dan asco, pero de aquella era un acojone constante, sobre todo cuando llevabas jugando unas horas y no encontrabas una puta cinta para grabar la partida en la máquina de escribir.',
-            tags: ['Persecutor', 'Nombre'],
+            tags: ['Boss', 'Final'],
             favorite: false,
             timestamp: 0
           },
@@ -327,27 +327,27 @@
             title: 'Tabla periódica',
             media: 'bb.jpg',
             description: 'Ya que has tenido una pregunta de física, qué tal ahora una de química? Y quién mejor en química que nuestro profesor favorito, Walter White? No seas demasiado dura conmigo, no sé casi nada de química y aunque éste es tu campo predilecto, no se me ha ocurrido nada más...',
-            tags: ['Peso'],
+            tags: ['Peso', '+3000'],
             favorite: false,
             timestamp: 0
           },
           {
-            password: '000',
+            password: '3033',
             icon: 'movies',
             title: 'Big Crunch',
-            media: 'media.extension',
+            media: 'bang.gif',
             description: 'Molaba más cuando no tenían novia, pero todos los frikis tenemos derecho al amor, no? Ahora es una retaíla de empalagosas situaciones románticas estúpidas, de esas que tanto te gustan. Pero antes tenían cosas tan chulas como ésta.',
-            tags: ['Robot', 'Nombre'],
+            tags: ['Robot'],
             favorite: false,
             timestamp: 0
           },
           {
             password: 'MONTE',
             icon: 'movies',
-            title: 'Mad Max',
+            title: 'Cuál es tu nombre?',
             media: 'witness.gif',
             description: 'Una de mis sagas favoritas. El rollo postapocalíptico me mola un montón. Y es muy curioso que sea en Australia. Aunque la obra maestra es la cuarta, el resto tampoco están mal. En fin, lo que nos interesa aquí es algo muy obvio pero que apenas sale mencionado en las películas. La verdad es que no sabía muy bien qué preguntar...',
-            tags: ['Apellido'],
+            tags: ['Last name'],
             favorite: false,
             timestamp: 0
           },
@@ -357,7 +357,7 @@
             title: 'El juego de mesa',
             media: 'jumanji.gif',
             description: 'Esto si que era jugarsela apostando a un juego. Sabías que no sólo se esta haciendo un remake, sino que había segunda parte? Yo no tenía ni idea.',
-            tags: ['Título', 'Película'],
+            tags: ['Título'],
             favorite: false,
             timestamp: 0
           },
@@ -436,7 +436,7 @@
             icon: 'movies',
             title: 'Follow the white rabbit',
             media: 'matrix.jpg',
-            description: 'Qué escogerías tu?',
+            description: 'Qué habrías escogido tú?',
             tags: ['Decisiones'],
             favorite: false,
             timestamp: 0
@@ -467,12 +467,12 @@
             title: 'Pensamiento Profundo',
             media: 'guide.jpg',
             description: 'Tras millones de años, se ha llegado a una conclusión irrefutable.',
-            tags: ['Respuesta', 'Pregunta'],
+            tags: ['Respuesta', 'Pregunta', '+1000'],
             favorite: false,
             timestamp: 0
           },
           {
-            password: '42',
+            password: '1042',
             icon: 'movies',
             title: 'Es hora de morir',
             media: 'runner.gif',
@@ -537,7 +537,7 @@
             title: 'Fin',
             media: 'victory.jpg',
             description: 'Enhorabuena! Has llegado al final del todo. Te estarás preguntando si todo este esfuerzo ha merecido la pena, pero espero que al menos te hayas divertido resolviendo mi juego. Y que te guste mi regalo como premio por tu esfuerzo! Para el año que viene, tal vez te haga una expansión con otras 50 pruebas. Un beso, Vivi!',
-            tags: ['Llave', 'Ornitorrinco'],
+            tags: ['La llave es importante', 'Al final no había monstruos', 'El Ornitorrinco era para despistar'],
             favorite: false,
             timestamp: 0
           }
