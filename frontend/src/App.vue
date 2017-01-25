@@ -32,7 +32,7 @@
             md-icon.md-primary star
             span Logros
     .main      
-      router-view.content.animated.fadeIn
+      router-view#scroll.content.animated.fadeIn
 </template>
 
 <script>

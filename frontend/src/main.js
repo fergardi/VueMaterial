@@ -67,3 +67,9 @@ new Vue({
   render: h => h(App),
   router
 })
+
+// scroll
+router.beforeEach(function (to, from, next) {
+  document.getElementById('scroll').scrollIntoView(true)
+  next()
+})

@@ -582,6 +582,7 @@
               this.open()
             }
           })
+          document.getElementById('scroll').scrollIntoView(true)
           return found
         } else {
           return this.quests[0]
