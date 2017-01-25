@@ -176,7 +176,7 @@
             icon: 'games',
             title: 'World of Warcraft',
             media: 'item.jpg',
-            description: 'Otro agujero de horas y no parar de jugar. Por cierto, la historia del Warcraft está bastante bien. El Warcraft3 la expone en un orden muy interesante. Pero aquí buscamos al culpable de todo, en realidad.',
+            description: 'Otro agujero de horas y un no parar de jugar. La saga completa, la verdad. La historia del WoW es un poco enrevesada y sin un final concreto, pero la del Warcraft3 está bastante bien. Pero aquí buscamos al culpable de todo, en realidad.',
             tags: ['Arma', 'Inglés'],
             favorite: false,
             timestamp: 0
@@ -205,155 +205,165 @@
             password: 'Vanya',
             icon: 'games',
             title: '+1 UP!',
+            media: 'mario.gif',
+            description: 'Mira que este juego tiene añazos, y hoy en dia se sigue manteniendo como el juego más vendido de la historia. Y cada vez que pensabas que llegabas al final, "Lo siento Mario, la princesa está en otro castillo". Podías darme un mapa al castillo correcto, hijo de puta...',
+            tags: ['Princesa'],
+            favorite: false,
+            timestamp: 0
+          },
+          {
+            password: 'Peach',
+            icon: 'movies',
+            title: 'Foto de familia',
+            media: 'sherlock.jpg',
+            description: 'No podía ser un juego de acertijos completo sin que apareciera nuestro investigador favorito, verdad? Yo no soy tan listo como para crear un complicado reto intelectual que resolver, aunque tenga buenas ideas para una scape room. Al menos Mary está MUERTA.',
+            tags: ['Esta', 'U', 'Resulta', 'Una', 'Salvajada'],
+            favorite: false,
+            timestamp: 0
+          },
+          {
+            password: 'Eurus',
+            icon: 'games',
+            title: 'Aku Aku',
+            media: 'crash.gif',
+            description: 'Otro genial juego de cuando tenía la PSOne. Qué recuerdos! No sé si has jugado, pero sino siempre tienes la Wikipedia. Por cierto, la desarrolladora original, Naughty Dog, es la responsable actual de la saga Uncharted.',
+            tags: ['Gemelo', 'Malvado'],
+            favorite: false,
+            timestamp: 0
+          },
+          {
+            password: 'UkaUka',
+            icon: 'movies',
+            title: 'Luz! Fuego! Destrucción!',
+            media: 'goku.gif',
+            description: 'El mundo puede ser una ruina! No lo podemos permitir! Esto sí que eran dibujos de los buenos, y no la mierda que ponen hoy en día a los chavales. Algún día tengo que volver a verlo entero otra vez. La de pifostio que se armó por intentar conseguir las 7 bolas de...',
+            tags: ['Dragón'],
+            favorite: false,
+            timestamp: 0
+          },
+          {
+            password: 'Shenlong',
+            icon: 'book',
+            title: 'Eres un mago, Harry',
+            media: 'mapa.gif',
+            description: 'Siempre me pareció un poco absurdo que unos artefactos mágicos tan jodidamente poderosos y que tienden a ser usados para hacer el mal, como la Capa de Invisibilidad o el Mapa del Merodeador, acaben en las inexpedrtas manos de imberbes estudiantes de instituto. Eso sí, en Gringots guardamos las monedas de oro, no sea que los gitamagos nos las roben.',
+            tags: ['Persona', 'Muerta', 'Imposible', 'Nick'],
+            favorite: false,
+            timestamp: 0
+          },
+          {
+            password: 'Colagusano',
+            icon: 'movies',
+            title: 'Odio a Carl',
+            media: 'walking.jpg',
+            description: 'Yo ya veo esto simplemente para ver si Carl se muere. Aunque sé que es un personaje principal y esto no es Juego de Tronos, no he perdido la esperanza de que Negan lo mate a base de bates en la cabeza. Este niño evade la muerte tan bien como la Portuguesa o Kissy.',
+            tags: ['Spoiler', 'Todos', 'Estamos'],
+            favorite: false,
+            timestamp: 0
+          },
+          {
+            password: 'Infectados',
+            icon: 'games',
+            title: 'Waka Waka Waka',
+            media: 'pacman.gif',
+            description: 'Sabías que este juego está basado en la película Alien? Se supone que los fantasmas son representaciones del bicho y tu tienes que huir de el por los pasillos de la nave, hasta que tienes suficientes agallas como para volverte contra él y matarlo. Curioso, verdad?',
+            tags: ['Fantasma', 'Color', 'Favorito'],
+            favorite: false,
+            timestamp: 0
+          },
+          {
+            password: 'Blinky',
+            icon: 'movies',
+            title: 'I will be back',
+            media: 'back.gif',
+            description: 'A mi me gustan por este orden: primero la segunda, segundo la tercera, tercero la primera, cuarta la quinta y quinta la cuarta. La serie no hay por donde cogerla.',
+            tags: ['Orden'],
+            favorite: false,
+            timestamp: 0
+          },
+          {
+            password: '23154',
+            icon: 'games',
+            title: 'Fatality',
+            media: 'fatality.gif',
+            description: 'Sabías que este juego se convirtió en muy famoso porque las escenas de lucha estaban grabadas con personas reales que se ofrecieron para capturar sus movimientos y representarlos en un juego de recreativa?',
+            tags: ['Boss', 'Final'],
+            favorite: false,
+            timestamp: 0
+          },
+          {
+            password: 'ShangTsung',
+            icon: 'place',
+            title: 'Excursión',
+            media: 'key.jpg',
+            description: 'Toca coger el coche y darse un paseo. Creías que lo de viajar y hablar con NPCs era broma, verdad? Pues ya verás cuando tengas que luchar contra monstruos...',
+            tags: ['Mapa', 'Coche'],
+            favorite: false,
+            timestamp: 0
+          },
+          {
+            password: 'Ornitorrinco',
+            icon: 'movies',
+            title: 'Hay alguien ahí?',
+            media: 'alien.gif',
+            description: 'Supongo que te estarás preguntando para qué sirve esa llave. Y la contraseña. En fin, ya lo descubrirás. Mientras tanto, seguimos con otro acertijo. Este es muy sencillo, casi de manual.',
+            tags: ['Especie'],
+            favorite: false,
+            timestamp: 0
+          },
+          {
+            password: 'Xenomorfo',
+            icon: 'games',
+            title: 'Resident Evil',
             media: 'media.extension',
-            description: 'super mario',
+            description: 'El mejor juego de zombies que hay. Tenía acción, sustos, acertijos, puzzles y una historia bastante buena. Hoy en día los píxeles dan asco, pero de aquella era un acojone constante, sobre todo cuando llevabas jugando unas horas y no encontrabas una puta cinta para grabar la partida en la máquina de escribir.',
+            tags: ['Persecutor', 'Nombre'],
+            favorite: false,
+            timestamp: 0
+          },
+          {
+            password: 'Nemesis',
+            icon: 'movies',
+            title: 'Tabla periódica',
+            media: 'bb.jpg',
+            description: 'Ya que has tenido una pregunta de física, qué tal ahora una de química? Y quién mejor en química que nuestro profesor favorito, Walter White? No seas demasiado dura conmigo, no sé casi nada de química y éste es tu campo predilecto, no se me ha ocurrido nada más...',
+            tags: ['Peso'],
+            favorite: false,
+            timestamp: 0
+          },
+          {
+            password: '000',
+            icon: 'movies',
+            title: 'Big Crunch',
+            media: 'media.extension',
+            description: 'Molaba más cuando no tenían novia, pero todos los frikis tenemos derecho al amor, no? Ahora es una retaíla de empalagosas situaciones románticas estúpidas, de esas que tanto te gustan. Pero antes tenían cosas tan chulas como ésta.',
+            tags: ['Robot', 'Nombre'],
+            favorite: false,
+            timestamp: 0
+          },
+          {
+            password: 'MONTE',
+            icon: 'movies',
+            title: 'Mad Max',
+            media: 'witness.gif',
+            description: 'Una de mis sagas favoritas. El rollo postapocalíptico me mola un montón. Y es muy curioso que sea en Australia. En fin, lo que nos interesa aquí es algo muy obvio pero que apenas sale mencionado en las películas. La verdad es que no sabía muy bien qué preguntar...',
+            tags: ['Apellido', 'Australiano'],
+            favorite: false,
+            timestamp: 0
+          },
+          {
+            password: 'Rockatansky',
+            icon: 'movies',
+            title: 'El juego de mesa',
+            media: 'jimanji.gif',
+            description: 'Esto si que era jugar.',
             tags: ['tag1', 'tag2', 'tag3'],
             favorite: false,
             timestamp: 0
           },
           {
             password: 'password',
-            icon: 'icon',
-            title: 'sherlock',
-            media: 'media.extension',
-            description: 'sherlock',
-            tags: ['tag1', 'tag2', 'tag3'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: 'password',
-            icon: 'icon',
-            title: 'crash bandicoot',
-            media: 'media.extension',
-            description: 'crash bandicoot',
-            tags: ['tag1', 'tag2', 'tag3'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: 'password',
-            icon: 'icon',
-            title: 'harry potter',
-            media: 'media.extension',
-            description: 'harry potter',
-            tags: ['tag1', 'tag2', 'tag3'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: 'password',
-            icon: 'icon',
-            title: 'walking dead',
-            media: 'media.extension',
-            description: 'walking dead',
-            tags: ['tag1', 'tag2', 'tag3'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: 'password',
-            icon: 'icon',
-            title: 'terminator',
-            media: 'media.extension',
-            description: 'terminator',
-            tags: ['tag1', 'tag2', 'tag3'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: 'password',
-            icon: 'icon',
-            title: 'dragon ball',
-            media: 'media.extension',
-            description: 'dragon ball',
-            tags: ['tag1', 'tag2', 'tag3'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: 'password',
-            icon: 'icon',
-            title: 'alien',
-            media: 'media.extension',
-            description: 'alien',
-            tags: ['tag1', 'tag2', 'tag3'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: 'password',
-            icon: 'icon',
-            title: 'resident evil',
-            media: 'media.extension',
-            description: 'resident evil',
-            tags: ['tag1', 'tag2', 'tag3'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: 'password',
-            icon: 'icon',
-            title: 'pacman',
-            media: 'media.extension',
-            description: 'pacman',
-            tags: ['tag1', 'tag2', 'tag3'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: 'password',
-            icon: 'icon',
-            title: 'breaking bad',
-            media: 'media.extension',
-            description: 'breaking bad',
-            tags: ['tag1', 'tag2', 'tag3'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: 'password',
-            icon: 'icon',
-            title: 'big bang theory',
-            media: 'media.extension',
-            description: 'malcolm',
-            tags: ['tag1', 'tag2', 'tag3'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: 'password',
-            icon: 'icon',
-            title: 'mad max',
-            media: 'media.extension',
-            description: 'mad max',
-            tags: ['tag1', 'tag2', 'tag3'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: 'password',
-            icon: 'icon',
-            title: 'mortal kombat',
-            media: 'media.extension',
-            description: 'mortal kombat',
-            tags: ['tag1', 'tag2', 'tag3'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: 'password',
-            icon: 'icon',
-            title: 'jumanji',
-            media: 'media.extension',
-            description: 'jumanji',
-            tags: ['tag1', 'tag2', 'tag3'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: 'password',
-            icon: 'icon',
+            icon: 'movies',
             title: 'futurama',
             media: 'media.extension',
             description: 'futurama',
@@ -363,7 +373,7 @@
           },
           {
             password: 'password',
-            icon: 'icon',
+            icon: 'movies',
             title: 'guardianes de la galaxia',
             media: 'media.extension',
             description: 'guardianes de la galaxia',
@@ -373,7 +383,7 @@
           },
           {
             password: 'password',
-            icon: 'icon',
+            icon: 'movies',
             title: 'monty python',
             media: 'media.extension',
             description: 'monty python',
@@ -383,7 +393,7 @@
           },
           {
             password: 'password',
-            icon: 'icon',
+            icon: 'movies',
             title: 'indiana jones',
             media: 'media.extension',
             description: 'indiana jones',
@@ -393,7 +403,7 @@
           },
           {
             password: 'password',
-            icon: 'icon',
+            icon: 'book',
             title: 'juego de tronos',
             media: 'media.extension',
             description: 'juego de tronos',
@@ -403,7 +413,7 @@
           },
           {
             password: 'password',
-            icon: 'icon',
+            icon: 'movies',
             title: 'matrix',
             media: 'media.extension',
             description: 'matrix',
@@ -413,7 +423,7 @@
           },
           {
             password: 'password',
-            icon: 'icon',
+            icon: 'games',
             title: 'final fantasy',
             media: 'media.extension',
             description: 'final fantasy',
@@ -423,7 +433,7 @@
           },
           {
             password: 'password',
-            icon: 'icon',
+            icon: 'movies',
             title: 'star wars',
             media: 'media.extension',
             description: 'star wars',
@@ -433,17 +443,17 @@
           },
           {
             password: 'password',
-            icon: 'icon',
-            title: 'pitufos',
+            icon: 'movies',
+            title: 'westworld',
             media: 'media.extension',
-            description: 'pitufos',
+            description: 'westworld',
             tags: ['tag1', 'tag2', 'tag3'],
             favorite: false,
             timestamp: 0
           },
           {
             password: 'password',
-            icon: 'icon',
+            icon: 'movies',
             title: 'autoestopista galactico',
             media: 'media.extension',
             description: 'autoestopista galactico',
@@ -453,7 +463,7 @@
           },
           {
             password: 'password',
-            icon: 'icon',
+            icon: 'extension',
             title: 'overexposed model',
             media: 'media.extension',
             description: 'overexposed model',
@@ -463,7 +473,7 @@
           },
           {
             password: 'password',
-            icon: 'icon',
+            icon: 'movies',
             title: 'blade runner',
             media: 'media.extension',
             description: 'blade runner',
@@ -473,7 +483,7 @@
           },
           {
             password: 'password',
-            icon: 'icon',
+            icon: 'movies',
             title: 'fraggle rock',
             media: 'media.extension',
             description: 'fraggle rock',
@@ -483,7 +493,7 @@
           },
           {
             password: 'password',
-            icon: 'icon',
+            icon: 'movies',
             title: 'pesadilla antes de navidad',
             media: 'media.extension',
             description: 'pesadilla antes de navidad',
@@ -493,7 +503,7 @@
           },
           {
             password: 'password',
-            icon: 'icon',
+            icon: 'movies',
             title: 'los goonies',
             media: 'media.extension',
             description: 'los goonies',
@@ -503,7 +513,7 @@
           },
           {
             password: 'password',
-            icon: 'icon',
+            icon: 'games',
             title: 'legend of zelda',
             media: 'media.extension',
             description: 'legend of zelda',
@@ -513,7 +523,7 @@
           },
           {
             password: 'password',
-            icon: 'icon',
+            icon: 'movies',
             title: 'evil dead',
             media: 'media.extension',
             description: 'evil dead',
@@ -522,22 +532,12 @@
             timestamp: 0
           },
           {
-            password: 'password',
-            icon: 'icon',
-            title: 'piti',
-            media: 'media.extension',
-            description: 'piti',
-            tags: ['tag1', 'tag2', 'tag3'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: 'password',
-            icon: 'icon',
-            title: 'fin',
-            media: 'media.extension',
-            description: 'fin',
-            tags: ['tag1', 'tag2', 'tag3'],
+            password: 'Piti',
+            icon: 'place',
+            title: 'Fin',
+            media: 'victory.jpg',
+            description: 'Enhorabuena! Has llegado al final. Te estarás preguntando si todo este esfuerzo ha merecido la pena, pero espero que te hayas divertido resolviendo mi juego. Y que te guste mi regalo como premio por tu esfuerzo! Un beso Vivi.',
+            tags: ['Llave', 'Ornitorrinco no sirve para nada'],
             favorite: false,
             timestamp: 0
           }
