@@ -12,10 +12,10 @@
           .md-title {{ active.title }}
           .md-subhead Acertijo {{ index }} de {{ quests.length }}
       md-card-media
-        img(v-bind:src="'img/quests/' + active.media", v-on:click="debug()")
+        md-image(v-bind:md-src="'img/quests/' + active.media", v-on:click="debug()")
         md-ink-ripple
       md-card-content
-        span {{ active.description }}
+        span(style="white-space: pre-line") {{ active.description }}
         p
           md-chip(v-for="tag in active.tags") {{ tag }}
         md-input-container(md-has-password)
@@ -34,8 +34,8 @@
             icon: 'extension',
             title: 'Empieza el juego',
             media: 'avatar.jpg',
-            description: 'Bienvenida a tu propia gymkana de aniversario portátil! Durante 50 pruebas, resolverás pequeños acertijos sobre temas de la cultura friki que tanto nos gusta a los dos para encontrar el regalo que he escondido al final. Hay de todo: libros, películas, series, dibujos animados, videojuegos, juegos... Para avanzar debes encontrar la contraseña que desbloquea la siguiente prueba. Los códigos siempre son de una palabra, compuesta por letras y/o números. En algunos raros casos, como nombres propios de 2 palabras, la contraseña será del formato PrimeraSegunda, nunca con espacios. Elimina los signos de puntuación, pero respeta las mayúsculas. Suerte y que te diviertas!',
-            tags: ['Pista', 'Ayuda', 'Nombre', 'Mujer'],
+            description: 'Bienvenida a tu propia gymkana de aniversario portátil! Durante 50 pruebas, resolverás pequeños acertijos sobre temas de la cultura friki que tanto nos gusta a los dos para encontrar el regalo que he escondido al final.\n\nHay de todo: libros, películas, series, dibujos animados, videojuegos, juegos de mesa... Para avanzar debes encontrar la contraseña que desbloquea la siguiente prueba.\n\nLos códigos siempre son de una palabra, compuesta por letras y/o números. En algunos raros casos, como nombres propios de 2 palabras, la contraseña será del formato PrimeraSegunda, nunca con espacios. Elimina los signos de puntuación, pero respeta las mayúsculas. Usa la Wikipedia.\n\nSuerte y que te diviertas!',
+            tags: ['Nombre', 'Mujer'],
             favorite: false,
             timestamp: 0
           },
@@ -114,7 +114,7 @@
             icon: 'games',
             title: 'Fus Ro Dah!',
             media: 'dragonborn.jpg',
-            description: '"Yo antes era un aventurero como tú, pero un día me hirieron con una flecha en la rodilla". Esa es sin duda la frase más repetida en este, por otro lado, grandísimo juego. Aunque tenía cosas muy absurdas. Recuerdo haber subido Herrería al máximo nivel fabricando cientos de dagas de hierro. Pero había otra armadura más chula todavía.',
+            description: '"Yo antes era un aventurero como tú, pero un día me hirieron con una flecha en la rodilla". Esa es sin duda la frase más repetida en este, por otro lado, grandísimo juego. Aunque tenía cosas muy absurdas. Recuerdo haber subido Herrería al máximo nivel fabricando cientos de dagas de hierro. Pero había otra armadura más chula todavía que la de Dragón, al menos para mi.',
             tags: ['Elemento', 'Metal', 'Armadura'],
             favorite: false,
             timestamp: 0
@@ -145,7 +145,7 @@
             title: 'Hazte con todos!',
             media: 'pokemon.jpg',
             description: 'Aunque es jodidamente imposible. Hay más de 800. Y éste es uno de ellos. Aunque no he sido tan cabrón de coger uno al azar para que los vayas comparando. Este es ligeramente especial. Suerte!',
-            tags: ['Nombre', '4chan'],
+            tags: ['4chan'],
             favorite: false,
             timestamp: 0
           },
@@ -161,7 +161,7 @@
           },
           {
             password: 'Sombrero',
-            icon: 'filter_6',
+            icon: 'games',
             title: 'Cards Against Humanity',
             media: 'cah.jpg',
             description: 'Cuando me soltaste esa burrada mientras veíamos juntos uno de los capítulos de esa serie, me hiciste reir tanto que me dije: "Esta chica es para mí". Simple y llanamente.',
@@ -202,20 +202,20 @@
           {
             password: 'Vanya',
             icon: 'games',
-            title: '+1 UP!',
+            title: '+1UP!',
             media: 'mario.gif',
             description: 'Mira que este juego tiene añazos, y hoy en dia se sigue manteniendo como el juego más vendido de la historia. Y cada vez que pensabas que llegabas al final, "Lo siento Mario, la princesa está en otro castillo". Podías darme un mapa al castillo correcto, hijo de puta...',
-            tags: ['Princesa'],
+            tags: ['Enemigo', 'Apellido'],
             favorite: false,
             timestamp: 0
           },
           {
-            password: 'Peach',
+            password: 'Morton',
             icon: 'movies',
             title: 'Foto de familia',
             media: 'sherlock.jpg',
             description: 'No podía ser un juego de acertijos completo sin que apareciera nuestro investigador favorito, verdad? Yo no soy tan listo como para crear un complicado reto intelectual que resolver, aunque tenga buenas ideas para una scape room. Y gracias adios, ahora Mary está MUERTA.',
-            tags: ['Esta', 'U', 'Resulta', 'Una', 'Simpleza'],
+            tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
@@ -234,13 +234,13 @@
             icon: 'movies',
             title: 'Luz! Fuego! Destrucción!',
             media: 'goku.gif',
-            description: 'El mundo puede ser una ruina! No lo podemos permitir! Esto sí que eran dibujos de los buenos, y no la mierda que ponen hoy en día a los chavales. Algún día tengo que volver a verlo entero otra vez. La de pifostio que se armó por intentar conseguir las 7 bolas de...',
-            tags: ['Dragón'],
+            description: 'El mundo puede ser una ruina! No lo podemos permitir! Esto sí que eran dibujos de los buenos, y no la mierda que ponen hoy en día a los chavales. Algún día tengo que volver a verlo entero otra vez. La de pifostio que se armó por intentar conseguir las 7 Bolas de Dragón',
+            tags: ['Nombre', 'Real'],
             favorite: false,
             timestamp: 0
           },
           {
-            password: 'Shenlong',
+            password: 'Kakarotto',
             icon: 'chrome_reader_mode',
             title: 'Eres un mago, Harry',
             media: 'marauders.gif',
@@ -262,7 +262,7 @@
           {
             password: 'Infectados',
             icon: 'games',
-            title: 'Waka Waka Waka',
+            title: 'Woka Woka Woka',
             media: 'pacman.gif',
             description: 'Sabías que este juego está basado en la película Alien? Se supone que los fantasmas son representaciones del bicho y tu tienes que huir de el por los pasillos de la nave, hasta que tienes suficientes agallas como para volverte contra él y matarlo. Curioso, verdad?',
             tags: ['Fantasma', 'Color', 'Favorito'],
@@ -335,7 +335,7 @@
             title: 'Cuál es tu nombre?',
             media: 'witness.gif',
             description: 'Una de mis sagas favoritas. El rollo postapocalíptico me mola un montón. Y es muy curioso que sea en Australia. Aunque la obra maestra es la cuarta, el resto tampoco están mal. En fin, lo que nos interesa aquí es algo muy obvio pero que apenas sale mencionado en las películas. La verdad es que no sabía muy bien qué preguntar...',
-            tags: ['Last name'],
+            tags: ['Apellido'],
             favorite: false,
             timestamp: 0
           },
@@ -352,7 +352,7 @@
           {
             password: 'Zathura',
             icon: 'movies',
-            title: '3000',
+            title: 'Año 3000',
             media: 'fry.gif',
             description: 'Mi serie de animación favorita. Tiene más burradas que los Simpsons, pero menos que Padre de Familia. Una pena que la cancelaran. Aunque luego volviera en forma de películas. Y luego volviera a estar en antena. Y luego vuelto a cancelarla. Pero estoy buscando un capítulo concreto...',
             tags: ['Tarjeta', 'Banco'],
@@ -455,17 +455,17 @@
             title: 'Pensamiento Profundo',
             media: 'guide.jpg',
             description: 'Tras millones de años, se ha llegado a una conclusión irrefutable.',
-            tags: ['Respuesta', 'Pregunta', '+1000'],
+            tags: ['Respuesta', 'Pregunta'],
             favorite: false,
             timestamp: 0
           },
           {
-            password: '1042',
+            password: '42',
             icon: 'movies',
             title: 'Es hora de morir',
             media: 'runner.gif',
             description: '"Todos esos momentos se perderán en el tiempo como lágrimas en la lluvia". Grandísima frase.',
-            tags: ['Modelo'],
+            tags: ['Modelo', 'Nomenclatura'],
             favorite: false,
             timestamp: 0
           },
@@ -475,7 +475,7 @@
             title: 'Tus problemas déjalos',
             media: 'fraggle.gif',
             description: 'Ven a disfrutar, ven a Fraggle Rock! Junto con los Teleñecos y Barrio Sésamo, este show era de lo mejor para los niños pequeños. Aunque creo recordar que tu no lo veías, así que igual es difícil.',
-            tags: ['Animal'],
+            tags: ['Real', 'Animal', 'Nombre'],
             favorite: false,
             timestamp: 0
           },
@@ -485,7 +485,7 @@
             title: 'Qué es?! Qué es?!',
             media: 'jack.gif',
             description: 'Hay luces de color! Qué es?! Parece de algodón! Qué es?! No creo en lo que veo. Estoy soñando? No lo sé! Qué injusto es! Qué es?',
-            tags: ['Luz', 'Roja', 'Nariz'],
+            tags: ['Luz', 'Nariz', 'Color', 'Favorito'],
             favorite: false,
             timestamp: 0
           },
@@ -504,8 +504,8 @@
             icon: 'games',
             title: 'Triforce',
             media: 'zelda.gif',
-            description: 'Yo no he jugado, pero se supone que en cada historia se repite el bucle de la divisón de la trifuerza en tres fragmentos: la Fuerza, representada por Garnon; la Sabiduría, representada por Zelda; y el Valor, representado por Link. Y el que controle las 3, controla el poder supremo. Pero, quién hizo esas piedras exactamente?',
-            tags: ['Color', 'Favorito'],
+            description: 'Yo no he jugado, pero se supone que en cada historia se repite el bucle de la divisón de la trifuerza en tres fragmentos: la Fuerza, representada por Garnon; la Sabiduría, representada por Zelda; y el Valor, representado por Link. Y el que controle las 3, controla el poder supremo. Pero, quién creó esos fragmentos exactamente?',
+            tags: ['Color', 'Favorito', 'Nombre'],
             favorite: false,
             timestamp: 0
           },
@@ -555,6 +555,7 @@
       },
       debug () {
         var index = this.quests.findIndex(quest => quest.password === this.password)
+        console.log(index)
         this.password = this.quests[index + 1].password
       }
     },

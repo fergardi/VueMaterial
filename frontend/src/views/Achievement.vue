@@ -8,7 +8,7 @@
           .md-title Logros
           .md-subhead Lo que has conseguido hasta ahora
       md-card-media
-        img(src="img/achievement.gif")
+        md-image(md-src="img/achievement.gif")
         md-ink-ripple
       md-card-content
         md-list.md-double-line
@@ -21,12 +21,12 @@
                 md-icon.md-primary announcement
           md-list-item(v-for="(achievement, index) in ordered")
             md-avatar.md-large
-              img(v-bind:src="'img/quests/' + achievement.media")
+              md-image(v-bind:md-src="'img/quests/' + achievement.media")
             .md-list-text-container
               strong {{ achievement.title }}
               i {{ achievement.timestamp | date }}
             md-button.md-icon-button.md-list-action(v-on:click="fav(achievement)")
-              md-icon(v-bind:class="{ 'md-primary' : achievement.favorite }") star
+              md-icon(v-bind:class="{ 'md-primary' : achievement.favorite }") favorite
             md-divider.md-inset(v-if="index < ordered.length - 1")
 </template>
 

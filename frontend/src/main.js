@@ -17,7 +17,7 @@ Vue.use(VueRouter)
 // routes
 var router = new VueRouter({
   routes: [
-    { path: '/', component: Home },
+    { path: '/', redirect: '/home' },
     { path: '/home', component: Home },
     { path: '/quest', component: Quest },
     { path: '/achievement', component: Achievement },
@@ -37,7 +37,10 @@ Vue.material.registerTheme({
     primary: 'indigo'
   },
   achievement: {
-    primary: 'deep-purple'
+    primary: {
+      color: 'red',
+      hue: 600
+    }
   },
   help: {
     primary: {
@@ -49,7 +52,7 @@ Vue.material.registerTheme({
     primary: 'blue'
   },
   quest: {
-    primary: 'deep-orange'
+    primary: 'deep-purple'
   }
 })
 

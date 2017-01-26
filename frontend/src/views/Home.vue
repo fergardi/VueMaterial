@@ -6,7 +6,7 @@
           img(v-bind:src="'img/' + card.media")
           md-ink-ripple
         md-card-area
-          router-link.md-primary.md-fab.floating(tag="md-button", to="/quest", v-if="index >= cards.length -1")
+          router-link.md-primary.md-fab.md-fab-bottom-right.floating(tag="md-button", to="/quest", v-if="index >= cards.length -1")
             md-icon play_arrow
           md-card-header
             .md-title {{ card.title }}
@@ -19,23 +19,23 @@
       return {
         cards: [
           {
-            title: 'Feliz aniversario!',
-            subtitle: 'Esto es una gymkana online creada para ti',
+            title: 'Feliz aniversario',
+            subtitle: 'Esto es una gymkana creada para ti',
             media: 'harrypotter.jpg'
           },
           {
             title: 'Tendrás que viajar',
-            subtitle: 'Tienes un coche eléctrico',
+            subtitle: 'Tienes un coche nuevo',
             media: 'starwars.jpg'
           },
           {
             title: 'Resolver acertijos',
-            subtitle: 'Descuida, eres más lista que yo',
+            subtitle: 'Eres más lista que yo',
             media: 'lordoftherings.jpg'
           },
           {
             title: 'Luchar contra monstruos',
-            subtitle: 'O lo más parecido a la realidad',
+            subtitle: 'Ornitorrincos asesinos',
             media: 'gameofthrones.jpg'
           },
           {
@@ -45,7 +45,7 @@
           },
           {
             title: 'Jugar unas partidas',
-            subtitle: 'No te vayas a enganchar',
+            subtitle: 'No te vicies demasiado',
             media: 'games.jpg'
           },
           {
@@ -66,5 +66,4 @@
   .floating
     position: absolute
     top: -35px
-    right: 5px
 </style>

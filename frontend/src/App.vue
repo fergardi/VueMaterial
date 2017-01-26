@@ -10,14 +10,14 @@
         router-link.md-icon-button(tag="md-button", to="/about")
           md-icon info
     md-sidenav.md-left.md-fixed(ref="sidebar")
-      md-toolbar.md-account-header
+      md-toolbar
         md-list.md-transparent
-          md-list-item.md-avatar-list.center
+          md-list-item.md-avatar-list.center(v-on:click="toggle()")
             md-avatar.md-large
-              img(src="img/fergardi.jpg")
-            span(style="flex: 1")
+              md-image(md-src="img/vivi.jpg")
+            h2.md-title(style="flex: 1") Annyversary
             md-avatar.md-large
-              img(src="img/vivi.jpg")
+              md-image(md-src="img/fergardi.jpg")
       md-list
         md-list-item(v-on:click="toggle()")
           router-link(to="/home")
@@ -31,6 +31,14 @@
           router-link(to="/achievement")
             md-icon.md-primary star
             span Logros
+        md-list-item(v-on:click="toggle()")
+          router-link(to="/help")
+            md-icon.md-primary help
+            span Ayuda
+        md-list-item(v-on:click="toggle()")
+          router-link(to="/about")
+            md-icon.md-primary info
+            span Información
     .main      
       router-view#scroll.content.animated.fadeIn
 </template>
@@ -77,15 +85,9 @@
     margin: 0 !important
   .md-chip
     margin-right: 5px
-  iframe
-  img
-    width: 100%
-    border: none
-  img
-    height: auto
-  iframe
-    height: 350px
-    max-height: 350px
+  .md-avatar
+    .md-image
+      border-radius: 50%
   @media screen and (min-width: 768px)
     .content
       margin: 0 25% !important

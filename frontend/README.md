@@ -1,4 +1,4 @@
-Más ideas
+#Ideas
 
 Men In Black
 Princesa Prometida
@@ -9,3 +9,16 @@ Spiderman
 Breaking Bad
 Mononoke
 Totoro
+Ready Player One
+Age of Empires
+Heroes juego
+Heroes tv
+112263
+Cariño encogido a niños
+Solo en casa
+Leroy Jenkins
+Como conoci a vuestra madre
+Willheim
+Rick y Morty
+Wayward Pines
+Gravity Falls
