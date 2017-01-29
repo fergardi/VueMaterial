@@ -13,7 +13,6 @@
           .md-subhead Acertijo {{ index }} de {{ quests.length }}
       md-card-media
         md-image(v-bind:md-src="'img/quests/' + active.media", v-on:click="debug()")
-        md-ink-ripple
       md-card-content
         span(style="white-space: pre-line") {{ active.description }}
         p
@@ -28,6 +27,7 @@
   export default {
     data () {
       return {
+        password: '',
         quests: [
           {
             password: '',
@@ -44,7 +44,7 @@
             icon: 'movies',
             title: 'Marty, tenemos que volver',
             media: 'delorean.gif',
-            description: 'Para resolver algunos acertijos tendrás que viajar usando tu flamante coche nuevo, que tiene algo que ver con este acertijo. También era híbrido, y sólo consumía 1.21GW por viaje! Creo que he sido un poco enrevesado, pero eres una chica lista y seguro que lo sacas tarde o temprano.',
+            description: 'Para resolver algunos acertijos tendrás que viajar usando tu flamante coche nuevo, que tiene algo que ver con este acertijo. También era híbrido, y sólo consumía 1.21GW por viaje!\n\nCreo que he sido un poco enrevesado, pero eres una chica lista y seguro que lo sacas tarde o temprano.',
             tags: ['California', 'Virginia'],
             favorite: false,
             timestamp: 0
@@ -64,7 +64,7 @@
             icon: 'chrome_reader_mode',
             title: 'Acertijos en la oscuridad',
             media: 'hobbit.gif',
-            description: 'El mejor capítulo del libro, el duelo a muerte de dos aficionados a los acertijos. Aunque uno de ellos hizo trampa, el otro también, así que técnicamente fue un empate de tramposos. Pero yo tampoco habría jugado limpio con Gollum, la verdad.',
+            description: 'El mejor capítulo del libro, el duelo a muerte de dos aficionados a los acertijos. Aunque uno de ellos hizo trampa, el otro también, así que técnicamente fue un empate de tramposos.\n\nPero yo tampoco habría jugado limpio con Gollum, la verdad.',
             tags: ['Acertijos', 'Último'],
             favorite: false,
             timestamp: 0
@@ -74,7 +74,7 @@
             icon: 'extension',
             title: 'Electricidad',
             media: 'law.jpg',
-            description: 'Este es un chiste de ingenieros. Bueno, la verdad es que de ingeniero, en singular. Mío, porque nadie más lo pilla. Aunque en realidad, es nuestro. Y el gato me ha venido que ni pintado!',
+            description: 'Este es un chiste de ingenieros. Bueno, la verdad es que de ingeniero, en singular. Mío, porque nadie más lo pilla. Aunque en realidad, es nuestro.\n\nY el gato me ha venido que ni pintado!',
             tags: ['Ley', 'Física'],
             favorite: false,
             timestamp: 0
@@ -94,7 +94,7 @@
             icon: 'movies',
             title: 'Ciencia vs Fe',
             media: 'lost.gif',
-            description: 'Otra grandísima serie, probablemente la primera que vi como una "serie" de capítulos en los que el orden importaba y mucho. De cuando apenas tenía suficiente banda ancha de internet en casa para poder verlo en streaming, pero eso no me impedía pausar la carga y poder ver capítulos hasta altísimas horas de la madrugada. Como haces tu en 2017, vamos...',
+            description: 'Otra grandísima serie, probablemente la primera que vi como una "serie" de capítulos en los que el orden importaba y mucho. De cuando apenas tenía suficiente banda ancha de internet en casa para poder verlo en streaming, pero eso no me impedía pausar la carga y poder ver capítulos hasta altísimas horas de la madrugada.\n\nComo haces tu, vamos...',
             tags: ['Spoiler', 'Números'],
             favorite: false,
             timestamp: 0
@@ -114,7 +114,7 @@
             icon: 'games',
             title: 'Fus Ro Dah!',
             media: 'dragonborn.jpg',
-            description: '"Yo antes era un aventurero como tú, pero un día me hirieron con una flecha en la rodilla". Esa es sin duda la frase más repetida en este, por otro lado, grandísimo juego. Aunque tenía cosas muy absurdas. Recuerdo haber subido Herrería al máximo nivel fabricando cientos de dagas de hierro. Pero había otra armadura más chula todavía que la de Dragón, al menos para mi.',
+            description: '"Yo antes era un aventurero como tú, pero un día me hirieron con una flecha en la rodilla". Esa es sin duda la frase más repetida en este, por otro lado, grandísimo juego. Aunque tenía cosas muy absurdas. Recuerdo haber subido Herrería al máximo nivel fabricando cientos de dagas de hierro.\n\nPero había otra armadura más chula todavía que la de Dragón, al menos para mi...',
             tags: ['Elemento', 'Metal', 'Armadura'],
             favorite: false,
             timestamp: 0
@@ -134,7 +134,7 @@
             icon: 'movies',
             title: 'Oferta en la ferretería',
             media: 'saw.gif',
-            description: 'Me imagino al malo yendo a la ferretería del barrio a comprar bridas, cal, un barreño resistente al ácido, ácido, un saco, una cuerda, una pala y algunos instrumentos de tortura de oferta para hacer intrincados instrumentos de muerte retardada. Y pagando en efectivo. Todo muy correcto, todo muy normal. Siempre saludaba.',
+            description: 'Me imagino al malo yendo a la ferretería del barrio a comprar bridas, cal, un barreño resistente al ácido, ácido, un saco, una cuerda, una pala y algunos instrumentos de tortura de oferta para hacer intrincados instrumentos de muerte retardada. Y pagando en efectivo. Todo muy correcto, todo muy normal.\n\nSiempre saludaba.',
             tags: ['Asesino', 'Nick'],
             favorite: false,
             timestamp: 0
@@ -144,7 +144,7 @@
             icon: 'games',
             title: 'Hazte con todos!',
             media: 'pokemon.jpg',
-            description: 'Aunque es jodidamente imposible. Hay más de 800. Y éste es uno de ellos. Aunque no he sido tan cabrón de coger uno al azar para que los vayas comparando. Este es ligeramente especial. Suerte!',
+            description: 'Aunque es jodidamente imposible. Hay más de 800! Y éste es uno de ellos. Aunque no he sido tan cabrón de coger uno al azar para que los vayas comparando. Este es ligeramente especial.\n\nSuerte!',
             tags: ['4chan'],
             favorite: false,
             timestamp: 0
@@ -154,7 +154,7 @@
             icon: 'chrome_reader_mode',
             title: 'Le Petit Prince',
             media: 'little.gif',
-            description: 'Otro precioso libro de obligada lectura infantil y no tan infantil. Mientras que los niños ven un elefante en el estómago de una boa, los adultos somos muchos más simples y aburridos... Menos mal que yo no.',
+            description: 'Otro precioso libro de obligada lectura infantil y no tan infantil. Mientras que los niños ven un elefante en el estómago de una boa, los adultos somos muchos más simples y aburridos...\n\nMenos mal que yo no.',
             tags: ['Adultos', 'Realidad'],
             favorite: false,
             timestamp: 0
@@ -194,7 +194,7 @@
             icon: 'chrome_reader_mode',
             title: 'Habla, y entra',
             media: 'moria.gif',
-            description: 'Otra escena mítica de otro gran libro y película. Aquí vamos a jugar un poco con el frikismo más extremo. Da gracias que no me gusta Star Trek, que sino imagínate en Klingon...',
+            description: 'Otra escena mítica de otro gran libro y película. Aquí vamos a jugar un poco con el frikismo más extremo. Da gracias que no me gusta Star Trek, imagínate en Klingon...',
             tags: ['Élfico', 'Hermosa'],
             favorite: false,
             timestamp: 0
@@ -204,7 +204,7 @@
             icon: 'games',
             title: '+1UP!',
             media: 'mario.gif',
-            description: 'Mira que este juego tiene añazos, y hoy en dia se sigue manteniendo como el juego más vendido de la historia. Y cada vez que pensabas que llegabas al final, "Lo siento Mario, la princesa está en otro castillo". Podías darme un mapa al castillo correcto, hijo de puta...',
+            description: 'Mira que este juego tiene añazos, y hoy en dia se sigue manteniendo como el juego más vendido de la historia. Y cada vez que pensabas que llegabas al final, "Lo siento Mario, la princesa está en otro castillo". Podías habermelo dicho antes, hijo de puta...',
             tags: ['Enemigo', 'Apellido'],
             favorite: false,
             timestamp: 0
@@ -214,7 +214,7 @@
             icon: 'movies',
             title: 'Foto de familia',
             media: 'sherlock.jpg',
-            description: 'No podía ser un juego de acertijos completo sin que apareciera nuestro investigador favorito, verdad? Yo no soy tan listo como para crear un complicado reto intelectual que resolver, aunque tenga buenas ideas para una scape room. Y gracias adios, ahora Mary está MUERTA.',
+            description: 'No podía ser un juego de acertijos completo sin que apareciera nuestro investigador favorito, verdad? Yo no soy tan listo como para crear un complicado reto intelectual que resolver, aunque tenga buenas ideas para una scape room.\n\nY gracias adios, ahora Mary está MUERTA.',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
@@ -244,7 +244,7 @@
             icon: 'chrome_reader_mode',
             title: 'Eres un mago, Harry',
             media: 'marauders.gif',
-            description: 'Siempre me pareció un poco absurdo que unos artefactos mágicos tan jodidamente poderosos y que tienden a ser usados para hacer el mal, como la Capa de Invisibilidad o el Mapa del Merodeador, acaben en las inexpedrtas manos de imberbes estudiantes de instituto. Eso sí, en Gringots guardamos las monedas de oro, no sea que los gitamagos nos las roben.',
+            description: 'Siempre me pareció un poco absurdo que unos artefactos mágicos tan jodidamente poderosos y que tienden a ser usados para hacer el mal, como la Capa de Invisibilidad o el Mapa del Merodeador, acaben en las inexpedrtas manos de imberbes estudiantes de instituto.\n\nEso sí, en Gringots guardamos las monedas de oro, no sea que los gitamagos nos las roben.',
             tags: ['Muerto', 'Imposible', 'Mote'],
             favorite: false,
             timestamp: 0
@@ -254,7 +254,7 @@
             icon: 'movies',
             title: 'Odio a Carl',
             media: 'carl.gif',
-            description: 'Yo ya veo esto simplemente para ver si Carl se muere. Aunque sé que es un personaje principal y esto no es Juego de Tronos, no he perdido la esperanza de que Negan lo mate a base de bates en la cabeza. Este niño evade la muerte tan bien como la Portuguesa o Kissy.',
+            description: 'Yo ya veo esto simplemente para ver si Carl se muere. Aunque sé que es un personaje principal y esto no es Juego de Tronos, no he perdido la esperanza de que Negan lo mate a base de bates en la cabeza.\n\nEste niño evade la muerte tan bien como la Portuguesa o Kissy.',
             tags: ['Spoiler', 'Todos', 'Estamos'],
             favorite: false,
             timestamp: 0
@@ -264,7 +264,7 @@
             icon: 'games',
             title: 'Woka Woka Woka',
             media: 'pacman.gif',
-            description: 'Sabías que este juego está basado en la película Alien? Se supone que los fantasmas son representaciones del bicho y tu tienes que huir de el por los pasillos de la nave, hasta que tienes suficientes agallas como para volverte contra él y matarlo. Curioso, verdad?',
+            description: 'Sabías que este juego está basado en la película Alien? Se supone que los fantasmas son representaciones del bicho y tu tienes que huir de el por los pasillos de la nave, hasta que tienes suficientes agallas como para volverte contra él y matarlo.\n\nCurioso, verdad?',
             tags: ['Fantasma', 'Color', 'Favorito'],
             favorite: false,
             timestamp: 0
@@ -274,7 +274,7 @@
             icon: 'movies',
             title: 'I will be back',
             media: 'terminator.gif',
-            description: 'A mi me gustan por este orden: primero la segunda, segundo la tercera, tercero la primera, cuarta la quinta y quinta la cuarta. La serie no hay por donde cogerla.',
+            description: 'A mi me gustan por este orden: primero la segunda, segundo la tercera, tercero la primera, cuarta la quinta y quinta la cuarta.\n\nLa serie no hay por donde cogerla.',
             tags: ['Orden'],
             favorite: false,
             timestamp: 0
@@ -294,7 +294,7 @@
             icon: 'place',
             title: 'Excursión',
             media: 'key.jpg',
-            description: 'Toca coger el coche y darse un paseo. Creías que lo de viajar y hablar con NPCs era broma, verdad? Pues ya verás cuando tengas que luchar contra monstruos...',
+            description: 'Toca coger el coche y darse un paseo. Creías que lo de viajar y hablar con NPCs era broma, verdad? Pues ya verás cuando tengas que luchar contra monstruos...\n\nOrnitorrincos asesinos!',
             tags: ['Mapa', 'Coche'],
             favorite: false,
             timestamp: 0
@@ -304,7 +304,7 @@
             icon: 'movies',
             title: 'Hay alguien ahí?',
             media: 'alien.gif',
-            description: 'Supongo que te estarás preguntando para qué sirve esa llave. Y la contraseña. En fin, ya lo descubrirás. Mientras tanto, seguimos con otro acertijo. Este es muy sencillo, casi de manual.',
+            description: 'Supongo que te estarás preguntando para qué sirve esa llave. Y la contraseña. En fin, ya lo descubrirás.\n\nMientras tanto, seguimos con otro acertijo. Este es muy sencillo, casi de manual.',
             tags: ['Especie'],
             favorite: false,
             timestamp: 0
@@ -334,7 +334,7 @@
             icon: 'movies',
             title: 'Cuál es tu nombre?',
             media: 'witness.gif',
-            description: 'Una de mis sagas favoritas. El rollo postapocalíptico me mola un montón. Y es muy curioso que sea en Australia. Aunque la obra maestra es la cuarta, el resto tampoco están mal. En fin, lo que nos interesa aquí es algo muy obvio pero que apenas sale mencionado en las películas. La verdad es que no sabía muy bien qué preguntar...',
+            description: 'Una de mis sagas favoritas. El rollo postapocalíptico me mola un montón. Y es muy curioso que sea en Australia. Aunque la obra maestra es la cuarta, el resto tampoco están mal. En fin, lo que nos interesa aquí es algo muy obvio pero que apenas sale mencionado en las películas.\n\nLa verdad es que no sabía muy bien qué preguntar...',
             tags: ['Apellido'],
             favorite: false,
             timestamp: 0
@@ -344,7 +344,7 @@
             icon: 'movies',
             title: 'El juego de mesa',
             media: 'jumanji.gif',
-            description: 'Esto si que era jugarsela apostando a un juego. Sabías que no sólo se esta haciendo un remake, sino que había segunda parte? Yo no tenía ni idea.',
+            description: 'Esto si que era jugarsela apostando a un juego. Sabías que no sólo se esta haciendo un remake para 2017, sino que había segunda parte?\n\nYo no tenía ni idea.',
             tags: ['Título'],
             favorite: false,
             timestamp: 0
@@ -354,8 +354,8 @@
             icon: 'movies',
             title: 'Año 3000',
             media: 'fry.gif',
-            description: 'Mi serie de animación favorita. Tiene más burradas que los Simpsons, pero menos que Padre de Familia. Una pena que la cancelaran. Aunque luego volviera en forma de películas. Y luego volviera a estar en antena. Y luego vuelto a cancelarla. Pero estoy buscando un capítulo concreto...',
-            tags: ['Tarjeta', 'Banco'],
+            description: 'Mi serie de animación favorita. Tiene más burradas que los Simpsons, pero menos que Padre de Familia. Una pena que la cancelaran. Aunque luego volviera en forma de películas. Y luego volviera a estar en antena. Y luego vuelto a cancelarla.\n\nPero estamos buscando un capítulo muy concreto...',
+            tags: ['Banco', 'Pizza'],
             favorite: false,
             timestamp: 0
           },
@@ -374,7 +374,7 @@
             icon: 'extension',
             title: 'Overexposed model',
             media: 'model.jpg',
-            description: 'Incluso alguien ha hecho un Tumblr para postear fotos donde la gente encuentra a esta modelo que está por todas partes. Nosotros mismos sin ir más lejos ya nos la hemos encontrado por ahí. Yo una vez la ví en Noruega anunciando auténtica butifarra española.',
+            description: 'Incluso alguien ha hecho un Tumblr para postear fotos donde la gente encuentra a esta modelo que está por todas partes. Nosotros mismos sin ir más lejos ya nos la hemos encontrado por ahí, en León.\n\nYo una vez la ví en Noruega anunciando auténtica butifarra española.',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
@@ -384,7 +384,7 @@
             icon: 'movies',
             title: 'El Puente de la Muerte',
             media: 'python.gif',
-            description: 'Quien el puente desee atravesar, tres preguntas deberá contestar, o al abismo irá a dar...',
+            description: 'Quien el puente desee atravesar, tres preguntas deberá contestar, o al abismo irá a dar...\n\nIba a ponerte lo del color favorito, y contestar mal, pero ésta me mola más!',
             tags: ['Capital'],
             favorite: false,
             timestamp: 0
@@ -394,7 +394,7 @@
             icon: 'movies',
             title: 'Indiana',
             media: 'indiana.gif',
-            description: 'Quién no ha tenido alguna vez la curisidad por saber qué se siente al tener el corazón palpitante de un hombre en la mano mientras se lo ofrece como sacrificio a su Dios favorito? Y el de un niño?',
+            description: 'Quién no ha tenido alguna vez la curisidad por saber qué se siente al tener el corazón palpitante de un hombre en la mano mientras se lo ofrece como sacrificio a su Dios favorito?\n\nY el de un niño?',
             tags: ['Dios'],
             favorite: false,
             timestamp: 0
@@ -414,7 +414,7 @@
             icon: 'chrome_reader_mode',
             title: 'Todos van a morir',
             media: 'got.gif',
-            description: 'Estoy casi seguro de que no se va a salvar ninguno de ellos. El Trono de Hierro no va a acabar en manos de ninguno de los supuestos herederos legítimos. El frío blanco se comerá todo a su paso. Oh, dulce niño de verano...',
+            description: 'Estoy casi seguro de que no se va a salvar ninguno de ellos. El Trono de Hierro no va a acabar en manos de ninguno de los supuestos herederos legítimos. El frío blanco se comerá todo a su paso.\n\nOh, dulce niño de verano...',
             tags: ['Fuego'],
             favorite: false,
             timestamp: 0
@@ -434,7 +434,7 @@
             icon: 'movies',
             title: 'Uno nuevo en la familia',
             media: 'starwars.gif',
-            description: 'Éramos pocos y parió la abuela. Estos de Disney si que saben hacer merchandising. Le dan a la rueda y ala, un nuevo droide en cada película. Luego peluches, pósters, figuras, camisetas... Y yo encantado de la vida! Cuál será el siguiente?',
+            description: 'Éramos pocos y parió la abuela. Estos de Disney si que saben hacer merchandising. Le dan a la rueda y ala, un nuevo droide en cada película. Luego peluches, pósters, figuras, camisetas...\n\nY yo encantado de la vida! Cuál será el siguiente?',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
@@ -464,7 +464,7 @@
             icon: 'movies',
             title: 'Es hora de morir',
             media: 'runner.gif',
-            description: '"Todos esos momentos se perderán en el tiempo como lágrimas en la lluvia". Grandísima frase.',
+            description: '"Todos esos momentos se perderán en el tiempo como lágrimas en la lluvia".\n\nGrandísima frase.',
             tags: ['Modelo', 'Nomenclatura'],
             favorite: false,
             timestamp: 0
@@ -494,18 +494,18 @@
             icon: 'movies',
             title: 'V de Virginia',
             media: 'vendetta.gif',
-            description: '"Recuerden, recuerden, el 5 de Noviembre. Conspiración, pólvora y traición. No veo la demora y siempre es la hora, de evocarla sin dilación". Hoy en día se ha convertido en la careta oficial de Annonymous, así como referencias a otras películas y series de hackers como Mr Robot.',
+            description: '"Recuerden, recuerden, el 5 de Noviembre. Conspiración, pólvora y traición. No veo la demora y siempre es la hora, de evocarla sin dilación". Hoy en día se ha convertido en la careta oficial de Annonymous, así como referencias en otras películas y series de hackers como Mr Robot.',
             tags: ['Apellido'],
             favorite: false,
             timestamp: 0
           },
           {
-            password: 'Hawkes',
+            password: 'Fawkes',
             icon: 'games',
             title: 'Triforce',
             media: 'zelda.gif',
             description: 'Yo no he jugado, pero se supone que en cada historia se repite el bucle de la divisón de la trifuerza en tres fragmentos: la Fuerza, representada por Garnon; la Sabiduría, representada por Zelda; y el Valor, representado por Link. Y el que controle las 3, controla el poder supremo. Pero, quién creó esos fragmentos exactamente?',
-            tags: ['Color', 'Favorito', 'Nombre'],
+            tags: ['Nombre', 'Color', 'Favorito'],
             favorite: false,
             timestamp: 0
           },
@@ -514,7 +514,7 @@
             icon: 'movies',
             title: 'Me comeré tu alma',
             media: 'ash.gif',
-            description: 'Aunque tiene un par de escenas especialmente brutas, es una película de muy bajo presupuesto pensada para reirse con ganas de las fuerzas del mal y de los muertos vivientes. Y la serie no está nada mal tampoco.',
+            description: 'Aunque tiene un par de escenas especialmente brutas, es una película de muy bajo presupuesto pensada para reirse con ganas de las fuerzas del mal y de los muertos vivientes. Y la serie no está nada mal tampoco.\n\nCómete esto!',
             tags: ['Libro'],
             favorite: false,
             timestamp: 0
@@ -524,13 +524,12 @@
             icon: 'place',
             title: 'Fin',
             media: 'victory.jpg',
-            description: 'Enhorabuena! Has llegado al final del todo. Te estarás preguntando si todo este esfuerzo ha merecido la pena, pero espero que al menos te hayas divertido resolviendo mi juego. Y que te guste mi regalo como premio por tu esfuerzo! Para el año que viene, tal vez te haga una expansión con otras 50 pruebas. Un beso, Vivi!',
-            tags: ['Llave', 'Los monstruos no existen'],
+            description: 'Enhorabuena! Has llegado al final del todo. Te estarás preguntando si todo este esfuerzo ha merecido la pena, pero espero que al menos te hayas divertido resolviendo mi juego. Y que te guste mi regalo como premio por tu esfuerzo! Para el año que viene, tal vez te haga una expansión con otras 50 pruebas.\n\nUn beso, Vivi!',
+            tags: ['Llave', 'Ornitorrinco'],
             favorite: false,
             timestamp: 0
           }
-        ],
-        password: ''
+        ]
       }
     },
     created () {
@@ -555,7 +554,6 @@
       },
       debug () {
         var index = this.quests.findIndex(quest => quest.password === this.password)
-        console.log(index)
         this.password = this.quests[index + 1].password
       }
     },

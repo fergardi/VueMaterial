@@ -1,15 +1,15 @@
 <template lang="pug">
   .app
-    md-whiteframe(md-elevation="3")
+    md-whiteframe(md-elevation="3", v-once)
       md-toolbar
         md-button.md-icon-button(v-on:click="toggle()")
           md-icon menu
         h2.md-title(style="flex: 1") Annyversary
         router-link.md-icon-button(tag="md-button", to="/help")
           md-icon help
-        router-link.md-icon-button(tag="md-button", to="/about")
+        router-link.md-icon-button(tag="md-button", to="/info")
           md-icon info
-    md-sidenav.md-left.md-fixed(ref="sidebar")
+    md-sidenav.md-left.md-fixed(ref="sidebar", v-once)
       md-toolbar
         md-list.md-transparent
           md-list-item.md-avatar-list.center(v-on:click="toggle()")
@@ -36,7 +36,7 @@
             md-icon.md-primary help
             span Ayuda
         md-list-item(v-on:click="toggle()")
-          router-link(to="/about")
+          router-link(to="/info")
             md-icon.md-primary info
             span Información
     .main      
@@ -88,6 +88,9 @@
   .md-avatar
     .md-image
       border-radius: 50%
+  .md-toolbar
+    h2.md-title
+      color: white
   @media screen and (min-width: 768px)
     .content
       margin: 0 25% !important

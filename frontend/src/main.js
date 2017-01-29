@@ -7,7 +7,7 @@ import moment from 'moment'
 
 import App from './App.vue'
 import Home from './views/Home.vue'
-import About from './views/About.vue'
+import Info from './views/Info.vue'
 import Achievement from './views/Achievement.vue'
 import Help from './views/Help.vue'
 import Quest from './views/Quest.vue'
@@ -22,7 +22,7 @@ var router = new VueRouter({
     { path: '/quest', component: Quest },
     { path: '/achievement', component: Achievement },
     { path: '/help', component: Help },
-    { path: '/about', component: About },
+    { path: '/info', component: Info },
     { path: '*', redirect: '/' }
   ]
 })
@@ -48,7 +48,7 @@ Vue.material.registerTheme({
       hue: 600
     }
   },
-  about: {
+  info: {
     primary: 'blue'
   },
   quest: {
@@ -63,6 +63,9 @@ Vue.filter('date', (timestamp) => {
 
 // localstorage
 Vue.use(VueLocalForage)
+
+// ripple
+Vue.material.inkRipple = false
 
 /* eslint-disable no-new */
 new Vue({
