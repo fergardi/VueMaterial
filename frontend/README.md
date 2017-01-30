@@ -11,9 +11,13 @@ Mononoke
 Totoro
 Ready Player One
 Age of Empires
+Assassins Creed
+Malcolm in the Middle
 Spaceball
 Heroes juego
 Heroes tv
+Tekken
+Codigo da Vinci
 Principe Bel Air
 Nombre del Viento
 1984
@@ -31,8 +35,10 @@ Simpsons
 Scott Pilgrim
 Willow
 Chihiro
+Shadow of the Colossus
 Mars Attacks
 Man Seeking Woman
+Fibonacci
 Lemmings
 Muppets
 Barrio Sesamo
