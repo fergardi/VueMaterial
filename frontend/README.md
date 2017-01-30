@@ -16,9 +16,15 @@ Heroes tv
 112263
 Cariño encogido a niños
 Solo en casa
-Leroy Jenkins
+Lerooy Jenkins
 Como conoci a vuestra madre
 Willheim
 Rick y Morty
 Wayward Pines
 Gravity Falls
+Nombre del viento
+Momia
+Simpsons
+Scott Pilgrim
+Willow
+Chihiro
