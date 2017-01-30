@@ -1,13 +1,10 @@
 <template lang="pug">
-  div
+  div(v-once)
     md-card(md-with-hover)
       md-card-media-cover(md-solid, v-for="(card, index) in cards")
         md-card-media(md-ratio="16:9")
-          img(v-bind:src="'img/' + card.media")
-          md-ink-ripple
+          md-image(v-bind:md-src="'img/' + card.media")
         md-card-area
-          router-link.md-primary.md-fab.md-fab-bottom-right.floating(tag="md-button", to="/quest", v-if="index >= cards.length -1")
-            md-icon play_arrow
           md-card-header
             .md-title {{ card.title }}
             .md-subhead {{ card.subtitle }}
@@ -63,7 +60,4 @@
 </script>
 
 <style lang="stylus" scoped>
-  .floating
-    position: absolute
-    top: -35px
 </style>
