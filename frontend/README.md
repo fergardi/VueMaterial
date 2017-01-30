@@ -41,3 +41,6 @@ Bioshock
 Padre de Familia
 Naruto
 Fullmetal Alchemist
+Konami Kode
+Game Boy
+SNES
