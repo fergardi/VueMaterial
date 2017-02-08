@@ -2,7 +2,7 @@
   div
     md-snackbar(ref="snackbar", md-duration="5000")
       span Correcto! Se ha guardado en tus Logros. A ver si resuelves el siguiente...
-      md-button.md-accent(v-on:click="close()")
+      md-button.md-accent(v-on:click.native="close()")
         md-icon done
     md-card(md-with-hover)
       md-card-header
@@ -12,7 +12,8 @@
           .md-title {{ active.title }}
           .md-subhead Acertijo {{ index }} de {{ quests.length }}
       md-card-media
-        md-image(v-bind:md-src="'img/quests/' + active.media", v-on:click="debug()")
+        md-image(v-bind:md-src="'img/quests/' + active.media", v-on:click.native="debug()")
+        md-ink-ripple
       md-card-content
         span(style="white-space: pre-line") {{ active.description }}
         p

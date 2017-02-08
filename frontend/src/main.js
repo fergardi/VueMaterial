@@ -64,18 +64,21 @@ Vue.filter('date', (timestamp) => {
 // localstorage
 Vue.use(VueLocalForage)
 
-// ripple
-Vue.material.inkRipple = false
-
-/* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  render: h => h(App),
-  router
+// scroll to top and close sidebar
+router.beforeEach((to, from, next) => {
+  Vue.nextTick(() => {
+    const content = document.querySelector('.scroll')
+    if (content) {
+      content.scrollTop = 0
+    }
+    Main.close()
+    next()
+  })
 })
 
-// scroll
-router.beforeEach(function (to, from, next) {
-  document.getElementById('scroll').scrollIntoView(true)
-  next()
+// main app
+let Main = Vue.component('app', App)
+Main = new Main({
+  el: '#app',
+  router
 })

@@ -9,24 +9,23 @@
           .md-subhead Lo que has conseguido hasta ahora
       md-card-media
         md-image(md-src="img/achievement.jpg")
-      md-card-content
-        span Aquí podrás ver todas las misiones que has ido completando durante la gymkana, con sus contraseñas y la fecha en la que fueron descubiertas:
+        md-ink-ripple
+      md-card-content.no-padding
+        span.flex.padding Aquí podrás ver todas las misiones que has ido completando durante la gymkana, con sus contraseñas y la fecha en la que fueron descubiertas:
         md-list.md-triple-line
+          md-divider
           md-list-item(v-if="!ordered.length")
-            md-avatar.md-large
-              md-icon.md-primary announcement
+            md-icon.md-size-2x.md-primary announcement
             .md-list-text-container
               strong Absolutamente NADA
               span.italic Empieza a resolver misiones!
           md-list-item(v-for="(achievement, index) in ordered")
-            md-avatar.md-large
-              // md-image(v-bind:md-src="'img/quests/' + achievement.media")
-              md-icon.md-primary {{ achievement.icon }}
+            md-icon.md-size-2x.md-primary {{ achievement.icon }}
             .md-list-text-container
               strong {{ achievement.title }}
               span {{ achievement.password }}
               i {{ achievement.timestamp | date }}
-            md-button.md-icon-button.md-list-action(v-on:click="fav(achievement)")
+            md-button.md-icon-button.md-list-action(v-on:click.native="fav(achievement)")
               md-icon(v-bind:class="{ 'md-primary' : achievement.favorite }") favorite
             md-divider(v-if="index < ordered.length - 1")
 </template>

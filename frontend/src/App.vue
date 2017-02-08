@@ -2,44 +2,40 @@
   .app
     md-whiteframe(md-elevation="3", v-once)
       md-toolbar
-        md-button.md-icon-button(v-on:click="toggle()")
+        md-button.md-icon-button(v-on:click.native="toggle()")
           md-icon menu
         h2.md-title(style="flex: 1") Annyversary
-        router-link.md-icon-button(tag="md-button", to="/help")
-          md-icon help
-        router-link.md-icon-button(tag="md-button", to="/info")
-          md-icon info
     md-sidenav.md-left.md-fixed(ref="sidebar", v-once)
-      md-toolbar
+      md-toolbar.md-account-header
         md-list.md-transparent
-          md-list-item.md-avatar-list.center(v-on:click="toggle()")
+          md-list-item.md-avatar-list.center(v-on:click.native="toggle()")
             md-avatar.md-large
               md-image(md-src="img/vivi.jpg")
             h2.md-title(style="flex: 1") Annyversary
             md-avatar.md-large
               md-image(md-src="img/fergardi.jpg")
       md-list
-        md-list-item(v-on:click="toggle()")
-          router-link(to="/home")
+        md-list-item
+          router-link(exact, to="/home")
             md-icon.md-primary home
             span Inicio
-        md-list-item(v-on:click="toggle()")
-          router-link(to="/quest")
+        md-list-item
+          router-link(exact, to="/quest")
             md-icon.md-primary announcement
             span Misiones
-        md-list-item(v-on:click="toggle()")
-          router-link(to="/achievement")
+        md-list-item
+          router-link(exact, to="/achievement")
             md-icon.md-primary star
             span Logros
-        md-list-item(v-on:click="toggle()")
-          router-link(to="/help")
+        md-list-item
+          router-link(exact, to="/help")
             md-icon.md-primary help
             span Ayuda
-        md-list-item(v-on:click="toggle()")
-          router-link(to="/info")
+        md-list-item
+          router-link(exact, to="/info")
             md-icon.md-primary info
             span Información
-    .main      
+    .main
       router-view#scroll.content.animated.fadeIn
 </template>
 
@@ -57,6 +53,9 @@
     methods: {
       toggle () {
         this.$refs.sidebar.toggle()
+      },
+      close () {
+        this.$refs.sidebar.close()
       }
     }
   }
@@ -85,12 +84,19 @@
     margin: 0 !important
   .md-chip
     margin-right: 5px
+  .md-toolbar.md-account-header .md-avatar-list .md-list-item-container
+    align-items: center;
   .md-avatar
     .md-image
       border-radius: 50%
-  .md-toolbar
-    h2.md-title
-      color: white
+  .router-link-active
+    background-color: rgba(153, 153, 153, 0.2);
+  .flex
+    display: flex
+  .no-padding
+    padding: 0 !important
+  .padding
+    padding: 16px
   @media screen and (min-width: 768px)
     .content
       margin: 0 25% !important
