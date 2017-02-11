@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    md-snackbar(ref="snackbar", md-duration="5000")
+    md-snackbar(ref="snackbar", md-duration="5000", v-once)
       span Correcto! Se ha guardado en tus Logros. A ver si resuelves el siguiente...
       md-button.md-accent(v-on:click.native="close()")
         md-icon done
@@ -235,7 +235,7 @@
             icon: 'movies',
             title: 'Luz! Fuego! Destrucción!',
             media: 'goku.gif',
-            description: 'El mundo puede ser una ruina! No lo podemos permitir! Esto sí que eran dibujos de los buenos, y no la mierda que ponen hoy en día a los chavales. Algún día tengo que volver a verlo entero otra vez. La de pifostio que se armó por intentar conseguir las 7 Bolas de Dragón',
+            description: 'El mundo puede ser una ruina! No lo podemos permitir! Esto sí que eran dibujos de los buenos, y no la mierda que ponen hoy en día a los chavales. Algún día tengo que volver a verlo entero otra vez. La de pifostio que se armó por intentar conseguir las 7 Bolas de Dragón.',
             tags: ['Nombre', 'Real'],
             favorite: false,
             timestamp: 0
@@ -245,7 +245,7 @@
             icon: 'chrome_reader_mode',
             title: 'Eres un mago, Harry',
             media: 'marauders.gif',
-            description: 'Siempre me pareció un poco absurdo que unos artefactos mágicos tan jodidamente poderosos y que tienden a ser usados para hacer el mal, como la Capa de Invisibilidad o el Mapa del Merodeador, acaben en las inexpedrtas manos de imberbes estudiantes de instituto.\n\nEso sí, en Gringots guardamos las monedas de oro, no sea que los gitamagos nos las roben.',
+            description: 'Siempre me pareció un poco absurdo que unos artefactos mágicos tan jodidamente poderosos y que tienden a ser usados para hacer el mal, como la Capa de Invisibilidad o el Mapa del Merodeador, acaben en las inexpertas manos de imberbes estudiantes de instituto.\n\nEso sí, en Gringots guardamos las monedas de oro, no sea que los gitamagos nos las roben.',
             tags: ['Muerto', 'Imposible', 'Mote'],
             favorite: false,
             timestamp: 0

@@ -1,11 +1,10 @@
 <template lang="pug">
   .app
-    md-whiteframe(md-elevation="3", v-once)
-      md-toolbar
-        md-button.md-icon-button(v-on:click.native="toggle()")
-          md-icon menu
-        h2.md-title(style="flex: 1") Annyversary
-    md-sidenav.md-left.md-fixed(ref="sidebar", v-once)
+    md-toolbar(v-once)
+      md-button.md-icon-button(v-on:click.native="toggle()")
+        md-icon menu
+      h2.md-title(style="flex: 1") Annyversary
+    md-sidenav.md-left.md-fixed(md-swipeable, ref="sidebar", v-once)
       md-toolbar.md-account-header
         md-list.md-transparent
           md-list-item.md-avatar-list.center(v-on:click.native="toggle()")
@@ -15,26 +14,12 @@
             md-avatar.md-large
               md-image(md-src="img/fergardi.jpg")
       md-list
-        md-list-item
-          router-link(exact, to="/home")
-            md-icon.md-primary home
-            span Inicio
-        md-list-item
-          router-link(exact, to="/quest")
-            md-icon.md-primary announcement
-            span Misiones
-        md-list-item
-          router-link(exact, to="/achievement")
-            md-icon.md-primary star
-            span Logros
-        md-list-item
-          router-link(exact, to="/help")
-            md-icon.md-primary help
-            span Ayuda
-        md-list-item
-          router-link(exact, to="/info")
-            md-icon.md-primary info
-            span Información
+        md-list-item(v-for="item in items")
+          router-link(exact, v-bind:to="item.url")
+            md-icon.md-primary {{ item.icon }}
+            span {{ item.title }}
+        md-list-item.bottom
+          small.signature &copy;fergardi2017
     .main
       router-view#scroll.content.animated.fadeIn
 </template>
@@ -42,6 +27,37 @@
 <script>
   import localforage from 'localforage'
   export default {
+    data () {
+      return {
+        items: [
+          {
+            url: '/home',
+            icon: 'home',
+            title: 'Inicio'
+          },
+          {
+            url: '/quest',
+            icon: 'extension',
+            title: 'Acertijos'
+          },
+          {
+            url: '/achievement',
+            icon: 'star',
+            title: 'Logros'
+          },
+          {
+            url: '/help',
+            icon: 'help',
+            title: 'Ayuda'
+          },
+          {
+            url: '/info',
+            icon: 'info',
+            title: 'Información'
+          }
+        ]
+      }
+    },
     created () {
       this.$storageConfig({
         driver: localforage.LOCALSTORAGE,
@@ -97,6 +113,9 @@
     padding: 0 !important
   .padding
     padding: 16px
+  .signature
+    width: 100%
+    text-align: center
   @media screen and (min-width: 768px)
     .content
       margin: 0 25% !important

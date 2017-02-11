@@ -1,10 +1,9 @@
 <template lang="pug">
   div(v-once)
     md-card(md-with-hover)
-      md-card-media-cover(md-solid, v-for="(card, index) in cards")
+      md-card-media-cover(md-solid, v-for="card in cards")
         md-card-media(md-ratio="16:9")
           md-image(v-bind:md-src="'img/' + card.media")
-          md-ink-ripple
         md-card-area
           md-card-header
             .md-title {{ card.title }}

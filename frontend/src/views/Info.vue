@@ -14,39 +14,48 @@
         span.flex.padding Para nuestro aniversario quería hacer algo especial para tí, y, como esto del desarrollo es lo que mejor se me da, me dije: ¿Por qué no hacer una gymkana online con cosas frikis que nos gusten a los dos, como juegos, pelis, series, comics o libros? Espero que te diviertas jugándolo tanto como yo haciéndolo. Por si tienes curiosidad, lo he creado usando:
         md-list.md-double-line
           md-divider
-          md-list-item
-            md-icon.md-size-2x.md-primary cloud
+          md-list-item(v-for="item in items")
+            md-avatar.md-large
+              md-icon.md-primary {{ item.icon }}
             .md-list-text-container
-              span NodeJS
-              span https://nodejs.org/es/
+              span {{ item.title }}
+              span {{ item.subtitle }}
             md-divider
-          md-list-item
-            md-icon.md-size-2x.md-primary build
-            .md-list-text-container
-              span VueJS
-              span https://vuejs.org/
-            md-divider
-          md-list-item
-            md-icon.md-size-2x.md-primary brush
-            .md-list-text-container
-              span Google Material Design
-              span https://material.io/guidelines/
-            md-divider
-          md-list-item
-            md-icon.md-size-2x.md-primary dashboard
-            .md-list-text-container
-              span Vue Material
-              span https://vuematerial.github.io/
-            md-divider
-          md-list-item
-            md-icon.md-size-2x.md-primary android
-            .md-list-text-container
-              span Apache Cordova
-              span https://cordova.apache.org/
 </template>
 
 <script>
   export default {
+    data () {
+      return {
+        items: [
+          {
+            icon: 'settings',
+            title: 'NodeJS',
+            subtitle: 'https://nodejs.org/'
+          },
+          {
+            icon: 'code',
+            title: 'VueJS',
+            subtitle: 'https://vuejs.org/'
+          },
+          {
+            icon: 'dashboard',
+            title: 'Vue Material',
+            subtitle: 'https://vuematerial.github.io/'
+          },
+          {
+            icon: 'brush',
+            title: 'Material Design',
+            subtitle: 'https://material.io/guidelines/'
+          },
+          {
+            icon: 'android',
+            title: 'Apache Cordova',
+            subtitle: 'https://cordova.apache.org/'
+          }
+        ]
+      }
+    },
     created () {
       this.$material.setCurrentTheme('info')
     }

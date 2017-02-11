@@ -14,44 +14,67 @@
         span.flex.padding Eres una chica lista, pero probablemente necesites algo de ayuda en las misiones más complicadas o en las que yo creo que sabes de qué van pero en realidad no tienes ni la remota idea. Debes saber que ésta app es una pista en sí misma, es decir, cada misión puede que tenga pistas ocultas (en los iconos de ayuda, en los tags, en las imágenes, etc).
         md-list.md-double-line
           md-divider
-          md-list-item
-            md-icon.md-size-2x.md-primary extension
+          md-list-item(v-for="(item, index) in items", v-bind:class="{ 'md-disabled': last(index) }")
+            md-avatar.md-large
+              md-icon.md-primary {{ item.icon }}
             .md-list-text-container
-              span Puzzle
-              span Acertijos, enigmas, adivinanzas, etc
+              span {{ item.title }}
+              span {{ item.subtitle }}
             md-divider
-          md-list-item
-            md-icon.md-size-2x.md-primary movies
-            .md-list-text-container
-              span Video
-              span Cine, películas, series, dibujos, etc
-            md-divider
-          md-list-item
-            md-icon.md-size-2x.md-primary games
-            .md-list-text-container
-              span Juego
-              span Videojuegos, juegos de mesa, cartas, etc
-            md-divider
-          md-list-item
-            md-icon.md-size-2x.md-primary chrome_reader_mode
-            .md-list-text-container
-              span Texto
-              span Libros, comics, carteles, pósters, etc
-            md-divider
-          md-list-item
-            md-icon.md-size-2x.md-primary place
-            .md-list-text-container
-              span Sitio
-              span Mapas, viajes, lugares, etc
 </template>
 
 <script>
   export default {
+    data () {
+      return {
+        items: [
+          {
+            icon: 'extension',
+            title: 'Puzzle',
+            subtitle: 'Acertijos, enigmas, adivinanzas, etc'
+          },
+          {
+            icon: 'movies',
+            title: 'Video',
+            subtitle: 'Cine, películas, series, dibujos, etc'
+          },
+          {
+            icon: 'games',
+            title: 'Juego',
+            subtitle: 'Videojuegos, juegos de mesa, cartas, etc'
+          },
+          {
+            icon: 'chrome_reader_mode',
+            title: 'Texto',
+            subtitle: 'Libros, comics, carteles, pósters, etc'
+          },
+          {
+            icon: 'place',
+            title: 'Sitio',
+            subtitle: 'Mapas, viajes, lugares, etc'
+          },
+          {
+            icon: 'audiotrack',
+            title: 'Audio (2018)',
+            subtitle: 'Música, sonidos, ruidos, etc'
+          }
+        ]
+      }
+    },
     created () {
       this.$material.setCurrentTheme('help')
+    },
+    methods: {
+      last (index) {
+        return index === this.items.length - 1
+      }
     }
   }
 </script>
 
 <style lang="stylus" scoped>
+  .md-disabled
+    background-color: lightgray !important
+    .md-icon
+      color: grey !important
 </style>

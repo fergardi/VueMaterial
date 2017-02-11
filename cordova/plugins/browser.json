@@ -12,6 +12,9 @@
         },
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "fergardi.cordova.annyversary"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "fergardi.cordova.annyversary"
         }
     },
     "dependent_plugins": {}
