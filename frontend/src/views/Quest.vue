@@ -4,7 +4,7 @@
       span Correcto! Se ha guardado en tus Logros. A ver si resuelves el siguiente...
       md-button.md-accent(v-on:click.native="close()")
         md-icon done
-    md-card(md-with-hover)
+    md-card
       md-card-header
         md-avatar.md-large
           md-icon.md-primary {{ active.icon }}

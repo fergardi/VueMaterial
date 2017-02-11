@@ -1,6 +1,6 @@
 <template lang="pug">
   div(v-once)
-    md-card(md-with-hover)
+    md-card
       md-card-media-cover(md-solid, v-for="card in cards")
         md-card-media(md-ratio="16:9")
           md-image(v-bind:md-src="'img/' + card.media")

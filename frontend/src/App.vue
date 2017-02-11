@@ -8,11 +8,16 @@
       md-toolbar.md-account-header
         md-list.md-transparent
           md-list-item.md-avatar-list.center(v-on:click.native="toggle()")
+            .flex
             md-avatar.md-large
               md-image(md-src="img/vivi.jpg")
-            h2.md-title(style="flex: 1") Annyversary
             md-avatar.md-large
               md-image(md-src="img/fergardi.jpg")
+            .flex
+          md-list-item
+            .flex
+            h2.md-title Annyversary
+            .flex
       md-list
         md-list-item(v-for="item in items")
           router-link(exact, v-bind:to="item.url")
@@ -32,8 +37,8 @@
         items: [
           {
             url: '/home',
-            icon: 'home',
-            title: 'Inicio'
+            icon: 'cake',
+            title: 'Bienvenida'
           },
           {
             url: '/quest',
@@ -52,7 +57,7 @@
           },
           {
             url: '/info',
-            icon: 'info',
+            icon: 'school',
             title: 'Información'
           }
         ]
@@ -109,6 +114,7 @@
     background-color: rgba(153, 153, 153, 0.2);
   .flex
     display: flex
+    flex: 1
   .no-padding
     padding: 0 !important
   .padding

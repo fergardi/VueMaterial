@@ -3,7 +3,7 @@
     md-card
       md-card-header
         md-avatar.md-large
-          md-icon.md-primary info
+          md-icon.md-primary school
         md-card-header-text
           .md-title Información
           .md-subhead Datos técnicos
