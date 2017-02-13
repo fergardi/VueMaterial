@@ -1,5 +1,5 @@
 <template lang="pug">
-  div(v-once)
+  div
     md-card
       md-card-header
         md-avatar.md-large
@@ -9,6 +9,7 @@
           .md-subhead Lo que has conseguido hasta ahora
       md-card-media
         md-image(md-src="img/achievement.jpg")
+        md-ink-ripple
       md-card-content.no-padding
         .padding
           p Aquí podrás ver todas las misiones que has ido completando durante la gymkana, con sus contraseñas y la fecha en la que fueron descubiertas:

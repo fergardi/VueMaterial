@@ -10,9 +10,9 @@
           md-list-item.md-avatar-list.center(v-on:click.native="toggle()")
             .flex
             md-avatar.md-large
-              md-image(md-src="img/vivi.jpg")
-            md-avatar.md-large
               md-image(md-src="img/fergardi.jpg")
+            md-avatar.md-large
+              md-image(md-src="img/vivi.jpg")
             .flex
           md-list-item
             .flex

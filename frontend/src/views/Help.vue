@@ -19,7 +19,7 @@
           p Estos son los temas relacionados. Usa la Wikipedia. Suerte y que te diviertas!
         md-list.md-double-line
           md-divider
-          md-list-item(v-for="(item, index) in items", v-bind:class="{ 'md-disabled': last(index) }")
+          md-list-item(v-for="item in items")
             md-avatar.md-large
               md-icon.md-primary {{ item.icon }}
             .md-list-text-container
@@ -57,11 +57,6 @@
             icon: 'place',
             title: 'Sitio',
             subtitle: 'Mapas, viajes, lugares, etc'
-          },
-          {
-            icon: 'audiotrack',
-            title: 'Audio (2018)',
-            subtitle: 'Música, sonidos, ruidos, etc'
           }
         ]
       }
@@ -78,8 +73,4 @@
 </script>
 
 <style lang="stylus" scoped>
-  .md-disabled
-    background-color: lightgray !important
-    .md-icon
-      color: grey !important
 </style>

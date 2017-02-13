@@ -1,5 +1,5 @@
 <template lang="pug">
-  div(v-once)
+  div
     md-snackbar(ref="snackbar", md-duration="5000", v-once)
       span Correcto! Se ha guardado en tus Logros. A ver si resuelves el siguiente...
       md-button.md-accent(v-on:click.native="close()")
@@ -11,12 +11,16 @@
         md-card-header-text
           .md-title {{ active.title }}
           .md-subhead Acertijo {{ index }} de {{ quests.length }}
+        md-switch.md-primary(v-model="help") Pista
       md-card-media
         md-image(v-bind:md-src="'img/quests/' + active.media", v-on:click.native="debug()")
         md-ink-ripple
       md-card-content
         p.description {{ active.description }}
-        md-chip(v-for="tag in active.tags") {{ tag }}
+        p
+          md-chip.md-primary(v-for="tag in active.tags") {{ tag }}
+          template(v-for="clue in active.clues")
+            md-chip.md-warn(v-show="help") {{ clue }}
         md-input-container(md-has-password)
           label Código secreto
           md-input(type="password", required, v-model="password")
@@ -27,15 +31,17 @@
   export default {
     data () {
       return {
+        help: false,
         password: '',
-        quests: [// TODO: sacarlo a un js
+        quests: [
           {
             password: '',
             icon: 'extension',
             title: 'Empieza el juego',
             media: 'avatar.jpg',
             description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
-            tags: ['Nombre'],
+            tags: ['Nombre', 'Mujer'],
+            clues: ['Lol'],
             favorite: false,
             timestamp: 0
           },
@@ -105,7 +111,7 @@
             title: 'Imaginación al poder',
             media: 'neverending.gif',
             description: 'Uno de los libros que con más cariño recuerdo de mi infancia. De cuando las novelas río de fantasía medieval eran demasiado complicados para un niño, que prefería entretenerse con amigables dragones y princesas en altos castillos de mundos imaginarios.',
-            tags: ['Amuleto', 'Cura', 'Enfermedad'],
+            tags: ['Amuleto', 'Enfermedad'],
             favorite: false,
             timestamp: 0
           },
@@ -293,7 +299,7 @@
             password: 'ShangTsung',
             icon: 'place',
             title: 'Excursión',
-            media: 'key.jpg',
+            media: '25.jpg',
             description: 'Toca coger el coche y darse un paseo. Creías que lo de viajar y hablar con NPCs era broma, verdad? Pues ya verás cuando tengas que luchar contra monstruos...\n\nOrnitorrincos asesinos!',
             tags: ['Mapa', 'Coche'],
             favorite: false,
@@ -335,7 +341,7 @@
             title: 'Cuál es tu nombre?',
             media: 'witness.gif',
             description: 'Una de mis sagas favoritas. El rollo postapocalíptico me mola un montón. Y es muy curioso que sea en Australia. Aunque la obra maestra es la cuarta, el resto tampoco están mal. En fin, lo que nos interesa aquí es algo muy obvio pero que apenas sale mencionado en las películas.\n\nLa verdad es que no sabía muy bien qué preguntar...',
-            tags: ['Apellido'],
+            tags: ['Australiano', 'Apellido'],
             favorite: false,
             timestamp: 0
           },
@@ -435,7 +441,7 @@
             title: 'Uno nuevo en la familia',
             media: 'starwars.gif',
             description: 'Éramos pocos y parió la abuela. Estos de Disney si que saben hacer merchandising. Le dan a la rueda y ala, un nuevo droide en cada película. Luego peluches, pósters, figuras, camisetas...\n\nY yo encantado de la vida! Cuál será el siguiente?',
-            tags: ['Nombre'],
+            tags: ['Nombre', 'Robot'],
             favorite: false,
             timestamp: 0
           },
@@ -514,47 +520,27 @@
             icon: 'movies',
             title: 'Me comeré tu alma',
             media: 'ash.gif',
-            description: 'Aunque tiene un par de escenas especialmente brutas, es una película de muy bajo presupuesto pensada para reirse con ganas de las fuerzas del mal y de los muertos vivientes. Y la serie no está nada mal tampoco.\n\nCómete esto!',
+            description: 'Aunque tiene un par de escenas especialmente brutas, es una película de muy bajo presupuesto pensada para reirse con ganas de las fuerzas del mal y de los muertos vivientes. Y la serie no está nada mal tampoco.',
             tags: ['Libro', 'Muertos'],
             favorite: false,
             timestamp: 0
           },
           {
-            password: '',
-            icon: 'extension',
-            title: 'Empieza el juego',
-            media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
-            tags: ['Nombre'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: '',
-            icon: 'extension',
+            password: 'Necronomicon',
+            icon: 'movies',
             title: 'Men In Black',
-            media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            media: 'mib.gif',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
-            title: 'Princesa Prometida',
-            media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
-            tags: ['Nombre'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: '',
-            icon: 'extension',
+            icon: 'movies',
             title: 'Mr Robot',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
@@ -564,347 +550,297 @@
             icon: 'extension',
             title: 'Witcher',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
-            title: 'Iron Man',
-            media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
-            tags: ['Nombre'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: '',
-            icon: 'extension',
+            icon: 'movies',
             title: 'Spiderman',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'movies',
             title: 'Breaking Bad',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
-            title: 'Mononoke',
-            media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
-            tags: ['Nombre'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: '',
-            icon: 'extension',
+            icon: 'movies',
             title: 'Totoro',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'chrome_reader_mode',
             title: 'Ready Player One',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'games',
             title: 'Age of Empires',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'games',
             title: 'Assassins Creed',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'movies',
             title: 'Malcolm in the Middle',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'movies',
             title: 'Spaceball',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'games',
             title: 'Heroes juego',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'movies',
             title: 'Heroes tv',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'games',
             title: 'Tekken',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'chrome_reader_mode',
             title: 'Codigo da Vinci',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'movies',
             title: 'Principe Bel Air',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'chrome_reader_mode',
             title: 'Nombre del Viento',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'chrome_reader_mode',
             title: '1984',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
-            title: '112263',
-            media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
-            tags: ['Nombre'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: '',
-            icon: 'extension',
+            icon: 'chrome_reader_mode',
             title: 'Cariño encogido a niños',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'chrome_reader_mode',
             title: 'Solo en casa',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'games',
             title: 'Lerooy Jenkins',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'movies',
             title: 'Como conoci a vuestra madre',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
-            title: 'Willheim',
-            media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
-            tags: ['Nombre'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: '',
-            icon: 'extension',
+            icon: 'movies',
             title: 'Rick y Morty',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'movies',
             title: 'Wayward Pines',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'movies',
             title: 'Gravity Falls',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'movies',
             title: 'Momia',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'movies',
             title: 'Simpsons',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'movies',
             title: 'Scott Pilgrim',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'movies',
             title: 'Willow',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
-            title: 'Chihiro',
-            media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
-            tags: ['Nombre'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: '',
-            icon: 'extension',
+            icon: 'games',
             title: 'Shadow of the Colossus',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'movies',
             title: 'Mars Attacks',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'movies',
             title: 'Man Seeking Woman',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
@@ -914,117 +850,107 @@
             icon: 'extension',
             title: 'Fibonacci',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'games',
             title: 'Lemmings',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'movies',
             title: 'Naruto',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'movies',
             title: 'Muppets',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
-            title: 'Barrio Sesamo',
+            icon: 'games',
+            title: 'Worms',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
-            title: 'Bioshock',
-            media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
-            tags: ['Nombre'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: '',
-            icon: 'extension',
+            icon: 'movies',
             title: 'Padre de Familia',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
-            title: 'Naruto',
-            media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
-            tags: ['Nombre'],
-            favorite: false,
-            timestamp: 0
-          },
-          {
-            password: '',
-            icon: 'extension',
+            icon: 'movies',
             title: 'Fullmetal Alchemist',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'games',
             title: 'Konami Kode',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
-            title: 'Game Boy',
-            media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            icon: 'place',
+            title: 'SNES',
+            media: '25.jpg',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             imestamp: 0
           },
           {
             password: '',
-            icon: 'extension',
+            icon: 'place',
             title: 'SNES',
-            media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            media: '50.jpg',
+            description: '',
+            tags: ['Nombre'],
+            favorite: false,
+            imestamp: 0
+          },
+          {
+            password: '',
+            icon: 'place',
+            title: 'SNES',
+            media: '75.jpg',
+            description: '',
             tags: ['Nombre'],
             favorite: false,
             imestamp: 0
@@ -1033,7 +959,7 @@
             password: 'Necronomicon',
             icon: 'place',
             title: 'Fin',
-            media: 'victory.jpg',
+            media: '100.jpg',
             description: 'Enhorabuena! Has llegado al final del todo. Te estarás preguntando si todo este esfuerzo ha merecido la pena, pero espero que al menos te hayas divertido. Y que te guste mi regalo!',
             tags: ['Llave', 'Ornitorrinco'],
             favorite: false,
@@ -1079,7 +1005,7 @@
               this.open()
             }
           })
-          document.getElementById('scroll').scrollIntoView(true)
+          if (document.getElementById('scroll')) document.getElementById('scroll').scrollIntoView(true)
           return found
         } else {
           return this.quests[0]
@@ -1095,7 +1021,10 @@
 <style lang="stylus" scoped>
   .description
     white-space: pre-line
-  .clue
+  .md-chip.md-primary
     background-color: #673ab7
+    color: white
+  .md-chip.md-warn
+    background-color: #e53935
     color: white
 </style>
