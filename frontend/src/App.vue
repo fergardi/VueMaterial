@@ -23,8 +23,7 @@
           router-link(exact, v-bind:to="item.url")
             md-icon.md-primary {{ item.icon }}
             span {{ item.title }}
-        md-list-item.bottom
-          small.signature &copy;fergardi2017
+      small.flex.center.signature &copy;fergardi2017
     .main
       router-view#scroll.content.animated.fadeIn
 </template>
@@ -119,9 +118,14 @@
     padding: 0 !important
   .padding
     padding: 16px
+  .center
+    align-items: center
+    justify-content: center
   .signature
     width: 100%
-    text-align: center
+    position: absolute
+    bottom: 0
+    margin-bottom: 1em
   @media screen and (min-width: 768px)
     .content
       margin: 0 25% !important

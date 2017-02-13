@@ -9,7 +9,7 @@
     "dev": "npm-run-all --parallel watchify serve",
     "test": "karma start karma.config.js",
     "build": "cross-env NODE_ENV=production browserify -g envify src/main.js | uglifyjs -c warnings=false -m > dist/build.js",
-    "cordova": "cross-env NODE_ENV=production browserify -g envify src/main.js | uglifyjs -c warnings=false -m > ../cordova/www/js/build.js && cp -R img/ ../cordova/www/img/ && cp -R fonts/ ../cordova/www/fonts/ && cp -R css/ ../cordova/www/css/ && cp node_modules/vue-material/dist/vue-material.css ../cordova/www/css/vue-material.css"
+    "cordova": "cross-env NODE_ENV=production browserify -g envify src/main.js | uglifyjs -c warnings=false -m > ../cordova/www/js/build.js && cp -R img/ ../cordova/www/ && cp -R fonts/ ../cordova/www/ && cp -R css/ ../cordova/www/ && cp node_modules/vue-material/dist/vue-material.css ../cordova/www/css/vue-material.css"
   },
   "dependencies": {
     "moment": "^2.17.1",
