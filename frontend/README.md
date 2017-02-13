@@ -10,21 +10,21 @@ Skyrim
 Einstein
 Saw
 Pokemon
-Principito
-Cartas contra la humanidad
 World of Warcraft
 Stranger things
 El señor de los anillos
 Super mario
 Sherlock
+2001
 Crash bandicoot
 Bola de dragon
+WallE
 Harry potter
 Walking dead
 Pacman
 Viaje 1/4
 Terminator
-Mortal kombat
+Coche fantastico
 Alien
 Resident evil
 Big bang theory
@@ -39,7 +39,6 @@ Final fantasy
 Juego de tronos
 Matrix
 Star wars
-Westworld
 Autoestopista galactico
 Blade runner
 Fraggle rock
@@ -51,35 +50,35 @@ MIB
 Viaje 2/4
 Mr robot
 The witcher
+Westworld
 Spiderman
 Breaking bad
-Totoro
 Ready player one
 Age of empires
 Assassins creed
-Malcolm
 Spaceball
 Heroes of might and magic
 Heroes
 Tekken
-Codigo da vinci
-Principe bel air
 Nombre del viento
 1984
 Cariño encogido a los niños
 Solo en casa
-Leroy jenkins
 Como conoci a vuestra madre
 Rick y morty
+12 monos
 Wayward pines
-Viaje 3/4
 Gravity falls
 La momia
+Independence day
 Simpsons
+Viaje 3/4
 Starship troopers
+Community
 Scott pilgrim
-Willom
+Firefly
 Sombra del coloso
+Star trek
 Mars attacks
 Mago de oz
 Man seeking woman
@@ -87,6 +86,7 @@ Fibonacci
 Lemmings
 Naruto
 Muppets
+Mortal kombat
 Worms
 Padre de familia
 Fullmetal alchemist
