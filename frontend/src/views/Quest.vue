@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  div(v-once)
     md-snackbar(ref="snackbar", md-duration="5000", v-once)
       span Correcto! Se ha guardado en tus Logros. A ver si resuelves el siguiente...
       md-button.md-accent(v-on:click.native="close()")
@@ -11,6 +11,7 @@
         md-card-header-text
           .md-title {{ active.title }}
           .md-subhead Acertijo {{ index }} de {{ quests.length }}
+        md-switch.md-primary(v-model="clue") Pista
       md-card-media
         md-image(v-bind:md-src="'img/quests/' + active.media", v-on:click.native="debug()")
         md-ink-ripple
@@ -18,6 +19,7 @@
         span(style="white-space: pre-line") {{ active.description }}
         p
           md-chip(v-for="tag in active.tags") {{ tag }}
+          md-chip.clue(v-for="clue in active.clues") {{ clue }}
         md-input-container(md-has-password)
           label Código secreto
           md-input(type="password", required, v-model="password")
@@ -28,6 +30,7 @@
   export default {
     data () {
       return {
+        clue: false,
         password: '',
         quests: [
           {
@@ -36,7 +39,8 @@
             title: 'Empieza el juego',
             media: 'avatar.jpg',
             description: 'Bienvenida a tu propia gymkana de aniversario portátil! Durante 50 pruebas, resolverás pequeños acertijos sobre temas de la cultura friki que tanto nos gusta a los dos para encontrar el regalo que he escondido al final.\n\nHay de todo: libros, películas, series, dibujos animados, videojuegos, juegos de mesa... Para avanzar debes encontrar la contraseña que desbloquea la siguiente prueba.\n\nLos códigos siempre son de una palabra, compuesta por letras y/o números. En algunos raros casos, como nombres propios de 2 palabras, la contraseña será del formato PrimeraSegunda, nunca con espacios. Elimina los signos de puntuación, pero respeta las mayúsculas. Usa la Wikipedia.\n\nSuerte y que te diviertas!',
-            tags: ['Nombre', 'Mujer'],
+            tags: ['Nombre'],
+            clues: ['Mujer'],
             favorite: false,
             timestamp: 0
           },
@@ -86,7 +90,7 @@
             title: 'Desierto de Nevada',
             media: 'halflife.gif',
             description: 'Allí transcurre este grandísimo juego. Supongo que te sonará. Lo que nos interesa aquí no es el juego como tal, sino la ubicación de las instalaciones del mismo. Te acuerdas?',
-            tags: ['Nombre', 'Clave', 'Complejo'],
+            tags: ['Nombre', 'Clave'],
             favorite: false,
             timestamp: 0
           },
@@ -95,7 +99,7 @@
             icon: 'movies',
             title: 'Ciencia vs Fe',
             media: 'lost.gif',
-            description: 'Otra grandísima serie, probablemente la primera que vi como una "serie" de capítulos en los que el orden importaba y mucho. De cuando apenas tenía suficiente banda ancha de internet en casa para poder verlo en streaming, pero eso no me impedía pausar la carga y poder ver capítulos hasta altísimas horas de la madrugada.\n\nComo haces tu, vamos...',
+            description: 'Otra grandísima serie, probablemente la primera que vi como una "serie" de capítulos en los que el orden importaba y mucho. De cuando apenas tenía suficiente banda ancha de internet en casa para poder verlo en streaming, pero eso no me impedía pausar la carga y poder ver capítulos hasta altísimas horas de la madrugada.',
             tags: ['Spoiler', 'Números'],
             favorite: false,
             timestamp: 0
@@ -315,7 +319,7 @@
             icon: 'games',
             title: 'Resident Evil',
             media: 'resident.gif',
-            description: 'El mejor juego de zombies que hay. Tenía acción, sustos, acertijos, puzzles y una historia bastante buena. Hoy en día los píxeles dan asco, pero de aquella era un acojone constante, sobre todo cuando llevabas jugando unas horas y no encontrabas una puta cinta para grabar la partida en la máquina de escribir.',
+            description: 'El mejor juego de zombies que hay. Tenía acción, sustos, acertijos, puzzles y una historia bastante buena. Hoy en día los píxeles dan asco, pero de aquella era un acojone constante, sobre todo cuando llevabas jugando unas horas y no encontrabas una puta cinta para grabar la partida en la máquina de escribir. Las pelis son una basura.',
             tags: ['Boss', 'Final'],
             favorite: false,
             timestamp: 0
@@ -466,7 +470,7 @@
             title: 'Es hora de morir',
             media: 'runner.gif',
             description: '"Todos esos momentos se perderán en el tiempo como lágrimas en la lluvia".\n\nGrandísima frase.',
-            tags: ['Modelo', 'Nomenclatura'],
+            tags: ['Modelo'],
             favorite: false,
             timestamp: 0
           },
@@ -476,7 +480,7 @@
             title: 'Tus problemas déjalos',
             media: 'fraggle.gif',
             description: 'Ven a disfrutar, ven a Fraggle Rock! Junto con los Teleñecos y Barrio Sésamo, este show era de lo mejor para los niños pequeños. Aunque creo recordar que tu no lo veías, así que igual es difícil.',
-            tags: ['Real', 'Animal', 'Nombre'],
+            tags: ['Animal', 'Nombre'],
             favorite: false,
             timestamp: 0
           },
@@ -584,4 +588,6 @@
 </script>
 
 <style lang="stylus" scoped>
+  .clue
+    background-color: red
 </style>

@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  div(v-once)
     md-card
       md-card-header
         md-avatar.md-large
@@ -19,7 +19,7 @@
             .md-list-text-container
               strong Absolutamente NADA
               span.italic Empieza a resolver acertijos!
-              i YA
+              i AHORA
           md-list-item(v-else, v-for="achievement in ordered")
             md-avatar.md-large
               md-icon.md-primary {{ achievement.icon }}
