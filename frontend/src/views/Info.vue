@@ -10,8 +10,10 @@
       md-card-media
         md-image(md-src="img/info.jpg")
         md-ink-ripple
-      md-card-content.no-padding 
-        span.flex.padding Para nuestro aniversario quería hacer algo especial para tí, y, como esto del desarrollo es lo que mejor se me da, me dije: ¿Por qué no hacer una gymkana online con cosas frikis que nos gusten a los dos, como juegos, pelis, series, comics o libros? Espero que te diviertas jugándolo tanto como yo haciéndolo. Por si tienes curiosidad, lo he creado usando:
+      md-card-content.no-padding
+        .padding
+          p Para nuestro aniversario quería hacer algo especial para tí, y, como esto del desarrollo es lo que mejor se me da, me dije ¿por qué no hacer una gymkana online con cosas frikis que nos gustan a los dos, como juegos, pelis, series, comics o libros? Espero que te diviertas jugándolo tanto como yo haciéndolo.
+          p Por si tienes curiosidad, lo he creado usando:
         md-list.md-double-line
           md-divider
           md-list-item(v-for="item in items")

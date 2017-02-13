@@ -44,6 +44,7 @@
 * Man Seeking Woman
 * Fibonacci
 * Lemmings
+* Naruto
 * Muppets
 * Barrio Sesamo
 * Superman

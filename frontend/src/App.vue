@@ -21,7 +21,8 @@
       md-list
         md-list-item(v-for="item in items")
           router-link(exact, v-bind:to="item.url")
-            md-icon.md-primary {{ item.icon }}
+            md-avatar
+              md-icon.md-primary {{ item.icon }}
             span {{ item.title }}
       small.flex.center.signature &copy;fergardi2017
     .main

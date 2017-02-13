@@ -68,10 +68,7 @@ Vue.use(VueLocalForage)
 // scroll to top and close sidebar
 router.beforeEach((to, from, next) => {
   Vue.nextTick(() => {
-    const content = document.querySelector('.scroll')
-    if (content) {
-      content.scrollTop = 0
-    }
+    if (document.getElementById('scroll')) document.getElementById('scroll').scrollIntoView(true)
     Main.close()
     next()
   })
