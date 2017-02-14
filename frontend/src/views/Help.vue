@@ -27,14 +27,13 @@
               span {{ item.title }}
               span {{ item.subtitle }}
             md-divider
-        .padding
-          chart
+      md-card-media
+        md-image(md-src="img/chart.jpg")
+        md-ink-ripple
 </template>
 
 <script>
-  import Chart from '../components/Chart.js'
   export default {
-    components: { Chart },
     data () {
       return {
         items: [
