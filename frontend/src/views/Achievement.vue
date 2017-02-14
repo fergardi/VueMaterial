@@ -12,7 +12,7 @@
         md-ink-ripple
       md-card-content.no-padding
         .padding
-          p Aquí podrás ver todas las misiones que has ido completando durante la gymkana, con sus contraseñas y la fecha en la que fueron descubiertas:
+          span Aquí podrás ver todas las misiones que has ido completando durante la gymkana, con sus contraseñas y la fecha en la que fueron descubiertas:
         md-list.md-triple-line
           md-divider
           md-list-item(v-if="!ordered.length")
@@ -62,4 +62,6 @@
 </script>
 
 <style lang="stylus" scoped>
+  span
+    display block
 </style>

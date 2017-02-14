@@ -11,18 +11,18 @@
         md-card-header-text
           .md-title {{ active.title }}
           .md-subhead Acertijo {{ index }} de {{ quests.length }}
-        md-switch.md-primary(v-model="help") Pista
+        md-switch.md-warn(v-model="help") Pista
       md-card-media
         md-image(v-bind:md-src="'img/quests/' + active.media", v-on:click.native="debug()")
         md-ink-ripple
       md-card-content
-        p.description {{ active.description }}
+        span {{ active.description }}
         p
           md-chip.md-primary(v-for="tag in active.tags") {{ tag }}
           template(v-for="clue in active.clues")
-            md-chip.md-warn(v-show="help") {{ clue }}
+            md-chip.md-warn.animated.fadeIn(v-show="help") {{ clue }}
         md-input-container(md-has-password)
-          label Código secreto
+          label Código
           md-input(type="password", required, v-model="password")
 </template>
 
@@ -39,9 +39,9 @@
             icon: 'extension',
             title: 'Empieza el juego',
             media: 'avatar.jpg',
-            description: 'Bienvenida! Aparte de la gymkana, también he hecho tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
+            description: 'Bienvenida! Aparte de la gymkana, también he creado tu propio avatar en 8bits! Antes de que digas que os pareceis como un huevo a una castaña, esto es lo mejor que he podido conseguir con lo que había...',
             tags: ['Nombre', 'Mujer'],
-            clues: ['Lol'],
+            clues: ['Tú'],
             favorite: false,
             timestamp: 0
           },
@@ -50,8 +50,9 @@
             icon: 'movies',
             title: 'Marty, tenemos que volver',
             media: 'delorean.gif',
-            description: 'Para resolver algunos acertijos tendrás que viajar usando tu flamante coche nuevo, que tiene algo que ver con este acertijo. También era híbrido, y sólo consumía 1.21GW por viaje!\n\nCreo que he sido un poco enrevesado, pero eres una chica lista y seguro que lo sacas tarde o temprano.',
+            description: 'Para resolver algunos acertijos tendrás que viajar usando tu flamante coche nuevo, que tiene algo que ver con este acertijo. También era híbrido, y sólo consumía 1.21GW por viaje! Creo que he sido un poco enrevesado, pero eres una chica lista y seguro que lo sacas tarde o temprano.',
             tags: ['California', 'Virginia'],
+            clues: ['Matrícula'],
             favorite: false,
             timestamp: 0
           },
@@ -62,6 +63,7 @@
             media: 'monkey.gif',
             description: 'Este es sin duda uno de los mejores juegos a los que he jugado, y espero que tu también si quieres superar la siguiente prueba. Concretamente la escena de las jarras. Consistía en llevar un líquido de una punta de la isla a la otra, mientras las jarras contenedoras se iban deshaciendo por el camino.',
             tags: ['Piratas', 'Ingredientes'],
+            clues: ['Bebida'],
             favorite: false,
             timestamp: 0
           },
@@ -70,8 +72,9 @@
             icon: 'chrome_reader_mode',
             title: 'Acertijos en la oscuridad',
             media: 'hobbit.gif',
-            description: 'El mejor capítulo del libro, el duelo a muerte de dos aficionados a los acertijos. Aunque uno de ellos hizo trampa, el otro también, así que técnicamente fue un empate de tramposos.\n\nPero yo tampoco habría jugado limpio con Gollum, la verdad.',
+            description: 'El mejor capítulo del libro, el duelo a muerte de dos aficionados a los acertijos. Aunque uno de ellos hizo trampa, el otro también, así que técnicamente fue un empate de tramposos. Pero yo tampoco habría jugado limpio con Gollum, la verdad.',
             tags: ['Acertijos', 'Último'],
+            clues: ['Bolsillo'],
             favorite: false,
             timestamp: 0
           },
@@ -80,8 +83,9 @@
             icon: 'extension',
             title: 'Electricidad',
             media: 'law.jpg',
-            description: 'Este es un chiste de ingenieros. Bueno, la verdad es que de ingeniero, en singular. Mío, porque nadie más lo pilla. Aunque en realidad, es nuestro.\n\nY el gato me ha venido que ni pintado!',
+            description: 'Este es un chiste de ingenieros. Bueno, la verdad es que de ingeniero, en singular. Mío, porque nadie más lo pilla. Aunque en realidad, es nuestro. Y el gato me ha venido que ni pintado!',
             tags: ['Ley', 'Física'],
+            clues: ['Electricidad'],
             favorite: false,
             timestamp: 0
           },
@@ -92,6 +96,7 @@
             media: 'halflife.gif',
             description: 'Allí transcurre este grandísimo juego. Supongo que te sonará. Lo que nos interesa aquí no es el juego como tal, sino la ubicación de las instalaciones del mismo. Te acuerdas?',
             tags: ['Nombre', 'Clave'],
+            clues: ['Complejo'],
             favorite: false,
             timestamp: 0
           },
@@ -102,6 +107,7 @@
             media: 'lost.gif',
             description: 'Otra grandísima serie, probablemente la primera que vi como una "serie" de capítulos en los que el orden importaba y mucho. De cuando apenas tenía suficiente banda ancha de internet en casa para poder verlo en streaming, pero eso no me impedía pausar la carga y poder ver capítulos hasta altísimas horas de la madrugada.',
             tags: ['Spoiler', 'Números'],
+            clues: ['Malditos'],
             favorite: false,
             timestamp: 0
           },
@@ -112,6 +118,7 @@
             media: 'neverending.gif',
             description: 'Uno de los libros que con más cariño recuerdo de mi infancia. De cuando las novelas río de fantasía medieval eran demasiado complicados para un niño, que prefería entretenerse con amigables dragones y princesas en altos castillos de mundos imaginarios.',
             tags: ['Amuleto', 'Enfermedad'],
+            clues: ['Nombre'],
             favorite: false,
             timestamp: 0
           },
@@ -120,8 +127,9 @@
             icon: 'games',
             title: 'Dragonborn',
             media: 'dragonborn.jpg',
-            description: '"Yo antes era un aventurero como tú, pero un día me hirieron con una flecha en la rodilla". Esa es sin duda la frase más repetida en este, por otro lado, grandísimo juego. Aunque tenía cosas muy absurdas. Recuerdo haber subido Herrería al máximo nivel fabricando cientos de dagas de hierro.\n\nPero había otra armadura más chula todavía que la de Dragón, al menos para mi...',
+            description: '"Yo antes era un aventurero como tú, pero un día me hirieron con una flecha en la rodilla". Esa es sin duda la frase más repetida en este, por otro lado, grandísimo juego. Aunque tenía cosas muy absurdas. Recuerdo haber subido Herrería al máximo nivel fabricando cientos de dagas de hierro. Pero había otra armadura más chula todavía que la de Dragón, al menos para mi...',
             tags: ['Fus', 'Ro'],
+            clues: ['Grito'],
             favorite: false,
             timestamp: 0
           },
@@ -132,6 +140,7 @@
             media: 'einstein.jpg',
             description: 'Seguro que has hecho este rompecabezas antes. Te toca volverlo a hacer, pero ésta vez para responder a mi propia pregunta: ¿Qué bebe el dueño del pez?',
             tags: ['País', 'Origen'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -140,8 +149,9 @@
             icon: 'movies',
             title: 'Oferta en la ferretería',
             media: 'saw.gif',
-            description: 'Me imagino al malo yendo a la ferretería del barrio a comprar bridas, cal, un barreño resistente al ácido, ácido, un saco, una cuerda, una pala y algunos instrumentos de tortura de oferta para hacer intrincados instrumentos de muerte retardada. Y pagando en efectivo. Todo muy correcto, todo muy normal.\n\nSiempre saludaba.',
+            description: 'Me imagino al malo yendo a la ferretería del barrio a comprar bridas, cal, un barreño resistente al ácido, ácido, un saco, una cuerda, una pala y algunos instrumentos de tortura de oferta para hacer intrincados instrumentos de muerte retardada. Y pagando en efectivo. Todo muy correcto, todo muy normal. Siempre saludaba.',
             tags: ['Asesino', 'Nick'],
+            clues: ['Puzzle'],
             favorite: false,
             timestamp: 0
           },
@@ -150,8 +160,9 @@
             icon: 'games',
             title: 'Hazte con todos!',
             media: 'pokemon.jpg',
-            description: 'Aunque es jodidamente imposible. Hay más de 800! Y éste es uno de ellos. Aunque no he sido tan cabrón de coger uno al azar para que los vayas comparando. Este es ligeramente especial.\n\nSuerte!',
-            tags: ['4chan', 'Inventado'],
+            description: 'Aunque es jodidamente imposible. Hay más de 800! Y éste es uno de ellos. Aunque no he sido tan cabrón de coger uno al azar para que los vayas comparando. Este es ligeramente especial. Suerte!',
+            tags: ['Nombre', 'Inventado'],
+            clues: ['4chan'],
             favorite: false,
             timestamp: 0
           },
@@ -160,8 +171,9 @@
             icon: 'chrome_reader_mode',
             title: 'Le Petit Prince',
             media: 'little.gif',
-            description: 'Otro precioso libro de obligada lectura infantil y no tan infantil. Mientras que los niños ven un elefante en el estómago de una boa, los adultos somos muchos más simples y aburridos...\n\nMenos mal que yo no.',
+            description: 'Otro precioso libro de obligada lectura infantil y no tan infantil. Mientras que los niños ven un elefante en el estómago de una boa, los adultos somos muchos más simples y aburridos... Menos mal que yo no.',
             tags: ['Adultos', 'Realidad'],
+            clues: ['Prenda'],
             favorite: false,
             timestamp: 0
           },
@@ -172,6 +184,7 @@
             media: 'cah.jpg',
             description: 'Cuando me soltaste esa burrada mientras veíamos juntos uno de los capítulos de esa serie, me hiciste reir tanto que me dije: "Esta chica es para mí". Simple y llanamente.',
             tags: ['Burrada', 'Plural'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -182,6 +195,7 @@
             media: 'item.gif',
             description: 'Otro agujero de horas y un no parar de jugar. La saga completa, la verdad. La historia del WoW es un poco enrevesada y sin un final concreto, pero la del Warcraft3 está bastante bien. Pero aquí buscamos al culpable de todo, de toda la historia, desde el principio.',
             tags: ['Arma', 'Inglés'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -192,6 +206,7 @@
             media: 'stranger.gif',
             description: 'Vaya pedazo de serie. Muy oscura y a la vez casi familiar con la pandilla de Verano Azul dando vueltas por la ciudad con un monstruo interdimensional rondado. Y la escena de las luces de navidad sobre la pared fue magistral.',
             tags: ['Luces', 'Letras'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -202,6 +217,7 @@
             media: 'moria.gif',
             description: 'Otra escena mítica de otro gran libro y película. Aquí vamos a jugar un poco con el frikismo más extremo. Da gracias que no me gusta Star Trek, imagínate en Klingon...',
             tags: ['Hermosa', 'Élfico'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -212,6 +228,7 @@
             media: 'mario.gif',
             description: 'Mira que este juego tiene añazos, y hoy en dia se sigue manteniendo como el juego más vendido de la historia. Y cada vez que pensabas que llegabas al final, "Lo siento Mario, la princesa está en otro castillo". Podías habermelo dicho antes, hijo de puta...',
             tags: ['Enemigo', 'Apellido'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -220,8 +237,9 @@
             icon: 'movies',
             title: 'Foto de familia',
             media: 'sherlock.jpg',
-            description: 'No podía ser un juego de acertijos completo sin que apareciera nuestro investigador favorito, verdad? Yo no soy tan listo como para crear un complicado reto intelectual que resolver, aunque tenga buenas ideas para una scape room.\n\nY gracias adios, ahora Mary está MUERTA.',
+            description: 'No podía ser un juego de acertijos completo sin que apareciera nuestro investigador favorito, verdad? Yo no soy tan listo como para crear un complicado reto intelectual que resolver, aunque tenga buenas ideas para una scape room. Y gracias adios, ahora Mary está MUERTA.',
             tags: ['Nombre', 'Familiar'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -232,6 +250,7 @@
             media: 'crash.gif',
             description: 'Otro genial juego de cuando tenía la PSOne. Qué recuerdos! No sé si has jugado, pero sino siempre tienes la Wikipedia. Por cierto, la desarrolladora original, Naughty Dog, es la responsable actual de la saga Uncharted.',
             tags: ['Gemelo', 'Malvado'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -242,6 +261,7 @@
             media: 'goku.gif',
             description: 'El mundo puede ser una ruina! No lo podemos permitir! Esto sí que eran dibujos de los buenos, y no la mierda que ponen hoy en día a los chavales. Algún día tengo que volver a verlo entero otra vez. La de pifostio que se armó por intentar conseguir las 7 Bolas de Dragón.',
             tags: ['Nombre', 'Real'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -250,8 +270,9 @@
             icon: 'chrome_reader_mode',
             title: 'Eres un mago, Harry',
             media: 'marauders.gif',
-            description: 'Siempre me pareció un poco absurdo que unos artefactos mágicos tan jodidamente poderosos y que tienden a ser usados para hacer el mal, como la Capa de Invisibilidad o el Mapa del Merodeador, acaben en las inexpertas manos de imberbes estudiantes de instituto.\n\nEso sí, en Gringots guardamos las monedas de oro, no sea que los gitamagos nos las roben.',
+            description: 'Siempre me pareció un poco absurdo que unos artefactos mágicos tan jodidamente poderosos y que tienden a ser usados para hacer el mal, como la Capa de Invisibilidad o el Mapa del Merodeador, acaben en las inexpertas manos de imberbes estudiantes de instituto. Eso sí, en Gringots guardamos las monedas de oro, no sea que los gitamagos nos las roben.',
             tags: ['Muerto', 'Mote'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -260,8 +281,9 @@
             icon: 'movies',
             title: 'Odio a Carl',
             media: 'carl.gif',
-            description: 'Yo ya veo esto simplemente para ver si Carl se muere. Aunque sé que es un personaje principal y esto no es Juego de Tronos, no he perdido la esperanza de que Negan lo mate a base de bates en la cabeza.\n\nEste niño evade la muerte tan bien como la Portuguesa o Kissy.',
+            description: 'Yo ya veo esto simplemente para ver si Carl se muere. Aunque sé que es un personaje principal y esto no es Juego de Tronos, no he perdido la esperanza de que Negan lo mate a base de bates en la cabeza. Este niño evade la muerte tan bien como la Portuguesa o Kissy.',
             tags: ['Spoiler', 'Estamos'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -270,8 +292,9 @@
             icon: 'games',
             title: 'Woka Woka Woka',
             media: 'pacman.gif',
-            description: 'Sabías que este juego está basado en la película Alien? Se supone que los fantasmas son representaciones del bicho y tu tienes que huir de el por los pasillos de la nave, hasta que tienes suficientes agallas como para volverte contra él y matarlo.\n\nCurioso, verdad?',
+            description: 'Sabías que este juego está basado en la película Alien? Se supone que los fantasmas son representaciones del bicho y tu tienes que huir de el por los pasillos de la nave, hasta que tienes suficientes agallas como para volverte contra él y matarlo. Curioso, verdad?',
             tags: ['Color', 'Favorito'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -280,8 +303,9 @@
             icon: 'movies',
             title: 'I will be back',
             media: 'terminator.gif',
-            description: 'A mi me gustan por este orden: primero la segunda, segundo la tercera, tercero la primera, cuarta la quinta y quinta la cuarta.\n\nLa serie no hay por donde cogerla.',
+            description: 'A mi me gustan por este orden: primero la segunda, segundo la tercera, tercero la primera, cuarta la quinta y quinta la cuarta. La serie no hay por donde cogerla.',
             tags: ['Orden', 'Secuencia'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -292,6 +316,7 @@
             media: 'fatality.gif',
             description: 'Sabías que este juego se convirtió en muy famoso porque las escenas de lucha estaban grabadas con personas reales que se ofrecieron para capturar sus movimientos y representarlos en un juego de recreativa?',
             tags: ['Boss', 'Final'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -300,8 +325,9 @@
             icon: 'place',
             title: 'Excursión',
             media: '25.jpg',
-            description: 'Toca coger el coche y darse un paseo. Creías que lo de viajar y hablar con NPCs era broma, verdad? Pues ya verás cuando tengas que luchar contra monstruos...\n\nOrnitorrincos asesinos!',
+            description: 'Toca coger el coche y darse un paseo. Creías que lo de viajar y hablar con NPCs era broma, verdad? Pues ya verás cuando tengas que luchar contra monstruos... Ornitorrincos asesinos!',
             tags: ['Mapa', 'Coche'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -310,8 +336,9 @@
             icon: 'movies',
             title: 'Hay alguien ahí?',
             media: 'alien.gif',
-            description: 'Supongo que te estarás preguntando para qué sirve esa llave. Y la contraseña. En fin, ya lo descubrirás.\n\nMientras tanto, seguimos con otro acertijo. Este es muy sencillo, casi de manual.',
+            description: 'Supongo que te estarás preguntando para qué sirve esa llave. Y la contraseña. En fin, ya lo descubrirás. Mientras tanto, seguimos con otro acertijo. Este es muy sencillo, casi de manual.',
             tags: ['Especie', 'Género'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -322,6 +349,7 @@
             media: 'resident.gif',
             description: 'El mejor juego de zombies que hay. Tenía acción, sustos, acertijos, puzzles y una historia bastante buena. Hoy en día los píxeles dan asco, pero de aquella era un acojone constante, sobre todo cuando llevabas jugando unas horas y no encontrabas una puta cinta para grabar la partida en la máquina de escribir. Las pelis son una basura.',
             tags: ['Boss', 'Final'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -332,6 +360,7 @@
             media: 'bang.gif',
             description: 'Molaba más cuando no tenían novia, pero todos los frikis tenemos derecho al amor, no? Ahora es una retaíla de empalagosas situaciones románticas estúpidas, de esas que tanto te gustan. Pero antes tenían cosas tan chulas como ésta.',
             tags: ['Robot', 'Siglas'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -340,8 +369,9 @@
             icon: 'movies',
             title: 'Cuál es tu nombre?',
             media: 'witness.gif',
-            description: 'Una de mis sagas favoritas. El rollo postapocalíptico me mola un montón. Y es muy curioso que sea en Australia. Aunque la obra maestra es la cuarta, el resto tampoco están mal. En fin, lo que nos interesa aquí es algo muy obvio pero que apenas sale mencionado en las películas.\n\nLa verdad es que no sabía muy bien qué preguntar...',
+            description: 'Una de mis sagas favoritas. El rollo postapocalíptico me mola un montón. Y es muy curioso que sea en Australia. Aunque la obra maestra es la cuarta, el resto tampoco están mal. En fin, lo que nos interesa aquí es algo muy obvio pero que apenas sale mencionado en las películas. La verdad es que no sabía muy bien qué preguntar...',
             tags: ['Australiano', 'Apellido'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -350,8 +380,9 @@
             icon: 'movies',
             title: 'El juego de mesa',
             media: 'jumanji.gif',
-            description: 'Esto si que era jugarsela apostando a un juego. Sabías que no sólo se esta haciendo un remake para 2017, sino que había segunda parte?\n\nYo no tenía ni idea.',
+            description: 'Esto si que era jugarsela apostando a un juego. Sabías que no sólo se esta haciendo un remake para 2017, sino que había segunda parte? Yo no tenía ni idea.',
             tags: ['Título', 'Juego'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -360,8 +391,9 @@
             icon: 'movies',
             title: 'Año 3000',
             media: 'fry.gif',
-            description: 'Mi serie de animación favorita. Tiene más burradas que los Simpsons, pero menos que Padre de Familia. Una pena que la cancelaran. Aunque luego volviera en forma de películas. Y luego volviera a estar en antena. Y luego vuelto a cancelarla.\n\nPero estamos buscando un capítulo muy concreto...',
+            description: 'Mi serie de animación favorita. Tiene más burradas que los Simpsons, pero menos que Padre de Familia. Una pena que la cancelaran. Aunque luego volviera en forma de películas. Y luego volviera a estar en antena. Y luego vuelto a cancelarla. Pero estamos buscando un capítulo muy concreto...',
             tags: ['Banco', 'Pizza'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -372,6 +404,7 @@
             media: 'galaxy.gif',
             description: 'Yo desconocía totalmente la existencia de esta franquicia de antihéroes, pero desde que la descubrí, me encanta. Si hasta tengo cómics de ella. Este año sale la segunda parte!',
             tags: ['Rocket', 'Experimento'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -380,8 +413,9 @@
             icon: 'extension',
             title: 'Overexposed model',
             media: 'model.jpg',
-            description: 'Incluso alguien ha hecho un Tumblr para postear fotos donde la gente encuentra a esta modelo que está por todas partes. Nosotros mismos sin ir más lejos ya nos la hemos encontrado por ahí, en León.\n\nYo una vez la ví en Noruega anunciando auténtica butifarra española.',
+            description: 'Incluso alguien ha hecho un Tumblr para postear fotos donde la gente encuentra a esta modelo que está por todas partes. Nosotros mismos sin ir más lejos ya nos la hemos encontrado por ahí, en León. Yo una vez la ví en Noruega anunciando auténtica butifarra española.',
             tags: ['Nombre', 'Modelo'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -390,8 +424,9 @@
             icon: 'movies',
             title: 'El Puente de la Muerte',
             media: 'python.gif',
-            description: 'Quien el puente desee atravesar, tres preguntas deberá contestar, o al abismo irá a dar...\n\nIba a ponerte lo del color favorito, y contestar mal, pero ésta me mola más!',
+            description: 'Quien el puente desee atravesar, tres preguntas deberá contestar, o al abismo irá a dar... Iba a ponerte lo del color favorito, y contestar mal, pero ésta me mola más!',
             tags: ['Capital', 'Asiria'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -400,8 +435,9 @@
             icon: 'movies',
             title: 'Indiana',
             media: 'indiana.gif',
-            description: 'Quién no ha tenido alguna vez la curisidad por saber qué se siente al tener el corazón palpitante de un hombre en la mano mientras se lo ofrece como sacrificio a su Dios favorito?\n\nY el de un niño?',
+            description: 'Quién no ha tenido alguna vez la curisidad por saber qué se siente al tener el corazón palpitante de un hombre en la mano mientras se lo ofrece como sacrificio a su Dios favorito? Y el de un niño?',
             tags: ['Dios', 'Culto'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -412,6 +448,7 @@
             media: 'ff.jpg',
             description: 'Somos de mundos distintos. Tú, de Nintendo y Legend of Zelda. Yo, de Sony y Final Fantasy. Un amor imposible.',
             tags: ['Personaje', 'FF9'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -420,8 +457,9 @@
             icon: 'chrome_reader_mode',
             title: 'Todos van a morir',
             media: 'got.gif',
-            description: 'Estoy casi seguro de que no se va a salvar ninguno de ellos. El Trono de Hierro no va a acabar en manos de ninguno de los supuestos herederos legítimos. El frío blanco se comerá todo a su paso.\n\nOh, dulce niño de verano...',
+            description: 'Estoy casi seguro de que no se va a salvar ninguno de ellos. El Trono de Hierro no va a acabar en manos de ninguno de los supuestos herederos legítimos. El frío blanco se comerá todo a su paso. Oh, dulce niño de verano...',
             tags: ['Fuego', 'Verde'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -432,6 +470,7 @@
             media: 'matrix.jpg',
             description: 'Qué habrías escogido tú?',
             tags: ['Color', 'Favorito'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -440,8 +479,9 @@
             icon: 'movies',
             title: 'Uno nuevo en la familia',
             media: 'starwars.gif',
-            description: 'Éramos pocos y parió la abuela. Estos de Disney si que saben hacer merchandising. Le dan a la rueda y ala, un nuevo droide en cada película. Luego peluches, pósters, figuras, camisetas...\n\nY yo encantado de la vida! Cuál será el siguiente?',
+            description: 'Éramos pocos y parió la abuela. Estos de Disney si que saben hacer merchandising. Le dan a la rueda y ala, un nuevo droide en cada película. Luego peluches, pósters, figuras, camisetas... Y yo encantado de la vida! Cuál será el siguiente?',
             tags: ['Nombre', 'Robot'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -452,6 +492,7 @@
             media: 'westworld.gif',
             description: 'Vaya spoileraco que se nos escapó sobre Bernard, eh? A la bobada además. Zasca. Yo suelo ser siempre muy considerado cuando hablamos de spoilers, pero esa vez...',
             tags: ['Robot', 'Humano'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -462,6 +503,7 @@
             media: 'guide.jpg',
             description: 'Tras millones de años, se ha llegado a una conclusión irrefutable.',
             tags: ['Respuesta', 'Pregunta'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -470,8 +512,9 @@
             icon: 'movies',
             title: 'Es hora de morir',
             media: 'runner.gif',
-            description: '"Todos esos momentos se perderán en el tiempo como lágrimas en la lluvia".\n\nGrandísima frase.',
+            description: '"Todos esos momentos se perderán en el tiempo como lágrimas en la lluvia". Grandísima frase.',
             tags: ['Modelo', 'Clave'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -482,6 +525,7 @@
             media: 'fraggle.gif',
             description: 'Ven a disfrutar, ven a Fraggle Rock! Junto con los Teleñecos y Barrio Sésamo, este show era de lo mejor para los niños pequeños. Aunque creo recordar que tu no lo veías, así que igual es difícil.',
             tags: ['Animal', 'Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -492,6 +536,7 @@
             media: 'jack.gif',
             description: 'Hay luces de color! Qué es?! Parece de algodón! Qué es?! No creo en lo que veo. Estoy soñando? No lo sé! Qué injusto es! Qué es?',
             tags: ['Luz', 'Nariz'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -502,6 +547,7 @@
             media: 'vendetta.gif',
             description: '"Recuerden, recuerden, el 5 de Noviembre. Conspiración, pólvora y traición. No veo la demora y siempre es la hora, de evocarla sin dilación". Hoy en día se ha convertido en la careta oficial de Annonymous, así como referencias en otras películas y series de hackers como Mr Robot.',
             tags: ['Careta', 'Apellido'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -512,6 +558,7 @@
             media: 'zelda.gif',
             description: 'Yo no he jugado, pero se supone que en cada historia se repite el bucle de la divisón de la trifuerza en tres fragmentos: la Fuerza, representada por Garnon; la Sabiduría, representada por Zelda; y el Valor, representado por Link. Y el que controle las 3, controla el poder supremo. Pero, quién creó esos fragmentos exactamente?',
             tags: ['Color', 'Favorito'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -522,6 +569,7 @@
             media: 'ash.gif',
             description: 'Aunque tiene un par de escenas especialmente brutas, es una película de muy bajo presupuesto pensada para reirse con ganas de las fuerzas del mal y de los muertos vivientes. Y la serie no está nada mal tampoco.',
             tags: ['Libro', 'Muertos'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -532,6 +580,7 @@
             media: 'mib.gif',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -542,6 +591,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -552,6 +602,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -562,6 +613,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -572,6 +624,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -582,6 +635,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -592,6 +646,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -602,6 +657,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -612,6 +668,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -622,6 +679,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -632,6 +690,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -642,6 +701,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -652,6 +712,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -662,6 +723,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -672,6 +734,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -682,6 +745,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -692,6 +756,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -702,6 +767,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -712,6 +778,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -722,6 +789,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -732,6 +800,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -742,6 +811,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -752,6 +822,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -762,6 +833,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -772,6 +844,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -782,6 +855,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -792,6 +866,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -802,6 +877,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -812,6 +888,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -822,6 +899,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -832,6 +910,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -842,6 +921,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -852,6 +932,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -862,6 +943,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -872,6 +954,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -882,6 +965,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -892,6 +976,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -902,6 +987,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -912,6 +998,7 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -922,6 +1009,84 @@
             media: 'avatar.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
+            favorite: false,
+            timestamp: 0
+          },
+          {
+            password: '',
+            icon: 'games',
+            title: 'Konami Kode',
+            media: 'avatar.jpg',
+            description: '',
+            tags: ['Nombre'],
+            clues: ['Pista1'],
+            favorite: false,
+            timestamp: 0
+          },
+          {
+            password: '',
+            icon: 'games',
+            title: 'Konami Kode',
+            media: 'avatar.jpg',
+            description: '',
+            tags: ['Nombre'],
+            clues: ['Pista1'],
+            favorite: false,
+            timestamp: 0
+          },
+          {
+            password: '',
+            icon: 'games',
+            title: 'Konami Kode',
+            media: 'avatar.jpg',
+            description: '',
+            tags: ['Nombre'],
+            clues: ['Pista1'],
+            favorite: false,
+            timestamp: 0
+          },
+          {
+            password: '',
+            icon: 'games',
+            title: 'Konami Kode',
+            media: 'avatar.jpg',
+            description: '',
+            tags: ['Nombre'],
+            clues: ['Pista1'],
+            favorite: false,
+            timestamp: 0
+          },
+          {
+            password: '',
+            icon: 'games',
+            title: 'Konami Kode',
+            media: 'avatar.jpg',
+            description: '',
+            tags: ['Nombre'],
+            clues: ['Pista1'],
+            favorite: false,
+            timestamp: 0
+          },
+          {
+            password: '',
+            icon: 'games',
+            title: 'Konami Kode',
+            media: 'avatar.jpg',
+            description: '',
+            tags: ['Nombre'],
+            clues: ['Pista1'],
+            favorite: false,
+            timestamp: 0
+          },
+          {
+            password: '',
+            icon: 'games',
+            title: 'Konami Kode',
+            media: 'avatar.jpg',
+            description: '',
+            tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           },
@@ -932,6 +1097,7 @@
             media: '25.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             imestamp: 0
           },
@@ -942,6 +1108,7 @@
             media: '50.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             imestamp: 0
           },
@@ -952,6 +1119,7 @@
             media: '75.jpg',
             description: '',
             tags: ['Nombre'],
+            clues: ['Pista1'],
             favorite: false,
             imestamp: 0
           },
@@ -962,6 +1130,7 @@
             media: '100.jpg',
             description: 'Enhorabuena! Has llegado al final del todo. Te estarás preguntando si todo este esfuerzo ha merecido la pena, pero espero que al menos te hayas divertido. Y que te guste mi regalo!',
             tags: ['Llave', 'Ornitorrinco'],
+            clues: ['Pista1'],
             favorite: false,
             timestamp: 0
           }
@@ -1006,6 +1175,7 @@
             }
           })
           if (document.getElementById('scroll')) document.getElementById('scroll').scrollIntoView(true)
+          this.help = false
           return found
         } else {
           return this.quests[0]
@@ -1019,12 +1189,12 @@
 </script>
 
 <style lang="stylus" scoped>
-  .description
-    white-space: pre-line
+  .md-switch
+    align-items center
   .md-chip.md-primary
-    background-color: #673ab7
-    color: white
+    background-color #673ab7
+    color white
   .md-chip.md-warn
-    background-color: #e53935
-    color: white
+    background-color #e91e63
+    color white
 </style>

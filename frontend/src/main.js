@@ -53,7 +53,8 @@ Vue.material.registerTheme({
   },
   quest: {
     primary: 'deep-purple',
-    accent: 'green'
+    accent: 'green',
+    warn: 'pink'
   }
 })
 

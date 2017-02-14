@@ -1,100 +1,100 @@
 8bits
-Regreso al futuro
-Monkey island
-El hobbit
-VIR
-Half life
-Lost
-Historia interminable
-Skyrim
-Einstein
-Saw
-Pokemon
-World of Warcraft
-Stranger things
-El señor de los anillos
-Super mario
-Sherlock
-2001
-Crash bandicoot
-Bola de dragon
-WallE
 Harry potter
+Sherlock
+The witcher
+Sombra del coloso
+Dune
+Planeta simios
+Spiderman
+Bola de dragon
+Avatar
+Man seeking woman
+Playmobil
+Padre de familia
+Scott pilgrim
+Lego
+Lost
+Final fantasy
+WallE
+Heroes
+Autoestopista galactico
+Mad max
+Guardianes de la galaxia
+Jurassic park
+Mortal kombat
+25 Viaje 1/4
+Worms
+Fibonacci
+Wayward pines
+Crash bandicoot
+Coche fantastico
+Einstein
+Blade runner
+Solo en casa
+Futurama
+Historia interminable
+Resident evil
+Breaking bad
+12 monos
+Assassins creed
+Big bang theory
+V de vendetta
+Indiana jones
+Juego de tronos
+Saw
+Age of empires
+Mago de oz
+Community
+World of Warcraft
+Quinto elemento
+50 Viaje 2/4
+El señor de los anillos
+La momia
+Como conoci a vuestra madre
+Regreso al futuro
+Legend of zelda
+Mecano
+Monkey island
+Half life
+Gravity falls
+Rick y morty
+Mars attacks
+Metal slug
+1984
+Westworld
+El hobbit
+Inception
+Star trek
+Simpsons
+Starship troopers
+Heroes of might and magic
+Fullmetal alchemist
+Monty python
+Naruto
+Ready player one
+75 Viaje 3/4
+Firefly
+MIB
+Nombre del viento
+Alien
+Stranger things
+VIR
+Tekken
 Walking dead
 Pacman
-Viaje 1/4
-Terminator
-Coche fantastico
-Alien
-Resident evil
-Big bang theory
-Mad max
-Jumanji
-Futurama
-Guardianes de la galaxia
-Overexposed model
-Monty python
-Indiana jones
-Final fantasy
-Juego de tronos
-Matrix
-Star wars
-Autoestopista galactico
-Blade runner
-Fraggle rock
 Pesadilla antes de navidad
-V de vendetta
-Legend of zelda
-Evil dead
-MIB
-Viaje 2/4
-Mr robot
-The witcher
-Westworld
-Spiderman
-Breaking bad
-Ready player one
-Age of empires
-Assassins creed
-Spaceball
-Heroes of might and magic
-Heroes
-Tekken
-Nombre del viento
-1984
-Cariño encogido a los niños
-Solo en casa
-Como conoci a vuestra madre
-Rick y morty
-12 monos
-Wayward pines
-Gravity falls
-La momia
-Independence day
-Simpsons
-Viaje 3/4
-Starship troopers
-Community
-Scott pilgrim
-Firefly
-Sombra del coloso
-Star trek
-Mars attacks
-Mago de oz
-Man seeking woman
-Fibonacci
+Terminator
+Star wars
 Lemmings
-Naruto
+Overexposed model
+Skyrim
+Spaceball
+Evil dead
+Matrix
+Independence day
 Muppets
-Mortal kombat
-Worms
-Padre de familia
-Fullmetal alchemist
-Avatar
-Dune
-Metal slug
-Inception
-Jurassic park
-Quinto elemento
-Planeta simios
-Viaje 4/4
+Mr robot
+Pokemon
+Jumanji
+Super mario
+100 Viaje 4/4

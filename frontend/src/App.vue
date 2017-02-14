@@ -84,53 +84,53 @@
 
 <style lang="stylus">
   body
-    background: url("img/background.jpg") no-repeat center center fixed
-    -webkit-background-size: cover
-    -moz-background-size: cover
-    -o-background-size: cover
-    background-size: cover
-    box-sizing: border-box
+    background url("img/background.jpg") no-repeat center center fixed
+    -webkit-background-size cover
+    -moz-background-size cover
+    -o-background-size cover
+    background-size cover
+    box-sizing border-box
   html
   body
   .app
-    height: 100%
-    overflow: hidden
+    height 100%
+    overflow hidden
   .app
-    display: flex
-    flex-flow: column
+    display flex
+    flex-flow column
   .main
-    overflow: auto
-    height: 100%
+    overflow auto
+    height 100%
   .content
-    margin: 0 !important
+    margin 0 !important
   .md-chip
-    margin-right: 5px
+    margin-right 5px
   .md-toolbar.md-account-header .md-avatar-list .md-list-item-container
-    align-items: center;
-  .md-avatar
-    .md-image
-      border-radius: 50%
+    align-items center
   .router-link-active
-    background-color: rgba(153, 153, 153, 0.2);
+    background-color rgba(153, 153, 153, 0.2);
   .flex
-    display: flex
-    flex: 1
+    display flex
+    flex 1
+  .md-card
+    border none
+    box-shadow none
   .no-padding
-    padding: 0 !important
+    padding 0 !important
   .padding
-    padding: 16px
+    padding 16px
   .center
-    align-items: center
-    justify-content: center
+    align-items center
+    justify-content center
   .signature
-    width: 100%
-    position: absolute
-    bottom: 0
-    margin-bottom: 1em
-  @media screen and (min-width: 768px)
+    width 100%
+    position absolute
+    bottom 0
+    margin-bottom 1em
+  @media screen and (min-width 768px)
     .content
-      margin: 0 25% !important
-  @media screen and (min-width: 1024px)
+      margin 0 25% !important
+  @media screen and (min-width 1024px)
     .content
-      margin: 0 33% !important
+      margin 0 33% !important
 </style>

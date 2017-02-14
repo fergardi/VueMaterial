@@ -12,8 +12,8 @@
         md-ink-ripple
       md-card-content.no-padding
         .padding
-          p Para nuestro aniversario quería hacer algo especial para tí, y, como esto del desarrollo es lo que mejor se me da, me dije ¿por qué no hacer una gymkana online con cosas frikis que nos gustan a los dos, como juegos, pelis, series, comics o libros? Espero que te diviertas jugándolo tanto como yo haciéndolo.
-          p Por si tienes curiosidad, lo he creado usando:
+          span Para nuestro aniversario quería hacer algo especial para tí, y, como esto del desarrollo es lo que mejor se me da, me dije ¿por qué no hacer una gymkana online con cosas frikis que nos gustan a los dos, como juegos, pelis, series, comics o libros? Espero que te diviertas jugándolo tanto como yo haciéndolo.
+          span Por si tienes curiosidad, lo he creado usando:
         md-list.md-double-line
           md-divider
           md-list-item(v-for="item in items")
@@ -65,4 +65,8 @@
 </script>
 
 <style lang="stylus" scoped>
+  span
+    display block
+  span + span
+    margin-top 0.5em
 </style>
