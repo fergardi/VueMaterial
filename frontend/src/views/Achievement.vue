@@ -29,7 +29,8 @@
               strong {{ achievement.title }}
               span {{ achievement.password }}
               i {{ achievement.timestamp | date }}
-            md-icon.md-primary favorite
+            md-avatar
+              md-icon.md-primary star
             md-divider
 </template>
 

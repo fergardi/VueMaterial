@@ -16,7 +16,7 @@
           span Por si tienes curiosidad, lo he creado usando:
         md-list.md-double-line
           md-divider
-          md-list-item(v-for="item in items")
+          md-list-item(v-for="item in items", v-bind:href="item.subtitle")
             md-avatar.md-large
               md-icon.md-primary {{ item.icon }}
             .md-list-text-container
