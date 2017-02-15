@@ -59,4 +59,6 @@
 <style lang="stylus" scoped>
   span
     display block
+  span + span
+    margin-top 1em
 </style>

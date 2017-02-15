@@ -13,7 +13,7 @@
 * PELI    -> Alien
 * JUEGO   -> Age of empires
 * SERIE   -> Westworld
-* JUEGO   -> Sombra del coloso
+* JUEGO   -> Oddworld
 * PELI    -> Jumanji
 * LIBRO   -> Nombre del viento
 * SERIE   -> Como conoci a vuestra madre
