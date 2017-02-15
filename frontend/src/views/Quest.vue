@@ -108,7 +108,7 @@
             password: 'Caprica6',
             icon: 'theaters',
             title: 'Ash',
-            media: 'evil.gif',
+            media: 'ash.gif',
             description: 'Aunque tiene algunas escenas especialmente brutas, te ries de lo lindo con esta saga.',
             tags: ['Libro', 'Nombre'],
             clues: ['Muertos'],
@@ -277,7 +277,7 @@
           {
             password: 'Temerario',
             icon: 'place',
-            title: '25% desbloqueado',
+            title: '25%',
             media: '25.jpg',
             description: 'Vas por el 25% del juego! Ya te dije que tendrías que viajar, luchar contra monstruos y hablar con NPCs...',
             tags: ['Socky', 'Laura'],
@@ -297,9 +297,9 @@
           {
             password: '',
             icon: 'chrome_reader_mode',
-            title: 'Mago de oz',
+            title: 'Oz',
             media: '.jpg',
-            description: 'descripcion',
+            description: 'Una rayada importante de libro. Mola que un tornado se lleve tu casa contigo dentro y que en vez de morir aparezcas en un mundo lleno de fantasía.',
             tags: ['tag1', 'tag2'],
             clues: ['clue1'],
             timestamp: 0
@@ -309,7 +309,7 @@
             icon: 'theaters',
             title: 'Guardianes de la galaxia',
             media: '.jpg',
-            description: 'descripcion',
+            description: 'Debo confesaro, yo no los conocía de nada hasta que salieron en el cine, pero desde entonces me encantan y hasta colecciono sus cómics!',
             tags: ['tag1', 'tag2'],
             clues: ['clue1'],
             timestamp: 0
@@ -527,9 +527,9 @@
           {
             password: '',
             icon: 'place',
-            title: '50% desbloqueado',
-            media: '.jpg',
-            description: 'descripcion',
+            title: '50%',
+            media: '50.jpg',
+            description: 'Vas por el 50% del juego! Ya te dije que tendrías que viajar, luchar contra monstruos y hablar con NPCs...',
             tags: ['tag1', 'tag2'],
             clues: ['clue1'],
             timestamp: 0
