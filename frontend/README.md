@@ -20,10 +20,10 @@
 * JUGUETE -> Playmobil
 * JUEGO   -> Mortal kombat
 * PELI    -> Mars attacks
-* LIBRO   -> 1984
+* LIBRO   -> Fundación
 * DIBUJOS -> Gravity falls
 * SERIE   -> X files
-* PELI    -> Solo en casa
+* PELI    -> Sleepy hollow
 * VIAJE   -> 25 Viaje 1/4
 * PELI    -> Scott pilgrim
 * LIBRO   -> Mago de oz
