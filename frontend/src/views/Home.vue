@@ -41,11 +41,6 @@
             media: 'worldofwarcraft.jpg'
           },
           {
-            title: 'Jugar unas partidas',
-            subtitle: 'No te vicies demasiado',
-            media: 'games.jpg'
-          },
-          {
             title: 'Y encontrar tesoros',
             subtitle: 'Tomar prestado no es robar',
             media: 'darkmatherials.jpg'

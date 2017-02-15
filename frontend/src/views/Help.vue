@@ -18,18 +18,16 @@
           span Eres una chica lista, pero probablemente necesites algo de ayuda en las misiones más complicadas o en las que yo creo que sabes de qué van pero en realidad no tienes ni la remota idea.
           span Debes saber que ésta app es una pista en sí misma, es decir, cada misión puede que tenga pistas ocultas (en los iconos de ayuda, en los tags, en las imágenes, etc).
           span Estos son los temas relacionados. Usa la Wikipedia. Suerte y que te diviertas!
-        md-list.md-double-line
+        md-list.md-triple-line
           md-divider
           md-list-item(v-for="item in items")
             md-avatar.md-large
-              md-icon(v-bind:style="{ color: item.color }") {{ item.icon }}
+              md-icon.md-primary {{ item.icon }}
             .md-list-text-container
-              span {{ item.title }}
+              strong {{ item.title }}
               span {{ item.subtitle }}
+              i {{ item.percent }} / 100
             md-divider
-      md-card-media
-        md-image(md-src="img/chart.jpg")
-        md-ink-ripple
 </template>
 
 <script>
@@ -39,51 +37,51 @@
         items: [
           {
             icon: 'theaters',
-            color: '#3F51B5',
             title: 'Cine',
-            subtitle: 'Películas, cortos, etc'
+            subtitle: 'Películas, cortos, etc',
+            percent: 30
           },
           {
             icon: 'tv',
-            color: '#2196F3',
             title: 'Televisión',
-            subtitle: 'Series, miniseries, etc'
+            subtitle: 'Series, miniseries, etc',
+            percent: 22
           },
           {
             icon: 'games',
-            color: '#9C27B0',
             title: 'Juegos',
-            subtitle: 'Videojuegos, consolas, etc'
+            subtitle: 'Videojuegos, consolas, etc',
+            percent: 18
           },
           {
             icon: 'chrome_reader_mode',
-            color: '#FF9800',
-            title: 'Libros',
-            subtitle: 'Novelas, cuentos, revistas, etc'
+            title: 'Literatura',
+            subtitle: 'Novelas, cuentos, libros, etc',
+            percent: 10
           },
           {
             icon: 'palette',
-            color: '#F06292',
             title: 'Dibujos',
-            subtitle: 'Animación, 3D, etc'
+            subtitle: 'Animación, 3D, etc',
+            percent: 9
           },
           {
             icon: 'extension',
-            color: '#009688',
             title: 'Puzzles',
-            subtitle: 'Acertijos, adivinanzas, etc'
+            subtitle: 'Acertijos, adivinanzas, etc',
+            percent: 4
           },
           {
             icon: 'place',
-            color: '#D32F2F',
             title: 'Viajes',
-            subtitle: 'Mapas, destinos, sitios, etc'
+            subtitle: 'Mapas, destinos, sitios, etc',
+            percent: 4
           },
           {
             icon: 'toys',
-            color: '#8BC34A',
             title: 'Juguetes',
-            subtitle: 'Muñecos, figuras, comics, etc'
+            subtitle: 'Muñecos, figuras, comics, etc',
+            percent: 3
           }
         ]
       }

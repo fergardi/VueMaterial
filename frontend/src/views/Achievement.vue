@@ -41,12 +41,6 @@
         achievements: []
       }
     },
-    methods: {
-      fav (achievement) {
-        achievement.favorite = !achievement.favorite
-        this.$setItem(achievement.password, achievement)
-      }
-    },
     created () {
       this.$material.setCurrentTheme('achievement')
       this.$iterateStorage((key, value, index) => {

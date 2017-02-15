@@ -20,7 +20,7 @@
             md-avatar.md-large
               md-icon.md-primary {{ item.icon }}
             .md-list-text-container
-              span {{ item.title }}
+              strong {{ item.title }}
               span {{ item.subtitle }}
             md-divider
 </template>
@@ -30,6 +30,11 @@
     data () {
       return {
         items: [
+          {
+            icon: 'android',
+            title: 'Apache Cordova',
+            subtitle: 'https://cordova.apache.org/'
+          },
           {
             icon: 'settings',
             title: 'NodeJS',
@@ -49,11 +54,6 @@
             icon: 'brush',
             title: 'Material Design',
             subtitle: 'https://material.io/guidelines/'
-          },
-          {
-            icon: 'android',
-            title: 'Apache Cordova',
-            subtitle: 'https://cordova.apache.org/'
           }
         ]
       }
