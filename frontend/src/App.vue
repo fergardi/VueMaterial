@@ -112,6 +112,8 @@
   .flex
     display flex
     flex 1
+  .md-avatar-list .md-avatar .md-icon
+    border-radius: 50%
   .md-card
     border none
     box-shadow none

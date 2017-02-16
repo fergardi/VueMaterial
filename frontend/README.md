@@ -36,7 +36,7 @@
 * PELI    -> Star wars
 * JUEGO   -> Metal slug
 * DIBUJOS -> Hora de aventuras
-* SERIE   -> Community
+* SERIE   -> Power rangers
 * PELI    -> Autoestopista galactico
 * JUEGO   -> Resident evil
 * PELI    -> Blade runner

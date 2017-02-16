@@ -31,14 +31,14 @@
   export default {
     data () {
       return {
-        help: false,
+        help: true,
         password: '',
         quests: [
           {
             password: '',
             icon: 'extension',
             title: 'Empieza el juego',
-            media: 'avatar.jpg',
+            media: '0.jpg',
             description: 'También he creado tu propio avatar en 8bits! No he conseguido sacarte más parecida, así que es lo que hay.',
             tags: ['Avatar', '8bits'],
             clues: ['Nombre', 'Mujer'],
@@ -81,7 +81,7 @@
             media: 'pacman.gif',
             description: 'Sabías que está inspirado en Alien? Los fantasmas representan al bicho mientras huyes de él por la nave.',
             tags: ['Color', 'Favorito'],
-            clues: ['Fantasma'],
+            clues: ['Fantasma', 'Nombre'],
             timestamp: 0
           },
           {
@@ -110,8 +110,8 @@
             title: 'Ash',
             media: 'ash.gif',
             description: 'Aunque tiene algunas escenas especialmente brutas, te ries de lo lindo con esta saga.',
-            tags: ['Libro', 'Nombre'],
-            clues: ['Muertos', ''],
+            tags: ['Libro', 'Piel'],
+            clues: ['Muertos', 'Nombre'],
             timestamp: 0
           },
           {
@@ -121,7 +121,7 @@
             media: 'alchemist.gif',
             description: 'Gracias por recomendarmela, me ha gustado mucho! Pero sigo prefiriendo Naruto Shippuden...',
             tags: ['Color', 'Favorito'],
-            clues: ['Apellido'],
+            clues: ['Apellido', 'Roy'],
             timestamp: 0
           },
           {
@@ -131,7 +131,7 @@
             media: 'dune.gif',
             description: 'Otra novela río repleta de familias, nobles, traiciones, conspiraciones y luchas por el poder. Y gusanos.',
             tags: ['Droga', 'Gusano'],
-            clues: ['Especia'],
+            clues: ['Especia', 'Arrakis'],
             timestamp: 0
           },
           {
@@ -141,7 +141,7 @@
             media: 'alien.gif',
             description: 'Esto sí que era suspense y claustrofobia en estado puro. Luego lo mezclaron con Predator y se jodió. Luego hicieron precuela y se jodió todavía más.',
             tags: ['Familia', 'Especie'],
-            clues: ['Extraterrestre'],
+            clues: ['Extraterrestre', 'Nombre'],
             timestamp: 0
           },
           {
@@ -151,7 +151,7 @@
             media: 'aoe2.jpg',
             description: 'Te están atacando! Rush de escorpiones! Touche de torres! Empalizada de recursos! Si no matabas al jabalí antes del minuto 2, habías perdido.',
             tags: ['Chat', 'Risas'],
-            clues: ['Atajo'],
+            clues: ['Atajo', 'Teclado'],
             timestamp: 0
           },
           {
@@ -161,7 +161,7 @@
             media: 'westworld.gif',
             description: 'Una oscura odisea sobre el amanecer de la conciencia artificial y el futuro del pecado.',
             tags: ['Parque', 'Nombre'],
-            clues: ['Empresa'],
+            clues: ['Empresa', 'Atracciones'],
             timestamp: 0
           },
           {
@@ -181,7 +181,7 @@
             media: 'jumanji.gif',
             description: 'Esto sí que era un juego de mesa. Ni apostando dinero ni hostias. Sabías que hay segunda parte?',
             tags: ['Secuela', 'Película'],
-            clues: ['Nombre'],
+            clues: ['Nombre', 'Espacio'],
             timestamp: 0
           },
           {
@@ -191,17 +191,17 @@
             media: 'kvothe.jpg',
             description: 'Una de mis sagas favoritas. Su representación de la magia es la más descriptiva que he leído.',
             tags: ['Viento', 'Sabio'],
-            clues: ['Palabra'],
+            clues: ['Tercero', 'Libro'],
             timestamp: 0
           },
           {
             password: 'Piedra',
             icon: 'tv',
-            title: 'Como conocí',
+            title: 'Su puta madre',
             media: 'himym.gif',
             description: 'Tantos años esperando para conocer a la madre y al final se muere para volver con Robin. Spoiler!',
             tags: ['Spoiler', 'Madre'],
-            clues: ['Nombre'],
+            clues: ['Nombre', 'Muerta'],
             timestamp: 0
           },
           {
@@ -211,7 +211,7 @@
             media: 'playmobil.jpg',
             description: 'Bueno, eso de "mobil" no se yo. Pobrecillos, no tenían codos. No podían beber. Ni comer. Ni masturbarse.',
             tags: ['Marca', 'Española'],
-            clues: ['Empresa'],
+            clues: ['Empresa', 'Licencia'],
             timestamp: 0
           },
           {
@@ -221,7 +221,7 @@
             media: 'fatality.gif',
             description: 'Sabías que su éxito fue el uso pionero de la captura de movimientos reales usando cámaras stop motion?',
             tags: ['Personaje', 'Saurian'],
-            clues: ['Outworld'],
+            clues: ['Outworld', 'Nombre'],
             timestamp: 0
           },
           {
@@ -231,7 +231,7 @@
             media: 'mars.gif',
             description: 'Como los guionistas no sabían lo que iban a decir los marcianos, escribieron "ack ack ack" en el guión, y luego se conservó durante la filmación!',
             tags: ['Idea', 'Original'],
-            clues: ['Juego'],
+            clues: ['Juego', 'Tipo'],
             timestamp: 0
           },
           {
@@ -267,7 +267,7 @@
           {
             password: 'Verdad',
             icon: 'theaters',
-            title: 'Cuidado con la cabeza',
+            title: 'Ojo con la cabeza',
             media: 'sleepy.gif',
             description: 'Aunque me gustó el libro, la película de Tim Burton es bastante más interesante y con una trama más enrevesada. De mis favoritas.',
             tags: ['Animal', 'Cruel'],
@@ -290,16 +290,16 @@
             title: 'Scott Pilgrim',
             media: 'scott.gif',
             description: 'Otra buena película de frikis basada en un cómic. Las vidas extra son muy importantes para luchar contra exnovios celosos...',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            tags: ['Novia', 'Nombre'],
+            clues: ['Pelo', 'Rosa'],
             timestamp: 0
           },
           {
-            password: '',
+            password: 'Ramona',
             icon: 'chrome_reader_mode',
             title: 'Alicia',
-            media: 'alicia.jpg',
-            description: '',
+            media: 'alice.jpg',
+            description: 'Sabías que Lewis Caroll se inspiró en las historias que inventaba para entretener a tres hermanas mientras cruzaba el río en un barco?',
             tags: ['Apellido', 'Niña'],
             clues: ['Inspiración', 'Original'],
             timestamp: 0
@@ -307,7 +307,7 @@
           {
             password: 'Liddell',
             icon: 'theaters',
-            title: 'Guardianes de la galaxia',
+            title: 'Los Guardianes',
             media: 'gotg.jpg',
             description: 'Lo confieso, no los conocía de nada hasta que salieron en el cine, pero desde entonces me encantan y hasta colecciono sus cómics!',
             tags: ['Rocket', 'Expediente'],
@@ -337,15 +337,15 @@
           {
             password: 'Blackmesa',
             icon: 'theaters',
-            title: 'Día de la Independencia',
-            media: '.jpg',
-            description: 'descripcion',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            title: 'No los mojes',
+            media: 'gremlin.gif',
+            description: 'Eran tan moonos... Hasta que los mojabas, les daba el sol o les alimentabas después de media noche.',
+            tags: ['Nombre', 'Gremlin'],
+            clues: ['Bicho', 'Original'],
             timestamp: 0
           },
           {
-            password: '',
+            password: 'Mogwai',
             icon: 'games',
             title: 'Fontanero',
             media: 'mario.gif',
@@ -358,14 +358,14 @@
             password: 'Morton',
             icon: 'tv',
             title: 'Mr Robot',
-            media: '.jpg',
-            description: 'descripcion',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            media: 'robot.jpg',
+            description: 'Una serie moderna sobre hacking remake del club de la lucha que no podía faltar sobre la cultura friki.',
+            tags: ['Hackers', 'Grupo'],
+            clues: ['Activista', 'Nombre'],
             timestamp: 0
           },
           {
-            password: '',
+            password: 'fsociety',
             icon: 'theaters',
             title: 'Star Wars',
             media: 'starwars.jpg',
@@ -377,18 +377,18 @@
           {
             password: 'K2SO',
             icon: 'games',
-            title: 'Metal slug',
+            title: 'Recreativas',
             media: 'slug.gif',
             description: 'Una viciada de las recreativas. Tardes y monedas de 25 pesetas tiradas matando todo lo matable y muriendo todo lo morible.',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            tags: ['Enemigo', 'Final'],
+            clues: ['Militar', 'General'],
             timestamp: 0
           },
           {
-            password: '',
+            password: 'Morden',
             icon: 'palette',
-            title: 'Adventure Time',
-            media: '.jpg',
+            title: 'Finn & Jake',
+            media: 'time.jpg',
             description: 'Una gran serie animada para niños y no tan niños, con una trama principal perfectamente hilada si te vas fijando bien en cada episodio.',
             tags: ['Animal', 'Enemigo'],
             clues: ['Todos', 'Capítulos'],
@@ -397,35 +397,35 @@
           {
             password: 'Caracol',
             icon: 'tv',
-            title: 'Community',
-            media: '.jpg',
-            description: 'Otra serie estupenda. Adoro los episodios de guerra de pintura. Y los especiales de videojuegos! Y de stop motion! Y de...!',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            title: 'MegaZord!',
+            media: 'rangers.gif',
+            description: 'Otra serie casposa de cojones, pero que veía sin parar cuando era niño...',
+            tags: ['Enemigos', 'Chustas'],
+            clues: ['Desechables', 'Inútiles'],
             timestamp: 0
           },
           {
-            password: '',
+            password: 'Masillas',
             icon: 'theaters',
-            title: 'Pensamiento Profundo',
-            media: '.jpg',
+            title: 'Deep Thought',
+            media: 'deep.jpg',
             description: 'La respuesta al sentido de la vida, el universo y todo lo demás.',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            tags: ['Ordenador', 'Respuesta'],
+            clues: ['Número', 'Todo'],
             timestamp: 0
           },
           {
             password: '42',
             icon: 'games',
-            title: 'Resident evil',
-            media: '.jpg',
+            title: 'Zombies',
+            media: 'resident.gif',
             description: 'Otra de las teorías que tengo sobre tu trabajo es que desarrolláis en secreto armas biológicas. Experimentando con conejitos!',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            tags: ['Nombre', 'Empresa'],
+            clues: ['Corporación', 'Maligna'],
             timestamp: 0
           },
           {
-            password: '',
+            password: 'Umbrella',
             icon: 'theaters',
             title: 'Es hora de morir',
             media: 'runner.gif',
@@ -447,9 +447,9 @@
           {
             password: 'UkaUka',
             icon: 'chrome_reader_mode',
-            title: 'Historia interminable',
-            media: '.jpg',
-            description: 'descripcion',
+            title: 'Fújur!',
+            media: 'neverending.gif',
+            description: 'Otra preciosa historia infantil de dragones, princesas en castillos, reinos encantados y un héroe necesario.',
             tags: ['Cura', 'Enfermedad'],
             clues: ['Amuleto', 'Nombre'],
             timestamp: 0
@@ -458,7 +458,7 @@
             password: 'Auryn',
             icon: 'games',
             title: 'Warcraft',
-            media: 'warcraft.jpg',
+            media: 'wow.jpg',
             description: 'Otra viciada de juego. El WoW no estaba mal, pero el W3 era una maravilla. Te descojonas con los Orcos. Pero me va más la nigromancia.',
             tags: ['Espada', 'Hielo'],
             clues: ['Nombre', 'Inglés'],
@@ -478,8 +478,8 @@
             password: 'Ohm',
             icon: 'tv',
             title: 'Fringe',
-            media: 'fringe.gif',
-            description: '',
+            media: 'fringe.jpg',
+            description: 'Otra de obligado visionado. Mejor que Expendiente X. Y con una historia profunda y bien hilada.',
             tags: ['Spoiler', 'Enemigos'],
             clues: ['Calvos', 'Sombreros'],
             timestamp: 0
@@ -488,7 +488,7 @@
             password: 'Observers',
             icon: 'theaters',
             title: 'La peonza cae',
-            media: 'inception.jpg',
+            media: 'inception.gif',
             description: 'Y punto. Nada de dejarlo en el aire, en el último milisegundo se tambalea indicando que nunca girará infinitamente, por lo que es real.',
             tags: ['Escaleras', 'Infinitas'],
             clues: ['Nombre', 'Dibujante'],
@@ -507,15 +507,15 @@
           {
             password: 'Ornitier',
             icon: 'theaters',
-            title: 'Planeta Simios',
-            media: '.jpg',
-            description: 'descripcion',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            title: 'Simios',
+            media: 'apes.jpg',
+            description: 'Nada mala distopía futurista y no tan alejada de la realidad.',
+            tags: ['Doctor', 'Nombre'],
+            clues: ['Simio', 'Pueblo'],
             timestamp: 0
           },
           {
-            password: '',
+            password: 'Zaius',
             icon: 'tv',
             title: 'Muppets',
             media: 'muppets.jpg',
@@ -530,65 +530,65 @@
             title: '50%',
             media: '50.jpg',
             description: 'Vas por el 50% del juego! Ya te dije que tendrías que viajar, luchar contra monstruos y hablar con NPCs...',
-            tags: ['Jony', 'Janira'],
-            clues: ['León'],
+            tags: ['Mapa', 'León'],
+            clues: ['Jaime', 'Kissy'],
             timestamp: 0
           },
           {
-            password: '@@@@@',
+            password: 'Sabroson',
             icon: 'games',
             title: 'Lemmings',
             media: 'lemmings.gif',
-            description: 'Un grandísimo juego de lógica que adoraba de pequeño. Intentar salvarlos a todo era una locura. Y explotar a los rezagados molaba.',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            description: 'Un grandísimo juego de lógica que adoraba de pequeño. Intentar salvarlos a todo era una locura.',
+            tags: ['Empresa', 'Actual'],
+            clues: ['Original', 'DMA Design'],
             timestamp: 0
           },
           {
-            password: '',
+            password: 'Rockstar',
             icon: 'tv',
             title: 'Wayward pines',
-            media: '.jpg',
-            description: 'descripcion',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            media: 'wayward.jpg',
+            description: 'La intro me encanta. Y la mitad de la primera temporada es un WTF en toda regla.',
+            tags: ['Año', 'Congelado'],
+            clues: ['Futuro', 'Real'],
             timestamp: 0
           },
           {
-            password: '',
+            password: '4028',
             icon: 'toys',
-            title: 'Mecano',
-            media: '.jpg',
+            title: 'Meccagoen',
+            media: 'mecano.jpg',
             description: 'Desde pequeño quería construir cosas. Empecé con los Lego, luego los Mecano, y cuando confirmé que era un manazas y un inútil, me dediqué a la informática!',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            tags: ['Nombre', 'Original'],
+            clues: ['Licencia', '1920'],
             timestamp: 0
           },
           {
-            password: '',
+            password: 'Metaling',
             icon: 'palette',
             title: 'Simpsons',
-            media: '.jpg',
+            media: 'simpsons.gif',
             description: 'Ya no me hacen ni puta gracia los capítulos nuevos, ni siquiera la película, pero los viejos aún son buenísimos.',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            tags: ['Brujas', 'Noche'],
+            clues: ['Árbol', 'Terror'],
             timestamp: 0
           },
           {
-            password: '',
+            password: 'Halloween',
             icon: 'tv',
             title: 'Larga vida',
-            media: '.jpg',
+            media: 'spock.jpg',
             description: 'El reboot que han hecho de las películas es extremadamente decente. Pero la serie original sigue siendo un pestiño.',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            tags: ['Apellido', 'Nuevo'],
+            clues: ['Actor', 'Spock'],
             timestamp: 0
           },
           {
-            password: '',
+            password: 'Quinto',
             icon: 'theaters',
             title: 'Cómo te llamas?',
-            media: '.jpg',
+            media: 'max.gif',
             description: 'Este debería ser el ejemplo perfecto de cómo hacer un reboot/remake bien. Si las originales eran de culto, ésta se ha convertirá en leyenda.',
             tags: ['Protagonista', 'Apellido'],
             clues: ['Australiano', 'Palabra'],
@@ -597,15 +597,15 @@
           {
             password: 'Rockatansky',
             icon: 'chrome_reader_mode',
-            title: 'Ready Player One',
+            title: 'Ready',
             media: 'rpo.jpg',
-            description: 'Otra de lo que parece que será mi futura saga favorita. Espero que la película sea de mi agrado',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            description: 'Otra de lo que parece que será mi futura saga favorita. Espero que la película esté a la altura del libro.',
+            tags: ['Enemigos', 'Nombre'],
+            clues: ['Clave', '6'],
             timestamp: 0
           },
           {
-            password: '',
+            password: 'Sixers',
             icon: 'games',
             title: 'Tekken',
             media: 'tekken.gif',
@@ -619,16 +619,16 @@
             icon: 'tv',
             title: 'Héroes',
             media: 'heroes.jpg',
-            description: 'Salva a la animadora, salva al mundo. Si tan sólo se hubiera quedado en la primera temporada... A quién pretendo engañar, sólo molaba Sylar.',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            description: 'Salva a la animadora, salva al mundo. Si tan sólo se hubiera quedado en la primera temporada...',
+            tags: ['Malo', 'Poderes'],
+            clues: ['Nombre', 'Enemigo'],
             timestamp: 0
           },
           {
-            password: '',
+            password: 'Sylar',
             icon: 'theaters',
             title: 'Oferta de sierras',
-            media: '.jpg',
+            media: 'saw.gif',
             description: 'Me imagino al paisano comprando en la ferretería cuerdas, bridas, esposas, palas, lejía, antimanchas, cadenas, sopletes, sierras, taladros... Y pagando en efectivo.',
             tags: ['Nick', 'Asesino'],
             clues: ['Inglés', 'Nombre'],
@@ -657,11 +657,11 @@
           {
             password: 'Lugar',
             icon: 'tv',
-            title: 'Firefly',
-            media: '.jpg',
-            description: 'descripcion',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            title: 'Luciérnaga',
+            media: 'firefly.gif',
+            description: 'Otra serie que me encanta, que sólo puedo definir como "Future Western".',
+            tags: ['Nombre', 'Nave'],
+            clues: ['Película', 'Secuela'],
             timestamp: 0
           },
           {
@@ -688,44 +688,44 @@
             password: 'Din',
             icon: 'tv',
             title: 'Dr. Who',
-            media: '.jpg',
-            description: 'descripcion',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            media: 'who.jpg',
+            description: 'Otra que intenté ver en su día y apenas pude con el primer episodio. Pero debo intentarlo de nuevo...',
+            tags: ['Enemigos', 'Extraterrestres'],
+            clues: ['Androides', 'Malos'],
             timestamp: 0
           },
           {
-            password: '',
+            password: 'Daleks',
             icon: 'theaters',
             title: 'Avatar',
-            media: '.jpg',
-            description: 'descripcion',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            media: 'avatar.jpg',
+            description: 'Pocahontas con anfetaminas. Aún así, la mejor película en 3D hasta la fecha.',
+            tags: ['Follar', 'Genitales'],
+            clues: ['Pelos', 'Unidos'],
             timestamp: 0
           },
           {
-            password: '',
+            password: 'Coletas',
             icon: 'chrome_reader_mode',
-            title: 'The Witcher',
-            media: '.jpg',
+            title: 'El Brujo',
+            media: 'wolf.jpg',
             description: '',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            tags: ['Caballo', 'Mote'],
+            clues: ['Nombre', 'Español'],
             timestamp: 0
           },
           {
-            password: '',
+            password: 'Sardinilla',
             icon: 'theaters',
             title: 'MIB',
             media: 'mib.gif',
-            description: 'descripcion',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            description: 'Otra de las rayadas de invasiones alienígenas. Pero siempre me pareció una idea muy simpática.',
+            tags: ['Animal', 'Personaje'],
+            clues: ['Nombre', 'Habla'],
             timestamp: 0
           },
           {
-            password: '',
+            password: 'Frank',
             icon: 'tv',
             title: 'Breaking Bad',
             media: 'bb.gif',
@@ -780,16 +780,16 @@
             title: '75%',
             media: '75.jpg',
             description: 'Vas por el 75% del juego! Ya te dije que tendrías que viajar, luchar contra monstruos y hablar con NPCs...',
-            tags: ['Mapa', 'León'],
-            clues: ['Jaime', 'Kissy'],
+            tags: ['Mapa', 'Mansilla'],
+            clues: ['Santos', 'Begoña'],
             timestamp: 0
           },
           {
-            password: 'Supercalifragilisticoespialidoso',
+            password: 'Volador',
             icon: 'palette',
-            title: 'Naruto',
+            title: 'Shippuden',
             media: 'naruto.gif',
-            description: 'No te metas con Naruto. Tiene una historia por detrás que ya la quisiera Dragon Ball o Fullmetal Alchemist. Aunque tenga demasiado relleno.',
+            description: 'No te metas con Naruto! Tiene una historia por detrás que ya la quisiera Dragon Ball o Fullmetal Alchemist. Aunque tenga demasiado relleno.',
             tags: ['Ataque', 'Bola'],
             clues: ['Nombre', 'Japonés'],
             timestamp: 0
@@ -797,7 +797,7 @@
           {
             password: 'Rasengan',
             icon: 'tv',
-            title: '´Química avanzada',
+            title: 'Química avanzada',
             media: 'got.gif',
             description: 'Estos sí que eran alquimistas y herreros como mandaban los diversos dioses.',
             tags: ['Acero', 'Fuego'],
@@ -828,7 +828,7 @@
             password: 'Vanya',
             icon: 'theaters',
             title: 'Qué es? Qué es?',
-            media: 'nightmare.gif',
+            media: 'jack.gif',
             description: 'Hay luces de color! Qué es? Parece de algodón! Qué es? No creo lo que veo, estoy soñando? No lo sé! Qué injusto es! Qué es?',
             tags: ['Nariz', 'Luz'],
             clues: ['Color', 'Favorito'],
@@ -837,18 +837,18 @@
           {
             password: 'Zero',
             icon: 'palette',
-            title: 'Rick y Morty',
+            title: 'Parodias',
             media: 'rick.jpg',
             description: 'Entiendo que Morty venga de Marty, pero de donde huevos sacaron que el nombre de Rick hace apología al Dr. Emmett?',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            tags: ['Apellido', 'Brown'],
+            clues: ['Serie', 'Doctor'],
             timestamp: 0
           },
           {
-            password: '',
+            password: 'Sanchez',
             icon: 'tv',
-            title: 'Coooararrrl',
-            media: 'carl.gif',
+            title: 'Puto niño',
+            media: 'carl.jpg',
             description: 'Odio a Carl. Le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odiooooo!!',
             tags: ['Nombre', 'Mujer'],
             clues: ['Recordado', 'Competición'],
@@ -857,7 +857,7 @@
           {
             password: 'Andrea',
             icon: 'theaters',
-            title: 'Indiana jones',
+            title: 'Indiana',
             media: 'indiana.gif',
             description: 'Quién no ha sentido nunca el deseo de tener en la mano el corazón recién arrancado y aún palpitante de una persona mientras se lo enseñas? Y el de un niño?',
             tags: ['Culto', 'Sacrificio'],
@@ -870,12 +870,12 @@
             title: 'Lego',
             media: 'lego.jpg',
             description: 'Para mi los Lego eran los bloques de construcción, nunca tuve muñequitos. Esos eran los Playmobil. Pero ahora molan mucho y quiero hacer escenas de Star Wars con ellos!',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            tags: ['Material', 'Original'],
+            clues: ['Juguetería', 'Dinamarca'],
             timestamp: 0
           },
           {
-            password: '',
+            password: 'Madera',
             icon: 'games',
             title: 'Destruye amistades',
             media: 'worms.jpg',
@@ -897,10 +897,10 @@
           {
             password: 'Klendathu',
             icon: 'chrome_reader_mode',
-            title: 'El hobbit',
+            title: 'Tramposos',
             media: 'gollum.gif',
             description: 'Tampoco sería un juego de acertijos completo sin el duelo de acertijos más famoso de todos los tiempos, no?',
-            tags: ['Acertijos', 'Último'],
+            tags: ['Acertijo', 'Último'],
             clues: ['Respuesta', 'Trampa'],
             timestamp: 0
           },
@@ -918,7 +918,7 @@
             password: 'Cerveza',
             icon: 'theaters',
             title: '12 monos',
-            media: 'monkeys.jpg',
+            media: 'monos.jpg',
             description: 'Otra gran distopía futurista tecnológicamente avanzada en la que el mundo ha sido destruido por un peligroso virus, y consiguen viajar al pasado para evitarlo.',
             tags: ['Virus', 'Nombre'],
             clues: ['Serie', 'Película'],
@@ -927,15 +927,15 @@
           {
             password: 'Kalavirus',
             icon: 'chrome_reader_mode',
-            title: 'Harry potter',
-            media: 'marauder.gif',
+            title: 'Eres un mago',
+            media: 'merodeador.gif',
             description: 'Siempre me pareció absurdo que artefactos mágicos tan jodidamente poderosos e inclinables hacia el mal como la Capa de Invisibilidad o el Mapa del Merodeador los posean unos preadolescentes.',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            tags: ['Mote', 'Imposible'],
+            clues: ['Muerto', 'Traidor'],
             timestamp: 0
           },
           {
-            password: '',
+            password: 'Colagusano',
             icon: 'palette',
             title: 'Año 3000',
             media: 'fry.gif',
@@ -948,24 +948,24 @@
             password: '1077',
             icon: 'theaters',
             title: 'Spiderman',
-            media: '.jpg',
-            description: 'En mi opinión, el único superhéroe de verdad. Un pringao con superpoderes. Como debe ser. Nada de artilugios ni tetazas enormes.',
-            tags: ['tag1', 'tag2'],
-            clues: ['clue1', 'clue2'],
+            media: 'spider.jpg',
+            description: 'En mi opinión, el único superhéroe de verdad. Un pringao con superpoderes. Como debe ser. Nada de artilugios ni tetazas enormes. Y Tobey lo clava.',
+            tags: ['Venom', 'Nieto'],
+            clues: ['Carnage', 'Hijo'],
             timestamp: 0
           },
           {
-            password: '',
+            password: 'Toxin',
             icon: 'tv',
             title: 'Kitt',
             media: 'kitt.gif',
             description: 'Hoy en día ves esta serie y es tan casposa como surrealista, pero cuando era un crío me encantaba.',
-            tags: ['Coche', 'Marca'],
-            clues: ['Empresa', 'Nombre'],
+            tags: ['Coche', 'Enemigo'],
+            clues: ['Malvado', 'Nombre'],
             timestamp: 0
           },
           {
-            password: 'Pontiac',
+            password: 'KARR',
             icon: 'theaters',
             title: 'Estoy dentro',
             media: 'matrix.jpg',
@@ -988,7 +988,7 @@
             password: 'Dah',
             icon: 'tv',
             title: 'Ciencia vs Fe',
-            media: 'bunker.gif',
+            media: 'lost.gif',
             description: 'La primera serie que me enganchó hasta tal punto de madrugar 4 horas para ver el final en tiempo real, sin subtitular, y con cortes de emisión. Final decepcionante, por cierto.',
             tags: ['Spoiler', 'Números'],
             clues: ['Malditos', 'Chungos'],
@@ -1008,7 +1008,7 @@
             password: 'Tentaquil',
             icon: 'tv',
             title: 'Big bang theory',
-            media: 'tbbt.jpg',
+            media: 'tbbt.gif',
             description: 'Molaban más cuando no tenían novia. Pero todos los frikis tenemos derecho al amor, no? Ahora son todo chuminadas.',
             tags: ['Piedra', 'Papel'],
             clues: ['Tijera', 'Lagarto'],
@@ -1030,8 +1030,8 @@
             title: '100%',
             media: '100.jpg',
             description: 'Has completado el 100% del juego! Enhorabuena! Me pregunto qué última misión te aguarda...',
-            tags: ['Llave', 'Sorpresa'],
-            clues: ['Buzón'],
+            tags: ['Mapa', 'Villaobispo'],
+            clues: ['Buzón', 'Llave'],
             timestamp: 0
           }
         ]
@@ -1075,7 +1075,7 @@
             }
           })
           if (document.getElementById('scroll')) document.getElementById('scroll').scrollIntoView(true)
-          this.help = false
+          // this.help = false
           return found
         } else {
           return this.quests[0]
