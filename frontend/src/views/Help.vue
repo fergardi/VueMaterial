@@ -9,7 +9,6 @@
           .md-subhead Te echo una mano?
       md-card-media
         md-image(md-src="img/help.jpg")
-        md-ink-ripple
       md-card-content.no-padding
         .padding
           span Bienvenida a tu propia gymkana de aniversario portátil! Durante 100 pruebas, resolverás pequeños acertijos sobre temas de la cultura friki que tanto nos gusta a los dos, para encontrar el regalo que he escondido al final.
@@ -60,7 +59,7 @@
             percent: 10
           },
           {
-            icon: 'palette',
+            icon: 'brush',
             title: 'Dibujos',
             subtitle: 'Animación, 3D, etc',
             percent: 9

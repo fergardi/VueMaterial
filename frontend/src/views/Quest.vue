@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    md-snackbar(ref="snackbar", md-duration="5000", v-once)
+    md-snackbar(ref="snackbar", md-duration="2000", md-position="top center", v-once)
       span Correcto! Se ha guardado en tus Logros. A ver si resuelves el siguiente...
       md-button.md-accent(v-on:click.native="close()")
         md-icon done
@@ -13,10 +13,9 @@
           .md-subhead Acertijo {{ index }} de {{ quests.length }}
         md-switch.md-warn(v-model="help") Pista
       md-card-media
-        md-image(v-bind:md-src="'img/quests/' + active.media", v-on:click.native="debug()")
-        md-ink-ripple
+        md-image(v-bind:md-src="'img/quests/' + active.media")
       md-card-content
-        i {{ active.description }}
+        span {{ active.description }}
         p
           md-chip.md-primary(v-for="tag in active.tags") {{ tag }}
           template(v-for="clue in active.clues")
@@ -31,7 +30,7 @@
   export default {
     data () {
       return {
-        help: true,
+        help: false,
         password: '',
         quests: [
           {
@@ -86,7 +85,7 @@
           },
           {
             password: 'Blinky',
-            icon: 'palette',
+            icon: 'brush',
             title: 'Luz! Fuego!',
             media: 'goku.gif',
             description: 'Destrucción! El mundo puede ser una ruina! No lo podemos permitir! Esto sí eran dibujos animados y no la mierda de hoy.',
@@ -116,7 +115,7 @@
           },
           {
             password: 'Necronomicon',
-            icon: 'palette',
+            icon: 'brush',
             title: 'Alquimia',
             media: 'alchemist.gif',
             description: 'Gracias por recomendarmela, me ha gustado mucho! Pero sigo prefiriendo Naruto Shippuden...',
@@ -246,7 +245,7 @@
           },
           {
             password: 'Trantor',
-            icon: 'palette',
+            icon: 'brush',
             title: 'Gravity Falls',
             media: 'gravity.jpg',
             description: 'El simple nombre sugiere misterio. El dibujo y el guión, el punto cómico a esta historia de sucesos paranormales y sobrenaturales a lo Expediente X.',
@@ -386,7 +385,7 @@
           },
           {
             password: 'Morden',
-            icon: 'palette',
+            icon: 'brush',
             title: 'Finn & Jake',
             media: 'time.jpg',
             description: 'Una gran serie animada para niños y no tan niños, con una trama principal perfectamente hilada si te vas fijando bien en cada episodio.',
@@ -566,7 +565,7 @@
           },
           {
             password: 'Metaling',
-            icon: 'palette',
+            icon: 'brush',
             title: 'Simpsons',
             media: 'simpsons.gif',
             description: 'Ya no me hacen ni puta gracia los capítulos nuevos, ni siquiera la película, pero los viejos aún son buenísimos.',
@@ -786,7 +785,7 @@
           },
           {
             password: 'Volador',
-            icon: 'palette',
+            icon: 'brush',
             title: 'Shippuden',
             media: 'naruto.gif',
             description: 'No te metas con Naruto! Tiene una historia por detrás que ya la quisiera Dragon Ball o Fullmetal Alchemist. Aunque tenga demasiado relleno.',
@@ -836,7 +835,7 @@
           },
           {
             password: 'Zero',
-            icon: 'palette',
+            icon: 'brush',
             title: 'Parodias',
             media: 'rick.jpg',
             description: 'Entiendo que Morty venga de Marty, pero de donde huevos sacaron que el nombre de Rick hace apología al Dr. Emmett?',
@@ -936,7 +935,7 @@
           },
           {
             password: 'Colagusano',
-            icon: 'palette',
+            icon: 'brush',
             title: 'Año 3000',
             media: 'fry.gif',
             description: 'Mi serie de animación favorita. Más graciosa que los Simpsons, y menos basta que Padre de Familia. Perfecta.',
@@ -996,7 +995,7 @@
           },
           {
             password: '4815162342',
-            icon: 'palette',
+            icon: 'brush',
             title: 'Hazte con todos',
             media: 'pokemon.jpg',
             description: 'No he sido tan cabrón de ponerte uno aleatorio para que me digas cuál es. Porque hay más de 800. Este es especial.',
@@ -1075,7 +1074,7 @@
             }
           })
           if (document.getElementById('scroll')) document.getElementById('scroll').scrollIntoView(true)
-          // this.help = false
+          this.help = false
           return found
         } else {
           return this.quests[0]

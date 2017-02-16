@@ -84,12 +84,15 @@
 
 <style lang="stylus">
   body
+    /*
     background url("img/background.jpg") no-repeat center center fixed
     -webkit-background-size cover
     -moz-background-size cover
     -o-background-size cover
     background-size cover
     box-sizing border-box
+    */
+    background-color #242f39 !important
   html
   body
   .app

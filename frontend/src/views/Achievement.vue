@@ -9,7 +9,6 @@
           .md-subhead Lo que has conseguido hasta ahora
       md-card-media
         md-image(md-src="img/achievement.jpg")
-        md-ink-ripple
       md-card-content.no-padding
         .padding
           span Aquí podrás ver todas las misiones que has ido completando durante la gymkana, con sus contraseñas y la fecha en la que fueron descubiertas:
@@ -17,11 +16,13 @@
           md-divider
           md-list-item(v-if="!ordered.length")
             md-avatar.md-large
-              md-icon.md-primary announcement
+              md-icon.md-primary warning
             .md-list-text-container
               strong Absolutamente NADA
               span.italic Empieza a resolver acertijos!
               i AHORA
+            md-avatar
+              md-icon.md-primary star_border
           md-list-item(v-else, v-for="achievement in ordered")
             md-avatar.md-large
               md-icon.md-primary {{ achievement.icon }}
