@@ -11,7 +11,7 @@ const quests = [
   {
     password: 'Virginia',
     icon: 'theaters',
-    title: 'Tenemos que volver',
+    title: 'Delorean',
     media: 'delorean.gif',
     description: 'Vas a tener que usar tu flamante coche nuevo para resolver algunas de las pruebas. Este también era híbrido, y solo consumía 1,21GW!',
     tags: ['California', 'Virginia'],
@@ -105,10 +105,10 @@ const quests = [
     media: 'aoe2.jpg',
     description: 'Te están atacando! Rush de escorpiones! Touche de torres! Empalizada de recursos! Si no matabas al jabalí antes del minuto 2, habías perdido.',
     tags: ['Chat', 'Risas'],
-    clues: ['Atajo', 'Teclado']
+    clues: ['Atajo', 'Palabra']
   },
   {
-    password: '11',
+    password: 'Once',
     icon: 'tv',
     title: 'Almas de metal',
     media: 'westworld.gif',

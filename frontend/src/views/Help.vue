@@ -19,13 +19,13 @@
           span Suerte y que te diviertas!
         md-list.md-triple-line
           md-divider
-          md-list-item(v-for="item in items")
+          md-list-item(v-for="item in ordered")
             md-avatar.md-large
               md-icon.md-primary {{ item.icon }}
             .md-list-text-container
               strong {{ item.title }}
               span {{ item.subtitle }}
-              i {{ item.percent.toFixed(2) }} %
+              i {{ item.percent }}%
             md-divider
 </template>
 
@@ -87,6 +87,12 @@
     },
     created () {
       this.$material.setCurrentTheme('help')
+    },
+    computed: {
+      ordered () {
+        return this.items
+        .sort((x, y) => parseInt(y.percent) - parseInt(x.percent))
+      }
     }
   }
 </script>

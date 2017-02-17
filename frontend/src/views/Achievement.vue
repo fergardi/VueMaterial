@@ -30,12 +30,12 @@
               strong {{ achievement.title }}
               span {{ achievement.password }}
               i {{ achievement.timestamp | date }}
-            md-avatar(v-if="achievement.helped")
-              md-icon.md-primary star_half
-              md-tooltip(md-direction="left") Usando ayuda
-            md-avatar(v-else)
+            md-avatar(v-if="!achievement.cheat")
               md-icon.md-primary star
-              md-tooltip(md-direction="left") Sin usar ayuda
+              md-tooltip(md-direction="left") Sin ayuda
+            md-avatar(v-else)
+              md-icon.md-primary star_half
+              md-tooltip(md-direction="left") Con ayuda
             md-divider
 </template>
 
