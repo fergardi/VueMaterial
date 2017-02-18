@@ -1,14 +1,14 @@
 ## Pruebas
 
-* PUZZLE  -> Inicio
+* DIBUJO  -> Inicio
 * PELI    -> Regreso al futuro
 * SERIE   -> Sherlock
 * PELI    -> Jurassic park
 * JUEGO   -> Pacman
-* DIBUJOS -> Bola de dragon
+* DIBUJO  -> Bola de dragon
 * SERIE   -> Galactica
 * PELI    -> Evil dead
-* DIBUJOS -> Fullmetal alchemist
+* DIBUJO  -> Fullmetal alchemist
 * LIBRO   -> Dune
 * PELI    -> Alien
 * JUEGO   -> Age of empires
@@ -21,12 +21,12 @@
 * JUEGO   -> Mortal kombat
 * PELI    -> Mars attacks
 * LIBRO   -> Fundación
-* DIBUJOS -> Gravity falls
+* DIBUJO  -> Gravity falls
 * SERIE   -> X files
 * PELI    -> Sleepy hollow
 * VIAJE   -> 25 Viaje 1/4
 * PELI    -> Scott pilgrim
-* LIBRO   -> Mago de oz
+* LIBRO   -> Drizzt
 * PELI    -> Guardianes de la galaxia
 * SERIE   -> V
 * JUEGO   -> Half life
@@ -35,7 +35,7 @@
 * SERIE   -> Mr robot
 * PELI    -> Star wars
 * JUEGO   -> Metal slug
-* DIBUJOS -> Hora de aventuras
+* DIBUJO  -> Hora de aventuras
 * SERIE   -> Power rangers
 * PELI    -> Autoestopista galactico
 * JUEGO   -> Resident evil
@@ -43,7 +43,7 @@
 * JUEGO   -> Crash bandicoot
 * LIBRO   -> Historia interminable
 * JUEGO   -> World of Warcraft
-* PUZZLE  -> VIR
+* PELI    -> Blade
 * SERIE   -> Man seeking woman
 * PELI    -> Inception
 * JUEGO   -> Final fantasy
@@ -53,7 +53,7 @@
 * JUEGO   -> Lemmings
 * SERIE   -> Wayward pines
 * JUGUETE -> Mecano
-* DIBUJOS -> Simpsons
+* DIBUJO  -> Simpsons
 * SERIE   -> Star trek
 * PELI    -> Mad max
 * LIBRO   -> Ready player one
@@ -70,44 +70,43 @@
 * LIBRO   -> The witcher
 * PELI    -> MIB
 * SERIE   -> Breaking bad
-* PUZZLE  -> Overexposed model
+* JUEGO   -> Space invaders
 * PELI    -> Terminator
 * JUEGO   -> Heroes of might and magic
 * PELI    -> V de vendetta
 * VIAJE   -> 75 Viaje 3/4
-* DIBUJOS -> Naruto
+* DIBUJO  -> Naruto
 * SERIE   -> Juego de tronos
 * PELI    -> Quinto elemento
 * LIBRO   -> El señor de los anillos
 * PELI    -> Pesadilla antes de navidad
-* DIBUJOS -> Rick y morty
+* DIBUJO  -> Rick y morty
 * SERIE   -> Walking dead
 * PELI    -> Indiana jones
 * JUGUETE -> Lego
 * JUEGO   -> Worms
 * PELI    -> Starship troopers
 * LIBRO   -> El hobbit
-* PUZZLE  -> Einstein
+* JUEGO   -> Tetris
 * PELI    -> 12 monos
 * LIBRO   -> Harry potter
-* DIBUJOS -> Futurama
+* DIBUJO  -> Futurama
 * PELI    -> Spiderman
 * SERIE   -> Coche fantastico
 * PELI    -> Matrix
 * JUEGO   -> Skyrim
 * SERIE   -> Lost
-* DIBUJOS -> Pokemon
+* DIBUJO  -> Pokemon
 * SERIE   -> Big bang theory
 * PELI    -> La momia
 * VIAJE   -> 100 Viaje 4/4
 
 ## Total
 
-* 30 PELIS
+* 31 PELIS
 * 22 SERIES
-* 18 JUEGOS
-* 10 LIBROS
+* 20 JUEGOS
+* 11 LIBROS
 *  9 DIBUJOS
-*  4 PUZZLES
 *  4 VIAJES
 *  3 JUGUETES

@@ -1,13 +1,17 @@
 <template lang="pug">
   .app
-    md-toolbar(v-once)
+    md-toolbar.md-dense(v-once)
       md-button.md-icon-button(v-on:click.native="toggle()")
         md-icon menu
+      .flex
       h2.md-title(style="flex: 1") Annyversary
-    md-sidenav.md-left.md-fixed(md-swipeable, ref="sidebar", v-once)
+      .flex
+      md-button.md-icon-button.hidden
+        md-icon search
+    md-sidenav.md-left.md-fixed(ref="sidebar", md-swipeable, v-once)
       md-toolbar.md-account-header
         md-list.md-transparent
-          md-list-item.md-avatar-list.center(v-on:click.native="toggle()")
+          md-list-item.md-avatar-list.center
             .flex
             md-avatar.md-large
               md-image(md-src="img/fergardi.jpg")
@@ -51,14 +55,14 @@
             title: 'Logros'
           },
           {
-            url: '/help',
-            icon: 'help',
-            title: 'Ayuda'
-          },
-          {
             url: '/info',
             icon: 'school',
             title: 'Información'
+          },
+          {
+            url: '/help',
+            icon: 'help',
+            title: 'Ayuda'
           }
         ]
       }
@@ -126,7 +130,10 @@
     padding 16px
   .center
     align-items center
+    text-align: center
     justify-content center
+  .hidden
+    visibility hidden
   .signature
     width 100%
     position absolute

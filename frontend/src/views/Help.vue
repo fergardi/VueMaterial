@@ -17,15 +17,18 @@
           span Los códigos siempre son de una palabra, compuesta por letras y/o números, nunca con espacios. Ignora los signos de puntuación, pero respeta siempre las mayúsculas (importante).
           span Eres una chica lista, pero probablemente necesites algo de ayuda en las misiones más complicadas o en las que yo creo que sabes de qué van pero en realidad no tienes ni la remota idea. Puedes activar el modo de ayuda avanzada si te atascas. Usa la Wikipedia.
           span Suerte y que te diviertas!
-        md-list.md-triple-line
+      md-divider
+      md-card-media
+        md-image(md-src="img/chart.png")
+      md-card-content.no-padding
+        md-list.md-double-line
           md-divider
           md-list-item(v-for="item in ordered")
             md-avatar.md-large
-              md-icon.md-primary {{ item.icon }}
+              md-icon(v-bind:style="{ color: item.color }") {{ item.icon }}
             .md-list-text-container
               strong {{ item.title }}
               span {{ item.subtitle }}
-              i {{ item.percent }}%
             md-divider
 </template>
 
@@ -38,49 +41,43 @@
             icon: 'theaters',
             title: 'Cine',
             subtitle: 'Películas, cortos, etc',
-            percent: 30
+            color: '#b71c1c'
           },
           {
             icon: 'tv',
             title: 'Televisión',
             subtitle: 'Series, miniseries, etc',
-            percent: 22
+            color: '#ff5722'
           },
           {
             icon: 'games',
             title: 'Juegos',
             subtitle: 'Videojuegos, consolas, etc',
-            percent: 18
+            color: '#ffeb3b'
           },
           {
             icon: 'chrome_reader_mode',
             title: 'Literatura',
             subtitle: 'Novelas, cuentos, libros, etc',
-            percent: 10
+            color: '#4caf50'
           },
           {
             icon: 'brush',
             title: 'Dibujos',
             subtitle: 'Animación, 3D, etc',
-            percent: 9
-          },
-          {
-            icon: 'extension',
-            title: 'Puzzles',
-            subtitle: 'Acertijos, adivinanzas, etc',
-            percent: 4
+            color: '#9c27b0'
           },
           {
             icon: 'place',
             title: 'Viajes',
             subtitle: 'Mapas, destinos, sitios, etc',
-            percent: 4
+            color: '#2196f3'
           },
           {
             icon: 'toys',
             title: 'Juguetes',
             subtitle: 'Muñecos, figuras, comics, etc',
-            percent: 3
+            color: '#ff4081'
           }
         ]
       }

@@ -1,8 +1,8 @@
 const quests = [
   {
     password: null,
-    icon: 'extension',
-    title: 'Empieza el juego',
+    icon: 'brush',
+    title: 'Pixels',
     media: '0.jpg',
     description: 'También he creado tu propio avatar en 8bits! No he conseguido sacarte más parecida, así que es lo que hay.',
     tags: ['Avatar', '8bits'],
@@ -30,7 +30,7 @@ const quests = [
     password: 'Eurus',
     icon: 'theaters',
     title: 'Atracciones',
-    media: 'jurassic.jpg',
+    media: 'park.gif',
     description: 'Recuerdo perfectamente esconderme debajo de la butaca del cine y gritar viendo esta película con 8 años.',
     tags: ['Bastón', 'Piedra'],
     clues: ['Mosquito', 'Savia']
@@ -101,14 +101,14 @@ const quests = [
   {
     password: 'Xenomorfo',
     icon: 'games',
-    title: 'Dame madera!',
+    title: 'Dame madera',
     media: 'aoe2.jpg',
     description: 'Te están atacando! Rush de escorpiones! Touche de torres! Empalizada de recursos! Si no matabas al jabalí antes del minuto 2, habías perdido.',
-    tags: ['Chat', 'Risas'],
-    clues: ['Atajo', 'Palabra']
+    tags: ['Truco', 'Recurso'],
+    clues: ['Chat', 'Palabra']
   },
   {
-    password: 'Once',
+    password: 'WOODSTOCK',
     icon: 'tv',
     title: 'Almas de metal',
     media: 'westworld.gif',
@@ -236,14 +236,14 @@ const quests = [
   {
     password: 'Ramona',
     icon: 'chrome_reader_mode',
-    title: 'Alicia',
-    media: 'alice.jpg',
-    description: 'Sabías que Lewis Caroll se inspiró en las historias que inventaba para entretener a tres hermanas mientras cruzaba el río en un barco?',
-    tags: ['Apellido', 'Niña'],
-    clues: ['Inspiración', 'Original']
+    title: 'Drizzt',
+    media: 'drizzt.jpg',
+    description: 'Otra de mis sagas de fantasía favoritas. En concreto me gusta el tema de la Antípoda Oscura, reino malvado y corrupto gobernado por mujeres.',
+    tags: ['Noble', 'Casa'],
+    clues: ['Nombre', 'Drow']
   },
   {
-    password: 'Liddell',
+    password: 'Menzoberranzan',
     icon: 'theaters',
     title: 'Los Guardianes',
     media: 'gotg.jpg',
@@ -382,21 +382,21 @@ const quests = [
     icon: 'games',
     title: 'Warcraft',
     media: 'wow.jpg',
-    description: 'Otra viciada de juego. El WoW no estaba mal, pero el W3 era una maravilla. Te descojonas con los Orcos. Pero me va más la nigromancia.',
+    description: 'Otra viciada de juego. El WoW no estaba mal, pero el W3 era una maravilla. Te descojonas con los Orcos.',
     tags: ['Espada', 'Hielo'],
     clues: ['Nombre', 'Inglés']
   },
   {
     password: 'Frostmourne',
-    icon: 'extension',
-    title: 'VIR',
-    media: 'ley.jpg',
-    description: 'Una broma de la que solo me río yo, como ingeniero que soy. Pero teniendo en cuenta que tu te ríes de las cajas de mis juegos porque pone "DEVIR", estamos en paz.',
-    tags: ['Ley', 'Física'],
-    clues: ['Electricidad', 'Hombre']
+    icon: 'theaters',
+    title: 'Vampiros',
+    media: 'blade.gif',
+    description: 'la única saga de vampiros que merece algo la pena, al menos para mí.',
+    tags: ['Personaje', 'Nombre'],
+    clues: ['Real', 'Brooks']
   },
   {
-    password: 'Ohm',
+    password: 'Eric',
     icon: 'tv',
     title: 'Fringe',
     media: 'fringe.jpg',
@@ -631,15 +631,15 @@ const quests = [
   },
   {
     password: 'VIr',
-    icon: 'extension',
-    title: 'Spam',
-    media: 'model.jpg',
-    description: 'Una vez que la conoces, ya no puedes evitar encontrarla allá por donde vayas. EVERYWHERE.',
-    tags: ['Nombre', 'Modelo'],
-    clues: ['Mujer', 'Spam']
+    icon: 'games',
+    title: 'Mata mata',
+    media: 'invaders.gif',
+    description: 'Recuerdo con tristeza haberme gastado un dineral en comprarlo original para la Game Boy. Qué tontería de juego.',
+    tags: ['Puntuación', 'Capada'],
+    clues: ['Máximo', 'Número']
   },
   {
-    password: 'Arianne',
+    password: '9990',
     icon: 'theaters',
     title: 'Terminator',
     media: 'terminator.gif',
@@ -784,15 +784,15 @@ const quests = [
   },
   {
     password: 'Anillo',
-    icon: 'extension',
-    title: 'Las 5 Casas',
-    media: 'einstein.jpg',
-    description: 'Probablemente ya has hecho este rompecabezas, así que te pregunto, qué bebe el dueño del pez?',
-    tags: ['Bebida', 'Dueño'],
-    clues: ['País', 'Origen']
+    icon: 'games',
+    title: 'TOC',
+    media: 'tetris.gif',
+    description: 'Una muestra excelente de lo que frustrante que puede ser tener un poco de ToC. Todo ordenadito de cojones.',
+    tags: ['Mezcla', 'Tetra'],
+    clues: ['Nombre', 'Deporte']
   },
   {
-    password: 'Cerveza',
+    password: 'Tennis',
     icon: 'theaters',
     title: '12 monos',
     media: 'monos.jpg',

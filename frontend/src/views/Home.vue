@@ -5,7 +5,7 @@
         md-card-media(md-ratio="16:9")
           md-image(v-bind:md-src="'img/' + card.media")
         md-card-area
-          md-card-header
+          md-card-header.center
             .md-title {{ card.title }}
             .md-subhead {{ card.subtitle }}
 </template>
@@ -17,7 +17,7 @@
         cards: [
           {
             title: 'Feliz aniversario',
-            subtitle: 'Esto es una gymkana creada para ti',
+            subtitle: 'He creado este juego para ti',
             media: 'harrypotter.jpg'
           },
           {
@@ -32,7 +32,7 @@
           },
           {
             title: 'Luchar contra monstruos',
-            subtitle: 'Ornitorrincos asesinos',
+            subtitle: 'Perros, gatos y ornitorrincos',
             media: 'gameofthrones.jpg'
           },
           {

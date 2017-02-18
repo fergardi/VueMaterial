@@ -1,9 +1,10 @@
 <template lang="pug">
   div
-    md-snackbar(ref="snackbar", md-duration="3000", md-position="top center", v-once)
-      span Correcto! Se ha guardado en tus Logros. A ver si resuelves el siguiente...
+    md-snackbar(ref="snackbar", md-duration="5000", md-position="top center", v-once)
+      span Correcto! Logro desbloqueado!
       md-button.md-accent(v-on:click.native="close()")
-        md-icon done
+        md-icon(v-if="!cheat") star
+        md-icon(v-else) star_half
     md-card
       md-card-header
         md-avatar.md-large
@@ -22,7 +23,7 @@
             md-chip.md-accent.animated.fadeIn(v-show="help") {{ clue }}
         md-input-container.md-input-invalid(md-has-password)
           label Código
-          md-input(type="password", v-model="password", required)
+          md-input(type="password", v-model="password", id="password", required)
           span.md-error Respeta mayúsculas pero ignora signos de puntuación.
 </template>
 
@@ -76,7 +77,9 @@
             this.cheat = false
           })
           if (document.getElementById('scroll')) document.getElementById('scroll').scrollIntoView(true)
+          // if (document.getElementById('password')) document.getElementById('password').focus()
           this.help = false
+          this.password = ''
           this.active = found
         }
       },
