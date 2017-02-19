@@ -1,12 +1,12 @@
 const quests = [
   {
-    password: null,
+    password: 'Pixels',
     icon: 'brush',
-    title: 'Pixels',
+    title: 'Ready Player Two',
     media: '0.jpg',
     description: 'También he creado tu propio avatar en 8bits! No he conseguido sacarte más parecida, así que es lo que hay.',
-    tags: ['Avatar', '8bits'],
-    clues: ['Nombre', 'Mujer']
+    tags: ['Avatar', 'Nombre'],
+    clues: ['Virginia', 'Mujer']
   },
   {
     password: 'Virginia',

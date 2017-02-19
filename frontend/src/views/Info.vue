@@ -3,7 +3,7 @@
     md-card
       md-card-header
         md-avatar.md-large
-          md-icon.md-primary school
+          md-icon.md-primary help
         md-card-header-text
           .md-title Información
           .md-subhead Datos técnicos
@@ -11,8 +11,7 @@
         md-image(md-src="img/info.jpg")
       md-card-content.no-padding
         .padding
-          span Para nuestro aniversario quería hacer algo especial para tí, y, como esto del desarrollo es lo que mejor se me da, me dije ¿por qué no hacer una gymkana online con cosas frikis que nos gustan a los dos, como juegos, pelis, series, comics o libros? Espero que te diviertas jugándolo tanto como yo haciéndolo.
-          span Por si tienes curiosidad, lo he creado usando:
+          span Espero que te haya gustado la idea. Igual no mola! Además, me ha servido para aprender a desarrollar apps móviles. Por si tienes curiosidad, lo he creado usando:
         md-list.md-double-line
           md-divider
           md-list-item(v-for="item in items")

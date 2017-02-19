@@ -11,7 +11,7 @@
           md-icon.md-primary {{ active.icon }}
         md-card-header-text
           .md-title {{ active.title }}
-          .md-subhead Acertijo {{ index }} de {{ quests.length }}
+          .md-subhead Acertijo {{ index }} de 100
         md-switch.md-accent(v-model="help") Pista
       md-card-media
         md-image(v-bind:md-src="'img/quests/' + active.media")
@@ -29,24 +29,22 @@
 
 <script>
   import moment from 'moment'
-  import data from '../data/quests.js'
+  import quests from '../data/quests.js'
   export default {
     data () {
       return {
         help: false,
         cheat: false,
         password: '',
-        quests: [],
         active: null
       }
     },
     created () {
       this.$material.setCurrentTheme('quest')
-      this.quests = data
-      this.active = this.quests[0]
+      this.active = quests[0]
       this.$getItem('LAST')
       .then((value) => {
-        this.active = value ? this.quests.find(quest => quest.password === value.password) || this.quests[0] : this.quests[0]
+        this.active = value ? quests.find(quest => quest.password === value.password) || quests[0] : quests[0]
       })
     },
     methods: {
@@ -57,13 +55,13 @@
         this.$refs.snackbar.close()
       },
       debug () {
-        var index = this.quests.findIndex(quest => quest.password === this.active.password)
-        this.password = this.quests[index + 1].password
+        var index = quests.findIndex(quest => quest.password === this.active.password)
+        this.password = quests[index + 1].password
       }
     },
     watch: {
       password (password) {
-        var found = this.quests.find(quest => quest.password === password)
+        var found = quests.find(quest => quest.password === password)
         if (found) {
           this.$getItem(password)
           .then((item) => {
@@ -89,7 +87,7 @@
     },
     computed: {
       index () {
-        return this.quests.findIndex(quest => quest.password === this.active.password) + 1
+        return quests.findIndex(quest => quest.password === this.active.password) + 1
       }
     }
   }

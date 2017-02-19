@@ -3,23 +3,20 @@
     md-card
       md-card-header
         md-avatar.md-large
-          md-icon.md-primary help
+          md-icon.md-primary school
         md-card-header-text
-          .md-title Ayuda
-          .md-subhead Te echo una mano?
+          .md-title Tutorial
+          .md-subhead Qué demonios es esto?
       md-card-media
         md-image(md-src="img/help.jpg")
       md-card-content.no-padding
         .padding
-          span Bienvenida a tu propia gymkana de aniversario portátil! Durante 100 pruebas, resolverás pequeños acertijos sobre temas de la cultura friki que tanto nos gusta a los dos, para encontrar el regalo que he escondido al final.
-          span Hay de todo: libros, películas, series, dibujos, videojuegos, juguetes... Para avanzar debes encontrar la contraseña que desbloquea la siguiente prueba.
-          span Como era tan difícil escoger sobre cientos de referencias frikis, algunas muy buenas se me han quedado fuera. Tal vez para el año que viene te haga una expansión...
-          span Los códigos siempre son de una palabra, compuesta por letras y/o números, nunca con espacios. Ignora los signos de puntuación, pero respeta siempre las mayúsculas (importante).
-          span Eres una chica lista, pero probablemente necesites algo de ayuda en las misiones más complicadas o en las que yo creo que sabes de qué van pero en realidad no tienes ni la remota idea. Puedes activar el modo de ayuda avanzada si te atascas. Usa la Wikipedia.
-          span Suerte y que te diviertas!
-      md-divider
-      md-card-media
-        md-image(md-src="img/chart.png")
+          span Para nuestro aniversario quería hacer algo especial para tí y, como esto es lo que mejor se me da, me dije ¿por qué no hacer un juego con cosas frikis que nos gustan a los dos?
+          span Durante 100 niveles, resolverás pequeños acertijos sobre temas de la cultura friki popular para encontrar un regalo que he escondido al final.
+          span Cada prueba consta de un título, un icono, una imagen, una descripción, y unas etiquetas. Debes descubrir la contraseña que te permita avanzar al siguiente nivel.
+          span Puedes solicitar pista si te atascas, que muestra más etiquetas para ayudarte, pero de hacerlo se verá reflejado en tu puntuación final.
+          span Las contraseñas siempre son de una palabra con letras y/o números, nunca con espacios. Ignora los signos de puntuación, pero respeta siempre las mayúsculas.
+          span Espero que te diviertas jugándolo tanto como yo haciéndolo. Suerte y que te diviertas! Éstos son los temas que he escogido:
       md-card-content.no-padding
         md-list.md-double-line
           md-divider
@@ -30,6 +27,8 @@
               strong {{ item.title }}
               span {{ item.subtitle }}
             md-divider
+      md-card-media
+        md-image(md-src="img/chart.png")
 </template>
 
 <script>
@@ -40,43 +39,43 @@
           {
             icon: 'theaters',
             title: 'Cine',
-            subtitle: 'Películas, cortos, etc',
+            subtitle: 'Películas, cortos, vídeos, etc',
             color: '#b71c1c'
           },
           {
             icon: 'tv',
             title: 'Televisión',
-            subtitle: 'Series, miniseries, etc',
+            subtitle: 'Series, miniseries, anuncios, etc',
             color: '#ff5722'
           },
           {
             icon: 'games',
-            title: 'Juegos',
-            subtitle: 'Videojuegos, consolas, etc',
+            title: 'Videojuegos',
+            subtitle: 'Juegos, trucos, consolas, etc',
             color: '#ffeb3b'
           },
           {
             icon: 'chrome_reader_mode',
             title: 'Literatura',
-            subtitle: 'Novelas, cuentos, libros, etc',
+            subtitle: 'Libros, historietas, comics, etc',
             color: '#4caf50'
           },
           {
             icon: 'brush',
-            title: 'Dibujos',
-            subtitle: 'Animación, 3D, etc',
+            title: 'Animación',
+            subtitle: 'Dibujos, anime, 3D, etc',
             color: '#9c27b0'
           },
           {
             icon: 'place',
-            title: 'Viajes',
-            subtitle: 'Mapas, destinos, sitios, etc',
+            title: 'Lugares',
+            subtitle: 'Mapas, destinos, viajes, etc',
             color: '#2196f3'
           },
           {
             icon: 'toys',
             title: 'Juguetes',
-            subtitle: 'Muñecos, figuras, comics, etc',
+            subtitle: 'Muñecos, figuras, marcas, etc',
             color: '#ff4081'
           }
         ]

@@ -5,25 +5,22 @@
         md-avatar.md-large
           md-icon.md-primary star
         md-card-header-text
-          .md-title Logros
+          .md-title Puntuación
           .md-subhead Lo que has conseguido hasta ahora
       md-card-media
         md-image(md-src="img/achievement.jpg")
       md-card-content.no-padding
         .padding
-          span Aquí podrás ver todas las misiones que has ido completando durante la gymkana, con sus contraseñas y la fecha en la que fueron descubiertas:
+          span Aquí podrás ver todos los niveles que has ido completando durante el juego, con sus contraseñas, la fecha en la que fueron descubiertas y sus puntos.
+          span.center Progreso total
+          md-progress(v-bind:md-progress="achievements.length")
+          span.center {{ achievements.length }} / 100
+          span.center Puntuación total
+          md-progress(v-bind:md-progress="score / 100")
+          span.center {{ score }} / 10000
         md-list.md-triple-line
           md-divider
-          md-list-item(v-if="!ordered.length")
-            md-avatar.md-large
-              md-icon.md-primary warning
-            .md-list-text-container
-              strong Absolutamente NADA
-              span.italic Empieza a resolver acertijos!
-              i AHORA
-            md-avatar
-              md-icon.md-primary star_border
-          md-list-item(v-else, v-for="achievement in ordered")
+          md-list-item(v-for="achievement in ordered")
             md-avatar.md-large
               md-icon.md-primary {{ achievement.icon }}
             .md-list-text-container
@@ -32,10 +29,10 @@
               i {{ achievement.timestamp | date }}
             md-avatar(v-if="!achievement.cheat")
               md-icon.md-primary star
-              md-tooltip(md-direction="left") Sin ayuda
+              md-tooltip(md-direction="left") +100
             md-avatar(v-else)
               md-icon.md-primary star_half
-              md-tooltip(md-direction="left") Con ayuda
+              md-tooltip(md-direction="left") +50
             md-divider
 </template>
 
@@ -55,7 +52,11 @@
     computed: {
       ordered () {
         return this.achievements
-        .sort((x, y) => parseInt(x.timestamp) - parseInt(y.timestamp))
+        .sort((first, second) => parseInt(first.timestamp) - parseInt(second.timestamp))
+      },
+      score () {
+        return this.achievements
+        .reduce((total, achievement) => total + (achievement.cheat ? 50 : 100), 0)
       }
     }
   }

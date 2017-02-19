@@ -35,6 +35,8 @@
 
 <script>
   import localforage from 'localforage'
+  import quests from './data/quests.js'
+  import moment from 'moment'
   export default {
     data () {
       return {
@@ -45,24 +47,24 @@
             title: 'Bienvenida'
           },
           {
-            url: '/quest',
-            icon: 'extension',
-            title: 'Acertijos'
+            url: '/help',
+            icon: 'school',
+            title: 'Tutorial'
           },
           {
             url: '/achievement',
             icon: 'star',
-            title: 'Logros'
+            title: 'Puntuación'
+          },
+          {
+            url: '/quest',
+            icon: 'lock',
+            title: 'Niveles'
           },
           {
             url: '/info',
-            icon: 'school',
-            title: 'Información'
-          },
-          {
-            url: '/help',
             icon: 'help',
-            title: 'Ayuda'
+            title: 'Información'
           }
         ]
       }
@@ -74,6 +76,19 @@
         storeName: 'Achievements',
         description: 'Vue Annyversary database'
       })
+      var password = 'Pixels'
+      var found = quests.find(quest => quest.password === password)
+      if (found) {
+        this.$getItem(password)
+        .then((item) => {
+          if (!item) {
+            found.timestamp = moment().format('x')
+            found.cheat = false
+            this.$setItem('LAST', found)
+            this.$setItem(password, found)
+          }
+        })
+      }
     },
     methods: {
       toggle () {
