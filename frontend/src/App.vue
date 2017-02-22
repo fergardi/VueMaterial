@@ -1,6 +1,6 @@
 <template lang="pug">
   .app
-    md-toolbar.md-dense(v-once)
+    md-toolbar.md-dense(v-once, v-if="!fullscreen")
       md-button.md-icon-button(v-on:click.native="toggle()")
         md-icon menu
       .flex
@@ -8,16 +8,17 @@
       .flex
       md-button.md-icon-button.hidden
         md-icon search
-    md-sidenav.md-left.md-fixed(ref="sidebar", md-swipeable, v-once)
+    md-sidenav.md-left.md-fixed(ref="sidebar", md-swipeable, v-once, v-if="!fullscreen")
       md-toolbar.md-account-header
         md-list.md-transparent
-          md-list-item.md-avatar-list.center
-            .flex
-            md-avatar.md-large
-              md-image(md-src="img/fergardi.jpg")
-            md-avatar.md-large
-              md-image(md-src="img/vivi.jpg")
-            .flex
+          router-link(exact, to="/splash")
+            md-list-item.md-avatar-list.center
+              .flex
+              md-avatar.md-large
+                md-image(md-src="img/fergardi.jpg")
+              md-avatar.md-large
+                md-image(md-src="img/vivi.jpg")
+              .flex
           md-list-item
             .flex
             h2.md-title Annyversary
@@ -37,6 +38,7 @@
   import localforage from 'localforage'
   import quests from './data/quests.js'
   import moment from 'moment'
+  import vuex from './vuex/vuex.js'
   export default {
     data () {
       return {
@@ -92,10 +94,15 @@
     },
     methods: {
       toggle () {
-        this.$refs.sidebar.toggle()
+        if (this.$refs.sidebar) this.$refs.sidebar.toggle()
       },
       close () {
-        this.$refs.sidebar.close()
+        if (this.$refs.sidebar) this.$refs.sidebar.close()
+      }
+    },
+    computed: {
+      fullscreen () {
+        return vuex.state.fullscreen
       }
     }
   }
@@ -111,7 +118,7 @@
     background-size cover
     box-sizing border-box
     */
-    background-color #242f39 !important
+    background-color #242f39
   html
   body
   .app
@@ -125,27 +132,33 @@
     height 100%
   .content
     margin 0 !important
+    height: 100%
   .md-chip
     margin-right 5px
   .md-toolbar.md-account-header .md-avatar-list .md-list-item-container
     align-items center
   .router-link-active
-    background-color rgba(153, 153, 153, 0.2);
+    background-color rgba(153, 153, 153, 0.2)
   .flex
     display flex
     flex 1
   .md-avatar-list .md-avatar .md-icon
-    border-radius: 50%
+    border-radius 50%
   .md-card
     border none
     box-shadow none
+    .md-card-header
+      .md-title
+        font-size 22px
+      .md-switch
+        margin 0
   .no-padding
     padding 0 !important
   .padding
     padding 16px
   .center
     align-items center
-    text-align: center
+    text-align center
     justify-content center
   .hidden
     visibility hidden

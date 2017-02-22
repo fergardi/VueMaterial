@@ -1,7 +1,7 @@
 const quests = [
   {
     password: 'Pixels',
-    icon: 'brush',
+    icon: 'favorite',
     title: 'Ready Player Two',
     media: '0.jpg',
     description: 'También he creado tu propio avatar en 8bits! No he conseguido sacarte más parecida, así que es lo que hay.',
@@ -20,7 +20,7 @@ const quests = [
   {
     password: '1656JVS',
     icon: 'tv',
-    title: 'Sherlock',
+    title: 'Holmes',
     media: 'sherlock.jpg',
     description: 'No sería un juego de acertijos sin nuestro detective favorito, no? Una pena que haya terminado. Al menos Mary está MUERTA.',
     tags: ['Familiar', 'Perdido'],
@@ -47,9 +47,9 @@ const quests = [
   {
     password: 'Blinky',
     icon: 'brush',
-    title: 'Luz! Fuego!',
+    title: 'Luz! Fuego! Destrucción!',
     media: 'goku.gif',
-    description: 'Destrucción! El mundo puede ser una ruina! No lo podemos permitir! Esto sí eran dibujos animados y no la mierda de hoy.',
+    description: 'El mundo puede ser una ruina! No lo podemos permitir! Esto sí eran dibujos animados y no la mierda de hoy.',
     tags: ['Nombre', 'Verdadero'],
     clues: ['Japonés', 'Hombre']
   },
@@ -65,7 +65,7 @@ const quests = [
   {
     password: 'Caprica6',
     icon: 'theaters',
-    title: 'Ash',
+    title: 'Motosierras',
     media: 'ash.gif',
     description: 'Aunque tiene algunas escenas especialmente brutas, te ries de lo lindo con esta saga.',
     tags: ['Libro', 'Piel'],
@@ -76,7 +76,7 @@ const quests = [
     icon: 'brush',
     title: 'Alquimia',
     media: 'alchemist.gif',
-    description: 'Gracias por recomendarmela, me ha gustado mucho! Pero sigo prefiriendo Naruto Shippuden...',
+    description: 'Sigo prefiriendo Naruto Shippuden...',
     tags: ['Color', 'Favorito'],
     clues: ['Apellido', 'Roy']
   },

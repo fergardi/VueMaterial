@@ -32,12 +32,12 @@
           },
           {
             title: 'Luchar contra monstruos',
-            subtitle: 'Perros, gatos y ornitorrincos',
+            subtitle: 'Perros o incluso gatos',
             media: 'gameofthrones.jpg'
           },
           {
-            title: 'Hablar con NPCs',
-            subtitle: 'Recuerda que tienen sentimientos',
+            title: 'Completar misiones',
+            subtitle: 'Los NPCs tienen sentimientos',
             media: 'worldofwarcraft.jpg'
           },
           {

@@ -4,7 +4,7 @@
   "author": "Fernando García <fergardi@gmail.com>",
   "private": true,
   "scripts": {
-    "watchify": "watchify -vd -p [ browserify-hmr -p 3333 -u localhost:3333 ] -e src/main.js -o dist/build.js -t [ eslintify --extension js --extension vue --formatter stylish --quiet-ignored ]",
+    "watchify": "watchify -vd -p [ browserify-hmr -p 3333 -u localhost:3333 ] -e src/main.js -o dist/build.js -t",
     "serve": "http-server -p 4444 -o -s -c 1",
     "dev": "npm-run-all --parallel watchify serve",
     "test": "karma start karma.config.js",
@@ -17,7 +17,8 @@
     "vue-loader": "^10.0.2",
     "vue-localforage": "^0.2.4",
     "vue-material": "*",
-    "vue-router": "^2.1.1"
+    "vue-router": "^2.1.1",
+    "vuex": "^2.1.2"
   },
   "devDependencies": {
     "axis": "^0.6.1",

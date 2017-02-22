@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import VueMaterial from 'vue-material'
+import VueMaterial from '../dist/vue-material.js'
 import VueLocalForage from 'vue-localforage'
 
 import moment from 'moment'
@@ -10,6 +10,7 @@ import Home from './views/Home.vue'
 import Info from './views/Info.vue'
 import Achievement from './views/Achievement.vue'
 import Help from './views/Help.vue'
+import Splash from './views/Splash.vue'
 import Quest from './views/Quest.vue'
 
 // router
@@ -17,13 +18,14 @@ Vue.use(VueRouter)
 // routes
 var router = new VueRouter({
   routes: [
-    { path: '/', redirect: '/home' },
+    { path: '/', redirect: '/splash' },
     { path: '/home', component: Home },
     { path: '/quest', component: Quest },
     { path: '/achievement', component: Achievement },
     { path: '/help', component: Help },
     { path: '/info', component: Info },
-    { path: '*', redirect: '/' }
+    { path: '/splash', component: Splash },
+    { path: '*', redirect: '/splash' }
   ]
 })
 
@@ -31,7 +33,7 @@ var router = new VueRouter({
 Vue.use(VueMaterial)
 Vue.material.registerTheme({
   home: {
-    primary: 'indigo'
+    primary: 'blue'
   },
   achievement: {
     primary: {
@@ -46,12 +48,16 @@ Vue.material.registerTheme({
     }
   },
   info: {
-    primary: 'blue'
+    primary: 'pink'
   },
   quest: {
     primary: 'deep-purple',
     accent: 'green',
     warn: 'deep-purple'
+  },
+  splash: {
+    primary: 'purple',
+    background: 'indigo'
   }
 })
 
