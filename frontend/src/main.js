@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import VueMaterial from '../dist/vue-material.js'
+import VueMaterial from '../js/vue-material'
 import VueLocalForage from 'vue-localforage'
 
 import moment from 'moment'
@@ -56,7 +56,8 @@ Vue.material.registerTheme({
     warn: 'deep-purple'
   },
   splash: {
-    primary: 'purple',
+    primary: 'indigo',
+    accent: 'purple',
     background: 'indigo'
   }
 })

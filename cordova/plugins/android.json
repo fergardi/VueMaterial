@@ -7,9 +7,6 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "fergardi.cordova.annyversary"
-        },
         "cordova-plugin-crosswalk-webview": {
             "XWALK_VERSION": "21+",
             "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
@@ -25,6 +22,9 @@
             "PACKAGE_NAME": "fergardi.cordova.annyversary"
         },
         "cordova-plugin-navigationbar": {
+            "PACKAGE_NAME": "fergardi.cordova.annyversary"
+        },
+        "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "fergardi.cordova.annyversary"
         }
     },

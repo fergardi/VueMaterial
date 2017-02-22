@@ -1,12 +1,4 @@
 {
-    "cordova-plugin-splashscreen": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-splashscreen@4.0.1"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-crosswalk-webview": {
         "source": {
             "type": "registry",
@@ -35,6 +27,14 @@
         "source": {
             "type": "registry",
             "id": "cordova-plugin-navigationbar"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-splashscreen": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-splashscreen@4.0.1"
         },
         "is_top_level": true,
         "variables": {}

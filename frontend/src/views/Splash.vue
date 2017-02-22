@@ -1,15 +1,15 @@
 <template lang="pug">
   div(v-once)
-    md-boards.md-transparent(md-auto, :md-duration="5000", md-infinite)
+    md-boards.md-transparent(md-auto="true", :md-duration="10000", md-infinite)
       md-board.padded(v-for="(board, index) in boards")
         md-card
           md-card-media
-            md-image.image(v-bind:md-src="board.image")
+            md-image.image(v-bind:md-src="'img/' + board.image")
           md-card-content.flex
-            h2.md-title.title {{ board.title }}
-            p.text {{ board.text }}        
+            h1.title {{ board.title }}
+            p {{ board.text }}        
             router-link(exact, to="/home", v-if="last(index)")
-              md-button.md-raised.md-primary.button EMPEZAR
+              md-button.md-raised.md-accent.button jugar
 </template>
 
 <script>
@@ -19,19 +19,19 @@
       return {
         boards: [
           {
-            image: 'https://image.flaticon.com/icons/svg/324/324579.svg',
-            title: 'FELICIDADES',
-            text: 'text'
+            image: 'heart.svg',
+            title: 'Annyversary',
+            text: 'He creado un nuevo juego exclusivo para tí como regalo por nuestro primer aniversario juntos'
           },
           {
-            image: 'https://image.flaticon.com/icons/svg/207/207786.svg',
-            title: 'BATALLAS',
-            text: 'text'
+            image: 'quest.svg',
+            title: 'Misiones',
+            text: 'Tendrás que superar distintas pruebas, como acertijos y viajes, para avanzar en el juego'
           },
           {
-            image: 'https://image.flaticon.com/icons/svg/134/134892.svg',
-            title: 'MISIONES',
-            text: 'text'
+            image: 'chest.svg',
+            title: 'Tesoros',
+            text: 'Tras completarlas todas y obtener tu puntuación, encontrarás un misterioso regalo escondido'
           }
         ]
       }
@@ -55,12 +55,17 @@
 
 <style lang="stylus" scoped>
   .padded
-    padding 50px 100px
+    padding 25px
+  .image
+    padding 10px 50px
   .image
   .title
   .text
   .button
-    margin-top: 25px
+    margin-top 15px
+  .title
+    font-size 32px
+    font-weight 500
   .flex
     display flex
     flex-direction column
