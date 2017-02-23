@@ -24,9 +24,6 @@
         "cordova-plugin-navigationbar": {
             "PACKAGE_NAME": "fergardi.cordova.annyversary"
         },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "fergardi.cordova.annyversary"
-        },
         "cordova-plugin-vibration": {
             "PACKAGE_NAME": "fergardi.cordova.annyversary"
         }

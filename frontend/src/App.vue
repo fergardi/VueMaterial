@@ -4,7 +4,7 @@
       md-button.md-icon-button(v-on:click.native="toggle()")
         md-icon menu
       .flex
-      h2.md-title(style="flex: 1") Annyversary
+      h2.md-title(style="flex: 1") Frikiversario
       .flex
       md-button.md-icon-button.hidden
         md-icon search
@@ -21,7 +21,7 @@
               .flex
           md-list-item
             .flex
-            h2.md-title Annyversary
+            h2.md-title Frikiversario
             .flex
       md-list
         md-list-item(v-for="item in items")
@@ -110,14 +110,6 @@
 
 <style lang="stylus">
   body
-    /*
-    background url("img/background.jpg") no-repeat center center fixed
-    -webkit-background-size cover
-    -moz-background-size cover
-    -o-background-size cover
-    background-size cover
-    box-sizing border-box
-    */
     background-color #242f39
   html
   body
@@ -145,6 +137,7 @@
   .md-avatar-list .md-avatar .md-icon
     border-radius 50%
   .md-card
+    border-radius 0
     border none
     box-shadow none
     .md-card-header

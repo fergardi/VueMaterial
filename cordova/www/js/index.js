@@ -4,9 +4,6 @@ var app = {
   },
   onDeviceReady: function() {
     this.receivedEvent('deviceready');
-    window.setTimeout(function() {
-      $cordovaSplashscreen.hide();
-    }, 500);
   }
 };
 

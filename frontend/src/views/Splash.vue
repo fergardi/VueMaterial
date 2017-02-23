@@ -1,6 +1,6 @@
 <template lang="pug">
   div(v-once)
-    md-boards.md-transparent(md-auto, :md-duration="6000", md-infinite, md-swipeable)
+    md-boards.md-transparent(md-swipeable)
       md-board.padded(v-for="(board, index) in boards")
         md-card
           md-card-media
@@ -20,18 +20,18 @@
         boards: [
           {
             image: 'heart.svg',
-            title: 'Annyversary',
-            text: 'He creado un nuevo juego exclusivo para tí como regalo por nuestro primer aniversario juntos'
+            title: 'Frikiversario',
+            text: 'He creado un nuevo juego, exclusivo para tí, como regalo por nuestro primer aniversario juntos!'
           },
           {
             image: 'quest.svg',
             title: 'Misiones',
-            text: 'Tendrás que superar distintas pruebas, como acertijos y viajes, para avanzar en el juego'
+            text: 'Tendrás que superar distintas pruebas, complicados acertijos y largos viajes, para avanzar en el juego!'
           },
           {
             image: 'chest.svg',
             title: 'Tesoros',
-            text: 'Tras completarlas todas y obtener tu puntuación, encontrarás un misterioso regalo escondido'
+            text: 'Tras completarlo todo y obtener tu puntuación final, encontrarás un misterioso regalo escondido!'
           }
         ]
       }
