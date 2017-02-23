@@ -71,6 +71,7 @@
               this.$setItem('LAST', found)
               this.$setItem(password, found)
               this.open()
+              navigator.vibrate(2000)
             }
             this.cheat = false
           })
