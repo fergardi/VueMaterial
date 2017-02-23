@@ -1,6 +1,6 @@
 <template lang="pug">
   div(v-once)
-    md-boards.md-transparent(md-auto="true", :md-duration="10000", md-infinite)
+    md-boards.md-transparent(md-auto, :md-duration="6000", md-infinite, md-swipeable)
       md-board.padded(v-for="(board, index) in boards")
         md-card
           md-card-media
