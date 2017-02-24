@@ -59,9 +59,9 @@ Vue.material.registerTheme({
   },
   // splash
   welcome: {
-    primary: 'amber',
+    primary: 'brown',
     accent: 'purple',
-    background: 'amber'
+    background: 'brown'
   },
   mission: {
     primary: 'red',
