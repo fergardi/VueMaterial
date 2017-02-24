@@ -30,21 +30,25 @@ var router = new VueRouter({
 // material
 Vue.use(VueMaterial)
 Vue.material.registerTheme({
+  // fallback
   default: {
     background: 'indigo'
   },
+  // achievements
   achievement: {
     primary: {
       color: 'red',
       hue: 600
     }
   },
+  // help
   help: {
     primary: {
       color: 'green',
       hue: 600
     }
   },
+  // info
   info: {
     primary: 'pink'
   },
@@ -53,10 +57,41 @@ Vue.material.registerTheme({
     accent: 'green',
     warn: 'purple'
   },
-  splash: {
-    primary: 'indigo',
+  // splash
+  welcome: {
+    primary: 'amber',
     accent: 'purple',
+    background: 'amber'
+  },
+  mission: {
+    primary: 'red',
+    accent: 'purple',
+    background: 'red'
+  },
+  search: {
+    primary: 'green',
+    accent: 'purple',
+    background: 'green'
+  },
+  travel: {
+    primary: 'indigo',
+    accent: 'black',
     background: 'indigo'
+  },
+  monster: {
+    primary: 'deep-purple',
+    accent: 'pink',
+    background: 'deep-purple'
+  },
+  explore: {
+    primary: 'black',
+    accent: 'white',
+    background: 'black'
+  },
+  chest: {
+    primary: 'pink',
+    accent: 'indigo',
+    background: 'pink'
   }
 })
 
