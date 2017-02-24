@@ -22,12 +22,12 @@
           },
           {
             title: 'Tendrás que viajar',
-            subtitle: 'Tienes un coche nuevo',
+            subtitle: 'Tienes un coche híbrido',
             media: 'starwars.jpg'
           },
           {
             title: 'Resolver acertijos',
-            subtitle: 'Eres más lista que yo',
+            subtitle: 'Eres mucho más lista que yo',
             media: 'lordoftherings.jpg'
           },
           {
@@ -37,7 +37,7 @@
           },
           {
             title: 'Completar misiones',
-            subtitle: 'Los NPCs tienen sentimientos',
+            subtitle: 'Los NPCs también tienen sentimientos',
             media: 'worldofwarcraft.jpg'
           },
           {

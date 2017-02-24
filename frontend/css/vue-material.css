@@ -4832,6 +4832,45 @@ to {
 /* Responsive Breakpoints */
 /* Transitions - Based on Angular Material */
 /* Elevation - Based on Angular Material */
+.md-stepper {
+  padding: 0;
+  margin: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.md-stepper .md-step .md-step-header {
+    font-weight: bold;
+}
+.md-stepper .md-step .md-step-header .md-step-icon {
+      width: 40px;
+      min-width: 40px;
+      height: 40px;
+      margin: 0 6px;
+      padding: 8px;
+      border-radius: 50%;
+      line-height: 24px;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      pointer-events: none;
+}
+.md-stepper .md-step .md-step-header .md-step-title {
+      font-size: inherit;
+}
+.md-stepper .md-step .md-step-content {
+    margin: 10px 0 10px 25px;
+    padding-left: 30px;
+}
+.md-stepper .md-step:not(:last-of-type) .md-step-content {
+    border-left: 1px solid #BDBDBD;
+}
+/* Common */
+/* Responsive Breakpoints */
+/* Transitions - Based on Angular Material */
+/* Elevation - Based on Angular Material */
 .md-subheader {
   min-height: 48px;
   padding: 0 16px;

@@ -96,10 +96,6 @@
 <style lang="stylus" scoped>
   .md-switch
     align-items center
-  .md-chip.md-primary
-    background-color #673ab7
-    color white
   .md-chip.md-accent
-    background-color #4caf50
-    color white
+    color white !important
 </style>

@@ -45,7 +45,7 @@
         items: [
           {
             url: '/home',
-            icon: 'cake',
+            icon: 'favorite',
             title: 'Bienvenida'
           },
           {
