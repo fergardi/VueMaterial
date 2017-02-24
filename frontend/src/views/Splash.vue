@@ -7,9 +7,9 @@
             md-image.image(v-bind:md-src="'img/' + board.image")
           md-card-content.flex
             h1.title {{ board.title }}
-            p {{ board.text }}        
-            router-link(exact, to="/home", v-if="last(index)")
-              md-button.md-raised.md-accent.button jugar
+            p {{ board.subtitle }}        
+            router-link(exact, to="/help", v-if="last(index)")
+              md-button.md-raised.md-accent.button Comenzar
 </template>
 
 <script>
@@ -19,19 +19,34 @@
       return {
         boards: [
           {
-            image: 'heart.svg',
             title: 'Frikiversario',
-            text: 'He creado un nuevo juego, exclusivo para tí, como regalo por nuestro primer aniversario juntos!'
+            subtitle: 'He creado un nuevo juego, exclusivo para tí, como regalo por nuestro primer aniversario juntos',
+            image: 'heart.svg'
           },
           {
-            image: 'quest.svg',
             title: 'Misiones',
-            text: 'Tendrás que superar distintas pruebas, complicados acertijos y largos viajes, para avanzar en el juego!'
+            subtitle: 'Tendrás que superar distintas pruebas, cada una más complicada que la anterior, para avanzar en el juego',
+            image: 'quest.svg'
           },
           {
-            image: 'chest.svg',
+            title: 'Acertijos',
+            subtitle: 'Para encontrar la contraseña que desbloquea el siguiente nivel, tienes que usar tu ingenio y las pistas disponibles',
+            image: 'riddle.svg'
+          },
+          {
+            title: 'Viajes',
+            subtitle: 'Tal vez tengas que usar tu nuevo y flamante coche híbrido para resolver algunas de las pruebas',
+            image: 'travel.svg'
+          },
+          {
+            title: 'Monstruos',
+            subtitle: 'Terribles enemigos te aguardan! Perros, gatos, plantas o tal vez incluso temibles ornitorrincos asesinos voladores',
+            image: 'monster.svg'
+          },
+          {
             title: 'Tesoros',
-            text: 'Tras completarlo todo y obtener tu puntuación final, encontrarás un misterioso regalo escondido!'
+            subtitle: 'Tras completar todas las pruebas y obtener tu puntuación final, encontrarás un misterioso regalo escondido',
+            image: 'chest.svg'
           }
         ]
       }
@@ -58,6 +73,7 @@
     padding 25px
   .image
     padding 10px 50px
+    height: 300px
   .image
   .title
   .text

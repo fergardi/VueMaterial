@@ -6,7 +6,6 @@ import VueLocalForage from 'vue-localforage'
 import moment from 'moment'
 
 import App from './App.vue'
-import Home from './views/Home.vue'
 import Info from './views/Info.vue'
 import Achievement from './views/Achievement.vue'
 import Help from './views/Help.vue'
@@ -19,7 +18,6 @@ Vue.use(VueRouter)
 var router = new VueRouter({
   routes: [
     { path: '/', redirect: '/splash' },
-    { path: '/home', component: Home },
     { path: '/quest', component: Quest },
     { path: '/achievement', component: Achievement },
     { path: '/help', component: Help },
@@ -32,8 +30,8 @@ var router = new VueRouter({
 // material
 Vue.use(VueMaterial)
 Vue.material.registerTheme({
-  home: {
-    primary: 'blue'
+  default: {
+    background: 'indigo'
   },
   achievement: {
     primary: {
@@ -51,9 +49,9 @@ Vue.material.registerTheme({
     primary: 'pink'
   },
   quest: {
-    primary: 'deep-purple',
+    primary: 'purple',
     accent: 'green',
-    warn: 'deep-purple'
+    warn: 'purple'
   },
   splash: {
     primary: 'indigo',

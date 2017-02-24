@@ -44,11 +44,6 @@
       return {
         items: [
           {
-            url: '/home',
-            icon: 'favorite',
-            title: 'Bienvenida'
-          },
-          {
             url: '/help',
             icon: 'school',
             title: 'Tutorial'
