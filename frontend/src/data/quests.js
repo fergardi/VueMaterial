@@ -671,8 +671,8 @@ const quests = [
     title: '75%',
     media: '75.jpg',
     description: 'Vas por el 75% del juego! Ya te dije que tendrías que viajar, luchar contra monstruos y hablar con NPCs...',
-    tags: ['Mapa', 'Mansilla'],
-    clues: ['Santos', 'Begoña']
+    tags: ['Mapa', 'León'],
+    clues: ['Janira', 'Jony']
   },
   {
     password: 'Volador',

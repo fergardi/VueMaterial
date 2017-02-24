@@ -11,8 +11,8 @@
           md-icon.md-primary {{ active.icon }}
         md-card-header-text
           .md-title {{ active.title }}
-          .md-subhead Acertijo {{ index }} de 100
-        md-switch.md-accent(v-model="help") Pista
+          .md-subhead Nivel {{ index }} de {{ total }}
+        md-switch.md-accent(v-model="help", v-bind:disabled="help") Pista
       md-card-media
         md-image(v-bind:md-src="'img/quests/' + active.media")
       md-card-content
@@ -88,6 +88,9 @@
     computed: {
       index () {
         return quests.findIndex(quest => quest.password === this.active.password) + 1
+      },
+      total () {
+        return quests.length
       }
     }
   }

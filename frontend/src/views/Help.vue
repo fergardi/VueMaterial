@@ -6,7 +6,7 @@
           md-icon.md-primary school
         md-card-header-text
           .md-title Tutorial
-          .md-subhead Qué demonios es esto?
+          .md-subhead Cómo se juega a esto?
       md-card-media
         md-image(md-src="img/help.jpg")
       md-card-content.no-padding
@@ -35,7 +35,7 @@
             md-step
               md-step-header.md-primary(md-icon="assignment") Temas
               md-step-content
-                span Los temas que he escogido son:
+                span Ha sido muy difícil escoger sólo 100 cosas frikis. Tal vez el año que viene te haga una expansión! Los temas que he escogido son:
       md-card-content.no-padding
         md-list.md-double-line
           md-divider
