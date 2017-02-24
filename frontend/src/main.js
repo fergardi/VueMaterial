@@ -84,9 +84,9 @@ Vue.material.registerTheme({
     background: 'deep-purple'
   },
   explore: {
-    primary: 'black',
+    primary: 'grey',
     accent: 'white',
-    background: 'black'
+    background: 'grey'
   },
   chest: {
     primary: 'pink',
