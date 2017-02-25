@@ -8,10 +8,11 @@
           .md-title Información
           .md-subhead Datos técnicos
       md-card-media
-        md-image(md-src="img/info.jpg")
+        md-image(md-src="img/fergardi.jpg")
       md-card-content.no-padding
         .padding
-          span Espero que te haya gustado. Además, me ha servido para aprender a desarrollar apps móviles. Y también he trabajado con personas de todo el mundo y mejorado las librerías que he usado para crear este juego. Me he convertido en colaborador oficial en un proyecto muy interesante.
+          span Espero que te haya gustado jugarlo tanto como a mí hacerlo.
+          span Además, me ha servido para aprender a desarrollar apps móviles. He colaborado con personas de todo el mundo para mejorar los elementos que he usado al crear este juego.
           span Por si tienes curiosidad, lo he creado usando:
         md-list.md-double-line
           md-divider

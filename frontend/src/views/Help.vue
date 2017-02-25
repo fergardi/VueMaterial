@@ -11,31 +11,13 @@
         md-image(md-src="img/help.jpg")
       md-card-content.no-padding
         .padding
-          md-stepper
-            md-step
-              md-step-header.md-primary(md-icon="favorite") Introducción
-              md-step-content
-                span Para nuestro aniversario quería hacer algo especial para tí y, como esto es lo que mejor se me da, me dije ¿por qué no hacer un juego con cosas frikis que nos gustan a los dos?
-            md-step
-              md-step-header.md-primary(md-icon="settings") Pruebas
-              md-step-content
-                span Durante 100 niveles, resolverás pequeños acertijos sobre temas de la cultura friki popular para encontrar un regalo que he escondido al final.
-            md-step
-              md-step-header.md-primary(md-icon="extension") Tarjetas
-              md-step-content
-                span Cada tarjeta consta de un título, un icono, una imagen, una descripción, y unas etiquetas. Debes descubrir la contraseña que te permita avanzar al siguiente nivel.
-            md-step
-              md-step-header.md-primary(md-icon="lock") Contraseñas
-              md-step-content
-                span Las contraseñas siempre son de una palabra con letras y/o números, nunca con espacios. Ignora los signos de puntuación, pero respeta siempre las mayúsculas.
-            md-step
-              md-step-header.md-primary(md-icon="star") Puntuación
-              md-step-content
-                span Puedes solicitar pistas si te atascas, mostrando más etiquetas para ayudarte, pero sólo puntuarás la mitad en esa prueba.
-            md-step
-              md-step-header.md-primary(md-icon="assignment") Temas
-              md-step-content
-                span Ha sido muy difícil escoger sólo 100 cosas frikis. Tal vez el año que viene te haga una expansión! Los temas que he escogido son:
+          span Para nuestro aniversario quería hacer algo especial para tí y, como esto es lo que mejor se me da, me dije ¿por qué no hacer un juego con cosas frikis que nos gustan a los dos?
+          span Durante 100 niveles, resolverás pequeños acertijos sobre temas de la cultura friki popular para encontrar un regalo que he escondido al final.
+          span Cada tarjeta consta de un título, un icono, una imagen, una descripción, y unas etiquetas. Debes descubrir la contraseña que te permita avanzar al siguiente nivel.
+          span Las contraseñas siempre son de una palabra con letras y/o números, nunca con espacios. Ignora los signos de puntuación, pero respeta siempre las mayúsculas.
+          span No tendrás que memorizarlas todas, el juego recuerda el último nivel desbloqueado y guarda la partida automáticamente.
+          span Puedes solicitar pistas si te atascas, mostrando más etiquetas para ayudarte, pero sólo puntuarás la mitad en esa prueba.
+          span Ha sido muy difícil escoger sólo 100 cosas frikis, seguro que muchas se me han quedado en el tintero. Los temas que he escogido son:      
       md-card-content.no-padding
         md-list.md-double-line
           md-divider

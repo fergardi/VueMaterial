@@ -32,7 +32,8 @@ Vue.use(VueMaterial)
 Vue.material.registerTheme({
   // fallback
   default: {
-    background: 'indigo'
+    primary: 'black',
+    background: 'black'
   },
   // achievements
   achievement: {
@@ -50,42 +51,41 @@ Vue.material.registerTheme({
   },
   // info
   info: {
-    primary: 'pink'
+    primary: 'blue'
   },
+  // quest
   quest: {
-    primary: 'purple',
+    primary: 'deep-purple',
     accent: 'green',
-    warn: 'purple'
+    warn: 'deep-purple'
   },
   // splash
+  splash: {
+    primary: 'white',
+    background: 'black'
+  },
   welcome: {
-    primary: 'brown',
-    accent: 'purple',
-    background: 'brown'
+    primary: 'blue',
+    background: 'blue'
   },
   mission: {
     primary: 'red',
-    accent: 'purple',
     background: 'red'
   },
   search: {
     primary: 'green',
-    accent: 'purple',
     background: 'green'
   },
   travel: {
     primary: 'indigo',
-    accent: 'black',
     background: 'indigo'
   },
   monster: {
     primary: 'deep-purple',
-    accent: 'pink',
     background: 'deep-purple'
   },
   explore: {
     primary: 'grey',
-    accent: 'white',
     background: 'grey'
   },
   chest: {

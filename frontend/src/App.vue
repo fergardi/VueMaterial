@@ -122,6 +122,7 @@
     height: 100%
   .md-chip
     margin-right 5px
+    margin-bottom 5px
   .md-toolbar.md-account-header .md-avatar-list .md-list-item-container
     align-items center
   .router-link-active

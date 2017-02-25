@@ -1,10 +1,10 @@
 <template lang="pug">
-  div(v-once)
-    md-boards.md-transparent(md-swipeable)
+  md-theme(md-name="splash")
+    md-boards(md-swipeable, :md-swipe-distance="50")
       md-theme(v-for="(board, index) in boards", v-bind:md-name="board.theme")
         md-board.no-padding
           md-card
-            md-card-media
+            md-card-media.flex
               .shadow
                 md-image.image(v-bind:md-src="'img/' + board.image")
             md-card-content.flex.padded
@@ -23,43 +23,43 @@
           {
             theme: 'welcome',
             title: 'Frikiversario',
-            subtitle: 'He creado un nuevo juego, exclusivo para tí, como regalo por nuestro primer aniversario',
+            subtitle: 'He creado un juego totalmente nuevo, exclusivo para tí, como regalo por nuestro primer aniversario juntos',
             image: 'welcome.svg'
           },
           {
             theme: 'mission',
             title: 'Misiones',
-            subtitle: 'Tendrás que superar distintas pruebas, cada una más complicada que la anterior, para poder avanzar',
+            subtitle: 'Tendrás que superar distintas pruebas, cada una más complicada que la anterior, para poder avanzar en el juego',
             image: 'mission.svg'
           },
           {
             theme: 'search',
             title: 'Acertijos',
-            subtitle: 'Para encontrar la contraseña que desbloquea el siguiente nivel, tienes que usar las pistas y tu ingenio',
+            subtitle: 'Para adivinar la contraseña que desbloquea el siguiente nivel, tienes que entender las pistas y usar todo tu ingenio',
             image: 'search.svg'
           },
           {
             theme: 'travel',
             title: 'Viajes',
-            subtitle: 'Tal vez tengas que usar tu nuevo y flamante coche híbrido para resolver algunas de las misiones',
+            subtitle: 'Tal vez tengas que usar tu nuevo y flamante coche híbrido para resolver algunas de las misiones más complejas',
             image: 'travel.svg'
           },
           {
             theme: 'monster',
             title: 'Monstruos',
-            subtitle: 'Terribles enemigos te aguardan! Perros, gatos, plantas o tal vez incluso ornitorrincos asesinos voladores',
+            subtitle: 'Temibles enemigos te aguardan: perros, gatos, plantas o tal vez incluso horripilantes ornitorrincos asesinos voladores',
             image: 'monster.svg'
           },
           {
             theme: 'explore',
             title: 'Recuerdos',
-            subtitle: 'Probablemente, te darán ganas de volver a ver películas que no veías desde hace mucho tiempo',
+            subtitle: 'Probablemente tendrás que volver a repasar películas, series o libros que no veías desde hace mucho tiempo',
             image: 'explore.svg'
           },
           {
             theme: 'chest',
             title: 'Tesoros',
-            subtitle: 'Tras completar todas las pruebas y obtener tu puntuación final, encontrarás un misterioso regalo escondido',
+            subtitle: 'Tras completar todas las pruebas y obtener tu puntuación total, encontrarás un misterioso regalo escondido al final',
             image: 'chest.svg'
           }
         ]
@@ -89,8 +89,13 @@
 
 <style lang="stylus" scoped>
   .image
-    padding 20px 50px
-    height: 300px
+    padding 50px
+    height: 250px
+  .shadow
+    width 250px
+    height 250px
+    border-radius 50%
+    background-color rgba(0,0,0,0.1)
   .title
   .text
   .button
@@ -111,12 +116,7 @@
     display flex
     justify-content center
     align-items center
+    margin-top 20px
   .padded
     padding 30px
-  .shadow
-    margin-top 30px
-    width 300px
-    height 300px
-    border-radius 50%
-    background-color rgba(0,0,0,0.1)
 </style>

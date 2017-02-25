@@ -99,6 +99,6 @@
 <style lang="stylus" scoped>
   .md-switch
     align-items center
-  .md-chip.md-accent
+  .md-chip
     color white !important
 </style>
