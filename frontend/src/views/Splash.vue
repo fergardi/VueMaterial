@@ -60,14 +60,14 @@
             title: 'Recuerdos',
             subtitle: 'Probablemente tendrás que volver a repasar películas, series o libros que no veías desde hace mucho tiempo',
             image: 'explore.svg',
-            class: 'tossing'
+            class: 'floating'
           },
           {
             theme: 'chest',
             title: 'Tesoros',
             subtitle: 'Tras completar todas las pruebas y obtener tu puntuación total, encontrarás un misterioso regalo escondido al final',
             image: 'chest.svg',
-            class: 'floating'
+            class: 'tossing'
           }
         ]
       }
