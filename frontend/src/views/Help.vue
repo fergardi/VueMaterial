@@ -5,19 +5,19 @@
         md-avatar.md-large
           md-icon.md-primary school
         md-card-header-text
-          .md-title Tutorial
-          .md-subhead Cómo se juega a esto?
+          .md-title Tutorial del juego
+          .md-subhead Cómo demonios se juega a esto?
       md-card-media
         md-image(md-src="img/help.jpg")
       md-card-content.no-padding
         .padding
-          span Para nuestro aniversario quería hacer algo especial para tí y, como esto es lo que mejor se me da, me dije ¿por qué no hacer un juego con cosas frikis que nos gustan a los dos?
-          span Durante 100 niveles, resolverás pequeños acertijos sobre temas de la cultura friki popular para encontrar un regalo que he escondido al final.
-          span Cada tarjeta consta de un título, un icono, una imagen, una descripción, y unas etiquetas. Debes descubrir la contraseña que te permita avanzar al siguiente nivel.
-          span Las contraseñas siempre son de una palabra con letras y/o números, nunca con espacios. Ignora los signos de puntuación, pero respeta siempre las mayúsculas.
-          span No tendrás que memorizarlas todas, el juego recuerda el último nivel desbloqueado y guarda la partida automáticamente.
-          span Puedes solicitar pistas si te atascas, mostrando más etiquetas para ayudarte, pero sólo puntuarás la mitad en esa prueba.
-          span Ha sido muy difícil escoger sólo 100 cosas frikis, seguro que muchas se me han quedado en el tintero. Los temas que he escogido son:      
+          span Para nuestro aniversario quería hacer algo especial para tí y, como esto es lo que mejor se me da, me dije ¿por qué no hacer un <b>juego con cosas frikis</b> que nos gustan a los dos?
+          span Durante <b>100 niveles</b>, resolverás pequeños acertijos sobre temas de la cultura friki popular para encontrar un regalo que he escondido al final.
+          span Cada tarjeta consta de un título, un icono, una imagen, una descripción, y unas <b>pistas</b>. Debes descubrir la contraseña que te permita avanzar al siguiente nivel.
+          span Las contraseñas siempre son de <b>una palabra</b> con letras y/o números, nunca con espacios. Ignora los signos de puntuación, pero <b>respeta siempre las mayúsculas</b>.
+          span No tendrás que memorizarlas todas, el juego recuerda el último nivel desbloqueado y <b>guarda la partida</b> automáticamente.
+          span Puedes solicitar pistas si te atascas, mostrando más pistas para ayudarte, pero <b>sólo puntuarás la mitad</b> en esa prueba.
+          span Ha sido muy difícil seleccionar sólo 100 cosas frikis, seguro que muchas se me han quedado en el tintero. Los <b>temas</b> que he escogido son:      
       md-card-content.no-padding
         md-list.md-double-line
           md-divider

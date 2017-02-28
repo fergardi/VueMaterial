@@ -5,7 +5,7 @@
         md-avatar.md-large
           md-icon.md-primary star
         md-card-header-text
-          .md-title Puntuación
+          .md-title Puntuación total
           .md-subhead Lo que has conseguido hasta ahora
       md-card-media
         md-image(md-src="img/achievement.jpg")

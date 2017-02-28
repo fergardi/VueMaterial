@@ -5,8 +5,8 @@
         md-avatar.md-large
           md-icon.md-primary help
         md-card-header-text
-          .md-title Información
-          .md-subhead Datos técnicos
+          .md-title Información adicional
+          .md-subhead Datos técnicos de la aplicación
       md-card-media
         md-image(md-src="img/fergardi.jpg")
       md-card-content.no-padding
