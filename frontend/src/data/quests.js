@@ -6,7 +6,7 @@ const quests = [
     media: '0.jpg',
     description: 'También he creado tu propio avatar en 8bits! No he conseguido sacarte más parecida, así que es lo que hay.',
     tags: ['Avatar', 'Nombre'],
-    clues: ['Virginia', 'Mujer']
+    clues: ['Propio', 'Mujer']
   },
   {
     password: 'Virginia',
@@ -14,8 +14,8 @@ const quests = [
     title: 'Delorean',
     media: 'delorean.gif',
     description: 'Vas a tener que usar tu flamante coche nuevo para resolver algunas de las pruebas. Este también era híbrido, y solo consumía 1,21GW!',
-    tags: ['California', 'Virginia'],
-    clues: ['Placa', 'Matrícula']
+    tags: ['California', 'Placa'],
+    clues: ['Coche', 'Matrícula']
   },
   {
     password: '1656JVS',
@@ -50,8 +50,8 @@ const quests = [
     title: 'Luz! Fuego! Destrucción!',
     media: 'goku.gif',
     description: 'El mundo puede ser una ruina! No lo podemos permitir! Esto sí eran dibujos animados y no la mierda de hoy.',
-    tags: ['Nombre', 'Verdadero'],
-    clues: ['Japonés', 'Hombre']
+    tags: ['Nombre', 'Japonés'],
+    clues: ['Original', 'Goku']
   },
   {
     password: 'Kakaroto',
@@ -60,7 +60,7 @@ const quests = [
     media: 'cylon.gif',
     description: 'Lo mejor de esta serie era que muchos Cylons no sabían que lo eran y se creían humanos. Te dejaba con la boca abierta cuando se descubría un nuevo modelo.',
     tags: ['Rubia', 'Modelo'],
-    clues: ['Clave', 'Mujer']
+    clues: ['Clave', 'Cylon']
   },
   {
     password: 'Caprica6',
@@ -68,8 +68,8 @@ const quests = [
     title: 'Motosierras',
     media: 'ash.gif',
     description: 'Aunque tiene algunas escenas especialmente brutas, te ries de lo lindo con esta saga.',
-    tags: ['Libro', 'Piel'],
-    clues: ['Muertos', 'Nombre']
+    tags: ['Libro', 'Nombre'],
+    clues: ['Muertos', 'Piel']
   },
   {
     password: 'Necronomicon',
@@ -78,7 +78,7 @@ const quests = [
     media: 'alchemist.gif',
     description: 'Sigo prefiriendo Naruto Shippuden...',
     tags: ['Color', 'Favorito'],
-    clues: ['Apellido', 'Roy']
+    clues: ['Apellido', 'Personaje']
   },
   {
     password: 'Mustang',
@@ -113,8 +113,8 @@ const quests = [
     title: 'Almas de metal',
     media: 'westworld.gif',
     description: 'Una oscura odisea sobre el amanecer de la conciencia artificial y el futuro del pecado.',
-    tags: ['Parque', 'Nombre'],
-    clues: ['Empresa', 'Atracciones']
+    tags: ['Compañia', 'Empresa'],
+    clues: ['Nombre', 'Parque']
   },
   {
     password: 'Delos',
@@ -131,15 +131,15 @@ const quests = [
     title: 'Tambores',
     media: 'jumanji.gif',
     description: 'Esto sí que era un juego de mesa. Ni apostando dinero ni hostias. Sabías que hay segunda parte?',
-    tags: ['Secuela', 'Película'],
-    clues: ['Nombre', 'Espacio']
+    tags: ['Secuela', 'Espacio'],
+    clues: ['Nombre', 'Película']
   },
   {
     password: 'Zathura',
     icon: 'chrome_reader_mode',
     title: 'Kvothe',
     media: 'kvothe.jpg',
-    description: 'Una de mis sagas favoritas. Su representación de la magia es la más descriptiva que he leído.',
+    description: 'Una de mis sagas favoritas. Su representación de la magia es la más descriptiva que he leído. A ver si sale el nuevo.',
     tags: ['Viento', 'Sabio'],
     clues: ['Tercero', 'Libro']
   },
@@ -149,8 +149,8 @@ const quests = [
     title: 'Su puta madre',
     media: 'himym.gif',
     description: 'Tantos años esperando para conocer a la madre y al final se muere para volver con Robin. Spoiler!',
-    tags: ['Spoiler', 'Madre'],
-    clues: ['Nombre', 'Muerta']
+    tags: ['Nombre', 'Madre'],
+    clues: ['Ted', 'Muerta']
   },
   {
     password: 'Tracy',
@@ -176,17 +176,17 @@ const quests = [
     title: 'Ack, ack, ack!',
     media: 'mars.gif',
     description: 'Como los guionistas no sabían lo que iban a decir los marcianos, escribieron "ack ack ack" en el guión, y luego se conservó durante la filmación!',
-    tags: ['Idea', 'Original'],
-    clues: ['Juego', 'Tipo']
+    tags: ['Signo', 'Manos'],
+    clues: ['Comunicación', 'Paz']
   },
   {
-    password: 'Cartas',
+    password: 'Circulo',
     icon: 'chrome_reader_mode',
     title: 'Fundación',
     media: 'foundation.jpg',
     description: 'Otra novela río, esta vez futurista, sobre conspiraciones, partidos políticos, cultos religiosos, ansias de poder, y mucha intriga.',
-    tags: ['Nombre', 'Ciclo'],
-    clues: ['Trilogía', 'Libro']
+    tags: ['Nombre', 'Trilogía'],
+    clues: ['Ciclo', '']
   },
   {
     password: 'Trantor',
@@ -203,7 +203,7 @@ const quests = [
     title: 'Quiero creer',
     media: 'believe.jpg',
     description: 'Tenía algunos capítulos bastante escabrosos que luego no me dejaban dormir. Hasta la musiquita acojonaba cuando eras un crío.',
-    tags: ['Serie', 'Final'],
+    tags: ['Final', 'Título'],
     clues: ['Capítulo', 'Nombre']
   },
   {
@@ -212,26 +212,26 @@ const quests = [
     title: 'Ojo con la cabeza',
     media: 'sleepy.gif',
     description: 'Aunque me gustó el libro, la película de Tim Burton es bastante más interesante y con una trama más enrevesada. De mis favoritas.',
-    tags: ['Animal', 'Cruel'],
-    clues: ['Negro', 'Nombre']
+    tags: ['Animal', 'Negro'],
+    clues: ['Mote', 'Nombre']
   },
   {
     password: 'Temerario',
     icon: 'place',
     title: '25%',
     media: '25.jpg',
-    description: 'Vas por el 25% del juego! Ya te dije que tendrías que viajar, luchar contra monstruos y hablar con NPCs...',
+    description: 'Vas por el 25% del juego! Ya te dije que tendrías que viajar, hablar con NPCs y luchar contra monstruos.',
     tags: ['Mapa', 'Saldaña'],
     clues: ['Laura', 'Socky']
   },
   {
-    password: 'Ornitorrinco',
+    password: 'Gigante',
     icon: 'theaters',
     title: 'Scott Pilgrim',
     media: 'scott.gif',
     description: 'Otra buena película de frikis basada en un cómic. Las vidas extra son muy importantes para luchar contra exnovios celosos...',
-    tags: ['Novia', 'Nombre'],
-    clues: ['Pelo', 'Rosa']
+    tags: ['Rosa', 'Nombre'],
+    clues: ['Pelo', 'Novia']
   },
   {
     password: 'Ramona',
@@ -258,16 +258,16 @@ const quests = [
     media: 'v.jpg',
     description: 'Muy buena e infravalorada, a mi parecer. Un duelo de inteligencia y un plan maesto de alienígenas reptilianos comedores de ratones.',
     tags: ['Rubia', 'Pelirroja'],
-    clues: ['Anna', 'Nombre']
+    clues: ['Actriz', 'Apellido']
   },
   {
-    password: 'Morena',
+    password: 'Baccarin',
     icon: 'games',
     title: 'Media Vida',
     media: 'hl.jpg',
     description: 'Otra de mis teorías con respecto a tu trabajo es que también tenéis un Departamento de Materiales Anómalos. Y puertas interdimensionales!',
-    tags: ['Base', 'Nombre'],
-    clues: ['Instalaciones', 'Complejo']
+    tags: ['Instalaciones', 'Complejo'],
+    clues: ['Base', 'Nombre']
   },
   {
     password: 'Blackmesa',
@@ -275,7 +275,7 @@ const quests = [
     title: 'No los mojes',
     media: 'gremlin.gif',
     description: 'Eran tan moonos... Hasta que los mojabas, les daba el sol o les alimentabas después de media noche.',
-    tags: ['Nombre', 'Gremlin'],
+    tags: ['Nombre', 'Gremlins'],
     clues: ['Bicho', 'Original']
   },
   {
@@ -338,8 +338,8 @@ const quests = [
     title: 'Deep Thought',
     media: 'deep.jpg',
     description: 'La respuesta al sentido de la vida, el universo y todo lo demás.',
-    tags: ['Ordenador', 'Respuesta'],
-    clues: ['Número', 'Todo']
+    tags: ['Ordenador', 'Número'],
+    clues: ['Respuesta', 'Todo']
   },
   {
     password: '42',
@@ -348,7 +348,7 @@ const quests = [
     media: 'resident.gif',
     description: 'Otra de las teorías que tengo sobre tu trabajo es que desarrolláis en secreto armas biológicas. Experimentando con conejitos!',
     tags: ['Nombre', 'Empresa'],
-    clues: ['Corporación', 'Maligna']
+    clues: ['Corporación', 'Símbolo']
   },
   {
     password: 'Umbrella',
@@ -357,7 +357,7 @@ const quests = [
     media: 'runner.gif',
     description: 'Todos estos momentos se perderán en el tiempo como lágrimas en la lluvia.',
     tags: ['Modelo', 'Replicante'],
-    clues: ['Roy', 'Robot']
+    clues: ['Móvil', 'Robot']
   },
   {
     password: 'Nexus6',
@@ -383,8 +383,8 @@ const quests = [
     title: 'Warcraft',
     media: 'wow.jpg',
     description: 'Otra viciada de juego. El WoW no estaba mal, pero el W3 era una maravilla. Te descojonas con los Orcos.',
-    tags: ['Espada', 'Hielo'],
-    clues: ['Nombre', 'Inglés']
+    tags: ['Espada', 'Malvada'],
+    clues: ['Hielo', 'Inglés']
   },
   {
     password: 'Frostmourne',
@@ -420,7 +420,7 @@ const quests = [
     media: 'ff.jpg',
     description: 'Somos de mundos distintos. Tú, del Legend of Zelda y Nintendo. Yo, del Final Fantasy y Sony. Un amor imposible.',
     tags: ['Personaje', 'Apellido'],
-    clues: ['FF9', 'Nombre']
+    clues: ['FF9', 'Mote']
   },
   {
     password: 'Ornitier',
@@ -445,12 +445,12 @@ const quests = [
     icon: 'place',
     title: '50%',
     media: '50.jpg',
-    description: 'Vas por el 50% del juego! Ya te dije que tendrías que viajar, luchar contra monstruos y hablar con NPCs...',
+    description: 'Vas por el 50% del juego! Ya te dije que tendrías que viajar, hablar con NPCs y luchar contra monstruos.',
     tags: ['Mapa', 'León'],
     clues: ['Jaime', 'Kissy']
   },
   {
-    password: 'Sabroson',
+    password: 'Aparicion',
     icon: 'games',
     title: 'Lemmings',
     media: 'lemmings.gif',
@@ -670,12 +670,12 @@ const quests = [
     icon: 'place',
     title: '75%',
     media: '75.jpg',
-    description: 'Vas por el 75% del juego! Ya te dije que tendrías que viajar, luchar contra monstruos y hablar con NPCs...',
-    tags: ['Mapa', 'León'],
-    clues: ['Janira', 'Jony']
+    description: 'Vas por el 75% del juego! Ya te dije que tendrías que viajar, hablar con NPCs y luchar contra monstruos.',
+    tags: ['Mapa', 'Mansilla'],
+    clues: ['Begoña', 'Santos']
   },
   {
-    password: 'Volador',
+    password: 'Engendro',
     icon: 'brush',
     title: 'Shippuden',
     media: 'naruto.gif',

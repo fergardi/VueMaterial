@@ -47,7 +47,7 @@
           {
             theme: 'monster',
             title: 'Monstruos',
-            subtitle: 'Temibles enemigos te aguardan: perros, gatos, plantas o tal vez incluso horripilantes ornitorrincos asesinos voladores',
+            subtitle: 'Terribles enemigos te aguardan: perros, gatos, plantas y cualquiera que se interponga en tu camino',
             image: 'monster.svg'
           },
           {
