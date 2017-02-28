@@ -53,14 +53,14 @@
             title: 'Monstruos',
             subtitle: 'Terribles enemigos te aguardan: perros, gatos, plantas y cualquiera que se interponga en tu camino',
             image: 'monster.svg',
-            class: 'pulse'
+            class: 'floating'
           },
           {
             theme: 'explore',
             title: 'Recuerdos',
             subtitle: 'Probablemente tendrás que volver a repasar películas, series o libros que no veías desde hace mucho tiempo',
             image: 'explore.svg',
-            class: 'floating'
+            class: 'pulse'
           },
           {
             theme: 'chest',
