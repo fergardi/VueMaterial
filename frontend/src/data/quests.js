@@ -6,7 +6,7 @@ const quests = [
     media: '0.jpg',
     description: 'También he creado tu propio avatar en 8bits! No he conseguido sacarte más parecida, así que es lo que hay.',
     tags: ['Avatar', 'Nombre'],
-    clues: ['Virginia', 'Mujer']
+    clues: ['V', 'Mujer']
   },
   {
     password: 'Virginia',
@@ -14,8 +14,8 @@ const quests = [
     title: 'Delorean',
     media: 'delorean.gif',
     description: 'Vas a tener que usar tu flamante coche nuevo para resolver algunas de las pruebas. Este también era híbrido, y solo consumía 1,21GW!',
-    tags: ['California', 'Virginia'],
-    clues: ['Placa', 'Matrícula']
+    tags: ['California', 'Placa'],
+    clues: ['Coche', 'Matrícula']
   },
   {
     password: '1656JVS',
@@ -83,7 +83,7 @@ const quests = [
   {
     password: 'Mustang',
     icon: 'chrome_reader_mode',
-    title: 'Dune',
+    title: 'Dunas',
     media: 'dune.gif',
     description: 'Otra novela río repleta de familias, nobles, traiciones, conspiraciones y luchas por el poder. Y gusanos.',
     tags: ['Droga', 'Gusano'],
@@ -236,7 +236,7 @@ const quests = [
   {
     password: 'Ramona',
     icon: 'chrome_reader_mode',
-    title: 'Drizzt',
+    title: 'El elfo oscuro',
     media: 'drizzt.jpg',
     description: 'Otra de mis sagas de fantasía favoritas. En concreto me gusta el tema de la Antípoda Oscura, reino malvado y corrupto gobernado por mujeres.',
     tags: ['Noble', 'Casa'],
@@ -398,7 +398,7 @@ const quests = [
   {
     password: 'Eric',
     icon: 'tv',
-    title: 'Fringe',
+    title: 'Ciencia límite',
     media: 'fringe.jpg',
     description: 'Otra de obligado visionado. Mejor que Expendiente X. Y con una historia profunda y bien hilada.',
     tags: ['Spoiler', 'Enemigos'],
@@ -434,7 +434,7 @@ const quests = [
   {
     password: 'Zaius',
     icon: 'tv',
-    title: 'Muppets',
+    title: 'Trapos',
     media: 'muppets.jpg',
     description: 'Recuerdo que veía semanalmente este show con mis padres en el salón cuando era muy pequeño.',
     tags: ['Inglés', 'Verde'],
@@ -452,7 +452,7 @@ const quests = [
   {
     password: 'Sabroson',
     icon: 'games',
-    title: 'Lemmings',
+    title: 'Sálvalos a todos',
     media: 'lemmings.gif',
     description: 'Un grandísimo juego de lógica que adoraba de pequeño. Intentar salvarlos a todo era una locura.',
     tags: ['Empresa', 'Actual'],
@@ -479,7 +479,7 @@ const quests = [
   {
     password: 'Metaling',
     icon: 'brush',
-    title: 'La casa del árbol',
+    title: 'La casa árbol',
     media: 'simpsons.gif',
     description: 'Ya no me hacen ni puta gracia los capítulos nuevos, ni siquiera la película, pero los viejos aún son buenísimos.',
     tags: ['Brujas', 'Noche'],
@@ -897,7 +897,7 @@ const quests = [
     media: '100.jpg',
     description: 'Has completado el 100% del juego! Enhorabuena! Me pregunto qué última misión te aguarda...',
     tags: ['Mapa', 'Villaobispo'],
-    clues: ['Buzón', 'Llave']
+    clues: ['Fer', 'Mike']
   }
 ]
 

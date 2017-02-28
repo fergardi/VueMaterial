@@ -3,12 +3,13 @@
     md-card
       md-card-media.flex
         .shadow
-          md-image.image(md-src="img/heart.svg")
+          md-image.image.pulse(md-src="img/heart.svg")
       md-card-content.flex.padded
         h1.title Frikiversario
-        p 19/03/2017
+        p Hecho con cariño por <b>@fergardi</b> para <b>@vivi</b>
+        p 19/03/2016 - 19/03/2017
         router-link(exact, to="/quest")
-          md-button.md-raised.md-primary.button Volver
+          md-button.md-raised.md-accent.button Volver
 </template>
 
 <script>

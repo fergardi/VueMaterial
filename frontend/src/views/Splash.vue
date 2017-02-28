@@ -6,7 +6,7 @@
           md-card
             md-card-media.flex
               .shadow
-                md-image.image(v-bind:md-src="'img/' + board.image")
+                md-image.image(v-bind:md-src="'img/' + board.image", v-bind:class="board.class")
             md-card-content.flex.padded
               h1.title {{ board.title }}
               p {{ board.subtitle }}        
@@ -24,43 +24,50 @@
             theme: 'welcome',
             title: 'Frikiversario',
             subtitle: 'He creado un juego totalmente nuevo, exclusivo para tí, como regalo por nuestro primer aniversario juntos',
-            image: 'welcome.svg'
+            image: 'welcome.svg',
+            class: 'tossing'
           },
           {
             theme: 'mission',
             title: 'Misiones',
             subtitle: 'Tendrás que superar distintas pruebas, cada una más complicada que la anterior, para poder avanzar en el juego',
-            image: 'mission.svg'
+            image: 'mission.svg',
+            class: 'pulse'
           },
           {
             theme: 'search',
             title: 'Acertijos',
             subtitle: 'Para adivinar la contraseña que desbloquea el siguiente nivel, tienes que entender las pistas y usar todo tu ingenio',
-            image: 'search.svg'
+            image: 'search.svg',
+            class: 'floating'
           },
           {
             theme: 'travel',
             title: 'Viajes',
             subtitle: 'Tal vez tengas que usar tu nuevo y flamante coche híbrido para resolver algunas de las misiones más complejas',
-            image: 'travel.svg'
+            image: 'travel.svg',
+            class: 'tossing'
           },
           {
             theme: 'monster',
             title: 'Monstruos',
             subtitle: 'Terribles enemigos te aguardan: perros, gatos, plantas y cualquiera que se interponga en tu camino',
-            image: 'monster.svg'
+            image: 'monster.svg',
+            class: 'pulse'
           },
           {
             theme: 'explore',
             title: 'Recuerdos',
             subtitle: 'Probablemente tendrás que volver a repasar películas, series o libros que no veías desde hace mucho tiempo',
-            image: 'explore.svg'
+            image: 'explore.svg',
+            class: 'tossing'
           },
           {
             theme: 'chest',
             title: 'Tesoros',
             subtitle: 'Tras completar todas las pruebas y obtener tu puntuación total, encontrarás un misterioso regalo escondido al final',
-            image: 'chest.svg'
+            image: 'chest.svg',
+            class: 'floating'
           }
         ]
       }

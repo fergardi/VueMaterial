@@ -53,7 +53,8 @@ Vue.material.registerTheme({
   },
   // help
   egg: {
-    primary: 'red',
+    primary: 'amber',
+    accent: 'red',
     background: 'amber'
   },
   // info

@@ -14,14 +14,14 @@
           .md-subhead Nivel {{ index }} de {{ total }}
         md-switch.md-accent(v-model="help", v-bind:disabled="cheat")
       md-card-media
-        md-image(v-bind:md-src="'img/quests/' + active.media", v-on:click.native="debug()")
+        md-image(v-bind:md-src="'img/quests/' + active.media")
       md-card-content
         span {{ active.description }}
         p
           md-chip.md-primary(v-for="tag in active.tags") {{ tag }}
           template(v-for="clue in active.clues")
             md-chip.md-accent.animated.fadeIn(v-show="help") {{ clue }}
-        md-input-container.md-input-invalid(md-has-password)
+        md-input-container.md-input-invalid(md-has-password, v-if="!last")
           label Código
           md-input(type="password", v-model="password", id="password", required)
           span.md-error Respeta mayúsculas pero ignora signos de puntuación.
@@ -96,6 +96,9 @@
       },
       total () {
         return quests.length
+      },
+      last () {
+        return this.index === this.total
       }
     }
   }
