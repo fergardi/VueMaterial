@@ -6,6 +6,7 @@ import VueLocalForage from 'vue-localforage'
 import moment from 'moment'
 
 import App from './App.vue'
+import Egg from './views/Egg.vue'
 import Info from './views/Info.vue'
 import Achievement from './views/Achievement.vue'
 import Help from './views/Help.vue'
@@ -22,6 +23,7 @@ var router = new VueRouter({
     { path: '/achievement', component: Achievement },
     { path: '/help', component: Help },
     { path: '/info', component: Info },
+    { path: '/egg', component: Egg },
     { path: '/splash', component: Splash },
     { path: '*', redirect: '/splash' }
   ]
@@ -48,6 +50,11 @@ Vue.material.registerTheme({
       color: 'green',
       hue: 600
     }
+  },
+  // help
+  egg: {
+    primary: 'red',
+    background: 'amber'
   },
   // info
   info: {

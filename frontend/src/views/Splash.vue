@@ -11,11 +11,11 @@
               h1.title {{ board.title }}
               p {{ board.subtitle }}        
               router-link(exact, to="/help", v-if="last(index)")
-                md-button.md-raised.md-accent.button Comenzar
+                md-button.md-raised.md-accent.button Jugar
 </template>
 
 <script>
-  import vuex from '../vuex/vuex.js'
+  import vuex from '../vuex/vuex'
   export default {
     data () {
       return {

@@ -15,14 +15,15 @@
             md-list-item.md-avatar-list.center
               .flex
               md-avatar.md-large
-                md-image(md-src="img/fergardi.jpg")
+                img(src="img/fergardi.jpg")
               md-avatar.md-large
-                md-image(md-src="img/vivi.jpg")
+                img(src="img/vivi.jpg")
               .flex
-          md-list-item
-            .flex
-            h2.md-title Frikiversario
-            .flex
+          router-link(exact, to="/egg")
+            md-list-item
+              .flex
+              h2.md-title Frikiversario
+              .flex
       md-list
         md-list-item(v-for="item in items")
           router-link(exact, v-bind:to="item.url")
@@ -123,23 +124,28 @@
   .md-chip
     margin-right 5px
     margin-bottom 5px
-  .md-toolbar.md-account-header .md-avatar-list .md-list-item-container
-    align-items center
+  .md-toolbar.md-account-header
+    a:not(.md-button)
+      color inherit
+    .md-avatar-list
+      .md-list-item-container
+        align-items center
   .router-link-active
     background-color rgba(153, 153, 153, 0.2)
   .flex
     display flex
     flex 1
-  .md-avatar-list .md-avatar .md-icon
-    border-radius 50%
+  .md-avatar-list
+    .md-avatar
+      .md-icon
+        border-radius 50%
   .md-card
     border-radius 0
     border none
     box-shadow none
     .md-card-header
-      .md-title
-        font-size 22px
-      .md-switch
+      padding 5px
+      .md-avatar
         margin 0
   .no-padding
     padding 0 !important

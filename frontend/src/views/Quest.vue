@@ -1,7 +1,7 @@
 <template lang="pug">
   div
-    md-snackbar(ref="snackbar", md-duration="5000", md-position="top center", v-once)
-      span Correcto! Logro desbloqueado!
+    md-snackbar(ref="snackbar", md-duration="5000", md-position="top center")
+      span {{ message }}
       md-button.md-accent(v-on:click.native="close()")
         md-icon(v-if="!cheat") star
         md-icon(v-else) star_half
@@ -12,9 +12,9 @@
         md-card-header-text
           .md-title {{ active.title }}
           .md-subhead Nivel {{ index }} de {{ total }}
-        md-switch.md-accent(v-model="help", v-bind:disabled="help") Pista
+        md-switch.md-accent(v-model="help", v-bind:disabled="cheat")
       md-card-media
-        md-image(v-bind:md-src="'img/quests/' + active.media")
+        md-image(v-bind:md-src="'img/quests/' + active.media", v-on:click.native="debug()")
       md-card-content
         span {{ active.description }}
         p
@@ -36,7 +36,8 @@
         help: false,
         cheat: false,
         password: '',
-        active: null
+        active: null,
+        message: ''
       }
     },
     created () {
@@ -48,7 +49,8 @@
       })
     },
     methods: {
-      open () {
+      open (message) {
+        this.message = message
         this.$refs.snackbar.open()
       },
       close () {
@@ -70,7 +72,7 @@
               found.cheat = this.cheat
               this.$setItem('LAST', found)
               this.$setItem(password, found)
-              this.open()
+              this.open('Correcto! Logro desbloqueado!')
             }
             this.cheat = false
           })
@@ -83,6 +85,9 @@
       },
       help (boolean) {
         if (boolean) this.cheat = true
+      },
+      cheat (boolean) {
+        if (boolean) this.open('Has hecho trampas esta ronda!')
       }
     },
     computed: {
@@ -97,8 +102,14 @@
 </script>
 
 <style lang="stylus" scoped>
-  .md-switch
-    align-items center
-  .md-chip
-    color white !important
+  .md-card
+    .md-card-header
+      .md-switch
+        align-items center
+        display flex
+        flex-direction column
+        justify-content center
+        padding-right 10px
+    .md-chip
+      color white !important
 </style>

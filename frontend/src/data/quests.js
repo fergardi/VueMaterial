@@ -2,7 +2,7 @@ const quests = [
   {
     password: 'Pixels',
     icon: 'favorite',
-    title: 'Ready Player Two',
+    title: 'Insert coin',
     media: '0.jpg',
     description: 'También he creado tu propio avatar en 8bits! No he conseguido sacarte más parecida, así que es lo que hay.',
     tags: ['Avatar', 'Nombre'],
@@ -47,9 +47,9 @@ const quests = [
   {
     password: 'Blinky',
     icon: 'brush',
-    title: 'Luz! Fuego! Destrucción!',
+    title: 'Luz! Fuego!',
     media: 'goku.gif',
-    description: 'El mundo puede ser una ruina! No lo podemos permitir! Esto sí eran dibujos animados y no la mierda de hoy.',
+    description: 'Destrucción! El mundo puede ser una ruina! No lo podemos permitir! Esto sí eran dibujos animados y no la mierda de hoy.',
     tags: ['Nombre', 'Verdadero'],
     clues: ['Japonés', 'Hombre']
   },
@@ -96,7 +96,7 @@ const quests = [
     media: 'alien.gif',
     description: 'Esto sí que era suspense y claustrofobia en estado puro. Luego lo mezclaron con Predator y se jodió. Luego hicieron precuela y se jodió todavía más.',
     tags: ['Familia', 'Especie'],
-    clues: ['Extraterrestre', 'Nombre']
+    clues: ['Alien', 'Nombre']
   },
   {
     password: 'Xenomorfo',
@@ -167,8 +167,8 @@ const quests = [
     title: 'Fatality',
     media: 'fatality.gif',
     description: 'Sabías que su éxito fue el uso pionero de la captura de movimientos reales usando cámaras stop motion?',
-    tags: ['Personaje', 'Saurian'],
-    clues: ['Outworld', 'Nombre']
+    tags: ['Personaje', 'Lagarto'],
+    clues: ['Outworld', 'Saurian']
   },
   {
     password: 'Reptile',
@@ -218,7 +218,7 @@ const quests = [
   {
     password: 'Temerario',
     icon: 'place',
-    title: '25%',
+    title: 'Loading... 25%',
     media: '25.jpg',
     description: 'Vas por el 25% del juego! Ya te dije que tendrías que viajar, luchar contra monstruos y hablar con NPCs...',
     tags: ['Mapa', 'Saldaña'],
@@ -290,7 +290,7 @@ const quests = [
   {
     password: 'Morton',
     icon: 'tv',
-    title: 'Mr Robot',
+    title: 'Jabones y teclados',
     media: 'robot.jpg',
     description: 'Una serie moderna sobre hacking remake del club de la lucha que no podía faltar sobre la cultura friki.',
     tags: ['Hackers', 'Grupo'],
@@ -299,7 +299,7 @@ const quests = [
   {
     password: 'fsociety',
     icon: 'theaters',
-    title: 'Star Wars',
+    title: 'El nuevo',
     media: 'starwars.jpg',
     description: 'Uno más en la familia! Estoy deseando ver qué nuevos droides inventan para las futuras secuelas. Debe ser la única saga de películas que no me importa que saquen secuelas constantemente.',
     tags: ['Droide', 'Nombre'],
@@ -380,7 +380,7 @@ const quests = [
   {
     password: 'Auryn',
     icon: 'games',
-    title: 'Warcraft',
+    title: 'Guerra',
     media: 'wow.jpg',
     description: 'Otra viciada de juego. El WoW no estaba mal, pero el W3 era una maravilla. Te descojonas con los Orcos.',
     tags: ['Espada', 'Hielo'],
@@ -443,7 +443,7 @@ const quests = [
   {
     password: 'Kermit',
     icon: 'place',
-    title: '50%',
+    title: 'Loading... 50%',
     media: '50.jpg',
     description: 'Vas por el 50% del juego! Ya te dije que tendrías que viajar, luchar contra monstruos y hablar con NPCs...',
     tags: ['Mapa', 'León'],
@@ -461,7 +461,7 @@ const quests = [
   {
     password: 'Rockstar',
     icon: 'tv',
-    title: 'Wayward pines',
+    title: 'Los pinos',
     media: 'wayward.jpg',
     description: 'La intro me encanta. Y la mitad de la primera temporada es un WTF en toda regla.',
     tags: ['Año', 'Congelado'],
@@ -479,7 +479,7 @@ const quests = [
   {
     password: 'Metaling',
     icon: 'brush',
-    title: 'Simpsons',
+    title: 'La casa del árbol',
     media: 'simpsons.gif',
     description: 'Ya no me hacen ni puta gracia los capítulos nuevos, ni siquiera la película, pero los viejos aún son buenísimos.',
     tags: ['Brujas', 'Noche'],
@@ -506,7 +506,7 @@ const quests = [
   {
     password: 'Rockatansky',
     icon: 'chrome_reader_mode',
-    title: 'Ready',
+    title: 'Conectado',
     media: 'rpo.jpg',
     description: 'Otra de lo que parece que será mi futura saga favorita. Espero que la película esté a la altura del libro.',
     tags: ['Enemigos', 'Nombre'],
@@ -515,7 +515,7 @@ const quests = [
   {
     password: 'Sixers',
     icon: 'games',
-    title: 'Tekken',
+    title: 'Perfect!',
     media: 'tekken.gif',
     description: 'Tengo grabados a fuego en la memoria los combos más complicados de varios personajes. Reviento con Xiayou y King.',
     tags: ['Personaje', 'Secreto'],
@@ -524,7 +524,7 @@ const quests = [
   {
     password: 'Boskonovitch',
     icon: 'tv',
-    title: 'Héroes',
+    title: 'Héroes y villanos',
     media: 'heroes.jpg',
     description: 'Salva a la animadora, salva al mundo. Si tan sólo se hubiera quedado en la primera temporada...',
     tags: ['Malo', 'Poderes'],
@@ -542,7 +542,7 @@ const quests = [
   {
     password: 'Jigsaw',
     icon: 'tv',
-    title: 'Upside Down',
+    title: 'Upside down',
     media: 'stranger.gif',
     description: 'Intenté hacerte un gif personalizado con las luces pero la web que lo generaba está caída, así que opté por lo clásico...',
     tags: ['Monstruo', 'Nombre'],
@@ -569,7 +569,7 @@ const quests = [
   {
     password: 'Serenity',
     icon: 'theaters',
-    title: 'Santo Grial',
+    title: 'El Santo Grial',
     media: 'python.gif',
     description: 'Quién el puente desee atravesar, tres preguntas deberá contestar, o al abismo irá a dar...',
     tags: ['Segundo', 'Tercera'],
@@ -578,7 +578,7 @@ const quests = [
   {
     password: 'Ekallatum',
     icon: 'games',
-    title: 'Trifuerza',
+    title: 'La Trifuerza',
     media: 'zelda.gif',
     description: 'Sé que en la trifuerza el valor lo representa Link, la sabiduría Zelda y el poder Ganon, pero quién creó los fragmentos de la trifuerza?',
     tags: ['Color', 'Favorito'],
@@ -587,7 +587,7 @@ const quests = [
   {
     password: 'Din',
     icon: 'tv',
-    title: 'Dr. Who',
+    title: 'Dr. Mande?',
     media: 'who.jpg',
     description: 'Otra que intenté ver en su día y apenas pude con el primer episodio. Pero debo intentarlo de nuevo...',
     tags: ['Enemigos', 'Extraterrestres'],
@@ -596,7 +596,7 @@ const quests = [
   {
     password: 'Daleks',
     icon: 'theaters',
-    title: 'Avatar',
+    title: 'Pitufos 2.0',
     media: 'avatar.jpg',
     description: 'Pocahontas con anfetaminas. Aún así, la mejor película en 3D hasta la fecha.',
     tags: ['Follar', 'Genitales'],
@@ -623,7 +623,7 @@ const quests = [
   {
     password: 'Frank',
     icon: 'tv',
-    title: 'Breaking Bad',
+    title: 'Rompiendo Mal',
     media: 'bb.gif',
     description: 'La prueba viviente de que si le das una oportunidad a algo que no te gusta puede acabar sorprendiéndote sobremanera.',
     tags: ['Vanadio', 'Iridio'],
@@ -632,7 +632,7 @@ const quests = [
   {
     password: 'VIr',
     icon: 'games',
-    title: 'Mata mata',
+    title: 'Marcianitos',
     media: 'invaders.gif',
     description: 'Recuerdo con tristeza haberme gastado un dineral en comprarlo original para la Game Boy. Qué tontería de juego.',
     tags: ['Puntuación', 'Capada'],
@@ -641,7 +641,7 @@ const quests = [
   {
     password: '9990',
     icon: 'theaters',
-    title: 'Terminator',
+    title: 'I will be back',
     media: 'terminator.gif',
     description: 'A mí me gustan por este orden: primero la segunda, segundo la tercera, tercero la primera, cuarto la quinta y quinta la cuarta.',
     tags: ['Número', 'Secuencia'],
@@ -668,7 +668,7 @@ const quests = [
   {
     password: 'Norsefire',
     icon: 'place',
-    title: '75%',
+    title: 'Loading... 75%',
     media: '75.jpg',
     description: 'Vas por el 75% del juego! Ya te dije que tendrías que viajar, luchar contra monstruos y hablar con NPCs...',
     tags: ['Mapa', 'León'],
@@ -677,7 +677,7 @@ const quests = [
   {
     password: 'Volador',
     icon: 'brush',
-    title: 'Shippuden',
+    title: 'Nani?!',
     media: 'naruto.gif',
     description: 'No te metas con Naruto! Tiene una historia por detrás que ya la quisiera Dragon Ball o Fullmetal Alchemist. Aunque tenga demasiado relleno.',
     tags: ['Ataque', 'Bola'],
@@ -686,9 +686,9 @@ const quests = [
   {
     password: 'Rasengan',
     icon: 'tv',
-    title: 'Química avanzada',
+    title: 'Quimicefa',
     media: 'got.gif',
-    description: 'Estos sí que eran alquimistas y herreros como mandaban los diversos dioses.',
+    description: 'Estos sí que eran alquimistas y herreros como mandaban los antiguos dioses. Y los nuevos.',
     tags: ['Acero', 'Fuego'],
     clues: ['Verde', 'Negro']
   },
@@ -740,7 +740,7 @@ const quests = [
   {
     password: 'Andrea',
     icon: 'theaters',
-    title: 'Indiana',
+    title: 'Corazoncito',
     media: 'indiana.gif',
     description: 'Quién no ha sentido nunca el deseo de tener en la mano el corazón recién arrancado y aún palpitante de una persona mientras se lo enseñas? Y el de un niño?',
     tags: ['Culto', 'Sacrificio'],
@@ -769,7 +769,7 @@ const quests = [
     icon: 'theaters',
     title: 'Desea saber más?',
     media: 'troopers.gif',
-    description: 'Otra peli clásica de ciencia ficción, aunque haya otras 3 secuelas que den ganas de vomitar.',
+    description: 'Otra peli clásica de ciencia ficción, aunque tenga 3 secuelas que den ganas de vomitar.',
     tags: ['Bichos', 'Planeta'],
     clues: ['Guerra', 'Nombre']
   },
@@ -779,8 +779,8 @@ const quests = [
     title: 'Tramposos',
     media: 'gollum.gif',
     description: 'Tampoco sería un juego de acertijos completo sin el duelo de acertijos más famoso de todos los tiempos, no?',
-    tags: ['Acertijo', 'Último'],
-    clues: ['Respuesta', 'Trampa']
+    tags: ['Respuesta', 'Último'],
+    clues: ['Bilbo', 'Trampa']
   },
   {
     password: 'Anillo',
@@ -794,9 +794,9 @@ const quests = [
   {
     password: 'Tennis',
     icon: 'theaters',
-    title: '12 monos',
+    title: 'Ejército',
     media: 'monos.jpg',
-    description: 'Otra gran distopía futurista tecnológicamente avanzada en la que el mundo ha sido destruido por un peligroso virus, y consiguen viajar al pasado para evitarlo.',
+    description: 'Otra gran distopía futurista tecnológicamente avanzada en la que el mundo ha sido destruido por un peligroso virus, y consiguen viajar al pasado para evitarlo. La serie mola mil.',
     tags: ['Virus', 'Nombre'],
     clues: ['Serie', 'Película']
   },
@@ -821,7 +821,7 @@ const quests = [
   {
     password: '1077',
     icon: 'theaters',
-    title: 'Spiderman',
+    title: 'Trepamuros',
     media: 'spider.jpg',
     description: 'En mi opinión, el único superhéroe de verdad. Un pringao con superpoderes. Como debe ser. Nada de artilugios ni tetazas enormes. Y Tobey lo clava.',
     tags: ['Venom', 'Nieto'],
@@ -830,7 +830,7 @@ const quests = [
   {
     password: 'Toxin',
     icon: 'tv',
-    title: 'Kitt',
+    title: 'Kitt, ven, corre!',
     media: 'kitt.gif',
     description: 'Hoy en día ves esta serie y es tan casposa como surrealista, pero cuando era un crío me encantaba.',
     tags: ['Coche', 'Enemigo'],
@@ -857,7 +857,7 @@ const quests = [
   {
     password: 'Dah',
     icon: 'tv',
-    title: 'Ciencia vs Fe',
+    title: 'Ciencia vs fe',
     media: 'lost.gif',
     description: 'La primera serie que me enganchó hasta tal punto de madrugar 4 horas para ver el final en tiempo real, sin subtitular, y con cortes de emisión. Final decepcionante, por cierto.',
     tags: ['Spoiler', 'Números'],
@@ -875,7 +875,7 @@ const quests = [
   {
     password: 'Tentaquil',
     icon: 'tv',
-    title: 'Big bang theory',
+    title: 'Frikis',
     media: 'tbbt.gif',
     description: 'Molaban más cuando no tenían novia. Pero todos los frikis tenemos derecho al amor, no? Ahora son todo chuminadas.',
     tags: ['Piedra', 'Papel'],
@@ -884,7 +884,7 @@ const quests = [
   {
     password: 'Spock',
     icon: 'theaters',
-    title: 'La momia',
+    title: 'Arena',
     media: 'mummy.gif',
     description: 'Esta peli me mola un montón. Todavía me dan muy mal rollo los escarabajos carnívoros hibernados que se meten bajo la piel.',
     tags: ['Consorte', 'Faraón'],
@@ -893,7 +893,7 @@ const quests = [
   {
     password: 'Ankhesenamun',
     icon: 'place',
-    title: '100%',
+    title: 'Loading... 100%',
     media: '100.jpg',
     description: 'Has completado el 100% del juego! Enhorabuena! Me pregunto qué última misión te aguarda...',
     tags: ['Mapa', 'Villaobispo'],
