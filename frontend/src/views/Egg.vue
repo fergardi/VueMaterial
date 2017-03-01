@@ -3,7 +3,7 @@
     md-card
       md-card-media.flex
         .shadow
-          md-image.image.pulse(md-src="img/heart.svg")
+          img.image.pulse(src="img/heart.svg")
       md-card-content.flex.padded
         h1.title Frikiversario
         p Hecho con cariño por <b>@fergardi</b> para <b>@vivi</b>
@@ -34,10 +34,10 @@
     margin-top 0.5em
   .image
     padding 50px
-    height: 250px
+    height: 275px
   .shadow
-    width 250px
-    height 250px
+    width 275px
+    height 275px
     border-radius 50%
     background-color rgba(0,0,0,0.1)
   .title

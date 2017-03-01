@@ -168,4 +168,29 @@
   @media screen and (min-width 1024px)
     .content
       margin 0 33% !important
+  /* ANIMATION TRANSITION */
+  /*base code*/
+  .animation
+    -webkit-animation-duration 1s
+    animation-duration 1s
+    -webkit-animation-fill-mode both
+    animation-fill-mode both
+  .animation.infinite
+    -webkit-animation-iteration-count infinite
+    animation-iteration-count infinite
+  .animation.slower
+    -webkit-animation-duration 2s
+    animation-duration 2s
+  .animation.faster
+    -webkit-animation-duration 0.5s
+    animation-duration 0.5s
+  /*the animation definition*/
+  @keyframes fadeIn
+    0%
+      opacity 0
+    100%
+      opacity 1
+  .fadeIn
+    -webkit-animation-name fadeIn
+    animation-name fadeIn
 </style>

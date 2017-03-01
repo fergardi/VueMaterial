@@ -21,6 +21,7 @@
     "vuex": "^2.1.2"
   },
   "devDependencies": {
+    "autoprefixer-stylus": "^0.13.0",
     "axis": "^0.6.1",
     "babel-core": "^6.0.0",
     "babel-polyfill": "^6.20.0",

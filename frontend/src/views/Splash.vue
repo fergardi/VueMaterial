@@ -6,7 +6,7 @@
           md-card
             md-card-media.flex
               .shadow
-                md-image.image(v-bind:md-src="'img/' + board.image", v-bind:class="board.class")
+                img.image(v-bind:src="'img/' + board.image", v-bind:class="board.class")
             md-card-content.flex.padded
               h1.title {{ board.title }}
               p {{ board.subtitle }}        
@@ -60,14 +60,14 @@
             title: 'Recuerdos',
             subtitle: 'Probablemente tendrás que volver a repasar películas, series o libros que no veías desde hace mucho tiempo',
             image: 'explore.svg',
-            class: 'pulse'
+            class: 'tossing'
           },
           {
             theme: 'chest',
             title: 'Tesoros',
             subtitle: 'Tras completar todas las pruebas y obtener tu puntuación total, encontrarás un misterioso regalo escondido al final',
             image: 'chest.svg',
-            class: 'tossing'
+            class: 'pulse'
           }
         ]
       }
@@ -97,10 +97,10 @@
 <style lang="stylus" scoped>
   .image
     padding 50px
-    height: 250px
+    height: 275px
   .shadow
-    width 250px
-    height 250px
+    width 275px
+    height 275px
     border-radius 50%
     background-color rgba(0,0,0,0.1)
   .title
