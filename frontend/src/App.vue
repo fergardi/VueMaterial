@@ -1,29 +1,31 @@
 <template lang="pug">
   .app
-    md-toolbar.md-dense(v-once, v-if="!fullscreen")
-      md-button.md-icon-button(v-on:click.native="toggle()")
-        md-icon menu
-      .flex
-      h2.md-title(style="flex: 1") Frikiversario
-      .flex
-      md-button.md-icon-button.hidden
-        md-icon search
+    md-whiteframe
+      md-toolbar.md-dense(v-once, v-if="!fullscreen")
+        md-button.md-icon-button(v-on:click.native="toggle()")
+          md-icon menu
+        .flex
+        h2.md-title(style="flex: 1") Frikiversario
+        .flex
+        md-button.md-icon-button.hidden
+          md-icon search
     md-sidenav.md-left.md-fixed(ref="sidebar", md-swipeable, v-once, v-if="!fullscreen")
-      md-toolbar.md-account-header
-        md-list.md-transparent
-          router-link(exact, to="/splash")
-            md-list-item.md-avatar-list.center
-              .flex
-              md-avatar.md-large
-                img(src="img/fergardi.jpg")
-              md-avatar.md-large
-                img(src="img/vivi.jpg")
-              .flex
-          router-link(exact, to="/egg")
-            md-list-item
-              .flex
-              h2.md-title Frikiversario
-              .flex
+      md-whiteframe
+        md-toolbar.md-account-header
+          md-list.md-transparent
+            router-link(exact, to="/splash")
+              md-list-item.md-avatar-list.center
+                .flex
+                md-avatar.md-large
+                  img(src="img/fergardi.jpg")
+                md-avatar.md-large
+                  img(src="img/vivi.jpg")
+                .flex
+            router-link(exact, to="/egg")
+              md-list-item
+                .flex
+                h2.md-title Frikiversario
+                .flex
       md-list
         md-list-item(v-for="item in items")
           router-link(exact, v-bind:to="item.url")
