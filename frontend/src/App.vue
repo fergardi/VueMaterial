@@ -32,7 +32,7 @@
             span {{ item.title }}
       small.flex.center.signature &copy;fergardi2017
     .main
-      router-view#scroll.content.animated.fadeIn
+      router-view#scroll.content.animation.fadeIn
 </template>
 
 <script>

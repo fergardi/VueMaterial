@@ -91,16 +91,16 @@
 
 <style lang="stylus">
   .md-boards .md-boards-content .md-boards-wrapper
-    transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+    transition transform 1s cubic-bezier(0.19, 1, 0.22, 1)
 </style>
 
 <style lang="stylus" scoped>
   .image
     padding 50px
-    height: 275px
+    height: 250px
   .shadow
-    width 275px
-    height 275px
+    width 250px
+    height 250px
     border-radius 50%
     background-color rgba(0,0,0,0.1)
   .title
