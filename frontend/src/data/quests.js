@@ -299,14 +299,14 @@ const quests = [
   {
     password: 'fsociety',
     icon: 'theaters',
-    title: 'El nuevo',
+    title: 'Gemelos',
     media: 'starwars.jpg',
-    description: 'Uno más en la familia! Estoy deseando ver qué nuevos droides inventan para las futuras secuelas. Debe ser la única saga de películas que no me importa que saquen secuelas constantemente.',
+    description: 'Existen un montón de escenas eliminadas de Star Wars...',
     tags: ['Droide', 'Nombre'],
     clues: ['Números', 'Letras']
   },
   {
-    password: 'K2SO',
+    password: 'R2Q5',
     icon: 'games',
     title: 'Recreativas',
     media: 'slug.gif',
