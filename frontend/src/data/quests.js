@@ -2,11 +2,11 @@ const quests = [
   {
     password: 'Pixels',
     icon: 'favorite',
-    title: 'Insert coin',
+    title: 'Loading... 0%',
     media: '0.jpg',
     description: 'También he creado tu propio avatar en 8bits! No he conseguido sacarte más parecida, así que es lo que hay.',
     tags: ['Avatar', 'Nombre'],
-    clues: ['V', 'Mujer']
+    clues: ['Vir', 'Mujer']
   },
   {
     password: 'Virginia',
@@ -78,7 +78,7 @@ const quests = [
     media: 'alchemist.gif',
     description: 'Sigo prefiriendo Naruto Shippuden...',
     tags: ['Color', 'Favorito'],
-    clues: ['Apellido', 'Roy']
+    clues: ['Apellido', 'Personaje']
   },
   {
     password: 'Mustang',
@@ -139,7 +139,7 @@ const quests = [
     icon: 'chrome_reader_mode',
     title: 'Kvothe',
     media: 'kvothe.jpg',
-    description: 'Una de mis sagas favoritas. Su representación de la magia es la más descriptiva que he leído.',
+    description: 'Una de mis sagas favoritas. Su representación de la magia es la más descriptiva que he leído. A ver si sale el tercero!',
     tags: ['Viento', 'Sabio'],
     clues: ['Tercero', 'Libro']
   },
