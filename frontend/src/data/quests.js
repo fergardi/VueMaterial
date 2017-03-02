@@ -596,14 +596,14 @@ const quests = [
   {
     password: 'Daleks',
     icon: 'theaters',
-    title: 'Pitufos 2.0',
-    media: 'avatar.jpg',
-    description: 'Pocahontas con anfetaminas. Aún así, la mejor película en 3D hasta la fecha.',
-    tags: ['Follar', 'Genitales'],
-    clues: ['Pelos', 'Unidos']
+    title: 'Cables',
+    media: 'corto.gif',
+    description: 'Aún recuerdo muy bien esta peli en la que creo se basó enteramente Wall-E. De aquella jugaba con Meccanos.',
+    tags: ['Robot', 'Nombre'],
+    clues: ['SAINT', 'Número']
   },
   {
-    password: 'Coletas',
+    password: 'Johnny5',
     icon: 'chrome_reader_mode',
     title: 'El Brujo',
     media: 'wolf.jpg',
