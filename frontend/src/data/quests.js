@@ -225,7 +225,7 @@ const quests = [
     clues: ['Laura', 'Socky']
   },
   {
-    password: 'Ornitorrinco',
+    password: 'Demonio',
     icon: 'theaters',
     title: 'Scott Pilgrim',
     media: 'scott.gif',
@@ -450,7 +450,7 @@ const quests = [
     clues: ['Jaime', 'Kissy']
   },
   {
-    password: 'Sabroson',
+    password: 'Elemental',
     icon: 'games',
     title: 'Sálvalos a todos',
     media: 'lemmings.gif',
@@ -672,10 +672,10 @@ const quests = [
     media: '75.jpg',
     description: 'Vas por el 75% del juego! Ya te dije que tendrías que viajar, luchar contra monstruos y hablar con NPCs... Aunque si no quieres, siempre puedes hacer trampas y llamar para conseguir cumplir la misión, no me importa.',
     tags: ['Mapa', 'León'],
-    clues: ['Janira', 'Jony']
+    clues: ['Begoña', 'Santos']
   },
   {
-    password: 'Volador',
+    password: 'Espiritu',
     icon: 'brush',
     title: 'Nani?!',
     media: 'naruto.gif',
