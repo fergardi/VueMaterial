@@ -104,4 +104,6 @@
     height auto
     padding 4px 12px
     margin 0
+    color white !important
+    font-weight bold
 </style>

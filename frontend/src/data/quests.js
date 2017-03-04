@@ -49,7 +49,7 @@ const quests = [
     icon: 'brush',
     title: 'Luz! Fuego!',
     media: 'goku.gif',
-    description: 'Destrucción! El mundo puede ser una ruina! No lo podemos permitir! Esto sí eran dibujos animados y no la mierda que echan hoy en día. Aunque irónicamente siempre pensé que promovían un pelín la violencia entre unos jóvenes bastante impresionables.',
+    description: '"Destrucción! El mundo puede ser una ruina! No lo podemos permitir!" Esto sí eran dibujos animados y no la mierda que echan hoy en día. Aunque irónicamente siempre pensé que promovían un pelín la violencia entre unos jóvenes bastante impresionables.',
     tags: ['Nombre', 'Verdadero'],
     clues: ['Japonés', 'Hombre']
   },
@@ -479,36 +479,36 @@ const quests = [
   {
     password: 'Metaling',
     icon: 'brush',
-    title: 'La casa árbol',
+    title: 'S01E13',
     media: 'simpsons.gif',
     description: 'Ya no me hacen ni puta gracia los capítulos nuevos, ni siquiera la película, pero los viejos aún son buenísimos. Mis preferidos son los especiales de Halloween de la Casa Árbol del Terror.',
-    tags: ['Brujas', 'Noche'],
-    clues: ['Árbol', 'Terror']
+    tags: ['Ladrona', 'Apellido'],
+    clues: ['Botz', 'Completo']
   },
   {
-    password: 'Halloween',
+    password: 'Botzukowsky',
     icon: 'tv',
     title: 'Larga vida',
     media: 'spock.jpg',
-    description: 'El reboot que han hecho de las películas es extremadamente decente. Pero la serie original sigue siendo un pestiño.',
-    tags: ['Apellido', 'Nuevo'],
-    clues: ['Actor', 'Spock']
+    description: 'La verdad es que nunca he sido un fan, pero el reboot que han hecho de las películas es extremadamente bueno. La serie original sigue siendo un pestiño, intenté empezar a verla pero era tan cutre que daba vergüenza ajena.',
+    tags: ['Nave', 'Insignia'],
+    clues: ['Flota', 'Estelar']
   },
   {
-    password: 'Quinto',
+    password: 'Enterprise',
     icon: 'theaters',
-    title: 'Cómo te llamas?',
+    title: 'Mi nombre?',
     media: 'max.gif',
-    description: 'Este debería ser el ejemplo perfecto de cómo hacer un reboot/remake bien. Si las originales eran de culto, esta se ha convertirá en leyenda.',
-    tags: ['Protagonista', 'Apellido'],
-    clues: ['Australiano', 'Palabra']
+    description: 'Este debería ser el ejemplo perfecto de cómo hacer un reboot/remake bien. Si las originales eran ya películas de culto, para mí esta se ha convertirá en la película de acción por excelencia. Explota hasta la arena.',
+    tags: ['Australiano', 'Apellido'],
+    clues: ['Protagonista', 'Original']
   },
   {
     password: 'Rockatansky',
     icon: 'chrome_reader_mode',
     title: 'Conectado',
     media: 'rpo.jpg',
-    description: 'Otra de lo que parece que será mi futura saga favorita. Espero que la película esté a la altura del libro.',
+    description: 'Otra de lo que parece que será mi futura saga favorita. Cuando la caben claro. Espero que la película esté a la altura del libro, aunque si no lo está, como es de las pocas de las que me he leido primero el libro, nunca me joderán el recuerdo.',
     tags: ['Enemigos', 'Nombre'],
     clues: ['Clave', '6']
   },
@@ -517,7 +517,7 @@ const quests = [
     icon: 'games',
     title: 'Perfect!',
     media: 'tekken.gif',
-    description: 'Tengo grabados a fuego en la memoria los combos más complicados de varios personajes. Reviento con Xiayou y King.',
+    description: 'Otro arcade de las recreativas. Tengo grabados a fuego en la memoria los combos más complicados de varios personajes. Tras 15 años, hoy todavía soy capaz de reventar con Xiayou o King...',
     tags: ['Personaje', 'Secreto'],
     clues: ['Doctor', 'Ruso']
   },
@@ -526,7 +526,7 @@ const quests = [
     icon: 'tv',
     title: 'Héroes y villanos',
     media: 'heroes.jpg',
-    description: 'Salva a la animadora, salva al mundo. Si tan sólo se hubiera quedado en la primera temporada...',
+    description: '"Salva a la animadora, salva al mundo". Muchos personajes, muchos poderes, una sola historia común. Si tan sólo se hubiera quedado en la primera temporada...',
     tags: ['Malo', 'Poderes'],
     clues: ['Nombre', 'Enemigo']
   },
@@ -535,7 +535,7 @@ const quests = [
     icon: 'theaters',
     title: 'Oferta de sierras',
     media: 'saw.gif',
-    description: 'Me imagino al paisano comprando en la ferretería cuerdas, bridas, esposas, palas, lejía, antimanchas, cadenas, sopletes, sierras, taladros... Y pagando en efectivo.',
+    description: 'Me imagino al paisano comprando en la ferretería cuerdas, bridas, esposas, palas, sacos, lejía, antimanchas, cadenas, sopletes, sierras, taladros, martillos, cubos, alicates... Y pagando en efectivo, claro. Y con gabardina.',
     tags: ['Nick', 'Asesino'],
     clues: ['Inglés', 'Nombre']
   },
@@ -543,26 +543,26 @@ const quests = [
     password: 'Jigsaw',
     icon: 'tv',
     title: 'Upside down',
-    media: 'stranger.gif',
-    description: 'Intenté hacerte un gif personalizado con las luces pero la web que lo generaba está caída, así que opté por lo clásico...',
+    media: 'stranger.jpg',
+    description: 'Me habría gustado hacerte un gif personalizado con tu nombre usando las luces de la pared pero, tras mucho investigar, la web de Netflix que lo permitía está caída, así que opté por buscar otra cosa...',
     tags: ['Monstruo', 'Nombre'],
     clues: ['Universo', 'Paralelo']
   },
   {
     password: 'Demogorgon',
     icon: 'games',
-    title: 'Isla de los Monos',
-    media: 'monkey.gif',
-    description: 'Recuerdo esta saga con mucho cariño. Ya no se hacen juegos con este mimo y detalle. En ella se basa Piratas del Caribe.',
-    tags: ['La', 'X'],
-    clues: ['Marca', 'El']
+    title: 'La Isla del Mono',
+    media: 'guybrush.jpg',
+    description: 'Otra de mis sagas favoritas, en las que se basó Piratas del Caribe. Sabías que el nombre del protagonista surgió a partir del fichero y la extensión donde almacenaban sus imágenes? Guy.brush! Me encantan estas curiosidades.',
+    tags: ['Guy', 'Brush'],
+    clues: ['Apellido', 'Raro']
   },
   {
-    password: 'Lugar',
+    password: 'Threepwood',
     icon: 'tv',
     title: 'Luciérnaga',
     media: 'firefly.gif',
-    description: 'Otra serie que me encanta, que sólo puedo definir como "Future Western".',
+    description: 'Otra serie de ciencia ficción que me encanta, que sólo puede definirse como "Future Western". Una pena que la cancelaran, aunque saliera una película para cerrarla. Al parecer estan planeando su regreso!',
     tags: ['Nombre', 'Nave'],
     clues: ['Película', 'Secuela']
   },
@@ -571,16 +571,16 @@ const quests = [
     icon: 'theaters',
     title: 'El Santo Grial',
     media: 'python.gif',
-    description: 'Quién el puente desee atravesar, tres preguntas deberá contestar, o al abismo irá a dar...',
+    description: 'Grandísimos los Monty Python. Hay quien defiende que la mejor es la Vida de Bryan, pero como mi frikismo se basa en espada y magia, para mí esta es la mejor. "Quién el puente desee atravesar, tres preguntas deberá contestar, o al abismo irá a dar..."',
     tags: ['Segundo', 'Tercera'],
     clues: ['Capital', 'Asiria']
   },
   {
     password: 'Ekallatum',
     icon: 'games',
-    title: 'La Trifuerza',
+    title: 'Trifuerza',
     media: 'zelda.gif',
-    description: 'Sé que en la trifuerza el valor lo representa Link, la sabiduría Zelda y el poder Ganon, pero quién creó los fragmentos de la trifuerza?',
+    description: 'Quiero pasarme estos juegos, ya va siendo hora! Al parecer son reencarnaciones de la misma historia contada de maneras diferentes. Sé que en la trifuerza el Valor lo representa Link, la Sabiduría Zelda y el Poder Ganon, pero quién creó los fragmentos de la trifuerza?',
     tags: ['Color', 'Favorito'],
     clues: ['Nombre', 'Diosa']
   },
@@ -589,7 +589,7 @@ const quests = [
     icon: 'tv',
     title: 'Dr. Mande?',
     media: 'who.jpg',
-    description: 'Otra que intenté ver en su día y apenas pude con el primer episodio. Pero debo intentarlo de nuevo...',
+    description: 'Me da vergüenza reconocerlo, pero esta es otra de esas series que intenté ver en su día y apenas pude con el primer episodio. Pero debo intentarlo de nuevo, porque no puedo llamarme friki sin haberla visto!',
     tags: ['Enemigos', 'Extraterrestres'],
     clues: ['Androides', 'Malos']
   },
@@ -598,7 +598,7 @@ const quests = [
     icon: 'theaters',
     title: 'Cables',
     media: 'corto.gif',
-    description: 'Aún recuerdo muy bien esta peli en la que creo se basó enteramente Wall-E. De aquella jugaba con Meccanos.',
+    description: 'Aún recuerdo muy bien esta peli en la que creo se basó enteramente Wall-E. De aquella jugaba con Meccanos, y recuerdo haber hecho varios modelos de este simpático protagonista robótico.',
     tags: ['Robot', 'Nombre'],
     clues: ['SAINT', 'Número']
   },
@@ -607,7 +607,7 @@ const quests = [
     icon: 'chrome_reader_mode',
     title: 'El Brujo',
     media: 'wolf.jpg',
-    description: 'Cuando juegas al juego te parece que estás leyendo los libros, y cuando lees los libros te parece que estás jugando al juego. Genial!',
+    description: 'Una maravilla, ya sean los libros o los juegos. Cuando juegas al juego te parece que estás leyendo los libros, y cuando lees los libros te parece que estás jugando al juego. Genial! Aunque creo que tiene una serie que da asco.',
     tags: ['Caballo', 'Mote'],
     clues: ['Nombre', 'Español']
   },
@@ -616,16 +616,16 @@ const quests = [
     icon: 'theaters',
     title: 'MIB',
     media: 'mib.gif',
-    description: 'Otra de las rayadas de invasiones alienígenas. Pero siempre me pareció una idea muy simpática.',
+    description: 'Otra de las clásicas en cuanto a ciencia ficción se refiere. Esta vez de invasiones alienígenas y entidades secretas del gobierno que intentan evitarlo en la sombra. Siempre me pareció una idea muy simpática, y de aquella Will Smith solo hacia comedias.',
     tags: ['Animal', 'Personaje'],
     clues: ['Nombre', 'Habla']
   },
   {
     password: 'Frank',
     icon: 'tv',
-    title: 'Rompiendo Mal',
+    title: 'I am the danger',
     media: 'bb.gif',
-    description: 'La prueba viviente de que si le das una oportunidad a algo que no te gusta puede acabar sorprendiéndote sobremanera.',
+    description: 'La prueba viviente de que si le das una oportunidad a algo que no te gusta puede acabar sorprendiéndote de forma muy grata. Ver cómo se va haciendo sutilmente cada vez más cabrón conforme pasan los capítulos engancha. Un actor genial.',
     tags: ['Vanadio', 'Iridio'],
     clues: ['Elemento', 'Química']
   },
@@ -634,34 +634,34 @@ const quests = [
     icon: 'games',
     title: 'Marcianitos',
     media: 'invaders.gif',
-    description: 'Recuerdo con tristeza haberme gastado un dineral en comprarlo original para la Game Boy. Qué tontería de juego.',
-    tags: ['Puntuación', 'Capada'],
-    clues: ['Máximo', 'Número']
+    description: 'Recuerdo con tristeza haberme gastado un dineral en comprarlo original para la Game Boy. Qué tontería de juego. Pero hoy en día su icono es el referente en videojuegos, y mi salón es prueba de ello!',
+    tags: ['Puntuación', 'Tope'],
+    clues: ['Cap', 'Max']
   },
   {
     password: '9990',
     icon: 'theaters',
     title: 'I will be back',
     media: 'terminator.gif',
-    description: 'A mí me gustan por este orden: primero la segunda, segundo la tercera, tercero la primera, cuarto la quinta y quinta la cuarta.',
+    description: 'A mí me gustan por este orden: primero la segunda, segundo la tercera, tercero la primera, cuarto la quinta y quinta la cuarta. Lo pillas?',
     tags: ['Número', 'Secuencia'],
     clues: ['Orden', 'Código']
   },
   {
     password: '23154',
     icon: 'games',
-    title: 'Might & Magic',
+    title: 'M&M',
     media: 'homam.jpg',
-    description: 'Otro de mis juegos favoritos, esta vez de estrategia y rol por turnos. Siempre he tenido debilidad por la nigromancia. Ojo, que no necrofilia!',
-    tags: ['Necrópolis', 'Unidad'],
-    clues: ['Resucitar', 'Muertos']
+    description: 'Otro de mis juegos favoritos, esta vez de estrategia y rol por turnos. Espada y magia! Aunque siempre he tenido debilidad por la nigromancia. Ojo, que no la necrofilia!',
+    tags: ['Magia', 'Tierra'],
+    clues: ['Mundo', 'Continente']
   },
   {
-    password: 'Esqueletos',
+    password: 'Erathia',
     icon: 'theaters',
     title: '5 de Noviembre',
     media: 'vendetta.gif',
-    description: 'Recuerden, recuerden, el 5 de Noviembre. Conspiración, pólvora y traición. No veo la demora y siempre es la hora, de evocarla sin dilación.',
+    description: '"Recuerden, recuerden, el 5 de Noviembre. Conspiración, pólvora y traición. No veo la demora y siempre es la hora, de evocarla sin dilación". Esta careta ha inspirado revueltas en el mundo real.',
     tags: ['Partido', 'Político'],
     clues: ['Nombre', 'Inglés']
   },
@@ -679,25 +679,25 @@ const quests = [
     icon: 'brush',
     title: 'Nani?!',
     media: 'naruto.gif',
-    description: 'No te metas con Naruto! Tiene una historia por detrás que ya la quisiera Dragon Ball o Fullmetal Alchemist. Aunque tenga demasiado relleno.',
+    description: 'No te metas con Naruto! Tiene una historia por detrás que ya la quisiera Dragon Ball o Fullmetal Alchemist. Aunque tenga demasiado relleno, sigo defendiendo que el uso de las distintas habilidades en las batallas son una maravilla de estrategia e inteligencia.',
     tags: ['Ataque', 'Bola'],
     clues: ['Nombre', 'Japonés']
   },
   {
     password: 'Rasengan',
     icon: 'tv',
-    title: 'Quimicefa',
+    title: 'Juan de las nieves',
     media: 'got.gif',
-    description: 'Estos sí que eran alquimistas y herreros como mandaban los antiguos dioses. Y los nuevos.',
-    tags: ['Acero', 'Fuego'],
-    clues: ['Verde', 'Negro']
+    description: 'Lo más interesante de la serie es averiguar la verdadera identidad de John, aunque ya lo tenemos bastante claro. Si ya se lo dice Ygritte. "You know nothing, John Snow". Y si ella lo sabía desde el principio?',
+    tags: ['Snow', 'Apellido'],
+    clues: ['Real', 'Verdadero']
   },
   {
-    password: 'Valyrio',
+    password: 'Targaryen',
     icon: 'theaters',
     title: 'Multipase',
     media: 'element.gif',
-    description: 'Me encantan las películas de futuros en ciudades atestadas y tecnología por todas partes. Aunque luego odio ir a Madrid.',
+    description: 'Me encantan las películas de futuros en ciudades atestadas y tecnología por todas partes. En realidad cualquier cosa futurista me vale. Somos la generación que ha nacido demasiado tarde para explorar la Tierra y demasiado pronto para explorar el espacio.',
     tags: ['Raza', 'Alienígenas'],
     clues: ['Extraterrestres', 'Piedras']
   },
@@ -706,7 +706,7 @@ const quests = [
     icon: 'chrome_reader_mode',
     title: 'Habla y entra',
     media: 'moria.gif',
-    description: 'Podría haber sacado algo del Silmarillion que no sacases en la vida. En realidad he optado por un piropazo.',
+    description: 'Podría haber sacado algo del Silmarillion que no sacases en la vida, pero en realidad he optado por un piropazo en la lengua inventada de nuestro querido Tolkien.',
     tags: ['Hermosa', 'Élfico'],
     clues: ['Tolkien', 'Palabra']
   },
@@ -715,7 +715,7 @@ const quests = [
     icon: 'theaters',
     title: 'Qué es? Qué es?',
     media: 'jack.gif',
-    description: 'Hay luces de color! Qué es? Parece de algodón! Qué es? No creo lo que veo, estoy soñando? No lo sé! Qué injusto es! Qué es?',
+    description: '"Hay luces de color! Qué es? Parece de algodón! Qué es? No creo lo que veo, estoy soñando? No lo sé! Qué injusto es! Qué es?" Hecho de menos más películas de animación de Tim Burton.',
     tags: ['Nariz', 'Luz'],
     clues: ['Color', 'Favorito']
   },
@@ -724,34 +724,34 @@ const quests = [
     icon: 'brush',
     title: 'Parodias',
     media: 'rick.jpg',
-    description: 'Entiendo que Morty venga de Marty, pero de donde huevos sacaron que el nombre de Rick hace apología al Dr. Emmett?',
-    tags: ['Apellido', 'Brown'],
-    clues: ['Serie', 'Doctor']
+    description: 'Muchas gracias por recomendarme esta serie! Entiendo que Morty venga de Marty, pero de dónde huevos sacaron que el nombre de Rick hace apología al Dr. Emmett Brown? Y menudas burradas salen! Como la muñeca hinchable robot pariendo niños.',
+    tags: ['Apellido', 'Doctor'],
+    clues: ['Serie', 'Abuelo']
   },
   {
     password: 'Sanchez',
     icon: 'tv',
     title: 'Puto niño',
     media: 'carl.jpg',
-    description: 'Odio a Carl. Le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odiooooo!!',
-    tags: ['Nombre', 'Mujer'],
-    clues: ['Recordado', 'Competición']
+    description: 'Dios, pero que asco le tengo! Odio a Carl. Le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odiooooo!!',
+    tags: ['Tonta', 'Rubia'],
+    clues: ['Nombre', 'Olvidado']
   },
   {
     password: 'Andrea',
     icon: 'theaters',
     title: 'Corazoncito',
     media: 'indiana.gif',
-    description: 'Quién no ha sentido nunca el deseo de tener en la mano el corazón recién arrancado y aún palpitante de una persona mientras se lo enseñas? Y el de un niño?',
+    description: 'Quién no ha sentido nunca el deseo de tener en la mano el corazón recién arrancado y aún palpitante de un adulto mientras se lo enseñas antes de morir? Y el de un niño?',
     tags: ['Culto', 'Sacrificio'],
-    clues: ['Dios', 'Nombre']
+    clues: ['Deidad', 'Grito']
   },
   {
     password: 'Kalimah',
     icon: 'toys',
     title: 'Lego',
     media: 'lego.jpg',
-    description: 'Para mi los Lego eran los bloques de construcción, nunca tuve muñequitos. Esos eran los Playmobil. Pero ahora molan mucho y quiero hacer escenas de Star Wars con ellos!',
+    description: 'Para mi los Lego eran los bloques de construcción, nunca tuve muñequitos. Esos eran los Playmobil. Pero ahora molan mucho y quiero hacer escenas de Star Wars con ellos! He comprado mil en AliExpress!',
     tags: ['Material', 'Original'],
     clues: ['Juguetería', 'Dinamarca']
   },
@@ -760,7 +760,7 @@ const quests = [
     icon: 'games',
     title: 'Destruye amistades',
     media: 'worms.jpg',
-    description: 'No hay otra definición mejor. Quedar en casa de un amigo para jugar entre varios con la misma pantalla y ver sus corazones romperse cuando aniquilabas sus gusanitos. Sublime.',
+    description: 'No hay otra definición mejor. Quedar en casa de un amigo para jugar entre varios con la misma pantalla y ver sus corazones romperse cuando realizabas rebotes imposibles aprovechándote del viento mientras aniquilabas sus gusanitos y te hacias con la victoria. Y no te volvían a llamar para jugar. Delicioso.',
     tags: ['Granada', 'Santa'],
     clues: ['Inglés', 'Cántico']
   },
@@ -769,7 +769,7 @@ const quests = [
     icon: 'theaters',
     title: 'Desea saber más?',
     media: 'troopers.gif',
-    description: 'Otra peli clásica de ciencia ficción, aunque tenga 3 secuelas que den ganas de vomitar.',
+    description: 'Otra peli clásica de ciencia ficción, aunque tenga 3 secuelas que den ganas de vomitar. Los bichos gigantes dan un mal rollo que flipas, y las escenas eran de un gore bastante importante.',
     tags: ['Bichos', 'Planeta'],
     clues: ['Guerra', 'Nombre']
   },
@@ -778,7 +778,7 @@ const quests = [
     icon: 'chrome_reader_mode',
     title: 'Tramposos',
     media: 'gollum.gif',
-    description: 'Tampoco sería un juego de acertijos completo sin el duelo de acertijos más famoso de todos los tiempos, no?',
+    description: 'Tampoco sería un juego de acertijos completo sin el duelo de acertijos más famoso de todos los tiempos, verdad? Aunque más bien fué un duelo de tramposos.',
     tags: ['Respuesta', 'Último'],
     clues: ['Bilbo', 'Trampa']
   },
@@ -787,7 +787,7 @@ const quests = [
     icon: 'games',
     title: 'TOC',
     media: 'tetris.gif',
-    description: 'Una muestra excelente de lo que frustrante que puede ser tener un poco de ToC. Todo ordenadito de cojones.',
+    description: 'Una muestra excelente de lo que frustrante que puede ser tener un poco de ToC. Todo ordenadito de cojones. Sabes de dónde viene su nombre?',
     tags: ['Mezcla', 'Tetra'],
     clues: ['Nombre', 'Deporte']
   },
@@ -796,7 +796,7 @@ const quests = [
     icon: 'theaters',
     title: 'Ejército',
     media: 'monos.jpg',
-    description: 'Otra gran distopía futurista tecnológicamente avanzada en la que el mundo ha sido destruido por un peligroso virus, y consiguen viajar al pasado para evitarlo. La serie mola mil.',
+    description: 'Otra gran distopía futurista tecnológicamente avanzada en la que el mundo ha sido destruido por un peligroso virus, y consiguen viajar al pasado para evitarlo. Por cierto, la serie mola un montón.',
     tags: ['Virus', 'Nombre'],
     clues: ['Serie', 'Película']
   },
@@ -805,7 +805,7 @@ const quests = [
     icon: 'chrome_reader_mode',
     title: 'Eres un mago',
     media: 'merodeador.gif',
-    description: 'Siempre me pareció absurdo que artefactos mágicos tan jodidamente poderosos e inclinables hacia el mal como la Capa de Invisibilidad o el Mapa del Merodeador los posean unos preadolescentes.',
+    description: 'Siempre me pareció absurdo que artefactos mágicos tan jodidamente poderosos e inclinables hacia el mal como la Capa de Invisibilidad o el Mapa del Merodeador los posean unos preadolescentes pajilleros. Yo mismo habría usado la Capa para ir a espiar al baño de chicas!',
     tags: ['Mote', 'Imposible'],
     clues: ['Muerto', 'Traidor']
   },
@@ -814,7 +814,7 @@ const quests = [
     icon: 'brush',
     title: 'Año 3000',
     media: 'fry.gif',
-    description: 'Mi serie de animación favorita. Más graciosa que los Simpsons, y menos basta que Padre de Familia. Perfecta.',
+    description: 'Mi serie de animación favorita. Tiene lo mejor de los Simpsons, sin ser tan zafia como Padre de Familia. Lo que no entiendo es que la cancelaran y descancelaran tantas veces, yo creo que daba un dinero de la hostia.',
     tags: ['Tarjeta', 'Pizza'],
     clues: ['Pin', 'Banco']
   },
@@ -823,16 +823,16 @@ const quests = [
     icon: 'theaters',
     title: 'Trepamuros',
     media: 'spider.jpg',
-    description: 'En mi opinión, el único superhéroe de verdad. Un pringao con superpoderes. Como debe ser. Nada de artilugios ni tetazas enormes. Y Tobey lo clava.',
-    tags: ['Venom', 'Nieto'],
-    clues: ['Carnage', 'Hijo']
+    description: 'En mi opinión, el único superhéroe de verdad. Un pringao con superpoderes. Como debe ser. Nada de artilugios sofisticados ni tetazas enormes embutidas en trajes de licra marcando coño. Los remakes/reboots dan asco. El verdadero es y siempre será Tobey Maguire.',
+    tags: ['Carnage', 'Hijo'],
+    clues: ['Venom', 'Nieto']
   },
   {
     password: 'Toxin',
     icon: 'tv',
     title: 'Kitt, ven, corre!',
     media: 'kitt.gif',
-    description: 'Hoy en día ves esta serie y es tan casposa como surrealista, pero cuando era un crío me encantaba.',
+    description: 'Hoy en día ves esta serie y es tan casposa como surrealista, pero cuando era un crío me encantaba. Iba a poner algo de MacGyver o del Equipo A, pero en realidad el coche futurista es más friki.',
     tags: ['Coche', 'Enemigo'],
     clues: ['Malvado', 'Nombre']
   },
@@ -840,17 +840,17 @@ const quests = [
     password: 'KARR',
     icon: 'theaters',
     title: 'Estoy dentro',
-    media: 'matrix.jpg',
-    description: 'Para entender el final de la tercera parte necesitas meterte la pildora roja machacada por la nariz. Y tres rayas.',
-    tags: ['Hermano', 'Hermana'],
-    clues: ['Transexual', 'Sexo']
+    media: 'matrix.gif',
+    description: 'Para entender el final de la tercera parte necesitas meterte la pildora roja machacada por la nariz mezclada con la azul. Y tres rayas.',
+    tags: ['Babilonia', 'Rey'],
+    clues: ['Nombre', 'Nave']
   },
   {
-    password: 'Wachowski',
+    password: 'Nebuchadnezzar',
     icon: 'games',
     title: 'Dragonborn',
     media: 'skyrim.jpg',
-    description: 'Yo antes era un aventurero como tú, pero un día me hirieron con una flecha en la rodilla.',
+    description: '"Yo antes era un aventurero como tú, pero un día me hirieron con una flecha en la rodilla". Es la frase que más se oye en este juego. Me encantaban las misiones del culto de los Vampiros y de los Hombres Lobo.',
     tags: ['Fus', 'Ro'],
     clues: ['Grito', 'Muro']
   },
@@ -859,25 +859,25 @@ const quests = [
     icon: 'tv',
     title: 'Ciencia vs fe',
     media: 'lost.gif',
-    description: 'La primera serie que me enganchó hasta tal punto de madrugar 4 horas para ver el final en tiempo real, sin subtitular, y con cortes de emisión. Final decepcionante, por cierto.',
-    tags: ['Spoiler', 'Números'],
-    clues: ['Malditos', 'Chungos']
+    description: 'La primera serie que me enganchó hasta tal punto de madrugar 4 horas para ver el final en tiempo real, sin subtitular, y con cortes de emisión. Pero no me arrepiento, porque para mí ya es serie de culto, con unos cliffhangers que ya las quisieran muchas.',
+    tags: ['Serie', 'Números'],
+    clues: ['Malditos', 'Spoiler']
   },
   {
     password: '4815162342',
     icon: 'brush',
-    title: 'Hazte con todos',
+    title: 'Hazte con todos!',
     media: 'pokemon.jpg',
-    description: 'No he sido tan cabrón de ponerte uno aleatorio para que me digas cuál es. Porque hay más de 800. Este es especial.',
-    tags: ['Pokemon', '4chan'],
-    clues: ['Nombre', 'Inventado']
+    description: 'No he sido tan cabrón de ponerte uno al azar para que me digas cuál es, porque hay más de 800. Este es muy, muy especial, y una surfera web como tu no tendrá problemas en descubrir por qué.',
+    tags: ['Pokemon', 'Nombre'],
+    clues: ['4chan', 'Inventado']
   },
   {
     password: 'Tentaquil',
     icon: 'tv',
     title: 'Frikis',
     media: 'tbbt.gif',
-    description: 'Molaban más cuando no tenían novia. Pero todos los frikis tenemos derecho al amor, no? Ahora son todo chuminadas.',
+    description: 'Molaban mucho más al principio, cuando no tenían novia. Pero todos los frikis tenemos derecho al amor, no? Ahora son todo chuminadas y tonterías de pareja, apenas queda espacio para frikadas.',
     tags: ['Piedra', 'Papel'],
     clues: ['Tijera', 'Lagarto']
   },
@@ -886,7 +886,7 @@ const quests = [
     icon: 'theaters',
     title: 'Arena',
     media: 'mummy.gif',
-    description: 'Esta peli me mola un montón. Todavía me dan muy mal rollo los escarabajos carnívoros hibernados que se meten bajo la piel.',
+    description: 'Esta saga me mola un montón. Las maldiciones de civilizaciones antiguas que todavía conservan su poder como el primer día y esas cosas. Todavía me dan muy mal rollo los escarabajos carnívoros hibernados que se meten bajo la piel. Como el de aquella otra película en el que se le mete uno en el oído y se lo va comiendo.',
     tags: ['Consorte', 'Faraón'],
     clues: ['Nombre', 'Inglés']
   },
@@ -895,7 +895,7 @@ const quests = [
     icon: 'place',
     title: 'Loading... 100%',
     media: '100.jpg',
-    description: 'Has completado el 100% del juego! Enhorabuena! Me pregunto qué última misión te aguarda...',
+    description: 'Has completado el 100% del juego! Enhorabuena! Me pregunto qué última misión te aguarda... Cochinadas, probablemente.',
     tags: ['Mapa', 'Villaobispo'],
     clues: ['Fer', 'Mike']
   }
