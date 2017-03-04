@@ -14,7 +14,7 @@
           .md-subhead Nivel {{ index }} de {{ total }}
         md-switch.md-accent(v-model="help", v-bind:disabled="cheat")
       md-card-media
-        md-image(v-bind:md-src="'img/quests/' + active.media")
+        md-image(v-bind:md-src="'img/quests/' + active.media", v-on:click.native="debug()")
       md-card-content
         span {{ active.description }}
         p
