@@ -13,7 +13,8 @@
         .padding
           span Para nuestro aniversario quería hacer algo especial para tí y, como esto es lo que mejor se me da, me dije ¿por qué no hacer un <b>juego con cosas frikis</b> que nos gustan a los dos?
           span Durante <b>100 niveles</b>, resolverás pequeños acertijos sobre temas de la cultura friki popular para encontrar un regalo que he escondido al final.
-          span Cada tarjeta consta de un título, un icono, una imagen, una descripción, y unas <b>pistas</b>. Debes descubrir la contraseña que te permita avanzar al siguiente nivel.
+          span Cada tarjeta consta de un título, un icono, una imagen, una descripción, y unas <b class="md-theme-help md-chip md-primary">pistas</b>.
+          span Debes descubrir la <b>contraseña</b> que te permita avanzar al siguiente nivel.
           span Las contraseñas siempre son de <b>una palabra</b> con letras y/o números, nunca con espacios. Ignora los signos de puntuación, pero <b>respeta siempre las mayúsculas</b>.
           span No tendrás que memorizarlas todas, el juego recuerda el último nivel desbloqueado y <b>guarda la partida</b> automáticamente.
           span Puedes solicitar pistas si te atascas, mostrando más pistas para ayudarte, pero <b>sólo puntuarás la mitad</b> en esa prueba.
@@ -99,4 +100,8 @@
     display block
   span + span
     margin-top 1em
+  .md-chip
+    height auto
+    padding 4px 12px
+    margin 0
 </style>

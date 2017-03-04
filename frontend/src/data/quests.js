@@ -301,7 +301,7 @@ const quests = [
     icon: 'theaters',
     title: 'Gemelos',
     media: 'starwars.jpg',
-    description: 'Todos sabemos que existen un montón de escenas eliminadas de Star Wars, pero no fue hasta que, cuando empecé a comprar Legos en AliExpress, me enviaron un droide bastante diferente al que yo conocía. Pues resulta que existió de verdad.',
+    description: 'Todos sabemos que existen un montón de escenas eliminadas de Star Wars, pero no fue hasta que, cuando empecé a comprar Legos en AliExpress, me enviaron un droide bastante diferente al que yo recordaba. Pues resulta que existió de verdad!',
     tags: ['Droide', 'Nombre'],
     clues: ['Números', 'Letras']
   },
@@ -362,7 +362,7 @@ const quests = [
   {
     password: 'Nexus6',
     icon: 'games',
-    title: 'Bandicoot',
+    title: 'Crash',
     media: 'crash.gif',
     description: 'Otro de los grandes de mi infancia. Ya sabes que siempre suelo pasarme todos los juegos que tengan la opción en difícil y al 100%, no? Es como un mini ToC que padezco. Pues este me lo pude pasar al 105%, literalmente.',
     tags: ['Gemelo', 'Máscara'],
