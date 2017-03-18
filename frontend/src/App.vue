@@ -124,8 +124,7 @@
     margin 0 !important
     height: 100%
   .md-chip
-    margin-right 5px
-    margin-bottom 5px
+    margin 2px
   .md-toolbar.md-account-header
     a:not(.md-button)
       color inherit

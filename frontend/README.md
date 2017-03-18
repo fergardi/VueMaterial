@@ -17,7 +17,7 @@
 * PELI    -> Jumanji
 * LIBRO   -> Nombre del viento
 * SERIE   -> Como conoci a vuestra madre
-* JUGUETE -> Playmobil
+* PELI    -> Cazafantasmas
 * JUEGO   -> Mortal kombat
 * PELI    -> Mars attacks
 * LIBRO   -> Fundación
@@ -52,7 +52,7 @@
 * VIAJE   -> 50 Viaje 2/4
 * JUEGO   -> Lemmings
 * SERIE   -> Wayward pines
-* JUGUETE -> Mecano
+* PELI    -> Tron
 * DIBUJO  -> Simpsons
 * SERIE   -> Star trek
 * PELI    -> Mad max
@@ -81,9 +81,9 @@
 * LIBRO   -> El señor de los anillos
 * PELI    -> Pesadilla antes de navidad
 * DIBUJO  -> Rick y morty
-* SERIE   -> Walking dead
 * PELI    -> Indiana jones
-* JUGUETE -> Lego
+* SERIE   -> Walking dead
+* DIBUJOS -> Rompe Ralph
 * JUEGO   -> Worms
 * PELI    -> Starship troopers
 * LIBRO   -> El hobbit
@@ -103,10 +103,9 @@
 
 ## Total
 
-* 31 PELIS
+* 34 PELIS
 * 22 SERIES
 * 20 JUEGOS
 * 11 LIBROS
 *  9 DIBUJOS
 *  4 VIAJES
-*  3 JUGUETES

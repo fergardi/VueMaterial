@@ -4,7 +4,7 @@ const quests = [
     icon: 'favorite',
     title: 'Loading... 0%',
     media: '0.jpg',
-    description: 'Bienvenida a tu propia gymkana de aniversario portátil! La primera prueba es facilita para que te sirva de toma de contacto. También he creado tu propio avatar en 8bits! No he conseguido sacarte más parecida, así que es lo que hay.',
+    description: 'Bienvenida a tu propia gymkana de aniversario portátil! Espero que te hayas leído el tutorial. También he creado tu propio avatar en 8bits! No he conseguido sacarte más parecida, así que es lo que hay.',
     tags: ['Avatar', 'Nombre'],
     clues: ['Vir', 'Mujer']
   },
@@ -67,21 +67,21 @@ const quests = [
     icon: 'theaters',
     title: 'Cómete esto!',
     media: 'ash.gif',
-    description: 'Aunque tiene algunas escenas especialmente brutas (como por ejemplo la del árbol haciendole cositas a la chica), te ríes de lo lindo con la saga original. El remake de la peli que hicieron el año pasado es absolutamente desagradable, porque pierde el rollo comedia negra y pasa totalmente al terror. Pero la serie me encanta porque precisamente sigue esa línea! Si hasta tiene videojuegos!',
+    description: 'Aunque tiene algunas escenas especialmente brutas (como por ejemplo la del árbol haciendole cositas a la chica), te ríes de lo lindo con la saga original. El remake de la peli es absolutamente desagradable, porque pierde el rollo comedia negra y pasa totalmente al terror. Pero la serie me encanta porque precisamente sigue esa línea. Si hasta hay videojuegos!',
     tags: ['Libro', 'Piel'],
     clues: ['Muertos', 'Nombre']
   },
   {
     password: 'Necronomicon',
     icon: 'brush',
-    title: 'Alquimia',
-    media: 'alchemist.gif',
-    description: 'La verdad es que no está nada mal, la voy a colocar en el tercer puesto, justo detrás de Naruto Shippuden. La historia está bastante bien y es muy original. Es cierto que no tiene nada de relleno y que van directo al grano.',
-    tags: ['Color', 'Favorito'],
-    clues: ['Apellido', 'Personaje']
+    title: 'Inseparables',
+    media: 'alchemist.jpg',
+    description: 'Me gusta bastante la serie, va muy al grano y tiene bastantes ideas originales. Aunque la pongo por detrás de Naruto Shippuden y Dragon Ball.',
+    tags: ['Perro', 'Niña'],
+    clues: ['Monstruo', 'Mezcla']
   },
   {
-    password: 'Mustang',
+    password: 'Quimera',
     icon: 'chrome_reader_mode',
     title: 'Dunas',
     media: 'dune.gif',
@@ -154,15 +154,15 @@ const quests = [
   },
   {
     password: 'Tracy',
-    icon: 'toys',
-    title: 'Playmobil',
-    media: 'playmobil.jpg',
-    description: 'Bueno, eso de "mobil" no se yo. Pobrecillos, no tenían codos. No podían beber. Ni comer. Ni masturbarse! La verdad es que yo tenía el mítico barco. Pero lo cierto es que me molaban más construir con los bloques de Lego que montar escenas de personajes.',
-    tags: ['Marca', 'Española'],
-    clues: ['Empresa', 'Licencia']
+    icon: 'theaters',
+    title: 'A quién llamarás?',
+    media: 'ghost.gif',
+    description: '"Ray, si alguien te pregunta si eres un dios, contéstale que sí!" Otra mítica de la ciencia ficción, esta vez sobre fantasmas. El remake que hicieron rezuma feminazismo por todas partes.',
+    tags: ['Moco', 'Verde'],
+    clues: ['Fantasma', 'Nombre']
   },
   {
-    password: 'Famobil',
+    password: 'Slimer',
     icon: 'games',
     title: 'Fatality',
     media: 'fatality.gif',
@@ -219,13 +219,13 @@ const quests = [
     password: 'Ichabod',
     icon: 'place',
     title: 'Loading... 25%',
-    media: '25.jpg',
+    media: '25.png',
     description: 'Vas por el 25% del juego! Ya te dije que tendrías que viajar, luchar contra monstruos y hablar con NPCs... Aunque si no quieres, siempre puedes hacer trampas y llamar para conseguir cumplir la misión, no me importa.',
-    tags: ['Mapa', 'Saldaña'],
-    clues: ['Laura', 'Socky']
+    tags: ['42.5237207', '-4.739236'],
+    clues: ['Monstruo', 'Dragón']
   },
   {
-    password: 'Demonio',
+    password: 'Shivano',
     icon: 'theaters',
     title: 'Scott Pilgrim',
     media: 'scott.gif',
@@ -397,6 +397,15 @@ const quests = [
   },
   {
     password: 'Eric',
+    icon: 'brush',
+    title: 'Qué es? Qué es?',
+    media: 'jack.gif',
+    description: '"Hay luces de color! Qué es? Parece de algodón! Qué es? No creo lo que veo, estoy soñando? No lo sé! Qué injusto es! Qué es?" Hecho de menos más películas de animación de Tim Burton.',
+    tags: ['Nariz', 'Luz'],
+    clues: ['Color', 'Favorito']
+  },
+  {
+    password: 'Zero',
     icon: 'tv',
     title: 'Ciencia límite',
     media: 'fringe.jpg',
@@ -433,6 +442,15 @@ const quests = [
   },
   {
     password: 'Zaius',
+    icon: 'place',
+    title: 'Loading... 50%',
+    media: '50.png',
+    description: 'Vas por el 50% del juego! Ya te dije que tendrías que viajar, luchar contra monstruos y hablar con NPCs... Aunque si no quieres, siempre puedes hacer trampas y llamar para conseguir cumplir la misión, no me importa.',
+    tags: ['42.5931312', '-5.5647233'],
+    clues: ['Monstruo', 'Vampiro']
+  },
+  {
+    password: 'Sengir',
     icon: 'tv',
     title: 'Trapitos',
     media: 'muppets.jpg',
@@ -442,15 +460,6 @@ const quests = [
   },
   {
     password: 'Kermit',
-    icon: 'place',
-    title: 'Loading... 50%',
-    media: '50.jpg',
-    description: 'Vas por el 50% del juego! Ya te dije que tendrías que viajar, luchar contra monstruos y hablar con NPCs... Aunque si no quieres, siempre puedes hacer trampas y llamar para conseguir cumplir la misión, no me importa.',
-    tags: ['Mapa', 'León'],
-    clues: ['Jaime', 'Kissy']
-  },
-  {
-    password: 'Elemental',
     icon: 'games',
     title: 'Sálvalos a todos',
     media: 'lemmings.gif',
@@ -469,15 +478,15 @@ const quests = [
   },
   {
     password: '4028',
-    icon: 'toys',
-    title: 'Meccagoen',
-    media: 'mecano.jpg',
-    description: 'Desde pequeño me encantaba construir cosas. Empecé con los Lego, luego los Meccano, y cuando confirmé que era un manazas, un inútil con los rotrin y que no podría dedicarme a la arquitectura, me dediqué a la informática! Ahora puedo diseñar cosas tan chulas como este juego.',
-    tags: ['Nombre', 'Original'],
-    clues: ['Licencia', '1920']
+    icon: 'theaters',
+    title: 'Tron',
+    media: 'tron.jpg',
+    description: 'Otra de mis películas míticas de los 80. Aunque hoy en día veamos estos efectos "especiales" como una cutrez, de aquella era una auténtica pasada. Y la idea de meterse en un ordenador y luchar contra programas siempre me pareció muy original. Ten en cuenta que fue 15 años antes que Matrix. La secuela no es muy buena, pero tiene unos efectos impresionantes.',
+    tags: ['Flynn', 'Programa'],
+    clues: ['CCP', 'Ayuda']
   },
   {
-    password: 'Metaling',
+    password: 'Clu',
     icon: 'brush',
     title: 'S01E13',
     media: 'simpsons.gif',
@@ -658,6 +667,15 @@ const quests = [
   },
   {
     password: 'Erathia',
+    icon: 'place',
+    title: 'Loading... 75%',
+    media: '75.png',
+    description: 'Vas por el 75% del juego! Ya te dije que tendrías que viajar, luchar contra monstruos y hablar con NPCs... Aunque si no quieres, siempre puedes hacer trampas y llamar para conseguir cumplir la misión, no me importa.',
+    tags: ['42.5875991', '-5.5717349'],
+    clues: ['Monstruo', 'Elemental']
+  },
+  {
+    password: 'Zendikar',
     icon: 'theaters',
     title: '5 de Noviembre',
     media: 'vendetta.gif',
@@ -667,15 +685,6 @@ const quests = [
   },
   {
     password: 'Norsefire',
-    icon: 'place',
-    title: 'Loading... 75%',
-    media: '75.jpg',
-    description: 'Vas por el 75% del juego! Ya te dije que tendrías que viajar, luchar contra monstruos y hablar con NPCs... Aunque si no quieres, siempre puedes hacer trampas y llamar para conseguir cumplir la misión, no me importa.',
-    tags: ['Mapa', 'León'],
-    clues: ['Begoña', 'Santos']
-  },
-  {
-    password: 'Espiritu',
     icon: 'brush',
     title: 'Nani?!',
     media: 'naruto.gif',
@@ -712,15 +721,6 @@ const quests = [
   },
   {
     password: 'Vanya',
-    icon: 'theaters',
-    title: 'Qué es? Qué es?',
-    media: 'jack.gif',
-    description: '"Hay luces de color! Qué es? Parece de algodón! Qué es? No creo lo que veo, estoy soñando? No lo sé! Qué injusto es! Qué es?" Hecho de menos más películas de animación de Tim Burton.',
-    tags: ['Nariz', 'Luz'],
-    clues: ['Color', 'Favorito']
-  },
-  {
-    password: 'Zero',
     icon: 'brush',
     title: 'Parodias',
     media: 'rick.jpg',
@@ -730,15 +730,6 @@ const quests = [
   },
   {
     password: 'Sanchez',
-    icon: 'tv',
-    title: 'Puto niño',
-    media: 'carl.jpg',
-    description: 'Dios, pero que asco le tengo! Odio a Carl. Le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odiooooo!!',
-    tags: ['Tonta', 'Rubia'],
-    clues: ['Nombre', 'Olvidado']
-  },
-  {
-    password: 'Andrea',
     icon: 'theaters',
     title: 'Corazoncito',
     media: 'indiana.gif',
@@ -748,15 +739,24 @@ const quests = [
   },
   {
     password: 'Kalimah',
-    icon: 'toys',
-    title: 'Lego',
-    media: 'lego.jpg',
-    description: 'Para mi los Lego eran los bloques de construcción, nunca tuve muñequitos. Esos eran los Playmobil. Pero ahora molan mucho y quiero hacer escenas de Star Wars con ellos! He comprado mil en AliExpress!',
-    tags: ['Material', 'Original'],
-    clues: ['Juguetería', 'Dinamarca']
+    icon: 'tv',
+    title: 'Puto niño',
+    media: 'carl.jpg',
+    description: 'Dios, pero que asco le tengo! Odio a Carl. Le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odiooooo!!',
+    tags: ['Tonta', 'Rubia'],
+    clues: ['Nombre', 'Olvidado']
   },
   {
-    password: 'Madera',
+    password: 'Andrea',
+    icon: 'brush',
+    title: 'Bits',
+    media: 'ralph.jpg',
+    description: 'Me gustan mucho las películas basadas en mundos de videojuegos, y esta es perfecta. Aunque pueda resultar algo infantil, el hecho de viajar entre los distintos mundos de máquinas recreativas y conocer personajes de arcades me encanta.',
+    tags: ['Videojuego', 'Cervezas'],
+    clues: ['Servir', 'Bar']
+  },
+  {
+    password: 'Tapper',
     icon: 'games',
     title: 'Destruye amistades',
     media: 'worms.jpg',
@@ -894,10 +894,10 @@ const quests = [
     password: 'Ankhesenamun',
     icon: 'place',
     title: 'Loading... 100%',
-    media: '100.jpg',
+    media: '100.png',
     description: 'Has completado el 100% del juego! Enhorabuena! Me pregunto qué última misión te aguarda... Cochinadas, probablemente.',
-    tags: ['Mapa', 'Villaobispo'],
-    clues: ['Fer', 'Mike']
+    tags: ['42.6169707', '-5.5507699'],
+    clues: ['Regalo', 'Premio']
   }
 ]
 

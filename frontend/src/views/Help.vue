@@ -73,12 +73,6 @@
             title: 'Viajes',
             subtitle: 'Mapas, destinos, lugares, etc',
             color: '#2196f3'
-          },
-          {
-            icon: 'toys',
-            title: 'Juguetes',
-            subtitle: 'Muñecos, figuras, marcas, etc',
-            color: '#ff4081'
           }
         ]
       }
