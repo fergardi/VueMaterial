@@ -37,7 +37,7 @@ const quests = [
   },
   {
     password: 'Ambar',
-    icon: 'games',
+    icon: 'videogame_asset',
     title: 'Woka Woka Woka',
     media: 'pacman.gif',
     description: 'Sabías que este videojuego de recreativas está inspirado en las películas de Alien? Se supone que los fantasmas representan al bicho, mientras huyes de él por la nave recuperando instrumental valioso. A que es curioso?',
@@ -100,7 +100,7 @@ const quests = [
   },
   {
     password: 'Xenomorfo',
-    icon: 'games',
+    icon: 'videogame_asset',
     title: 'Dame madera',
     media: 'aoe2.jpg',
     description: 'Al ataque! Rush de escorpiones! Touche de torres! Empalizad sus recursos! Matad a sus aldeanos! Violad a sus caballos y huíd en sus mujeres, eso les confundirá! Llegamos a un nivel de competición tal en el que si no matabas al jabalí antes del minuto 1.30, habías perdido.',
@@ -118,7 +118,7 @@ const quests = [
   },
   {
     password: 'Delos',
-    icon: 'games',
+    icon: 'videogame_asset',
     title: 'Oddworld',
     media: 'oddworld.jpg',
     description: 'Una auténtica maravilla de saga. Los rompecabezas, la dificultad, los paisajes de los distintos mundos y los fondos diseñados a mano. Y esa mezcla de mundo avanzado tecnológicamente y al mismo tiempo obsoleto y tribal que me encanta en las obras de ciencia ficción. Sin duda es mi juego favorito de todos los tiempos.',
@@ -163,7 +163,7 @@ const quests = [
   },
   {
     password: 'Slimer',
-    icon: 'games',
+    icon: 'videogame_asset',
     title: 'Fatality',
     media: 'fatality.gif',
     description: 'Un machacabotones para los que no sabíamos los combos más poderosos. Sabías que su éxito fue el uso pionero de la captura de movimientos usando cámaras stop motion con maestros de artes marciales de verdad?',
@@ -262,7 +262,7 @@ const quests = [
   },
   {
     password: 'Baccarin',
-    icon: 'games',
+    icon: 'videogame_asset',
     title: 'Media Vida',
     media: 'hl.jpg',
     description: 'Una de mis teorías favoritas con respecto a tu trabajo (porque tengo varias) es que también tenéis un Departamento de Materiales Anómalos, con elementos extraterrestres inestables con los que experimentáis y conseguís abrir portales interdimensionales! Sería más divertido, no?',
@@ -280,7 +280,7 @@ const quests = [
   },
   {
     password: 'Mogwai',
-    icon: 'games',
+    icon: 'videogame_asset',
     title: 'Fontanero',
     media: 'mario.gif',
     description: '"Lo siento Mario, la princesa está en otro castillo." Pues ya podías habermelo dicho antes de venir, no? Tras 30 años, sigue siendo la saga de videojuegos más vendida de la historia.',
@@ -307,7 +307,7 @@ const quests = [
   },
   {
     password: 'R2Q5',
-    icon: 'games',
+    icon: 'videogame_asset',
     title: 'Recreativas',
     media: 'slug.gif',
     description: 'Una viciada de las recreativas. Tardes y monedas de 25 pesetas tiradas matando todo lo matable y muriendo todo lo morible. Te acuerdas de que encontramos una recreativa en un bar del Húmedo que aún lo tiene?',
@@ -343,7 +343,7 @@ const quests = [
   },
   {
     password: '42',
-    icon: 'games',
+    icon: 'videogame_asset',
     title: 'Zombies lentos',
     media: 'resident.gif',
     description: 'Otra de las teorías que tengo sobre tu trabajo (ya te dije que tenía varias) es que desarrolláis en secreto armas biológicas experimentales basadas en la mutación con virus carnívoros muy agresivos. Como Bernadette en Big Bang Theory!',
@@ -361,7 +361,7 @@ const quests = [
   },
   {
     password: 'Nexus6',
-    icon: 'games',
+    icon: 'videogame_asset',
     title: 'Crash',
     media: 'crash.gif',
     description: 'Otro de los grandes de mi infancia. Ya sabes que siempre suelo pasarme todos los juegos que tengan la opción en difícil y al 100%, no? Es como un mini ToC que padezco. Pues este me lo pude pasar al 105%, literalmente.',
@@ -379,7 +379,7 @@ const quests = [
   },
   {
     password: 'Auryn',
-    icon: 'games',
+    icon: 'videogame_asset',
     title: 'Guerra',
     media: 'wow.jpg',
     description: 'Otra viciada de juego. El WoW no estaba mal, pero el Warcraft III era una maravilla. Te descojonabas con los Orcos haciendo el gañán y diciendo bobadas según ibas jugando.',
@@ -424,7 +424,7 @@ const quests = [
   },
   {
     password: 'Penrose',
-    icon: 'games',
+    icon: 'videogame_asset',
     title: 'Fuego++',
     media: 'ff.jpg',
     description: 'Espadas y magia, la base de mi frikismo. Somos de mundos muy distintos. Tú, del Legend of Zelda y Nintendo. Yo, del Final Fantasy y Sony. Pero frikis al fin y al cabo.',
@@ -460,7 +460,7 @@ const quests = [
   },
   {
     password: 'Kermit',
-    icon: 'games',
+    icon: 'videogame_asset',
     title: 'Sálvalos a todos',
     media: 'lemmings.gif',
     description: 'Un grandísimo juego de lógica que adoraba de pequeño. Intentar salvarlos a todos era una locura, y en algunas ocasiones era hasta imposible, pero siempre era un reto intentarlo!',
@@ -523,7 +523,7 @@ const quests = [
   },
   {
     password: 'Sixers',
-    icon: 'games',
+    icon: 'videogame_asset',
     title: 'Perfect!',
     media: 'tekken.gif',
     description: 'Otro arcade de las recreativas. Tengo grabados a fuego en la memoria los combos más complicados de varios personajes. Tras 15 años, hoy todavía soy capaz de reventar con Xiayou o King...',
@@ -559,7 +559,7 @@ const quests = [
   },
   {
     password: 'Demogorgon',
-    icon: 'games',
+    icon: 'videogame_asset',
     title: 'La Isla del Mono',
     media: 'guybrush.jpg',
     description: 'Otra de mis sagas favoritas, en las que se basó Piratas del Caribe. Sabías que el nombre del protagonista surgió a partir del fichero y la extensión donde almacenaban sus imágenes? Guy.brush! Me encantan estas curiosidades.',
@@ -586,7 +586,7 @@ const quests = [
   },
   {
     password: 'Ekallatum',
-    icon: 'games',
+    icon: 'videogame_asset',
     title: 'Trifuerza',
     media: 'zelda.gif',
     description: 'Quiero pasarme estos juegos, ya va siendo hora! Al parecer son reencarnaciones de la misma historia contada de maneras diferentes. Sé que en la trifuerza el Valor lo representa Link, la Sabiduría Zelda y el Poder Ganon, pero quién creó los fragmentos de la trifuerza?',
@@ -640,7 +640,7 @@ const quests = [
   },
   {
     password: 'VIr',
-    icon: 'games',
+    icon: 'videogame_asset',
     title: 'Marcianitos',
     media: 'invaders.gif',
     description: 'Recuerdo con tristeza haberme gastado un dineral en comprarlo original para la Game Boy. Qué tontería de juego. Pero hoy en día su icono es el referente en videojuegos, y mi salón es prueba de ello!',
@@ -658,7 +658,7 @@ const quests = [
   },
   {
     password: '23154',
-    icon: 'games',
+    icon: 'videogame_asset',
     title: 'M&M',
     media: 'homam.jpg',
     description: 'Otro de mis juegos favoritos, esta vez de estrategia y rol por turnos. Espada y magia! Aunque siempre he tenido debilidad por la nigromancia. Ojo, que no la necrofilia!',
@@ -757,7 +757,7 @@ const quests = [
   },
   {
     password: 'Tapper',
-    icon: 'games',
+    icon: 'videogame_asset',
     title: 'Destruye amistades',
     media: 'worms.jpg',
     description: 'No hay otra definición mejor. Quedar en casa de un amigo para jugar entre varios con la misma pantalla y ver sus corazones romperse cuando realizabas rebotes imposibles aprovechándote del viento mientras aniquilabas sus gusanitos y te hacias con la victoria. Y no te volvían a llamar para jugar. Delicioso.',
@@ -784,7 +784,7 @@ const quests = [
   },
   {
     password: 'Anillo',
-    icon: 'games',
+    icon: 'videogame_asset',
     title: 'TOC',
     media: 'tetris.gif',
     description: 'Una muestra excelente de lo que frustrante que puede ser tener un poco de ToC. Todo ordenadito de cojones. Sabes de dónde viene su nombre?',
@@ -847,7 +847,7 @@ const quests = [
   },
   {
     password: 'Nebuchadnezzar',
-    icon: 'games',
+    icon: 'videogame_asset',
     title: 'Dragonborn',
     media: 'skyrim.jpg',
     description: '"Yo antes era un aventurero como tú, pero un día me hirieron con una flecha en la rodilla". Es la frase que más se oye en este juego. Me encantaban las misiones del culto de los Vampiros y de los Hombres Lobo.',

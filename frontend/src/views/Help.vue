@@ -51,7 +51,7 @@
             color: '#ff5722'
           },
           {
-            icon: 'games',
+            icon: 'videogame_asset',
             title: 'Videojuegos',
             subtitle: 'Juegos, trucos, consolas, etc',
             color: '#ffeb3b'
