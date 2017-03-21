@@ -77,7 +77,6 @@
             this.cheat = false
           })
           if (document.getElementById('scroll')) document.getElementById('scroll').scrollIntoView(true)
-          // if (document.getElementById('password')) document.getElementById('password').focus()
           this.help = false
           this.password = ''
           this.active = found

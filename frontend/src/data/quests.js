@@ -4,7 +4,7 @@ const quests = [
     icon: 'favorite',
     title: 'Loading... 0%',
     media: '0.jpg',
-    description: 'Bienvenida a tu propia gymkana de aniversario portátil! Espero que te hayas leído el tutorial. También he creado tu propio avatar en 8bits! No he conseguido sacarte más parecida, así que es lo que hay.',
+    description: 'Bienvenida a tu gymkana de aniversario portátil! Como ves, también he creado tu propio avatar en 8bits. No he conseguido sacarte más parecida, así que es lo que hay. Pero sales muy mona!',
     tags: ['Avatar', 'Nombre'],
     clues: ['Vir', 'Mujer']
   },
@@ -13,7 +13,7 @@ const quests = [
     icon: 'theaters',
     title: 'Delorean',
     media: 'delorean.gif',
-    description: 'Vas a tener que usar tu flamante coche nuevo para resolver algunas de las pruebas más cabronas, pero eso será más adelante. Este vehículo también era híbrido, y solo consumía 1,21GW por viaje! Aunque se estropeaba fácilmente...',
+    description: 'Vas a tener que usar tu flamante coche nuevo para resolver algunas de las pruebas más cabronas, pero eso será más adelante. Este vehículo también era híbrido, y solo consumía 1.21GW por viaje! Aunque se estropeaba fácilmente...',
     tags: ['California', 'Placa'],
     clues: ['Coche', 'Matrícula']
   },
@@ -77,8 +77,8 @@ const quests = [
     title: 'Inseparables',
     media: 'alchemist.jpg',
     description: 'Me gusta bastante la serie, va muy al grano y tiene bastantes ideas originales. Aunque la pongo por detrás de Naruto Shippuden y Dragon Ball.',
-    tags: ['Perro', 'Niña'],
-    clues: ['Monstruo', 'Mezcla']
+    tags: ['Nina', 'Alexander'],
+    clues: ['Niña', 'Perro']
   },
   {
     password: 'Quimera',
@@ -101,7 +101,7 @@ const quests = [
   {
     password: 'Xenomorfo',
     icon: 'videogame_asset',
-    title: 'Dame madera',
+    title: 'Dame madera!',
     media: 'aoe2.jpg',
     description: 'Al ataque! Rush de escorpiones! Touche de torres! Empalizad sus recursos! Matad a sus aldeanos! Violad a sus caballos y huíd en sus mujeres, eso les confundirá! Llegamos a un nivel de competición tal en el que si no matabas al jabalí antes del minuto 1.30, habías perdido.',
     tags: ['Truco', 'Recurso'],
@@ -140,26 +140,26 @@ const quests = [
     title: 'Kvothe',
     media: 'kvothe.jpg',
     description: 'Una de mis sagas de lectura favoritas. Sus explicaciones, aprendizaje y representación de la magia es la más descriptiva que he leído. Muy alquimica y original. A ver si sale el tercero de una vez!',
-    tags: ['Viento', 'Sabio'],
-    clues: ['Tercero', 'Libro']
+    tags: ['Magia', 'Simpatía'],
+    clues: ['Conexión', 'Fuerza']
   },
   {
-    password: 'Piedra',
+    password: 'Alar',
     icon: 'tv',
     title: 'Su puta madre',
     media: 'himym.gif',
-    description: 'Tantos años esperando para conocer a la madre de los chicos y mujer de Ted, y al final va y se muere, para volver con Robin como tendría que haber sido desde el principio. Spoiler!',
+    description: 'Tantos años esperando para conocer a la madre de los chicos y mujer de Ted, y al final va y se muere, para volver con Robin como tendría que haber sido desde el principio...',
     tags: ['Spoiler', 'Madre'],
     clues: ['Nombre', 'Muerta']
   },
   {
     password: 'Tracy',
     icon: 'theaters',
-    title: 'A quién llamarás?',
+    title: 'A quién vas a llamar?',
     media: 'ghost.gif',
     description: '"Ray, si alguien te pregunta si eres un dios, contéstale que sí!" Otra mítica de la ciencia ficción, esta vez sobre fantasmas. El remake que hicieron rezuma feminazismo por todas partes.',
     tags: ['Moco', 'Verde'],
-    clues: ['Fantasma', 'Nombre']
+    clues: ['Fantasma', 'Inglés']
   },
   {
     password: 'Slimer',
@@ -175,7 +175,7 @@ const quests = [
     icon: 'theaters',
     title: 'Ack, ack, ack!',
     media: 'mars.gif',
-    description: 'Como los guionistas no sabían lo que iban a decir los marcianos cuando estaban escribiendo el guión, escribieron "ack ack ack" para sustituirlo después, pero luego se conservó durante la filmación porque hizo gracia, y se quedó para la versión final.',
+    description: 'Como los guionistas no sabían lo que iban a decir los marcianos cuando estaban escribiendo el guión, escribieron "ack ack ack" para sustituirlo después, pero luego se conservó durante la filmación porque hizo gracia, y se quedó para la versión final. Está basada en un juego de cartas!',
     tags: ['Idea', 'Original'],
     clues: ['Juego', 'Tipo']
   },
@@ -184,27 +184,27 @@ const quests = [
     icon: 'chrome_reader_mode',
     title: 'Cimientos',
     media: 'foundation.jpg',
-    description: 'Otra novela río, esta vez futurista, sobre conspiraciones, partidos políticos, cultos religiosos, ansias de poder, y mucha intriga. Ah, y científicos capaces de analizar el curso de la historia para predecir cientos o miles de años de futuro por delante. Yo creo que se equivocaron al traducirla, porque Foundation significa Cimientos.',
-    tags: ['Nombre', 'Ciclo'],
-    clues: ['Trilogía', 'Libro']
+    description: 'Otra novela río, esta vez futurista, sobre conspiraciones, partidos políticos, cultos religiosos, ansias de poder, y mucha intriga. Ah, y científicos capaces de analizar el curso de la historia para predecir cientos o miles de años de futuro por delante.',
+    tags: ['Símbolo', 'Signo'],
+    clues: ['Dedo', 'Paz']
   },
   {
-    password: 'Trantor',
+    password: 'Circulo',
     icon: 'brush',
     title: 'Caída de gravedad',
     media: 'gravity.jpg',
     description: 'El simple nombre sugiere misterio. El dibujo, el guión, y el punto cómico a esta loca historia de sucesos paranormales y sobrenaturales a lo Expediente X en un pequeño pueblecito de las montañas, la convierten en una de las mejores series de animación que he visto. Pero solo tiene 2 temporadas.',
-    tags: ['Dipper', 'Mabel'],
-    clues: ['Familia', 'Apellido']
+    tags: ['Enemigo', 'Triángulo'],
+    clues: ['Bill', 'Apellido']
   },
   {
-    password: 'Pines',
+    password: 'Cipher',
     icon: 'tv',
     title: 'Quiero creer',
     media: 'believe.jpg',
     description: 'Tenía algunos capítulos bastante escabrosos que luego no me dejaban dormir. Hasta la musiquita acojonaba cuando eras un crío. Y ahora un poco también.',
-    tags: ['Serie', 'Final'],
-    clues: ['Capítulo', 'Nombre']
+    tags: ['Capítulo', 'Final'],
+    clues: ['Serie', 'Nombre']
   },
   {
     password: 'Verdad',
@@ -258,7 +258,7 @@ const quests = [
     media: 'v.jpg',
     description: 'Muy buena e infravalorada, a mi parecer. Me refiero a la nueva claro, la vieja no había por dónde cogerla. Un duelo de inteligencia entre dos mujeres y un plan maesto de alienígenas reptilianos comedores de ratones que quieren apoderarse del planeta. Con aparición estelar de la anterior reina!',
     tags: ['Rubia', 'Pelirroja'],
-    clues: ['Anna', 'Apellido']
+    clues: ['Actriz', 'Apellido']
   },
   {
     password: 'Baccarin',
@@ -320,7 +320,7 @@ const quests = [
     title: 'Finn & Jake',
     media: 'time.jpg',
     description: 'Una gran serie animada para niños y no tan niños, con una trama principal perfectamente hilada si te vas fijando bien en cada episodio. Concretamente, la triste historia del loco Rey Hielo es acojonante, de verdad.',
-    tags: ['Animal', 'Enemigo'],
+    tags: ['Animal', 'Malvado'],
     clues: ['Todos', 'Capítulos']
   },
   {
@@ -347,8 +347,8 @@ const quests = [
     title: 'Zombies lentos',
     media: 'resident.gif',
     description: 'Otra de las teorías que tengo sobre tu trabajo (ya te dije que tenía varias) es que desarrolláis en secreto armas biológicas experimentales basadas en la mutación con virus carnívoros muy agresivos. Como Bernadette en Big Bang Theory!',
-    tags: ['Nombre', 'Empresa'],
-    clues: ['Corporación', 'Maligna']
+    tags: ['Maligna', 'Empresa'],
+    clues: ['Corporación', 'Nombre']
   },
   {
     password: 'Umbrella',
@@ -362,14 +362,14 @@ const quests = [
   {
     password: 'Nexus6',
     icon: 'videogame_asset',
-    title: 'Crash',
+    title: 'Peramelidae',
     media: 'crash.gif',
     description: 'Otro de los grandes de mi infancia. Ya sabes que siempre suelo pasarme todos los juegos que tengan la opción en difícil y al 100%, no? Es como un mini ToC que padezco. Pues este me lo pude pasar al 105%, literalmente.',
-    tags: ['Gemelo', 'Máscara'],
-    clues: ['Malvado', 'Nombre']
+    tags: ['Islas', 'Australia'],
+    clues: ['Juegos', 'Nombre']
   },
   {
-    password: 'UkaUka',
+    password: 'Wumpa',
     icon: 'chrome_reader_mode',
     title: 'Fújur!',
     media: 'neverending.gif',
@@ -410,11 +410,11 @@ const quests = [
     title: 'Ciencia límite',
     media: 'fringe.jpg',
     description: 'Otra de obligado visionado. Para mí, es bastante bastante mejor que Expendiente X. Todos los capítulos son de un tema tabú de la ciencia ficción llevado al extremo del peligro, pero también tiene una historia por detrás que une todos los episodios.',
-    tags: ['Calvos', 'Enemigos'],
-    clues: ['Inglés', 'Sombreros']
+    tags: ['Sombreros', 'Enemigos'],
+    clues: ['Nombre', 'Plural']
   },
   {
-    password: 'Observers',
+    password: 'Observadores',
     icon: 'theaters',
     title: 'Rien de rien',
     media: 'inception.gif',
@@ -427,7 +427,7 @@ const quests = [
     icon: 'videogame_asset',
     title: 'Fuego++',
     media: 'ff.jpg',
-    description: 'Espadas y magia, la base de mi frikismo. Somos de mundos muy distintos. Tú, del Legend of Zelda y Nintendo. Yo, del Final Fantasy y Sony. Pero frikis al fin y al cabo.',
+    description: 'Espadas y magia, la base de mi frikismo. Somos de mundos muy distintos. Tú, del Legend of Zelda y Nintendo. Yo, del Final Fantasy y Sony. Pero frikis al fin y al cabo. Siempre me recuerda a tí.',
     tags: ['Personaje', 'Apellido'],
     clues: ['FF9', 'Nombre']
   },
@@ -455,20 +455,20 @@ const quests = [
     title: 'Trapitos',
     media: 'muppets.jpg',
     description: 'Recuerdo que veía semanalmente este show con mis padres en el salón cuando era muy pequeño! De aquella era como el Saturday Night Live, con artistas invitados, música en directo y sketches muy divertidos. Qué recuerdos!',
-    tags: ['Inglés', 'Verde'],
-    clues: ['Rana', 'Muñeco']
+    tags: ['Rana', 'Verde'],
+    clues: ['Inglés', 'Muñeco']
   },
   {
     password: 'Kermit',
     icon: 'videogame_asset',
     title: 'Sálvalos a todos',
     media: 'lemmings.gif',
-    description: 'Un grandísimo juego de lógica que adoraba de pequeño. Intentar salvarlos a todos era una locura, y en algunas ocasiones era hasta imposible, pero siempre era un reto intentarlo!',
-    tags: ['Empresa', 'Actual'],
-    clues: ['Original', 'DMA Design']
+    description: 'Un grandísimo juego de lógica que adoraba de pequeño. Intentar salvarlos a todos era una locura, y en algunas ocasiones era hasta imposible, pero siempre era un reto intentarlo! Sabes que lo creó la empresa que actualmente es Rockstar Games?',
+    tags: ['Dificultad', 'Máxima'],
+    clues: ['Nombre', 'Inglés']
   },
   {
-    password: 'Rockstar',
+    password: 'Mayhem',
     icon: 'tv',
     title: 'Los pinos',
     media: 'wayward.jpg',
@@ -479,11 +479,11 @@ const quests = [
   {
     password: '4028',
     icon: 'theaters',
-    title: 'Tron',
+    title: 'Procesadores',
     media: 'tron.jpg',
     description: 'Otra de mis películas míticas de los 80. Aunque hoy en día veamos estos efectos "especiales" como una cutrez, de aquella era una auténtica pasada. Y la idea de meterse en un ordenador y luchar contra programas siempre me pareció muy original. Ten en cuenta que fue 15 años antes que Matrix. La secuela no es muy buena, pero tiene unos efectos impresionantes.',
     tags: ['Flynn', 'Programa'],
-    clues: ['CCP', 'Ayuda']
+    clues: ['Nombre', 'Ayuda']
   },
   {
     password: 'Clu',
@@ -491,8 +491,8 @@ const quests = [
     title: 'S01E13',
     media: 'simpsons.gif',
     description: 'Ya no me hacen ni puta gracia los capítulos nuevos, ni siquiera la película, pero los viejos aún son buenísimos. Mis preferidos son los especiales de Halloween de la Casa Árbol del Terror.',
-    tags: ['Ladrona', 'Apellido'],
-    clues: ['Botz', 'Completo']
+    tags: ['Ladrona', 'Babysitter'],
+    clues: ['Botz', 'Apellido']
   },
   {
     password: 'Botzukowsky',
@@ -554,7 +554,7 @@ const quests = [
     title: 'Upside down',
     media: 'stranger.jpg',
     description: 'Me habría gustado hacerte un gif personalizado con tu nombre usando las luces de la pared pero, tras mucho investigar, la web de Netflix que lo permitía está caída, así que opté por buscar otra cosa...',
-    tags: ['Monstruo', 'Nombre'],
+    tags: ['Monstruo', 'Demonio'],
     clues: ['Universo', 'Paralelo']
   },
   {
@@ -635,7 +635,7 @@ const quests = [
     title: 'I am the danger',
     media: 'bb.gif',
     description: 'La prueba viviente de que si le das una oportunidad a algo que no te gusta puede acabar sorprendiéndote de forma muy grata. Ver cómo se va haciendo sutilmente cada vez más cabrón conforme pasan los capítulos engancha. Un actor genial.',
-    tags: ['Vanadio', 'Iridio'],
+    tags: ['Iridio', 'Vanadio'],
     clues: ['Elemento', 'Química']
   },
   {
@@ -644,8 +644,8 @@ const quests = [
     title: 'Marcianitos',
     media: 'invaders.gif',
     description: 'Recuerdo con tristeza haberme gastado un dineral en comprarlo original para la Game Boy. Qué tontería de juego. Pero hoy en día su icono es el referente en videojuegos, y mi salón es prueba de ello!',
-    tags: ['Puntuación', 'Tope'],
-    clues: ['Cap', 'Max']
+    tags: ['Puntuación', 'Total'],
+    clues: ['Capada', 'Máximo']
   },
   {
     password: '9990',
@@ -680,8 +680,8 @@ const quests = [
     title: '5 de Noviembre',
     media: 'vendetta.gif',
     description: '"Recuerden, recuerden, el 5 de Noviembre. Conspiración, pólvora y traición. No veo la demora y siempre es la hora, de evocarla sin dilación". Esta careta ha inspirado revueltas en el mundo real.',
-    tags: ['Partido', 'Político'],
-    clues: ['Nombre', 'Inglés']
+    tags: ['Partido', 'Nombre'],
+    clues: ['Política', 'Inglés']
   },
   {
     password: 'Norsefire',
@@ -699,7 +699,7 @@ const quests = [
     media: 'got.gif',
     description: 'Lo más interesante de la serie es averiguar la verdadera identidad de John, aunque ya lo tenemos bastante claro. Si ya se lo dice Ygritte. "You know nothing, John Snow". Y si ella lo sabía desde el principio?',
     tags: ['Snow', 'Apellido'],
-    clues: ['Real', 'Verdadero']
+    clues: ['Real', 'Casa']
   },
   {
     password: 'Targaryen',
@@ -715,7 +715,7 @@ const quests = [
     icon: 'chrome_reader_mode',
     title: 'Habla y entra',
     media: 'moria.gif',
-    description: 'Podría haber sacado algo del Silmarillion que no sacases en la vida, pero en realidad he optado por un piropazo en la lengua inventada de nuestro querido Tolkien.',
+    description: 'Podría haber sacado algo del Silmarillion que no sacases en la vida, pero en realidad he optado por tirarte un piropazo en la lengua inventada de nuestro querido Tolkien.',
     tags: ['Hermosa', 'Élfico'],
     clues: ['Tolkien', 'Palabra']
   },
@@ -744,7 +744,7 @@ const quests = [
     media: 'carl.jpg',
     description: 'Dios, pero que asco le tengo! Odio a Carl. Le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odio, le odiooooo!!',
     tags: ['Tonta', 'Rubia'],
-    clues: ['Nombre', 'Olvidado']
+    clues: ['Competición', 'Olvidado']
   },
   {
     password: 'Andrea',
@@ -780,7 +780,7 @@ const quests = [
     media: 'gollum.gif',
     description: 'Tampoco sería un juego de acertijos completo sin el duelo de acertijos más famoso de todos los tiempos, verdad? Aunque más bien fué un duelo de tramposos.',
     tags: ['Respuesta', 'Último'],
-    clues: ['Bilbo', 'Trampa']
+    clues: ['Correcta', 'Trampa']
   },
   {
     password: 'Anillo',
@@ -815,7 +815,7 @@ const quests = [
     title: 'Año 3000',
     media: 'fry.gif',
     description: 'Mi serie de animación favorita. Tiene lo mejor de los Simpsons, sin ser tan zafia como Padre de Familia. Lo que no entiendo es que la cancelaran y descancelaran tantas veces, yo creo que daba un dinero de la hostia.',
-    tags: ['Tarjeta', 'Pizza'],
+    tags: ['Tarjeta', 'Anchoas'],
     clues: ['Pin', 'Banco']
   },
   {
@@ -852,7 +852,7 @@ const quests = [
     media: 'skyrim.jpg',
     description: '"Yo antes era un aventurero como tú, pero un día me hirieron con una flecha en la rodilla". Es la frase que más se oye en este juego. Me encantaban las misiones del culto de los Vampiros y de los Hombres Lobo.',
     tags: ['Fus', 'Ro'],
-    clues: ['Grito', 'Muro']
+    clues: ['Grito', 'Palabra']
   },
   {
     password: 'Dah',
