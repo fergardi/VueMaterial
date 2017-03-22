@@ -2,7 +2,7 @@
   div
 
     md-dialog(ref="achievement")
-      md-card
+      md-card(v-on:click.native="close()")
         md-card-header
           md-avatar.md-large
             md-icon.md-primary {{ selected.icon }}
@@ -69,6 +69,9 @@
     methods: {
       open () {
         this.$refs['achievement'].open()
+      },
+      close () {
+        this.$refs['achievement'].close()
       },
       select (achievement) {
         this.selected = achievement
