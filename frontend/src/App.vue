@@ -148,6 +148,9 @@
       padding 5px
       .md-avatar
         margin 0
+  .md-dialog
+    max-width 90%
+    max-height 90%
   .no-padding
     padding 0 !important
   .padding

@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    md-snackbar(ref="snackbar", md-duration="5000", md-position="top center")
+    md-snackbar(ref="snackbar", md-duration="5000", md-position="bottom center")
       span {{ message }}
       md-button.md-accent(v-on:click.native="close()")
         md-icon(v-if="!cheat") star
@@ -76,10 +76,11 @@
             }
             this.cheat = false
           })
-          if (document.getElementById('scroll')) document.getElementById('scroll').scrollIntoView(true)
           this.help = false
           this.password = ''
           this.active = found
+          document.activeElement.blur()
+          document.getElementById('scroll').scrollIntoView(true)
         }
       },
       help (boolean) {

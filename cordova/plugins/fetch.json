@@ -1,12 +1,4 @@
 {
-    "cordova-plugin-crosswalk-webview": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-crosswalk-webview@~2.1.0"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-whitelist": {
         "source": {
             "type": "registry",
@@ -15,28 +7,18 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-fullscreen": {
+    "cordova-plugin-crosswalk-webview": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-fullscreen"
+            "id": "cordova-plugin-crosswalk-webview@~2.1.0"
         },
         "is_top_level": true,
-        "variables": {}
-    },
-    "cordova-plugin-navigationbar": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-navigationbar"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "cordova-plugin-vibration": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-vibration"
-        },
-        "is_top_level": true,
-        "variables": {}
+        "variables": {
+            "XWALK_VERSION": "21+",
+            "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
+            "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
+            "XWALK_MODE": "embedded",
+            "XWALK_MULTIPLEAPK": "true"
+        }
     }
 }
