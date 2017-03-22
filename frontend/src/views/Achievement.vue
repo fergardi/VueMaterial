@@ -1,5 +1,18 @@
 <template lang="pug">
   div
+
+    md-dialog(ref="achievement")
+      md-card
+        md-card-header
+          md-avatar.md-large
+            md-icon.md-primary {{ selected.icon }}
+          md-card-header-text
+            .md-title {{ selected.title }}
+        md-card-media
+          md-image(v-bind:md-src="'img/quests/' + selected.media")
+        md-card-content
+          span {{ selected.description }}
+
     md-card
       md-card-header
         md-avatar.md-large
@@ -20,7 +33,7 @@
           span.center {{ score }} / 10000
         md-list.md-triple-line
           md-divider
-          md-list-item(v-for="achievement in ordered")
+          md-list-item(v-for="achievement in ordered", v-on:click.native="select(achievement)")
             md-avatar.md-large
               md-icon.md-primary {{ achievement.icon }}
             .md-list-text-container
@@ -40,14 +53,27 @@
   export default {
     data () {
       return {
-        achievements: []
+        achievements: [],
+        selected: {
+          media: '../achievement.jpg'
+        }
       }
     },
     created () {
       this.$material.setCurrentTheme('achievement')
+      this.$material.inkRipple = false
       this.$iterateStorage((value, key, index) => {
         if (key !== 'LAST') this.achievements.push(value)
       })
+    },
+    methods: {
+      open () {
+        this.$refs['achievement'].open()
+      },
+      select (achievement) {
+        this.selected = achievement
+        this.open()
+      }
     },
     computed: {
       ordered () {
@@ -58,6 +84,9 @@
         return this.achievements
         .reduce((total, achievement) => total + (achievement.cheat ? 50 : 100), 0)
       }
+    },
+    destroyed () {
+      this.$material.inkRipple = true
     }
   }
 </script>
@@ -67,4 +96,17 @@
     display block
   span + span
     margin-top 1em
+  .md-dialog
+    .md-card
+      .md-card-header
+        padding 0
+        .md-card-header-text
+          display flex
+          align-items center
+          justify-content flex-start
+        .md-title
+          margin 0 !important
+      .md-card-content
+        font-size 0.85em
+        line-height 1.5em
 </style>
