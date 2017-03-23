@@ -109,6 +109,7 @@
 <style lang="stylus">
   body
     background-color #242f39
+    font-family 'Raleway', sans-serif !important
   html
   body
   .app
