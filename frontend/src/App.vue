@@ -26,7 +26,7 @@
                 .flex
                 h2.md-title Frikiversario
                 .flex
-      md-list
+      md-list.md-dense
         md-list-item(v-for="item in items")
           router-link(exact, v-bind:to="item.url")
             md-avatar
