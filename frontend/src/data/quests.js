@@ -335,14 +335,14 @@ const quests = [
   {
     password: 'Masillas',
     icon: 'theaters',
-    title: 'Deep Thought',
-    media: 'deep.jpg',
-    description: 'Esta respuesta al sentido de la vida, el universo y todo lo demás es la más famosa del cine. Es el único código que temía que descubieras introduciendo cosas al azar, así que si has llegado aquí así, vuelve atrás y no hagas trampas!',
-    tags: ['Ordenador', 'Respuesta'],
-    clues: ['Número', 'Todo']
+    title: 'Oscuridad total',
+    media: 'pitch.gif',
+    description: '"No es a mí a quién debéis temer..."',
+    tags: ['Monstruo', 'Especie'],
+    clues: ['Nombre', 'Alien']
   },
   {
-    password: '42',
+    password: 'Bioraptor',
     icon: 'videogame_asset',
     title: 'Zombies lentos',
     media: 'resident.gif',
